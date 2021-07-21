@@ -1,0 +1,4 @@
+baseURL = "/"
+languageCode = "es"
+title = "Inicio"
+defaultContentLanguage = "es"

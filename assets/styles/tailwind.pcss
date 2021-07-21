@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+}
+
+@layer components {
+  /*                                 LAYOUTS                              */
+
+  /* HEADER */
+  .header {
+    @apply relative
+    flex
+    justify-between
+    p-4
+    items-center
+    lg:py-8 lg:px-8
+    xl:px-20;
+  }
+  .header__menu {
+    @apply h-10 lg:hidden block cursor-pointer;
+  }
+
+  /* NAV */
+  .nav {
+    @apply absolute
+      top-24
+      left-0
+      px-4
+      py-4
+      bg-white
+      w-full
+      lg:w-auto
+      lg:relative lg:top-0 lg:left-0 lg:px-0 lg:py-0;
+  }
+  .nav__list {
+    @apply lg:flex;
+  }
+  .nav__item {
+    @apply mb-4 lg:mb-0 lg:mx-4 xl:mx-6;
+  }
+  .nav__link {
+    @apply block uppercase text-xs lg:pb-1 lg:text-xs xl:text-base font-medium;
+    border-bottom: 2px solid transparent;
+  }
+
+  @screen lg {
+    .nav__link:hover {
+      border-bottom: 2px solid #04f6e8;
+    }
+  }
+}
+
+.footer {
+  background-image: url("/images/footer-x1.png");
+  background-size: cover;
+  background-position: center;
+  @apply py-6 lg:py-12 text-color-white;
+}
+
+.footer .contenedor {
+  @apply flex flex-col items-center lg:justify-center lg:flex-row lg:justify-between;
+}
+
+.footer__logo {
+  @apply lg:pr-20;
+}
+
+@screen lg {
+  .footer__logo {
+    border-right: 1.5px solid #fff;
+  }
+}
+
+/* .footer__image {
+} */
+
+.footer__slogan {
+  @apply text-center text-lg;
+}
+
+.footer__slogan p {
+  @apply uppercase text-2xl;
+}
+
+.footer__slogan span {
+  @apply block normal-case text-sm;
+}
+
+/* .footer__nav {
+}
+
+.footer__list {
+}
+
+.footer__item {
+} */
+
+.footer__link {
+  @apply flex items-center uppercase text-sm mb-2;
+}
+
+.footer__link img {
+  @apply mr-2;
+}
+
+.footer__contact {
+  @apply text-center;
+}
+
+.footer__contact p {
+  @apply uppercase mb-4;
+}
+
+.footer__contact div {
+  @apply flex justify-between;
+}
+
+.footer__logo,
+.footer__slogan,
+.footer__nav {
+  @apply my-4 lg:my-0;
+}
+
+.datasketch {
+  @apply flex justify-center py-4;
+  background-color: #00223e;
+}
+
+/* .datasketch__logo {
+} */
+
+@screen lg {
+  .footer {
+    background-image: url("/images/footer-x2.png");
+  }
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* BANNER */
+
+/* BANNER HOME */
+/* .banner--home {
+    background-image: url(/images/home/)
+  } */
+
+@layer utilities {
+  .contenedor {
+    max-width: 1200px !important;
+    width: 95% !important;
+    margin: 0 auto !important;
+  }
+}

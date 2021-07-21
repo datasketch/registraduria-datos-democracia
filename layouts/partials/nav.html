@@ -1,0 +1,29 @@
+<header class="header">
+  <img src="{{ "images/logo.svg" | absURL }}" alt="" class="header__logo" />
+  <button id="menu-toggle" class="header__menu">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-full stroke-current icon icon-tabler icon-tabler-menu-2"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <line x1="4" y1="6" x2="20" y2="6" />
+      <line x1="4" y1="12" x2="20" y2="12" />
+      <line x1="4" y1="18" x2="20" y2="18" />
+    </svg>
+  </button>
+  <nav class="nav hidden lg:block" id="menu">
+    <ul class="nav__list">
+      {{ range .Site.Menus.main }}
+      <li class="nav__item">
+        <a
+          class="text-{{ with .Page.Params.color }}{{ . }}{{ end }} nav__link "
+          href="{{ .URL }}"
+          >{{ .Title }}</a
+        >
+      </li>
+      {{ end }}
+    </ul>
+  </nav>
+</header>

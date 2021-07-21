@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ .Language.Lang }}">
+  <head>
+    {{ partial "head.html" . }} {{ block "head" . }}{{ end }} {{ if .Title }}
+    <title>Home | {{ .Site.Title }}</title>
+    {{ else }}
+    <title>{{ .Site.Title }}</title>
+    {{ end }}
+  </head>
+  <body>
+    {{ partial "nav.html" . }}
+    <main>{{ block "main" . }}{{ end }}</main>
+  </body>
+  {{ partial "footer.html" . }} {{ $default := resources.Get "js/default.js" |
+  js.Build (dict "minify" true)}}
+  <script src="{{ $default.Permalink }}"></script>
+  {{ block "js" . }}{{ end }}
+</html>
