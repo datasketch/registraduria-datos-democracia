@@ -3,6 +3,55 @@
 @tailwind utilities;
 
 @layer base {
+  @font-face {
+    font-family: "Soberana Sans";
+    src: url("/fonts/SoberanaSans-Black.otf");
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: "Soberana Sans";
+    src: url("/fonts/SoberanaSans-BlackItalic.otf");
+    font-weight: normal;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Soberana Sans";
+    src: url("/fonts/SoberanaSans-Bold.otf");
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: "Soberana Sans";
+    src: url("/fonts/SoberanaSans-BoldItalic.otf");
+    font-weight: 700;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Soberana Sans";
+    src: url("/fonts/SoberanaSans-Italic.otf");
+    font-weight: normal;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Soberana Sans";
+    src: url("/fonts/SoberanaSans-Light.otf");
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: "Soberana Sans";
+    src: url("/fonts/SoberanaSans-Regular.otf");
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "Soberana Sans";
+    src: url("/fonts/SoberanaSans-Ultra.otf");
+    font-weight: 100;
+  }
+  @font-face {
+    font-family: "Soberana Sans";
+    src: url("/fonts/SoberanaSans-UltraItalic.otf");
+    font-weight: 100;
+    font-style: italic;
+  }
 }
 
 @layer components {
@@ -32,7 +81,7 @@
       bg-white
       w-full
       lg:w-auto
-      lg:relative lg:top-0 lg:left-0 lg:px-0 lg:py-0;
+      lg:relative lg:top-0 lg:left-0 lg:px-0 lg:py-0 z-10;
   }
   .nav__list {
     @apply lg:flex;
@@ -50,45 +99,46 @@
       border-bottom: 2px solid #04f6e8;
     }
   }
-}
 
-.footer {
-  background-image: url("/images/footer-x1.png");
-  background-size: cover;
-  background-position: center;
-  @apply py-6 lg:py-12 text-color-white;
-}
-
-.footer .contenedor {
-  @apply flex flex-col items-center lg:justify-center lg:flex-row lg:justify-between;
-}
-
-.footer__logo {
-  @apply lg:pr-20;
-}
-
-@screen lg {
-  .footer__logo {
-    border-right: 1.5px solid #fff;
+  .footer {
+    @apply py-6 lg:py-12 text-color-white font-soberana-sans bg-cover bg-center;
+    background-image: url("/images/footer-x1.png");
   }
-}
 
-/* .footer__image {
+  .footer .contenedor {
+    @apply flex flex-col items-center lg:justify-center lg:flex-row lg:justify-between;
+  }
+
+  .footer__logo {
+    @apply lg:pr-20;
+  }
+
+  @screen lg {
+    .footer {
+      background-image: url("/images/footer-x2.png");
+    }
+
+    .footer__logo {
+      border-right: 1.5px solid #fff;
+    }
+  }
+
+  /* .footer__image {
 } */
 
-.footer__slogan {
-  @apply text-center text-lg;
-}
+  .footer__slogan {
+    @apply text-center text-lg;
+  }
 
-.footer__slogan p {
-  @apply uppercase text-2xl;
-}
+  .footer__slogan p {
+    @apply uppercase text-2xl;
+  }
 
-.footer__slogan span {
-  @apply block normal-case text-sm;
-}
+  .footer__slogan span {
+    @apply block normal-case text-sm;
+  }
 
-/* .footer__nav {
+  /* .footer__nav {
 }
 
 .footer__list {
@@ -97,54 +147,106 @@
 .footer__item {
 } */
 
-.footer__link {
-  @apply flex items-center uppercase text-sm mb-2;
-}
+  .footer__link {
+    @apply flex items-center uppercase text-sm mb-2;
+  }
 
-.footer__link img {
-  @apply mr-2;
-}
+  .footer__link img {
+    @apply mr-2;
+  }
 
-.footer__contact {
-  @apply text-center;
-}
+  .footer__contact {
+    @apply text-center;
+  }
 
-.footer__contact p {
-  @apply uppercase mb-4;
-}
+  .footer__contact p {
+    @apply uppercase mb-4;
+  }
 
-.footer__contact div {
-  @apply flex justify-between;
-}
+  .footer__contact div {
+    @apply flex justify-between;
+  }
 
-.footer__logo,
-.footer__slogan,
-.footer__nav {
-  @apply my-4 lg:my-0;
-}
+  .footer__logo,
+  .footer__slogan,
+  .footer__nav {
+    @apply my-4 lg:my-0;
+  }
 
-.datasketch {
-  @apply flex justify-center py-4;
-  background-color: #00223e;
-}
+  @screen lg {
+    .footer {
+      background-image: url("/images/footer-x2.png");
+    }
+  }
 
-/* .datasketch__logo {
+  .datasketch {
+    @apply flex justify-center py-4;
+    background-color: #00223e;
+  }
+
+  /* .datasketch__logo {
 } */
 
-@screen lg {
-  .footer {
-    background-image: url("/images/footer-x2.png");
+  /* ------------------------------------------------------------------------- */
+
+  /* BANNER */
+  .banner {
+    @apply relative bg-cover bg-center text-color-white;
+    height: 80vh;
+  }
+
+  @screen lg {
+    .banner {
+      @apply bg-top;
+      height: 1000px;
+    }
+  }
+
+  /* BANNER HOME */
+  .banner--home {
+    background-image: url("/images/home/banner.png");
+    overflow: hidden;
+  }
+
+  .banner--home .banner__content {
+    @apply w-full px-8 py-10 md:p-12 lg:absolute lg:w-6/12 lg:p-0 xl:inset-y-1/4 xl:w-5/12;
+  }
+
+  @screen lg {
+    .banner--home .banner__content {
+      top: 20%;
+    }
+  }
+
+  .banner--home .banner__title {
+    @apply mb-4 text-3xl text-center uppercase font-bold leading-tight md:mb-8 lg:mb-3 lg:text-5xl lg:text-left xl:text-6xl;
+  }
+
+  .banner--home .banner__paragraph {
+    @apply text-base text-center lg:text-left;
+  }
+
+  .banner--home .banner__slogan {
+    bottom: 1%;
+    @apply absolute w-full p-8 text-center md:bottom-10 lg:w-8/12;
+  }
+
+  @screen lg {
+    .banner--home .banner__slogan {
+      font-size: 18px;
+      bottom: 4%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  @screen xl {
+    .banner--home .banner__slogan {
+      font-size: 22px;
+      bottom: 0;
+    }
   }
 }
-
-/* ------------------------------------------------------------------------- */
-
-/* BANNER */
-
-/* BANNER HOME */
-/* .banner--home {
-    background-image: url(/images/home/)
-  } */
 
 @layer utilities {
   .contenedor {

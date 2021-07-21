@@ -15,12 +15,11 @@ module.exports = {
         "color-white": "#fff",
       },
       fontFamily: {
-        // "beth-ellen": ['"Beth Ellen"', "cursive"],
-        // martin: ["MARTIN", "sans-serif"],
+        "soberana-sans": ['"Soberana Sans"'],
       },
       backgroundImage: {
-        // "tools-sm-es": "url('/images/tools-sm-es.svg')",
-        // "tools-lg-es": "url('/images/tools-lg-es.svg')",
+        "bg-footer-sm": "url(/images/footer-x1.png)",
+        "bg-footer-lg": "url(/images/footer-x2.png)",
       },
     },
   },
