@@ -327,12 +327,12 @@
 
   /* Parent */
   .mechanism {
-    @apply grid lg:items-center lg:grid-cols-2;
+    @apply grid lg:items-center lg:grid-cols-12;
   }
 
   /* Childs */
   .mechanism__list {
-    @apply py-14 text-center bg-primary-color-dark text-color-white order-2 md:py-20 md:grid md:grid-cols-2 lg:order-1 lg:grid-cols-1 xl:py-28;
+    @apply py-14 text-center bg-primary-color-dark text-color-white order-2 md:py-20 md:grid md:grid-cols-2 lg:order-1 lg:col-start-1 lg:col-end-7 lg:grid-cols-1 xl:col-start-1 xl:col-end-6  xl:py-28;
   }
 
   .mechanism__item {
@@ -348,7 +348,7 @@
   }
 
   .mechanism__content {
-    @apply p-6 order-1 bg-cover bg-center lg:order-2 lg:p-0 lg:px-12 xl:px-24;
+    @apply p-6 order-1 bg-cover bg-center lg:order-2 lg:p-0 lg:px-12 lg:col-start-7 lg:col-end-13 xl:px-24 xl:col-start-6 xl:col-end-12;
     background-image: url("/images/home/mechanism.svg");
   }
 
