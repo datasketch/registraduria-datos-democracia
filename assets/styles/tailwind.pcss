@@ -252,7 +252,7 @@
     }
   }
 
-  /* SECCION SISCRIMEL HOME */
+  /* SECTION SISCRIMEL HOME */
   .section-siscrimel {
     @apply py-8 xl:pt-20 xl:pb-24;
   }
@@ -295,8 +295,30 @@
     @apply px-4 xl:p-0;
   }
 
+  .siscrimel__description h2 {
+    @apply mb-4;
+  }
+
   .siscrimel__description p {
     @apply my-8 xl:my-8;
+  }
+
+  /* SECTION RESULTS */
+  .section-results {
+    @apply bg-primary-color py-12 md:py-14 xl:py-36;
+  }
+
+  .section-results h2 {
+    @apply mb-4 text-2xl md:text-3xl lg:text-5xl xl:mb-6 font-bold;
+  }
+
+  .section-results p {
+    @apply mb-4 xl:mb-6;
+  }
+
+  .results {
+    @apply text-center lg:w-6/12;
+    margin: 0 auto;
   }
 }
 
@@ -310,11 +332,19 @@
   /*   TYPOGRAPHY   */
 
   .heading-secondary {
-    @apply text-primary-color-dark text-4xl sm:text-5xl uppercase font-bold mb-4 xl:mb-8;
+    @apply text-4xl sm:text-5xl uppercase font-bold xl:mb-8;
   }
 
   .heading-secondary span {
     @apply block normal-case font-normal text-2xl sm:text-3xl;
+  }
+
+  .heading-secondary--blue {
+    @apply text-primary-color-dark;
+  }
+
+  .heading-secondary--white {
+    @apply text-color-white;
   }
 
   .heading-tertiary {
@@ -339,7 +369,7 @@
 
   /* BUTTONS */
   .btn {
-    @apply inline-block py-2 px-8 uppercase text-sm;
+    @apply inline-block py-2 px-8 uppercase text-sm font-bold;
   }
 
   .btn--primary {
@@ -347,5 +377,6 @@
   }
 
   .btn--secondary {
+    @apply bg-color-white text-primary-color font-bold;
   }
 }
