@@ -348,7 +348,7 @@
   }
 
   .mechanism__content {
-    @apply p-6 order-1 bg-cover bg-center lg:order-2 lg:p-0 lg:px-12 lg:col-start-7 lg:col-end-13 xl:px-24 xl:col-start-6 xl:col-end-12;
+    @apply p-6 order-1 bg-cover bg-center lg:order-2 lg:p-0 lg:px-12 lg:col-start-7 lg:col-end-13 xl:px-24 xl:col-start-6 xl:col-end-13;
     background-image: url("/images/home/mechanism.svg");
   }
 
@@ -358,6 +358,28 @@
 
   .mechanism__content p {
     @apply my-4 xl:my-6;
+  }
+
+  /* SECTION LIBRARY */
+  .section-library {
+    @apply py-8 lg:py-20 xl:py-24 xl:pb-36;
+  }
+
+  .section-library h2 {
+    @apply mb-4 text-3xl lg:text-5xl xl:mb-6 font-bold lg:mb-8;
+  }
+
+  .library {
+    @apply grid gap-y-12 grid-cols-1 lg:gap-x-12 lg:grid-cols-3 lg:items-center;
+  }
+
+  .library__item {
+    @apply relative flex flex-col justify-center items-center text-center self-stretch p-8;
+    border: 2px solid #04f6e8;
+  }
+
+  .library__btn {
+    @apply absolute -bottom-5;
   }
 }
 
