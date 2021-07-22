@@ -320,6 +320,45 @@
     @apply text-center lg:w-6/12;
     margin: 0 auto;
   }
+
+  /* SECTION MECHANISM */
+  .section-mechanism {
+  }
+
+  /* Parent */
+  .mechanism {
+    @apply grid lg:items-center lg:grid-cols-2;
+  }
+
+  /* Childs */
+  .mechanism__list {
+    @apply py-12 text-center bg-primary-color-dark text-color-white order-2 lg:order-1 md:grid md:grid-cols-2 lg:grid-cols-1;
+  }
+
+  .mechanism__item {
+    @apply mb-8;
+  }
+
+  .mechanism__item:last-child {
+    @apply mb-0;
+  }
+
+  .mechanism__item span {
+    @apply mr-6;
+  }
+
+  .mechanism__content {
+    @apply p-6 order-1 bg-cover bg-center lg:order-2 lg:p-0 lg:px-12 xl:px-24;
+    background-image: url("/images/home/mechanism.svg");
+  }
+
+  .mechanism__content h2 {
+    @apply text-3xl sm:text-4xl lg:text-5xl;
+  }
+
+  .mechanism__content p {
+    @apply my-4 xl:my-6;
+  }
 }
 
 @layer utilities {
