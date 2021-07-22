@@ -95,7 +95,7 @@
     @apply mb-4 lg:mb-0 lg:mx-3 xl:mx-6;
   }
   .nav__link {
-    @apply block uppercase text-xs font-medium lg:text-center lg:pb-1 lg:text-xs xl:text-base;
+    @apply block text-primary-color uppercase text-xs font-medium lg:text-center lg:pb-1 lg:text-xs xl:text-base;
     border-bottom: 2px solid transparent;
   }
 
@@ -196,21 +196,26 @@
 
   /* BANNER */
   .banner {
-    @apply relative bg-cover bg-center text-color-white;
-    height: 80vh;
+    overflow: hidden;
   }
 
   @screen lg {
     .banner {
       @apply bg-top;
-      height: 1000px;
     }
   }
 
   /* BANNER HOME */
   .banner--home {
+    @apply relative bg-cover bg-center text-color-white;
     background-image: url("/images/home/banner.png");
-    overflow: hidden;
+    height: 80vh;
+  }
+
+  @screen lg {
+    .banner--home {
+      height: 1000px;
+    }
   }
 
   .banner--home .banner__content {
@@ -221,10 +226,6 @@
     .banner--home .banner__content {
       top: 20%;
     }
-  }
-
-  .banner--home .banner__title {
-    @apply mb-4 text-3xl text-center uppercase font-bold leading-tight md:mb-8 lg:mb-3 lg:text-5xl lg:text-left xl:text-6xl;
   }
 
   .banner--home .banner__paragraph {
@@ -250,6 +251,41 @@
       font-size: 22px;
       bottom: 0;
     }
+  }
+
+  /* BANNER QUIENES SOMOS */
+
+  .banner--quienes-somos {
+    @apply relative bg-cover bg-center text-color-white;
+    background-image: url("/images/siscrimel/banner-quienes-somos-mobile.png");
+    height: 80vh;
+  }
+
+  @screen lg {
+    .banner--quienes-somos {
+      background-image: url("/images/siscrimel/banner-quienes-somos-desktop.png");
+      height: 100vh;
+    }
+  }
+
+  .banner--quienes-somos .banner__content {
+    @apply w-full px-8 py-10 md:p-12 lg:absolute lg:inset-y-1/4;
+  }
+
+  .banner--quienes-somos .banner__slogan {
+    @apply absolute bottom-24 text-color-white text-center lg:text-primary-color-dark lg:grid lg:items-center lg:grid-cols-2;
+  }
+
+  .banner--quienes-somos h1 {
+    @apply text-4xl lg:text-5xl xl:text-6xl;
+  }
+
+  .banner--quienes-somos h2 {
+    @apply text-color-white text-2xl normal-case mb-4 lg:mb-0 lg:text-primary-color lg:text-left xl:text-3xl;
+  }
+
+  .banner--quienes-somos p {
+    @apply lg:text-left lg:w-8/12 xl:w-7/12;
   }
 
   /* SECTION SISCRIMEL HOME */
@@ -348,7 +384,7 @@
   }
 
   .mechanism__content {
-    @apply p-6 order-1 bg-cover bg-center lg:order-2 lg:p-0 lg:px-12 lg:col-start-7 lg:col-end-13 xl:px-24 xl:col-start-6 xl:col-end-13;
+    @apply p-6 md:py-16 order-1 bg-cover bg-center lg:order-2 lg:p-0 lg:px-12 lg:col-start-7 lg:col-end-13 xl:px-24 xl:col-start-6 xl:col-end-13;
     background-image: url("/images/home/mechanism.svg");
   }
 
@@ -381,6 +417,36 @@
   .library__btn {
     @apply absolute -bottom-5;
   }
+
+  /* SISCRIMEL NAVIGATION */
+  .nav-siscrimel {
+    @apply hidden bg-primary-color-dark text-center text-color-white uppercase;
+    font-weight: 300;
+  }
+
+  @screen xl {
+    .nav-siscrimel {
+      @apply block;
+    }
+    .nav-siscrimel__list {
+      @apply grid grid-cols-5 items-center;
+    }
+
+    .nav-siscrimel__item {
+    }
+
+    .nav-siscrimel__link {
+      @apply block py-4 text-sm;
+    }
+
+    .nav-siscrimel__link span {
+      font-weight: 800;
+    }
+
+    .nav-siscrimel__link:hover {
+      @apply hover:bg-primary-color;
+    }
+  }
 }
 
 @layer utilities {
@@ -391,6 +457,14 @@
   }
 
   /*   TYPOGRAPHY   */
+
+  .heading-primary {
+    @apply mb-4 text-3xl text-center uppercase font-bold leading-tight md:mb-8 lg:mb-3 lg:text-5xl lg:text-left xl:text-6xl;
+  }
+
+  .heading-primary span {
+    @apply block text-base lg:text-xl;
+  }
 
   .heading-secondary {
     @apply text-4xl sm:text-5xl uppercase font-bold xl:mb-8;

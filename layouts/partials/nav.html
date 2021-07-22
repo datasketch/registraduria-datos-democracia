@@ -15,15 +15,24 @@
   </button>
   <nav class="nav hidden lg:block" id="menu">
     <ul class="nav__list">
-      {{ range .Site.Menus.main }}
       <li class="nav__item">
-        <a
-          class="text-{{ with .Page.Params.color }}{{ . }}{{ end }} nav__link"
-          href="{{ .URL }}"
-          >{{ .Title }}</a
-        >
+        <a class="nav__link" href="{{ .Site.BaseURL }}">Inicio</a>
       </li>
-      {{ end }}
+      <li class="nav__item">
+        <a class="nav__link" href="{{ relref . "siscrimel/quienes-somos.md" }}">Siscrimel</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="#">Resultados electorales</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="#">Mecanismos de participación</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="#">Biblioteca de recursos</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="#">Contáctanos</a>
+      </li>
     </ul>
   </nav>
 </header>
