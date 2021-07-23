@@ -15,6 +15,8 @@ module.exports = {
         "color-white": "#fff",
         "color-orange": "#EB5D0B",
         "color-bg": "#EDEEF0",
+        "color-light": "#00B0AC",
+        "color-blue-dark": "#EAEEF1",
       },
       fontFamily: {
         "soberana-sans": ['"Soberana Sans"'],
@@ -22,6 +24,10 @@ module.exports = {
       backgroundImage: {
         "bg-footer-sm": "url(/images/footer-x1.png)",
         "bg-footer-lg": "url(/images/footer-x2.png)",
+        "bg-banner-electoral-sm":
+          "url(/images/siscrimel/criminalidad-electoral/banner-criminalidad-electoral.png)",
+        "bg-lines": "url(/images/bg-lines.svg)",
+        "bg-lines-dark": "url(/images/bg-lines-dark.svg)",
       },
     },
   },

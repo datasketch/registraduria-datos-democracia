@@ -257,7 +257,7 @@
 
   .banner--quienes-somos {
     @apply relative bg-cover bg-center text-color-white;
-    background-image: url("/images/siscrimel/quienes-somos/banner-quienes-somos-mobile.png");
+    background-image: url("/images/siscrimel/quienes-somos/banner-quienes-somos-desktop.png");
     height: 80vh;
   }
 
@@ -273,7 +273,7 @@
   }
 
   .banner--quienes-somos .banner__slogan {
-    @apply absolute bottom-24 text-color-white text-center lg:text-primary-color-dark lg:grid lg:items-center lg:grid-cols-2;
+    @apply absolute -bottom-16 text-color-white text-center lg:text-primary-color-dark lg:grid lg:items-center lg:grid-cols-2;
   }
 
   .banner--quienes-somos h1 {
@@ -670,6 +670,10 @@
 
   .btn--primary {
     @apply bg-primary-color-dark text-color-white;
+  }
+
+  .btn--primary-light {
+    @apply bg-color-light text-color-white;
   }
 
   .btn--secondary {
