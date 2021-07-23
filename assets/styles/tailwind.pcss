@@ -331,6 +331,10 @@
     @apply px-4 xl:p-0;
   }
 
+  .siscrimel__information h3 {
+    @apply text-xl md:text-2xl font-bold;
+  }
+
   .siscrimel__description h2 {
     @apply mb-4;
   }
@@ -473,6 +477,53 @@
   .crimes__item p {
     @apply mb-6;
   }
+
+  /* SECTION EXPLORE */
+  .section-explore {
+    @apply py-8 md:py-12 lg:py-14 xl:py-24;
+  }
+
+  .explore {
+    @apply grid gap-y-6 items-center grid-cols-1 lg:grid-cols-2 lg:gap-y-0;
+  }
+
+  .explore__datas {
+    @apply relative text-center lg:text-left;
+  }
+
+  @screen xl {
+    .explore__datas h2 {
+      font-size: 40px !important;
+    }
+  }
+
+  .explore__list {
+    @apply my-4 text-primary-color xl:my-0 xl:w-10/12;
+  }
+
+  .explore__item {
+    @apply mb-4 lg:mb-6 xl:text-xl;
+  }
+
+  .explore__imagen {
+    @apply w-full;
+  }
+
+  .explore__icon {
+    @apply hidden absolute lg:inset-1/2 xl:-top-8 xl:-left-8 lg:block;
+  }
+
+  @screen lg {
+    .explore__icon {
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  @screen xl {
+    .explore__icon {
+      transform: translate(0, 0);
+    }
+  }
 }
 
 @layer utilities {
@@ -493,11 +544,19 @@
   }
 
   .heading-secondary {
-    @apply text-4xl sm:text-5xl uppercase font-bold xl:mb-8;
+    @apply text-4xl sm:text-5xl font-bold xl:mb-6;
   }
 
   .heading-secondary span {
     @apply block normal-case font-normal text-2xl sm:text-3xl;
+  }
+
+  .heading-secondary--uppercase {
+    @apply uppercase;
+  }
+
+  .heading-secondary--font-normal {
+    @apply text-3xl md:text-4xl xl:text-5xl;
   }
 
   .heading-secondary--blue {
