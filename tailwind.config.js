@@ -13,6 +13,8 @@ module.exports = {
         "primary-color-dark": "#003057",
         "color-body": "#303C46",
         "color-white": "#fff",
+        "color-orange": "#EB5D0B",
+        "color-bg": "#EDEEF0",
       },
       fontFamily: {
         "soberana-sans": ['"Soberana Sans"'],

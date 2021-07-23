@@ -9,7 +9,7 @@
   </head>
   <body class="font-soberana-sans">
     {{ partial "nav.html" . }}
-    <main>{{ block "main" . }}{{ end }}</main>
+    <main class="bg-color-bg">{{ block "main" . }}{{ end }}</main>
   </body>
   {{ partial "footer.html" . }} {{ $default := resources.Get "js/default.js" |
   js.Build (dict "minify" true)}}
