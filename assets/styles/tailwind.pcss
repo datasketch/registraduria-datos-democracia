@@ -257,13 +257,13 @@
 
   .banner--quienes-somos {
     @apply relative bg-cover bg-center text-color-white;
-    background-image: url("/images/siscrimel/banner-quienes-somos-mobile.png");
+    background-image: url("/images/siscrimel/quienes-somos/banner-quienes-somos-mobile.png");
     height: 80vh;
   }
 
   @screen lg {
     .banner--quienes-somos {
-      background-image: url("/images/siscrimel/banner-quienes-somos-desktop.png");
+      background-image: url("/images/siscrimel/quienes-somos/banner-quienes-somos-desktop.png");
       height: 100vh;
     }
   }
@@ -414,6 +414,10 @@
     border: 2px solid #04f6e8;
   }
 
+  .library__item h3 {
+    @apply text-xl lg:text-2xl;
+  }
+
   .library__btn {
     @apply absolute -bottom-5;
   }
@@ -446,6 +450,28 @@
     .nav-siscrimel__link:hover {
       @apply hover:bg-primary-color;
     }
+  }
+
+  /* SECTION CRIMES */
+  .section-crimes {
+    @apply bg-cover bg-center py-8 md:py-12 lg:py-14 xl:py-16;
+    background-image: url("/images/siscrimel/quienes-somos/delitos-irregularidades.jpg");
+  }
+
+  .crimes {
+    @apply grid grid-cols-1 gap-y-4 lg:grid-cols-2 lg:gap-y-0;
+  }
+
+  .crimes__item {
+    @apply lg:p-8 xl:p-12;
+  }
+
+  .crimes__item h3 {
+    @apply text-xl md:text-2xl lg:text-3xl xl:text-4xl;
+  }
+
+  .crimes__item p {
+    @apply mb-6;
   }
 }
 
@@ -483,7 +509,11 @@
   }
 
   .heading-tertiary {
-    @apply text-xl md:text-2xl text-primary-color-dark font-bold my-4;
+    @apply text-primary-color-dark font-bold my-4;
+  }
+
+  .heading-tertiary--white {
+    @apply text-color-white;
   }
 
   .paragraph {
@@ -504,7 +534,7 @@
 
   /* BUTTONS */
   .btn {
-    @apply inline-block py-2 px-8 uppercase text-sm font-bold;
+    @apply inline-block py-2 px-8 uppercase text-xs lg:text-sm  font-bold;
   }
 
   .btn--primary {
