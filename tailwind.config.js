@@ -46,6 +46,8 @@ module.exports = {
           "url(/images/siscrimel/quienes-somos/banner-variables-phone.png)",
         "metodologia-bg":
           "url(/images/siscrimel/explora-datos/metodologia.svg)",
+        "biblioteca-recursos-bg":
+          "url(/images/biblioteca-recursos/banner-biblioteca.jpg)",
       },
     },
   },
