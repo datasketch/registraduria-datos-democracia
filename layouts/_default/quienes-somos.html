@@ -1,12 +1,41 @@
 {{ define "main" }} {{ partial "nav-siscrimel" . }}
-<div class="banner banner--quienes-somos">
+<div
+  class="
+    relative
+    bg-cover bg-center
+    text-color-white
+    h-screen
+    bg-quienes-somos-bg
+    overflow-hidden
+  "
+>
   <div class="container">
-    <div class="banner__content">
-      <h1 class="heading-primary">
-        Siscrimel <span>Sistema de criminalidad electoral</span>
+    <div
+      class="
+        w-full
+        px-8
+        py-10
+        md:p-12
+        lg:absolute lg:inset-y-1/4
+        text-center
+        lg:text-left
+      "
+    >
+      <h1 class="text-4xl lg:text-5xl xl:text-6xl uppercase font-bold">
+        Siscrimel
+        <span class="block normal-case font-normal text-2xl lg:text-3xl"
+          >Sistema de criminalidad electoral</span
+        >
       </h1>
     </div>
-    <div class="banner__slogan"></div>
+    <div
+      class="
+        absolute
+        -bottom-16
+        text-color-white text-center
+        lg:text-primary-color-dark lg:grid lg:items-center lg:grid-cols-2
+      "
+    ></div>
   </div>
 </div>
 <div
@@ -30,14 +59,25 @@
     culpa iure optio?
   </p>
 </div>
-<section class="section-crimes">
+<section
+  class="bg-cover bg-center py-8 md:py-12 lg:py-14 xl:py-16 bg-delitos-bg"
+>
   <div class="container text-center">
-    <div class="crimes">
-      <div class="crimes__item">
-        <h3 class="heading-tertiary heading-tertiary--white">
+    <div class="grid grid-cols-1 gap-y-4 lg:grid-cols-2 lg:gap-y-0">
+      <div class="lg:p-8 xl:p-12">
+        <h3
+          class="
+            mb-4
+            text-xl
+            md:text-2xl
+            lg:text-3xl
+            xl:text-4xl
+            text-color-white
+          "
+        >
           Delito Electoral
         </h3>
-        <p class="paragraph paragraph--white">
+        <p class="mb-6 text-color-white">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
           voluptatem quae ratione veniam saepe quibusdam ex harum alias rerum,
           dolor repellendus repudiandae in optio quas. Vitae quasi quo iure
@@ -45,11 +85,20 @@
         </p>
         <a href="#" class="btn btn--secondary">Leer más</a>
       </div>
-      <div class="crimes__item">
-        <h3 class="heading-tertiary heading-tertiary--white">
+      <div class="lg:p-8 xl:p-12">
+        <h3
+          class="
+            mb-4
+            text-xl
+            md:text-2xl
+            lg:text-3xl
+            xl:text-4xl
+            text-color-white
+          "
+        >
           Irregularidad electoral
         </h3>
-        <p class="paragraph paragraph--white">
+        <p class="mb-6 text-color-white">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
           voluptatem quae ratione veniam saepe quibusdam ex harum alias rerum,
           dolor repellendus repudiandae in optio quas. Vitae quasi quo iure
@@ -60,36 +109,30 @@
     </div>
   </div>
 </section>
-<section class="section-explore">
+<section class="py-8 md:py-12 lg:py-14 xl:py-24">
   <div class="container">
-    <div class="explore">
-      <div class="explore__datas">
-        <h2
-          class="
-            heading-secondary
-            heading-secondary--blue
-            heading-secondary--font-normal
-          "
-        >
-          Explora los datos
-        </h2>
-        <ul class="explore__list">
-          <li class="explore__item">
+    <div
+      class="grid gap-y-6 items-center grid-cols-1 lg:grid-cols-2 lg:gap-y-0"
+    >
+      <div class="relative text-center lg:text-left text-primary-color">
+        <h2 class="text-4xl mb-4 font-bold">Explora los datos</h2>
+        <ul class="my-4 text-primary-color xl:my-0 xl:w-10/12">
+          <li class="mb-4 lg:mb-6 xl:text-xl">
             Conoce las bases de datos a través de nuestra herramienta de
             visualización
           </li>
-          <li class="explore__item">
+          <li class="mb-4 lg:mb-6 xl:text-xl">
             Conoce las bases de datos a través de nuestra herramienta de
             visualización
           </li>
-          <li class="explore__item">
+          <li class="mb-4 lg:mb-6 xl:text-xl">
             Conoce las bases de datos a través de nuestra herramienta de
             visualización
           </li>
         </ul>
         <a href="#" class="btn btn--primary">Visor de datos</a>
         <img
-          class="explore__icon"
+          class="hidden absolute lg:inset-1/2 xl:-top-8 xl:-left-8 lg:block"
           src="/images/siscrimel/quienes-somos/icono.svg"
           alt=""
         />
@@ -97,85 +140,335 @@
       <img
         src="/images/siscrimel/quienes-somos/explore-data-desktop.png"
         alt=""
-        class="explore__image"
+        class="w-full"
       />
     </div>
   </div>
 </section>
-<section class="section-variables">
-  <div class="container text-center">
-    <h3 class="heading-tertiary heading-tertiary--white">Variables</h3>
+<section
+  class="
+    apply
+    bg-center bg-cover
+    py-4
+    md:py-6
+    lg:py-8
+    xl:py-12
+    bg-variables-bg-sm
+    lg-bg-variables-bg-lg
+  "
+>
+  <div class="container text-center text-color-white">
+    <h3 class="mb-6 text-2xl md:mb-8 xl:text-3xl xl:mb-12">Variables</h3>
     <div class="variables">
-      <div class="variables__row">
-        <a href="#" class="variables__link">Homicidios</a>
-        <a href="#" class="variables__link">Medio ambiente</a>
-        <a href="#" class="variables__link">Homicidios</a>
-        <a href="#" class="variables__link">Medio ambiente</a>
+      <div class="mb-4 flex flex-wrap justify-center md:mb-5">
+        <a
+          href="#"
+          class="
+            mx-1
+            mb-2
+            text-color-white
+            uppercase
+            font-light
+            p-1
+            md:text-sm md:p-3
+            lg:mx-4
+            xl:px-6 xl:mx-4
+            border border-color-white
+          "
+          >Homicidios</a
+        >
+        <a
+          href="#"
+          class="
+            mx-1
+            mb-2
+            text-color-white
+            uppercase
+            font-light
+            p-1
+            md:text-sm md:p-3
+            lg:mx-4
+            xl:px-6 xl:mx-4
+            border border-color-white
+          "
+          >Medio ambiente</a
+        >
+        <a
+          href="#"
+          class="
+            mx-1
+            mb-2
+            text-color-white
+            uppercase
+            font-light
+            p-1
+            md:text-sm md:p-3
+            lg:mx-4
+            xl:px-6 xl:mx-4
+            border border-color-white
+          "
+          >Homicidios</a
+        >
+        <a
+          href="#"
+          class="
+            mx-1
+            mb-2
+            text-color-white
+            uppercase
+            font-light
+            p-1
+            md:text-sm md:p-3
+            lg:mx-4
+            xl:px-6 xl:mx-4
+            border border-color-white
+          "
+          >Medio ambiente</a
+        >
       </div>
-      <div class="variables__row">
-        <a href="#" class="variables__link">Medio ambiente</a>
-        <a href="#" class="variables__link">Homicidios</a>
-        <a href="#" class="variables__link">Medio ambiente</a>
-        <a href="#" class="variables__link">Homicidios</a>
-        <a href="#" class="variables__link">Medio ambiente</a>
+      <div class="mb-4 flex flex-wrap justify-center md:mb-5">
+        <a
+          href="#"
+          class="
+            mx-1
+            mb-2
+            text-color-white
+            uppercase
+            font-light
+            p-1
+            md:text-sm md:p-3
+            lg:mx-4
+            xl:px-6 xl:mx-4
+            border border-color-white
+          "
+          >Medio ambiente</a
+        >
+        <a
+          href="#"
+          class="
+            mx-1
+            mb-2
+            text-color-white
+            uppercase
+            font-light
+            p-1
+            md:text-sm md:p-3
+            lg:mx-4
+            xl:px-6 xl:mx-4
+            border border-color-white
+          "
+          >Homicidios</a
+        >
+        <a
+          href="#"
+          class="
+            mx-1
+            mb-2
+            text-color-white
+            uppercase
+            font-light
+            p-1
+            md:text-sm md:p-3
+            lg:mx-4
+            xl:px-6 xl:mx-4
+            border border-color-white
+          "
+          >Medio ambiente</a
+        >
+        <a
+          href="#"
+          class="
+            mx-1
+            mb-2
+            text-color-white
+            uppercase
+            font-light
+            p-1
+            md:text-sm md:p-3
+            lg:mx-4
+            xl:px-6 xl:mx-4
+            border border-color-white
+          "
+          >Homicidios</a
+        >
+        <a
+          href="#"
+          class="
+            mx-1
+            mb-2
+            text-color-white
+            uppercase
+            font-light
+            p-1
+            md:text-sm md:p-3
+            lg:mx-4
+            xl:px-6 xl:mx-4
+            border border-color-white
+          "
+          >Medio ambiente</a
+        >
       </div>
-      <div class="variables__row">
-        <a href="#" class="variables__link">Homicidios</a>
-        <a href="#" class="variables__link">Medio ambiente</a>
-        <a href="#" class="variables__link">Homicidios</a>
-        <a href="#" class="variables__link">Medio ambiente</a>
+      <div class="mb-4 flex flex-wrap justify-center md:mb-5">
+        <a
+          href="#"
+          class="
+            mx-1
+            mb-2
+            text-color-white
+            uppercase
+            font-light
+            p-1
+            md:text-sm md:p-3
+            lg:mx-4
+            xl:px-6 xl:mx-4
+            border border-color-white
+          "
+          >Homicidios</a
+        >
+        <a
+          href="#"
+          class="
+            mx-1
+            mb-2
+            text-color-white
+            uppercase
+            font-light
+            p-1
+            md:text-sm md:p-3
+            lg:mx-4
+            xl:px-6 xl:mx-4
+            border border-color-white
+          "
+          >Medio ambiente</a
+        >
+        <a
+          href="#"
+          class="
+            mx-1
+            mb-2
+            text-color-white
+            uppercase
+            font-light
+            p-1
+            md:text-sm md:p-3
+            lg:mx-4
+            xl:px-6 xl:mx-4
+            border border-color-white
+          "
+          >Homicidios</a
+        >
+        <a
+          href="#"
+          class="
+            mx-1
+            mb-2
+            text-color-white
+            uppercase
+            font-light
+            p-1
+            md:text-sm md:p-3
+            lg:mx-4
+            xl:px-6 xl:mx-4
+            border border-color-white
+          "
+          >Medio ambiente</a
+        >
       </div>
     </div>
   </div>
 </section>
-<section class="section-reports">
+<section class="py-6 md:py-8 lg:py-12 xl:py-20">
   <div class="container">
-    <div class="text-center mb-4 md:mb-6 lg:mb-10 xl:mb-12">
-      <h2 class="heading-secondary heading-secondary--blue">
+    <div
+      class="text-center mb-4 md:mb-6 lg:mb-10 xl:mb-12 text-primary-color-dark"
+    >
+      <h2 class="text-3xl md:text-4xl xl:text-5xl xl:mb-4 font-bold">
         Conoce los informes
       </h2>
-      <p class="paragraph paragraph--blue">Informes más descargados</p>
+      <p class="text-base md:text-xl lg:text-2xl text-xl">
+        Informes más descargados
+      </p>
     </div>
-    <div class="reports">
-      <div class="reports__item">
-        <h4 class="reports__title">Nombre del informe</h4>
-        <p class="reports__organizator">Cedae</p>
-        <p class="reports__description">
+    <div
+      class="
+        grid
+        mb-6
+        grid-cols-1
+        gap-y-8
+        md:mb-8
+        lg:grid-cols-2 lg:mb-12
+        xl:grid-cols-3
+        text-primary-color
+        lg:gap-x-8
+        xl:gap-x-10 xl:mb-20
+      "
+    >
+      <div
+        class="
+          bg-color-white
+          py-10
+          pl-12
+          pr-8
+          shadow-lg shadow-primary
+          rounded-xl
+        "
+      >
+        <h4 class="text-xl xl:text-2xl font-bold mb-2">Nombre del informe</h4>
+        <p class="italic mb-2 lg:mb-4 xl:mb-6 italic uppercase">Cedae</p>
+        <p class="mb-2 xl:mb-4">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero,
           quidem! Rerum dolorem fugit atque deserunt id temporibus? Maiores amet
           reprehenderit labore exercitationem consequuntur, culpa nihil expedita
           maxime aliquid velit iste.
         </p>
-        <p class="reports__date">
-          Fecha de publicación: <span>Julio 14 del 2021</span>
+        <p class="italic mb-3 lg:mb-4 xl:mb-6">
+          Fecha de publicación: <span class="font-bold">Julio 14 del 2021</span>
         </p>
         <a href="#" class="btn btn--tertiary">Ver informe</a>
       </div>
-      <div class="reports__item">
-        <h4 class="reports__title">Nombre del informe</h4>
-        <p class="reports__organizator">Cedae</p>
-        <p class="reports__description">
+      <div
+        class="
+          bg-color-white
+          py-10
+          pl-12
+          pr-8
+          shadow-lg shadow-primary
+          rounded-xl
+        "
+      >
+        <h4 class="text-xl xl:text-2xl font-bold mb-2">Nombre del informe</h4>
+        <p class="italic mb-2 lg:mb-4 xl:mb-6 italic uppercase">Cedae</p>
+        <p class="mb-2 xl:mb-4">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero,
           quidem! Rerum dolorem fugit atque deserunt id temporibus? Maiores amet
           reprehenderit labore exercitationem consequuntur, culpa nihil expedita
           maxime aliquid velit iste.
         </p>
-        <p class="reports__date">
-          Fecha de publicación: <span>Julio 14 del 2021</span>
+        <p class="italic mb-3 lg:mb-4 xl:mb-6">
+          Fecha de publicación: <span class="font-bold">Julio 14 del 2021</span>
         </p>
         <a href="#" class="btn btn--tertiary">Ver informe</a>
       </div>
-      <div class="reports__item">
-        <h4 class="reports__title">Nombre del informe</h4>
-        <p class="reports__organizator">Cedae</p>
-        <p class="reports__description">
+      <div
+        class="
+          bg-color-white
+          py-10
+          pl-12
+          pr-8
+          shadow-lg shadow-primary
+          rounded-xl
+        "
+      >
+        <h4 class="text-xl xl:text-2xl font-bold mb-2">Nombre del informe</h4>
+        <p class="italic mb-2 lg:mb-4 xl:mb-6 italic uppercase">Cedae</p>
+        <p class="mb-2 xl:mb-4">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero,
           quidem! Rerum dolorem fugit atque deserunt id temporibus? Maiores amet
           reprehenderit labore exercitationem consequuntur, culpa nihil expedita
           maxime aliquid velit iste.
         </p>
-        <p class="reports__date">
-          Fecha de publicación: <span>Julio 14 del 2021</span>
+        <p class="italic mb-3 lg:mb-4 xl:mb-6">
+          Fecha de publicación: <span class="font-bold">Julio 14 del 2021</span>
         </p>
         <a href="#" class="btn btn--tertiary">Ver informe</a>
       </div>

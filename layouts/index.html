@@ -1,34 +1,82 @@
 {{ define "main" }}
-<div class="banner banner--home">
+<div
+  class="
+    relative
+    overflow-hidden
+    bg-center bg-cover bg-center
+    text-color-white
+    h-5/6
+    bg-banner-home
+    h-screen
+    md:py-8
+    lg:py-0
+    banner
+  "
+>
   <div class="container">
-    <div class="banner__content">
-      <h1 class="heading-primary">Datos para la democracia</h1>
-      <p class="banner__paragraph">
+    <div
+      class="
+        w-full
+        px-8
+        py-10
+        md:p-12
+        lg:absolute lg:w-6/12 lg:p-0 lg:top-24 lg:left-24
+        xl:inset-y-1/4 xl:w-5/12
+      "
+    >
+      <h1
+        class="
+          mb-4
+          text-3xl text-center
+          uppercase
+          font-bold
+          leading-tight
+          md:mb-8
+          lg:mb-3 lg:text-5xl lg:text-left
+          xl:text-6xl
+        "
+      >
+        Datos para la democracia
+      </h1>
+      <p class="text-base text-center lg:text-left">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti,
         eveniet! Blanditiis, mollitia praesentium deserunt maiores assumenda
         officia eligendi! Corrupti enim quae iure nisi itaque provident neque
         magni facilis suscipit necessitatibus!
       </p>
     </div>
-    <p class="banner__slogan">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eaque
-      similique quibusdam, eos aperiam, officiis dolor saepe maiores ducimus nam
-      et deserunt dolorem? Magnam soluta perferendis tempora tenetur ducimus
-      nobis.
-    </p>
-  </div>
-</div>
-<section class="section-siscrimel">
-  <div class="siscrimel">
-    <div class="siscrimel__description">
-      <h2
+    <div class="container">
+      <p
         class="
-          heading-secondary heading-secondary--blue heading-secondary--uppercase
+          absolute
+          bottom-20
+          text-center
+          px-10
+          xl:bottom-36 xl:w-6/12 xl:text-xl xl:px-0 xl:right-1/4
         "
       >
-        Siscrimel <span>Sistema de Criminalidad Electoral</span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eaque
+        similique quibusdam, eos aperiam, officiis dolor saepe maiores ducimus
+        nam et deserunt dolorem? Magnam soluta perferendis tempora tenetur
+        ducimus nobis.
+      </p>
+    </div>
+  </div>
+</div>
+<section class="py-8 xl:pt-20 xl:pb-24">
+  <div
+    class="grid grid-cols-1 md:gap-y-2 lg:gap-y-0 xl:grid-cols-2 items-center"
+  >
+    <div class="bg-siscrimel-bg bg-cover bg-center py-8 px-4 xl:px-36">
+      <h2
+        class="text-4xl xl:text-5xl text-primary-color uppercase font-bold mb-4"
+      >
+        Siscrimel
+        <span class="lowercase block text-2xl"
+          >Sistema de Criminalidad Electoral</span
+        >
       </h2>
-      <p class="paragraph paragraph--black">
+      <p class="paragraph paragraph--black my-3 lg:my-6 my-8 xl:my-8">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint cum
         facilis repellat praesentium minus sapiente. Asperiores vero sint
         sapiente delectus, quae sed totam mollitia tempora, praesentium
@@ -36,15 +84,15 @@
       </p>
       <a href="#" class="btn btn--primary">Leer más</a>
     </div>
-    <div class="siscrimel__explore-data">
-      <div class="siscrimel__data">
-        <img
-          src="/images/home/explora-los-datos.jpg"
-          alt=""
-          class="siscrimel__data-image"
-        />
-        <div class="siscrimel__information">
-          <h3 class="heading-tertiary">Explora los Datos</h3>
+    <div class="w-full md:py-8 md:px-4 xl:w-11/12 xl:px-44">
+      <div class="md:grid grid-cols-2 xl:grid-cols-1">
+        <img src="/images/home/explora-los-datos.jpg" alt="" class="w-full" />
+        <div class="px-4 xl:p-0">
+          <h3
+            class="text-xl md:text-2xl font-bold mt-4 mb-4 text-primary-color"
+          >
+            Explora los Datos
+          </h3>
           <p class="paragraph">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
             qui magnam iusto nemo similique a dolor libero aliquam. Corrupti
@@ -56,17 +104,24 @@
     </div>
   </div>
 </section>
-<section class="section-results">
+<section class="bg-primary-color py-12 md:py-14 xl:py-36">
   <div class="container text-center">
     <h2
       class="
-        heading-secondary heading-secondary--white heading-secondary--uppercase
+        mb-4
+        text-2xl
+        md:text-3xl
+        lg:text-5xl
+        xl:mb-6
+        font-bold
+        text-color-white
+        uppercase
       "
     >
       Resultados Electorales
     </h2>
-    <div class="results">
-      <p class="paragraph paragraph--white">
+    <div class="apply text-center lg:w-6/12 m-auto">
+      <p class="mb-4 xl:mb-6 text-white">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea enim saepe
         autem porro odit corporis necessitatibus a vel. Maxime dolorum vitae
         aspernatur assumenda obcaecati debitis. Hic delectus beatae veritatis
@@ -77,39 +132,58 @@
   </div>
 </section>
 <section class="section-mechanism">
-  <div class="mechanism">
-    <ul class="mechanism__list">
-      <li class="mechanism__item">
-        <span>1.</span> Mecanismo de participación electoral
+  <div class="grid lg:items-center lg:grid-cols-12">
+    <ul
+      class="
+        py-14
+        text-center
+        bg-primary-color-dark
+        text-color-white
+        order-2
+        md:py-20 md:grid md:grid-cols-2
+        lg:order-1 lg:col-start-1 lg:col-end-7 lg:grid-cols-1
+        xl:col-start-1 xl:col-end-6 xl:py-28
+      "
+    >
+      <li class="mb-8">
+        <span class="mr-6">1.</span> Mecanismo de participación electoral
       </li>
-      <li class="mechanism__item">
-        <span>1.</span> Mecanismo de participación electoral
+      <li class="mb-8">
+        <span class="mr-6">1.</span> Mecanismo de participación electoral
       </li>
-      <li class="mechanism__item">
-        <span>1.</span> Mecanismo de participación electoral
+      <li class="mb-8">
+        <span class="mr-6">1.</span> Mecanismo de participación electoral
       </li>
-      <li class="mechanism__item">
-        <span>1.</span> Mecanismo de participación electoral
+      <li class="mb-8">
+        <span class="mr-6">1.</span> Mecanismo de participación electoral
       </li>
-      <li class="mechanism__item">
-        <span>1.</span> Mecanismo de participación electoral
+      <li class="mb-8">
+        <span class="mr-6">1.</span> Mecanismo de participación electoral
       </li>
-      <li class="mechanism__item">
-        <span>1.</span> Mecanismo de participación electoral
+      <li class="mb-8">
+        <span class="mr-6">1.</span> Mecanismo de participación electoral
       </li>
-      <li class="mechanism__item">
-        <span>1.</span> Mecanismo de participación electoral
+      <li class="mb-0">
+        <span class="mr-6">1.</span> Mecanismo de participación electoral
       </li>
     </ul>
-    <div class="mechanism__content">
-      <h2
-        class="
-          heading-secondary heading-secondary--blue heading-secondary--uppercase
-        "
-      >
-        <span>Mecanisco de</span>participación electoral
+    <div
+      class="
+        p-6
+        md:py-16
+        order-1
+        bg-cover bg-center
+        lg:order-2 lg:p-0 lg:px-12 lg:col-start-7 lg:col-end-13
+        xl:px-24 xl:col-start-6 xl:col-end-13
+        bg-mechanism-bg
+        text-primary-color-dark
+      "
+    >
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl uppercase">
+        <span class="block normal-case">Mecanisco de</span>participación
+        electoral
       </h2>
-      <p class="paragraph paragraph--blue">
+      <p class="my-4 xl:my-6">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, velit,
         dicta, quo cupiditate tempore maxime earum aliquid sit esse sunt nulla!
         Neque officiis adipisci nemo accusamus, temporibus maiores explicabo ut.
@@ -118,42 +192,88 @@
     </div>
   </div>
 </section>
-<section class="section-library">
+<section class="py-8 lg:py-20 xl:py-24 xl:pb-36">
   <div class="container">
-    <div class="lg:w-8/12 xl:w-7/12 m-auto text-center mb-8 xl:mb-16">
-      <h2
-        class="
-          heading-secondary heading-secondary--blue heading-secondary--uppercase
-        "
-      >
+    <div
+      class="
+        lg:w-8/12
+        xl:w-7/12
+        m-auto
+        text-center
+        mb-8
+        xl:mb-16
+        text-primary-color-dark
+      "
+    >
+      <h2 class="mb-4 text-3xl lg:text-5xl xl:mb-6 font-bold lg:mb-8">
         Biblioteca Virtual
       </h2>
-      <p class="paragraph paragraph--blue">
+      <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
         incidunt cumque commodi saepe sapiente adipisci tenetur maxime aut. Odio
         ducimus hic accusamus est aspernatur laudantium autem ab, voluptatum
         illum iste!
       </p>
     </div>
-    <div class="library">
-      <div class="library__item">
-        <h3 class="heading-tertiary">
+    <div
+      class="
+        grid
+        gap-y-12
+        grid-cols-1
+        lg:gap-x-12 lg:grid-cols-3 lg:items-center
+      "
+    >
+      <div
+        class="
+          relative
+          flex flex-col
+          justify-center
+          items-center
+          text-center
+          self-stretch
+          p-8
+          border-primary-color-light border-solid border-2
+        "
+      >
+        <h3 class="text-2xl font-bold">
           Publicaciones <br />
           e Investigaciones
         </h3>
-        <a href="#" class="library__btn btn btn--primary">Leer más</a>
+        <a href="#" class="absolute -bottom-5 btn btn--primary">Leer más</a>
       </div>
-      <div class="library__item">
-        <h3 class="heading-tertiary">
+      <div
+        class="
+          relative
+          flex flex-col
+          justify-center
+          items-center
+          text-center
+          self-stretch
+          p-8
+          border-primary-color-light border-solid border-2
+        "
+      >
+        <h3 class="text-2xl font-bold">
           Escuela de Nuevos Liderazgos en Cultura Democrática
         </h3>
-        <a href="#" class="library__btn btn btn--primary">Leer más</a>
+        <a href="#" class="absolute -bottom-5 btn btn--primary">Leer más</a>
       </div>
-      <div class="library__item">
-        <h3 class="heading-tertiary">
+      <div
+        class="
+          relative
+          flex flex-col
+          justify-center
+          items-center
+          text-center
+          self-stretch
+          p-8
+          border-primary-color-light border-solid border-2
+        "
+      >
+        <h3 class="text-2xl font-bold">
           Escuela de Nuevos Liderazgos de Mujeres
         </h3>
-        <a href="#" class="library__btn btn btn--primary">Leer más</a>
+        <a href="#" class="absolute -bottom-5 btn btn--primary">Leer más</a>
       </div>
     </div>
   </div>

@@ -17,6 +17,7 @@ module.exports = {
         "color-bg": "#EDEEF0",
         "color-light": "#00B0AC",
         "color-blue-dark": "#EAEEF1",
+        "color-datasketch": "#00223e",
       },
       fontFamily: {
         "soberana-sans": ['"Soberana Sans"'],
@@ -30,6 +31,21 @@ module.exports = {
         "bg-lines-dark": "url(/images/bg-lines-dark.svg)",
         "bg-banner-datos-sm":
           "url(/images/siscrimel/explora-datos/banner-explora-datos.jpg)",
+        "footer-sm": "url(/images/footer-x1.png)",
+        "footer-lg": "url(/images/footer-x2.png)",
+        "banner-home": "url(/images/home/banner.png)",
+        "siscrimel-bg": "url(/images/home/siscrimel.svg)",
+        "mechanism-bg": "url(/images/home/mechanism.svg)",
+        "quienes-somos-bg":
+          "url(/images/siscrimel/quienes-somos/banner-quienes-somos-desktop.png)",
+        "delitos-bg":
+          "url(/images/siscrimel/quienes-somos/delitos-irregularidades.jpg)",
+        "variables-bg-sm":
+          "url(/images/siscrimel/quienes-somos/banner-variables-phone.png)",
+        "variables-bg-lg":
+          "url(/images/siscrimel/quienes-somos/banner-variables-phone.png)",
+        "metodologia-bg":
+          "url(/images/siscrimel/explora-datos/metodologia.svg)",
       },
     },
   },

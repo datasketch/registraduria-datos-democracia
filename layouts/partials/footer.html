@@ -1,55 +1,82 @@
-<footer class="footer">
+<footer
+  class="
+    py-6
+    bg-footer-sm
+    text-color-white
+    font-soberana-sans
+    bg-cover bg-center
+    lg:bg-footer-lg lg:py-12
+  "
+>
   <div class="container">
-    <div class="footer__logo">
-      <img src="{{ "images/footer-logo.svg" | absURL }}" alt=""
-      class="footer__image" />
-    </div>
-    <div class="footer__slogan">
-      <p>
-        Cedae
-        <span
-          >Centro de Estudios en Democracia <br />
-          y Asuntos Electorales</span
-        >
-      </p>
-    </div>
-    <nav class="footer__nav">
-      <ul class="footer__list">
-        <li class="footer__item">
-          <a href="#" class="footer__link">
-            <img src="/images/arrow-footer.svg" alt="#" /> Siscrimel</a
+    <div
+      class="
+        flex flex-col
+        items-center
+        lg:justify-center lg:flex-row lg:justify-between
+      "
+    >
+      <div class="footer__logo lg:pr-20">
+        <img class="my-4 lg:my-0" src="{{ "images/footer-logo.svg" | absURL }}"
+        alt="" />
+      </div>
+      <div class="text-center text-lg">
+        <p class="uppercase text-2xl">
+          Cedae
+          <span class="block normal-case text-sm"
+            >Centro de Estudios en Democracia <br />
+            y Asuntos Electorales</span
           >
-        </li>
-        <li class="footer__item">
-          <a href="#" class="footer__link"
-            ><img src="/images/arrow-footer.svg" alt="#" />Resultados
-            Electorales</a
-          >
-        </li>
-        <li class="footer__item">
-          <a href="#" class="footer__link"
-            ><img src="/images/arrow-footer.svg" alt="#" />Mecanismos de
-            participación</a
-          >
-        </li>
-        <li class="footer__item">
-          <a href="#" class="footer__link"
-            ><img src="/images/arrow-footer.svg" alt="#" />Biblioteca de
-            recursos</a
-          >
-        </li>
-      </ul>
-    </nav>
-    <div class="footer__contact">
-      <p>Contáctanos</p>
-      <div>
-        <a href="#"><img src="/images/icon-twitter.svg" alt="#" /></a>
-        <a href="#"><img src="/images/icon-facebook.svg" alt="#" /></a>
-        <a href="#"><img src="/images/icon-telegram.svg" alt="#" /></a>
+        </p>
+      </div>
+      <nav class="my-4 lg:my-0">
+        <ul>
+          <li>
+            <a href="#" class="flex items-center uppercase text-sm mb-2">
+              <img class="mr-2" src="/images/arrow-footer.svg" alt="#" />
+              Siscrimel</a
+            >
+          </li>
+          <li>
+            <a href="#" class="flex items-center uppercase text-sm mb-2"
+              ><img
+                class="mr-2"
+                src="/images/arrow-footer.svg"
+                alt="#"
+              />Resultados Electorales</a
+            >
+          </li>
+          <li>
+            <a href="#" class="flex items-center uppercase text-sm mb-2"
+              ><img
+                class="mr-2"
+                src="/images/arrow-footer.svg"
+                alt="#"
+              />Mecanismos de participación</a
+            >
+          </li>
+          <li>
+            <a href="#" class="flex items-center uppercase text-sm mb-2"
+              ><img
+                class="mr-2"
+                src="/images/arrow-footer.svg"
+                alt="#"
+              />Biblioteca de recursos</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="text-center">
+        <p class="uppercase mb-4">Contáctanos</p>
+        <div class="flex justify-between">
+          <a href="#"><img src="/images/icon-twitter.svg" alt="#" /></a>
+          <a href="#"><img src="/images/icon-facebook.svg" alt="#" /></a>
+          <a href="#"><img src="/images/icon-telegram.svg" alt="#" /></a>
+        </div>
       </div>
     </div>
   </div>
 </footer>
-<div class="datasketch">
+<div class="flex justify-center py-4 bg-color-datasketch lg:py-6">
   <img src="/images/logo-datasketch.svg" alt="" class="datasketch__logo" />
 </div>

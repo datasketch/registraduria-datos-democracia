@@ -1,6 +1,12 @@
-<header class="header">
+<header class="relative
+flex
+justify-between
+p-4
+items-center
+lg:py-8 lg:px-8
+xl:px-20">
   <img src="{{ "images/logo.svg" | absURL }}" alt="" class="header__logo" />
-  <button id="menu-toggle" class="header__menu">
+  <button id="menu-toggle" class="h-10 lg:hidden block cursor-pointer">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       class="h-full stroke-current icon icon-tabler icon-tabler-menu-2"
@@ -13,25 +19,32 @@
       <line x1="4" y1="18" x2="20" y2="18" />
     </svg>
   </button>
-  <nav class="nav hidden lg:block" id="menu">
-    <ul class="nav__list">
-      <li class="nav__item">
-        <a class="nav__link" href="{{ .Site.BaseURL }}">Inicio</a>
+  <nav class="nav hidden absolute
+      top-24
+      left-0
+      px-4
+      py-4
+      bg-white
+      w-full
+      lg:relative lg:top-0 lg:left-0 lg:px-0 lg:py-0 z-10 lg:block" id="menu">
+    <ul class="lg:grid lg:grid-cols-6 lg:items-center">
+      <li class="mb-4 lg:mb-0 lg:mx-3 xl:mx-6">
+        <a class="nav__link block text-primary-color uppercase text-xs font-medium lg:ml-8 lg:text-center lg:pb-1 lg:text-xs xl:text-base" href="{{ .Site.BaseURL }}">Inicio</a>
       </li>
-      <li class="nav__item">
-        <a class="nav__link" href="{{ relref . "siscrimel/quienes-somos.md" }}">Siscrimel</a>
+      <li class="mb-4 lg:mb-0 lg:mx-3 xl:mx-6">
+        <a class="nav__link block text-primary-color uppercase text-xs font-medium lg:text-center lg:pb-1 lg:text-xs xl:text-base" href="{{ relref . "siscrimel/quienes-somos.md" }}">Siscrimel</a>
       </li>
-      <li class="nav__item">
-        <a class="nav__link" href="#">Resultados electorales</a>
+      <li class="mb-4 lg:mb-0 lg:mx-3 xl:mx-6">
+        <a class="nav__link block text-primary-color uppercase text-xs font-medium lg:text-center lg:pb-1 lg:text-xs xl:text-base" href="#">Resultados electorales</a>
       </li>
-      <li class="nav__item">
-        <a class="nav__link" href="#">Mecanismos de participación</a>
+      <li class="mb-4 lg:mb-0 lg:mx-3 xl:mx-6">
+        <a class="nav__link block text-primary-color uppercase text-xs font-medium lg:text-center lg:pb-1 lg:text-xs xl:text-base" href="#">Mecanismos de participación</a>
       </li>
-      <li class="nav__item">
-        <a class="nav__link" href="#">Biblioteca de recursos</a>
+      <li class="mb-4 lg:mb-0 lg:mx-3 xl:mx-6">
+        <a class="nav__link block text-primary-color uppercase text-xs font-medium lg:text-center lg:pb-1 lg:text-xs xl:text-base" href="#">Biblioteca de recursos</a>
       </li>
-      <li class="nav__item">
-        <a class="nav__link" href="#">Contáctanos</a>
+      <li class="mb-4 lg:mb-0 lg:mx-3 xl:mx-6">
+        <a class="nav__link block text-primary-color uppercase text-xs font-medium lg:text-center lg:pb-1 lg:text-xs xl:text-base" href="#">Contáctanos</a>
       </li>
     </ul>
   </nav>
