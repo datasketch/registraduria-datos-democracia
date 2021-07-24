@@ -28,6 +28,8 @@ module.exports = {
           "url(/images/siscrimel/criminalidad-electoral/banner-criminalidad-electoral.png)",
         "bg-lines": "url(/images/bg-lines.svg)",
         "bg-lines-dark": "url(/images/bg-lines-dark.svg)",
+        "bg-banner-datos-sm":
+          "url(/images/siscrimel/explora-datos/banner-explora-datos.jpg)",
       },
     },
   },
