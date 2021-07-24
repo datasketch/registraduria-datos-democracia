@@ -1,4 +1,4 @@
 ---
-title: Siscrimel
+title: Criminalidad electoral
 layout: criminalidad-electoral
 ---
