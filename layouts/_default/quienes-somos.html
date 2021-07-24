@@ -14,14 +14,14 @@
       class="
         w-full
         px-8
-        py-10
-        md:p-12
-        lg:absolute lg:inset-y-1/4
+        py-16
+        md:py-18
+        lg:py-0 lg:absolute lg:inset-y-1/4
         text-center
         lg:text-left
       "
     >
-      <h1 class="text-4xl lg:text-5xl xl:text-6xl uppercase font-bold">
+      <h1 class="text-4xl md:text-5xl xl:text-6xl uppercase font-bold">
         Siscrimel
         <span class="block normal-case font-normal text-2xl lg:text-3xl"
           >Sistema de criminalidad electoral</span
@@ -132,7 +132,13 @@
         </ul>
         <a href="#" class="btn btn--primary">Visor de datos</a>
         <img
-          class="hidden absolute lg:inset-1/2 xl:-top-8 xl:-left-8 lg:block"
+          class="
+            hidden
+            absolute
+            lg:-top-8 lg:-left-2
+            xl:-top-8 xl:-left-8
+            lg:block
+          "
           src="/images/siscrimel/quienes-somos/icono.svg"
           alt=""
         />
@@ -158,7 +164,9 @@
   "
 >
   <div class="container text-center text-color-white">
-    <h3 class="mb-6 text-2xl md:mb-8 xl:text-3xl xl:mb-12">Variables</h3>
+    <h3 class="mb-6 text-3xl md:mb-8 lg:text-4xl xl:text-5xl xl:mb-12">
+      Variables
+    </h3>
     <div class="variables">
       <div class="mb-4 flex flex-wrap justify-center md:mb-5">
         <a
