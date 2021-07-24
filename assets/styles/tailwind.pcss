@@ -77,8 +77,6 @@
     }
   }
 
-  /* ------------------------------------------------------------------------- */
-
   @screen xl {
     .banner {
       height: 1000px !important;
@@ -91,6 +89,27 @@
 
   .banner--quienes-somos p {
     @apply lg:text-left lg:w-8/12 xl:w-7/12;
+  }
+
+  .slider-wrapper {
+    @apply relative px-10;
+  }
+  .slider-next,
+  .slider-prev {
+    @apply absolute top-1/2 transform -translate-y-1/2 w-10 h-10 bg-center bg-contain bg-no-repeat cursor-pointer;
+  }
+
+  .slider-next {
+    @apply -right-4;
+    background-image: url("/images/arrow-right.svg");
+  }
+  .slider-prev {
+    @apply -left-4;
+    background-image: url("/images/arrow-left.svg");
+  }
+  .slider-prev.swiper-button-disabled,
+  .slider-next.swiper-button-disabled {
+    @apply opacity-30 cursor-not-allowed;
   }
 }
 

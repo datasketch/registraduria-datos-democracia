@@ -84,23 +84,8 @@
       </p>
       <a href="#" class="btn btn--primary">Leer más</a>
     </div>
-    <div class="w-full md:py-8 md:px-4 xl:w-11/12 xl:px-44">
-      <div class="md:grid grid-cols-2 xl:grid-cols-1">
-        <img src="/images/home/explora-los-datos.jpg" alt="" class="w-full" />
-        <div class="px-4 xl:p-0">
-          <h3
-            class="text-xl md:text-2xl font-bold mt-4 mb-4 text-primary-color"
-          >
-            Explora los Datos
-          </h3>
-          <p class="paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-            qui magnam iusto nemo similique a dolor libero aliquam. Corrupti
-            ipsam rem tenetur, quas amet hic. Sunt quisquam expedita facere
-            odio.
-          </p>
-        </div>
-      </div>
+    <div class="w-full md:py-8 md:px-4 xl:px-44">
+      {{ partial "siscrimel-slider" . }}
     </div>
   </div>
 </section>
@@ -278,4 +263,12 @@
     </div>
   </div>
 </section>
+{{ end }} {{ define "head" }}
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@6.7.0/swiper-bundle.min.css"
+/>
+{{ end }} {{ define "js" }} {{ $services := resources.Get "js/services.js" |
+js.Build (dict "minify" true)}}
+<script src="{{ $services.Permalink }}"></script>
 {{ end }}
