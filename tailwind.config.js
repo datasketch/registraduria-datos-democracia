@@ -13,6 +13,7 @@ module.exports = {
         "primary-color-dark": "#003057",
         "color-body": "#303C46",
         "color-white": "#fff",
+        "color-white-2": "#F7F8F9",
         "color-orange": "#EB5D0B",
         "color-bg": "#EDEEF0",
         "color-light": "#00B0AC",
@@ -48,6 +49,8 @@ module.exports = {
           "url(/images/siscrimel/explora-datos/metodologia.svg)",
         "biblioteca-recursos-bg":
           "url(/images/biblioteca-recursos/banner-biblioteca.jpg)",
+        dropdown: "url(/images/bg-dropdown.svg)",
+        "bg-informe": "url(/images/bg-informe.svg)",
       },
     },
   },
