@@ -268,7 +268,7 @@
   rel="stylesheet"
   href="https://unpkg.com/swiper@6.7.0/swiper-bundle.min.css"
 />
-{{ end }} {{ define "js" }} {{ $services := resources.Get "js/services.js" |
+{{ end }} {{ define "js" }} {{ $services := resources.Get "js/home.js" |
 js.Build (dict "minify" true)}}
 <script src="{{ $services.Permalink }}"></script>
 {{ end }}

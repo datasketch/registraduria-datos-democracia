@@ -397,10 +397,18 @@
         Informes más descargados
       </p>
     </div>
-    {{ partial "informes-slider" . }}
+    <div class="lg:mb-12">{{ partial "informes-slider" . }}</div>
     <div class="text-center">
       <a href="#" class="btn btn--primary">Ver más informes</a>
     </div>
   </div>
 </section>
+{{ end }} {{ define "head" }}
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@6.7.0/swiper-bundle.min.css"
+/>
+{{ end }} {{ define "js" }} {{ $services := resources.Get "js/about.js" |
+js.Build (dict "minify" true)}}
+<script src="{{ $services.Permalink }}"></script>
 {{ end }}
