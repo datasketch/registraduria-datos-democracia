@@ -226,115 +226,18 @@
           ></div>
         </div>
       </div>
-      <div
-        class="
-          grid grid-cols-12
-          p-6
-          bg-bg-informe bg-cover bg-center
-          items-center
-          lg:gap-x-8 lg:mb-10
-        "
-      >
-        <img
-          src="/images/biblioteca-recursos/imagen-biblioteca-recursos.png"
-          alt="imagen biblioteca recurso"
-          class="col-start-1 col-end-4"
-        />
-        <div class="col-start-4 col-end-13">
-          <span class="italic text-primary-color text-sm mb-1">Democracia</span>
-          <h4 class="text-primary-color lg:text-xl font-bold mb-1">
-            Análisis de la financiación de las campañas legislativas de Colombia
-            en 2014
-          </h4>
-          <cite class="block italic color-color-body text-sm mb-4"
-            >Autor:
-            <span class="font-bold">Transparencia por Colombia</span></cite
-          >
-          <p class="color-color-body lg:mb-9">
-            Análisis normativo y jurisprudencial del financiamiento político,
-            principalmente el de campañas, enfocándose en las elecciones de 2014
-          </p>
-          <div class="flex w-full justify-between">
-            <p class="italic color-color-body text-sm mb-2">
-              Año de Investigación: <span class="font-bold"> 2014</span>
-            </p>
-            <a href="#" class="btn btn--tertiary">Descargar</a>
-          </div>
-        </div>
+      <!-- PARENT ELEMENT -->
+      <div class="library-container">
+        <!-- CHILDS ELEMENTS DATAS -->
+        <!-- CHILDS ELEMENTS DATAS END -->
       </div>
-      <div
-        class="
-          grid grid-cols-12
-          p-6
-          bg-bg-informe bg-cover bg-center
-          items-center
-          lg:gap-x-8 lg:mb-10
-        "
-      >
-        <img
-          src="/images/biblioteca-recursos/imagen-biblioteca-recursos.png"
-          alt="imagen biblioteca recurso"
-          class="col-start-1 col-end-4"
-        />
-        <div class="col-start-4 col-end-13">
-          <span class="italic text-primary-color text-sm mb-1">Democracia</span>
-          <h4 class="text-primary-color lg:text-xl font-bold mb-1">
-            Análisis de la financiación de las campañas legislativas de Colombia
-            en 2014
-          </h4>
-          <cite class="block italic color-color-body text-sm mb-4"
-            >Autor:
-            <span class="font-bold">Transparencia por Colombia</span></cite
-          >
-          <p class="color-color-body lg:mb-9">
-            Análisis normativo y jurisprudencial del financiamiento político,
-            principalmente el de campañas, enfocándose en las elecciones de 2014
-          </p>
-          <div class="flex w-full justify-between">
-            <p class="italic color-color-body text-sm mb-2">
-              Año de Investigación: <span class="font-bold"> 2014</span>
-            </p>
-            <a href="#" class="btn btn--tertiary">Descargar</a>
-          </div>
-        </div>
-      </div>
-      <div
-        class="
-          grid grid-cols-12
-          p-6
-          bg-bg-informe bg-cover bg-center
-          items-center
-          lg:gap-x-8 lg:mb-10
-        "
-      >
-        <img
-          src="/images/biblioteca-recursos/imagen-biblioteca-recursos.png"
-          alt="imagen biblioteca recurso"
-          class="col-start-1 col-end-4"
-        />
-        <div class="col-start-4 col-end-13">
-          <span class="italic text-primary-color text-sm mb-1">Democracia</span>
-          <h4 class="text-primary-color lg:text-xl font-bold mb-1">
-            Análisis de la financiación de las campañas legislativas de Colombia
-            en 2014
-          </h4>
-          <cite class="block italic color-color-body text-sm mb-4"
-            >Autor:
-            <span class="font-bold">Transparencia por Colombia</span></cite
-          >
-          <p class="color-color-body lg:mb-9">
-            Análisis normativo y jurisprudencial del financiamiento político,
-            principalmente el de campañas, enfocándose en las elecciones de 2014
-          </p>
-          <div class="flex w-full justify-between">
-            <p class="italic color-color-body text-sm mb-2">
-              Año de Investigación: <span class="font-bold"> 2014</span>
-            </p>
-            <a href="#" class="btn btn--tertiary">Descargar</a>
-          </div>
-        </div>
-      </div>
+      <!-- PARENT ELEMENT END -->
     </div>
   </div>
 </section>
+<input type="hidden" name="data" id="data-biblioteca" value="{{ jsonify .Site.Data.biblioteca }}" />
+{{ end }}
+{{ define "js" }}
+{{ $biblioteca := resources.Get "js/api/biblioteca.js" | js.Build (dict "minify" true)}}
+<script src="{{ $biblioteca.Permalink }}"></script>
 {{ end }}
