@@ -3,47 +3,21 @@
   class="
     relative
     overflow-hidden
-    bg-center bg-cover bg-center
+    bg-cover bg-center
     text-color-white
-    h-5/6
     bg-banner-home
-    h-screen
-    md:py-8
-    lg:py-0
-    banner
+    banner--home
   "
 >
   <div class="container">
-    <div
-      class="
-        w-full
-        px-8
-        py-10
-        md:p-12
-        lg:absolute lg:w-6/12 lg:p-0 lg:top-24 lg:left-24
-        xl:inset-y-1/4 xl:w-5/12
-      "
-    >
-      <h1
-        class="
-          mb-4
-          text-3xl text-center
-          uppercase
-          font-bold
-          leading-tight
-          md:mb-8
-          lg:mb-3 lg:text-5xl lg:text-left lg:w-10/12
-          xl:text-6xl
-        "
-      >
+    <div class="lg:w-6/12 lg:pt-48">
+      <h1 class="uppercase font-bold lg:mb-3 lg:text-6xl lg:w-10/12">
         Datos para la democracia
       </h1>
-      <p class="text-base text-center lg:text-left lg:w-10/12">
+      <p class="lg:w-10/12">
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
         nonummy nibh euismod tincidunt ut laoreet dolore.
       </p>
-    </div>
-    <div class="container">
       <p
         class="
           absolute
@@ -61,20 +35,18 @@
     </div>
   </div>
 </div>
-<section class="py-8 xl:pt-20 xl:pb-24">
+<section class="lg:pt-20 lg:pb-24">
   <div
     class="grid grid-cols-1 md:gap-y-2 lg:gap-y-0 xl:grid-cols-2 items-center"
   >
-    <div class="bg-siscrimel-bg bg-cover bg-center py-8 px-4 xl:px-36">
-      <h2
-        class="text-4xl xl:text-5xl text-primary-color uppercase font-bold mb-4"
-      >
+    <div class="bg-siscrimel-bg bg-cover bg-center lg:pl-32">
+      <h2 class="text-4xl text-primary-color uppercase font-bold text-5xl">
         Siscrimel
-        <span class="lowercase block text-2xl"
+        <span class="lowercase block text-4xl"
           >Sistema de Criminalidad Electoral</span
         >
       </h2>
-      <p class="paragraph paragraph--black my-3 lg:my-6 my-8 xl:my-8">
+      <p class="paragraph paragraph--black lg:my-7 lg:w-10/12">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint cum
         facilis repellat praesentium minus sapiente. Asperiores vero sint
         sapiente delectus, quae sed totam mollitia tempora, praesentium
@@ -87,45 +59,69 @@
     </div>
   </div>
 </section>
-<section class="bg-primary-color py-12 md:py-14 xl:py-36">
+<section class="bg-primary-color lg:pt-28 lg:pb-36">
   <div class="container text-center">
-    <h2
-      class="
-        mb-4
-        text-2xl
-        md:text-3xl
-        lg:text-5xl
-        xl:mb-6
-        font-bold
-        text-color-white
-        uppercase
-      "
-    >
+    <h2 class="font-bold text-color-white uppercase lg:text-5xl lg:mb-12">
       Resultados Electorales
     </h2>
-    <div class="apply text-center lg:w-6/12 m-auto">
-      <p class="mb-4 xl:mb-6 text-white">
+    <div class="text-center">
+      <p class="text-white m-auto lg:w-5/12 lg:mb-16">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea enim saepe
         autem porro odit corporis necessitatibus a vel. Maxime dolorum vitae
         aspernatur assumenda obcaecati debitis. Hic delectus beatae veritatis
         quos?
       </p>
-      <a href="#" class="btn btn--secondary">Leer Más</a>
+      <div class="grid lg:grid-cols-4 m-auto lg:gap-x-24 lg:w-9/12 lg:mb-12">
+        <a
+          href="#"
+          class="
+            text-white
+            lg:px-4 lg:py-3 lg:text-4xl
+            border-2 border-primary-color-light
+          "
+          >2010</a
+        >
+        <a
+          href="#"
+          class="
+            text-white
+            lg:px-4 lg:py-3 lg:text-4xl
+            border-2 border-primary-color-light
+          "
+          >2011</a
+        >
+        <a
+          href="#"
+          class="
+            text-white
+            lg:px-4 lg:py-3 lg:text-4xl
+            border-2 border-primary-color-light
+          "
+          >2014</a
+        >
+        <a
+          href="#"
+          class="
+            text-white
+            lg:px-4 lg:py-3 lg:text-4xl
+            border-2 border-primary-color-light
+          "
+          >2018</a
+        >
+      </div>
+      <a href="#" class="btn btn--secondary">Conoce los datos</a>
     </div>
   </div>
 </section>
-<section class="section-mechanism">
+<section class="">
   <div class="grid lg:items-center lg:grid-cols-12">
     <ul
       class="
-        py-14
         text-center
         bg-primary-color-dark
         text-color-white
         order-2
-        md:py-20 md:grid md:grid-cols-2
-        lg:order-1 lg:col-start-1 lg:col-end-7 lg:grid-cols-1
-        xl:col-start-1 xl:col-end-6 xl:py-28
+        lg:order-1 lg:col-start-1 lg:col-end-6 lg:py-28
       "
     >
       <li class="mb-8">
@@ -162,11 +158,12 @@
         text-primary-color-dark
       "
     >
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl uppercase">
-        <span class="block normal-case">Mecanisco de</span>participación
-        electoral
+      <h2 class="uppercase font-bold lg:text-5xl">
+        <span class="block font-normal normal-case lg:text-3xl"
+          >Mecanismos de</span
+        >participación electoral
       </h2>
-      <p class="my-4 xl:my-6">
+      <p class="lg:my-8">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, velit,
         dicta, quo cupiditate tempore maxime earum aliquid sit esse sunt nulla!
         Neque officiis adipisci nemo accusamus, temporibus maiores explicabo ut.
@@ -175,23 +172,13 @@
     </div>
   </div>
 </section>
-<section class="py-8 lg:py-20 xl:py-24 xl:pb-36">
+<section class="lg:pt-24 lg:pb-32">
   <div class="container">
-    <div
-      class="
-        lg:w-8/12
-        xl:w-7/12
-        m-auto
-        text-center
-        mb-8
-        xl:mb-16
-        text-primary-color-dark
-      "
-    >
-      <h2 class="mb-4 text-3xl lg:text-5xl xl:mb-6 font-bold lg:mb-8">
+    <div class="text-center text-primary-color-dark lg:mb-14">
+      <h2 class="uppercase font-bold lg:mb-8 lg:text-5xl">
         Biblioteca Virtual
       </h2>
-      <p>
+      <p class="m-auto lg:w-7/12">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
         incidunt cumque commodi saepe sapiente adipisci tenetur maxime aut. Odio
         ducimus hic accusamus est aspernatur laudantium autem ab, voluptatum

@@ -52,6 +52,9 @@ module.exports = {
           "url(/images/biblioteca-recursos/banner-biblioteca.jpg)",
         dropdown: "url(/images/bg-dropdown.svg)",
         "bg-informe": "url(/images/bg-informe.svg)",
+        "bg-blue-light":
+          "url(/images/siscrimel/preguntas-frecuentes/blue-light.svg)",
+        "bg-blue-dark": "url(/images/bg-blue-dark.svg)",
       },
     },
   },

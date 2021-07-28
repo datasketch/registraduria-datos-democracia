@@ -1,33 +1,23 @@
 {{ define "main" }} {{ partial "nav-siscrimel" . }}
 <div
   class="
-    relative
     bg-bg-banner-datos-sm
     h-screen
-    overflow-hidden
     bg-cover bg-center
-    text-center
-    py-24
-    md:py-16
-    lg:py-0
   "
 >
   <div class="container">
-    <div class="text-center lg:absolute lg:inset-y-1/4 lg:text-left">
+    <div class="lg:pt-40">
       <h1
         class="
-          text-color-white
-          font-bold
-          text-3xl
-          mb-4
-          md:text-4xl
-          lg:mb-8 lg:text-5xl
-          xl:text-6xl
+        text-white lg:text-6xl
+         font-bold
+         lg:mb-3
         "
       >
-        Explora los datos
+        Explora los Datos
       </h1>
-      <p class="paragraph paragraph--white lg:w-6/12 xl:w-5/12">
+      <p class="paragraph paragraph--white lg:w-5/12">
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
         nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
         volutpat. Ut wisi enim ad minim veniam, quis
@@ -37,32 +27,32 @@
 </div>
 <div class="text-center bg-color-white pb-16 lg:pt-8">
   <div class="container">
-    <h2 class="heading-secondary heading-secondary--blue mb-4">
-      Delitos e irregularidades <span>en Colombia</span>
+    <h2 class="text-primary-color font-bold lg:mb-4 lg:text-5xl m-auto lg:w-6/12 lg:mb-6">
+      Delitos e irregularidades <span class="font-normal lg:text-4xl">en Colombia</span>
     </h2>
-    <a href="#" class="btn btn--primary">Como utilizar esta herramienta</a>
+    <a href="#" class="bg-primary-color-dark uppercase font-bold color text-color-white py-3 px-8 text-sm">Como utilizar esta herramienta</a>
   </div>
 </div>
-<section class="h-screen w-screen overflow-x-auto">
+<section class="h-screen w-screen overflow-x-auto lg:pb-20">
   <iframe
     class="w-full h-full"
     src="https://datasketch.shinyapps.io/app-datos-democracia/"
     frameborder="0"
   ></iframe>
 </section>
-<section class="bg-metodologia-bg bg-cover bg-center py-8 lg:py-24">
+<section class="bg-metodologia-bg bg-cover bg-center lg:pt-24 lg:pb-14">
   <div class="container text-center">
     <div class="lg:w-8/12 m-auto">
-      <h2 class="heading-secondary heading-secondary--white mb-4 lg:mb-8">
+      <h2 class="text-color-white font-bold lg:text-5xl lg:mb-4">
         Conoce la metodología
       </h2>
       <p
         class="
-          paragraph paragraph--white
-          mb-4
-          lg:mb-8 lg:w-10/12
           m-auto
+          text-color-white
+          lg:w-10/12
           lg:text-xl
+          lg:mb-8
         "
       >
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
@@ -70,8 +60,79 @@
         volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
         ullamcorper suscipit lobortis nisl.
       </p>
-      <a href="#" class="btn btn--secondary">Leer más</a>
+      <a href="#" class="text-color-primary-dark bg-color-bg py-3 px-10 uppercase font-bold text-sm">Leer más</a>
     </div>
   </div>
 </section>
-{{ partial "footer-siscrimel" . }} {{ end }}
+<section class="lg:py-20">
+  <div class="grid grid-cols-1 gap-y-4 lg:grid-cols-3 lg:gap-x-8 lg:w-11/12 m-auto">
+    <div class="lg:px-8 py-6 bg-bg-blue-dark bg-cover bg-center">
+      <img
+        src="/images/siscrimel/criminalidad-electoral/siscrimel-lg.jpg"
+        alt=""
+      />
+      <a
+        class="
+          block
+          text-primary-color
+          font-bold
+          mt-4
+          mb-2
+          text-color-primary
+          font-bold
+          text-xl
+        "
+        href="{{ relref . "siscrimel/quienes-somos.md" }}"
+        >SISCRIMEL</a
+      >
+      <p class="paragrah paragraph--blue">¿Qué es SISCRIMEL?</p>
+    </div>
+    <div class="lg:px-8 py-6 bg-bg-blue-dark bg-cover bg-center">
+      <img
+        src="/images/siscrimel/criminalidad-electoral/corruption.jpg"
+        alt=""
+      />
+      <a
+        class="
+          block
+          text-primary-color
+          font-bold
+          mt-4
+          mb-2
+          text-color-primary
+          font-bold
+          text-xl
+        "
+        href="{{ relref . "siscrimel/criminalidad-electoral.md" }}"
+        >Criminalidad electoral</a
+      >
+      <p class="paragrah paragraph--blue">
+        ¿Qué es la criminalidad electoral?
+      </p>
+    </div>
+    <div class="lg:px-8 py-6 bg-bg-blue-dark bg-cover bg-center">
+      <img
+        src="/images/siscrimel/criminalidad-electoral/information-lg.jpg"
+        alt=""
+      />
+      <a
+        class="
+          block
+          text-primary-color
+          font-bold
+          mt-4
+          mb-2
+          text-color-primary
+          font-bold
+          text-xl
+        "
+        href="#"
+        >Conoce los informes</a
+      >
+      <p class="paragrah paragraph--blue">
+        Descarga los informes de SISCRIMEL
+      </p>
+    </div>
+  </div>
+</section>
+{{ end }}

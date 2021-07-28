@@ -1,61 +1,51 @@
 {{ define "main" }} {{ partial "nav-siscrimel" . }}
 <div
   class="
-    relative
     bg-bg-banner-electoral-sm
     h-screen
     bg-cover bg-center
-    text-center
-    py-24
-    md:py-16
-    lg:py-0
   "
 >
   <div class="container">
-    <h1
+    <div class="lg:pt-40">
+      <h1
       class="
-        heading-secondary heading-secondary--white
-        uppercase
-        lg:absolute lg:inset-y-1/4
-        text-center
-        lg:text-left
+        text-white lg:text-6xl
+        uppercase font-bold
       "
     >
-      <span>Sobre la</span>Criminalidad <br />
+      <span class="text-4xl block normal-case font-normal">Sobre la</span>Criminalidad <br />
       electoral
     </h1>
+    </div>
   </div>
 </div>
 <div class="text-center -mt-16 pb-16 lg:pt-8">
   <div class="container">
-    <h2 class="heading-secondary heading-secondary--blue mb-4">
+    <h2 class="heading-secondary heading-secondary--blue lg:mb-10">
       <span>¿Qué es la</span>Criminalidad electoral ?
     </h2>
     <p
       class="
         paragraph
         paragrpah--blue
-        lg:w-6/12 lg:m-auto
+        lg:w-8/12 lg:m-auto
         text-primary-color
-        xl:w-8/12
       "
     >
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus neque
-      quo necessitatibus voluptatum nam consequuntur accusamus quos maiores,
-      doloremque architecto. Fugiat ea labore placeat totam facilis dolorum
-      eligendi molestiae adipisci.
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat
     </p>
   </div>
 </div>
-<div class="pb-12 lg:pb-24">
-  <div class="bg-bg-lines bg-cover bg-center text-center pb-12">
+<div class="bg-bg-lines bg-cover bg-center lg:py-20">
+  <div class="text-center">
     <div
       class="
         container
-        grid grid-cols-1
+        grid
         gap-y-6
-        lg:gap-y-0 lg:grid-cols-2
-        xl:text-xl
+        lg:grid-cols-2
+        lg:text-xl
       "
     >
       <div
@@ -66,17 +56,17 @@
           text-bold
         "
       >
-        <p class="text-4xl lg:text-5xl">7.616.857</p>
-        <p>Delitos</p>
-        <p>Electorales</p>
+        <p class="lg:text-6xl">7.616.857</p>
+        <p class="font-bold lg:text-3xl">Delitos</p>
+        <p class="font-bold lg:text-3xl">Electorales</p>
         <p class="lowercase text-base text-color-body">
           en colombia entre 2010 a 2019
         </p>
       </div>
       <div class="uppercase text-primary-color text-bold">
-        <p class="text-4xl lg:text-5xl">10.398.689</p>
-        <p>Irregularidades</p>
-        <p>Electorales</p>
+        <p class="lg:text-6xl">10.398.689</p>
+        <p class="font-bold lg:text-3xl">Irregularidades</p>
+        <p class="font-bold lg:text-3xl">Electorales</p>
         <p class="lowercase text-base text-color-body">
           en colombia entre 2010 a 2019
         </p>
@@ -84,80 +74,88 @@
     </div>
   </div>
 </div>
-<section class="pb-14 lg:pb-0 m-auto w-11/12 lg:w-8/12">
-  <h2 class="heading-secondary heading-secondary--blue lg:text-center">
-    Delito Electoral
-  </h2>
-  <p class="paragraph paragraph--blue my-8 lg:my-12">
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-    nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
-    wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-    lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
-    dolor in hendrerit in vulputate velit esse molestie consequat, vel illum
-    dolore eu feugiat
-  </p>
-  <h3 class="text-color-orange italic text-xl mb-6">
-    ¿Como identificar un delito electoral?
-  </h3>
-  <p class="paragraph paragraph--blue mb-8">
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-    nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
-    wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-    lobortis nisl ut aliquip ex ea commodo consequat.
-  </p>
-  <h3 class="text-color-orange italic text-xl mb-6">
-    ¿Cuales son las consecuencias de un delito electoral?
-  </h3>
-  <p class="paragraph paragraph--blue">
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-    nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
-    wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-    lobortis nisl ut aliquip ex ea commodo consequat.
-  </p>
-</section>
-<section class="pb-14 lg:pt-28 lg:pb-8 m-auto w-11/12 lg:w-8/12">
-  <h2 class="heading-secondary heading-secondary--blue lg:text-center">
-    Irregularidad Electoral
-  </h2>
-  <p class="paragraph paragraph--blue my-8 lg:my-12">
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-    nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
-    wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-    lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
-    dolor in hendrerit in vulputate velit esse molestie consequat, vel illum
-    dolore eu feugiat
-  </p>
-  <h3 class="text-color-orange italic text-xl mb-6">
-    ¿Como identificar una irregularidad electoral?
-  </h3>
-  <p class="paragraph paragraph--blue mb-8">
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-    nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
-    wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-    lobortis nisl ut aliquip ex ea commodo consequat.
-  </p>
-  <h3 class="text-color-orange italic text-xl mb-6">
-    ¿Cuales son las consecuencias de una irregularidad electoral?
-  </h3>
-  <p class="paragraph paragraph--blue">
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-    nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
-    wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-    lobortis nisl ut aliquip ex ea commodo consequat.
-  </p>
-</section>
-<section class="pb-10 bg-color-blue-dark lg:py-20">
-  <div class="text-center lg:w-8/12 m-auto">
-    <h2 class="heading-secondary heading-secondary--blue">
-      ¿Como se les atribuye la criminalidad electoral en Colombia?
+<section class="m-auto lg:py-16 lg:w-8/12">
+  <div class="container">
+    <h2 class="heading-secondary heading-secondary--blue lg:text-center">
+      Delito Electoral
     </h2>
-    <div class="my-5 md:my-8 lg:my-10">
-      <a href="#" class="btn btn--primary-light mb-4 md:mr-4 lg:mb-0"
+    <p class="paragraph paragraph--blue my-8 lg:my-12">
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
+      wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+      lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+      dolor in hendrerit in vulputate velit esse molestie consequat, vel illum
+      dolore eu feugiat
+    </p>
+    <h3 class="text-color-orange italic text-xl mb-6">
+      ¿Como identificar un delito electoral?
+    </h3>
+    <p class="paragraph paragraph--blue mb-8">
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
+      wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+      lobortis nisl ut aliquip ex ea commodo consequat.
+    </p>
+    <h3 class="text-color-orange italic text-xl mb-6">
+      ¿Cuales son las consecuencias de un delito electoral?
+    </h3>
+    <p class="paragraph paragraph--blue">
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
+      wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+      lobortis nisl ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+</section>
+<section class="m-auto lg:py-16 lg:w-8/12">
+  <div class="container">
+    <h2 class="heading-secondary heading-secondary--blue lg:text-center">
+      Irregularidad Electoral
+    </h2>
+    <p class="paragraph paragraph--blue my-8 lg:my-12">
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
+      wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+      lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+      dolor in hendrerit in vulputate velit esse molestie consequat, vel illum
+      dolore eu feugiat
+    </p>
+    <h3 class="text-color-orange italic text-xl mb-6">
+      ¿Como identificar una irregularidad electoral?
+    </h3>
+    <p class="paragraph paragraph--blue mb-8">
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
+      wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+      lobortis nisl ut aliquip ex ea commodo consequat.
+    </p>
+    <h3 class="text-color-orange italic text-xl mb-6">
+      ¿Cuales son las consecuencias de una irregularidad electoral?
+    </h3>
+    <p class="paragraph paragraph--blue">
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
+      wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+      lobortis nisl ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+</section>
+<section class="bg-color-blue-dark lg:py-20">
+  <div class="text-center lg:w-6/12 m-auto">
+    <h2 class="text-primary-color font-bold lg:text-4xl">
+      ¿Cuál es la tasa de la criminalidad electoral en Colombia?
+    </h2>
+    <div class="lg:my-10">
+      <div class="">
+        <a href="#" class="bg-color-light text-white py-2 px-4 uppercase inline-block lg:mb-3"
         >Por delitos electorales</a
       >
-      <a href="#" class="btn btn--primary">Por irregularidades electorales</a>
+      </div>
+       <div class="">
+        <a href="#" class="bg-primary-color text-white py-2 px-4 uppercase inline-block">Por irregularidades electorales</a>
+       </div>
     </div>
-    <p class="paragraph paragraph--blue mb-8 lg:mb-20">
+    <p class="paragraph paragraph--blue lg:mb-16">
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
       nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
       wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
@@ -166,7 +164,7 @@
   </div>
   <div class="container text-center">
     <h3 class="heading-tertiary heading-tertiary--blue uppercase lg:text-xl">
-      Delitos Electorales a Nivel Departamental en Colombia
+      TASA DELITOS ELECTORALES A NIVEL DEPARTAMETAL EN COLOMBIA
     </h3>
     <img
       src="/images/siscrimel/criminalidad-electoral/delitos-electorales.svg"
@@ -175,18 +173,89 @@
     />
   </div>
 </section>
-<section class="bg-bg-lines-dark bg-center bg-cover py-8 lg:py-20">
-  <div class="container text-center">
-    <div class="lg:w-8/12 m-auto text-color-white">
-      <h2 class="mb-4 font-bold lg:mb-8 xl:text-4xl">
+<section class="bg-bg-lines-dark bg-center bg-cover lg:py-20">
+  <div class="container">
+    <div class="lg:w-8/12 m-auto text-color-white text-center">
+      <h2 class="font-bold lg:mb-4 xl:text-4xl">
         ¿Conoces algún caso de criminalidad electoral en Colombia?
       </h2>
-      <p class="font-light mb-4 lg:mb-8 lg:w-10/12 m-auto lg:text-xl">
-        Te conectamos con las entidades a las cuales puedes acudir si deseas
-        reportar algún acto de criminalidad electoral en Colombia
+      <p class="m-auto font-light lg:mb-12 lg:w-10/12 lg:text-xl">
+        Te conectamos con las entidades a las cuales puedes acudir si deseas reportar algún acto de criminalidad electoral en Colombia
       </p>
-      <a href="#" class="btn btn--secondary">Conoce como denunciar</a>
+      <a href="#" class="bg-color-bg py-2 px-8 text-primary-color uppercase font-bold">Conoce como denunciar</a>
     </div>
   </div>
 </section>
-{{ partial "footer-siscrimel" . }} {{ end }}
+<section class="lg:py-20">
+  <div class="grid grid-cols-1 gap-y-4 lg:grid-cols-3 lg:gap-x-8 lg:w-11/12 m-auto">
+      <div class="lg:px-8 py-6 bg-bg-blue-dark bg-cover bg-center">
+        <img
+          src="/images/siscrimel/criminalidad-electoral/siscrimel-lg.jpg"
+          alt=""
+        />
+        <a
+          class="
+            block
+            text-primary-color
+            font-bold
+            mt-4
+            mb-2
+            text-color-primary
+            font-bold
+            text-xl
+          "
+          href="{{ relref . "siscrimel/quienes-somos.md" }}"
+          >SISCRIMEL</a
+        >
+        <p class="paragrah paragraph--blue">¿Qué es SISCRIMEL?</p>
+      </div>
+      <div class="lg:px-8 py-6 bg-bg-blue-dark bg-cover bg-center">
+        <img
+          src="/images/siscrimel/criminalidad-electoral/datas-lg.jpg"
+          alt=""
+        />
+        <a
+          class="
+            block
+            text-primary-color
+            font-bold
+            mt-4
+            mb-2
+            text-color-primary
+            font-bold
+            text-xl
+          "
+          href="{{ relref . "siscrimel/explora-los-datos.md" }}"
+          >Explora los datos</a
+        >
+        <p class="paragrah paragraph--blue">
+          Conoce los datos de criminalidad electoral en Colombia
+        </p>
+      </div>
+      <div class="lg:px-8 py-6 bg-bg-blue-dark bg-cover bg-center">
+        <img
+          src="/images/siscrimel/criminalidad-electoral/information-lg.jpg"
+          alt=""
+        />
+        <a
+          class="
+            block
+            text-primary-color
+            font-bold
+            mt-4
+            mb-2
+            text-color-primary
+            font-bold
+            text-xl
+          "
+          href="#"
+          >Conoce los informes</a
+        >
+        <p class="paragrah paragraph--blue">
+          Descarga los informes de SISCRIMEL
+        </p>
+      </div>
+  </div>
+</section>
+{{ end }}
+
