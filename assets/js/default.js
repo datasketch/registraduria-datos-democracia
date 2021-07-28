@@ -1,10 +1,11 @@
-const menuToggle = document.getElementById("menu-toggle");
-const menu = document.getElementById("menu");
+const nav = document.querySelector(".nav");
+const btnHamburguer = document.querySelector(".menu-icon");
 const btnDropDown = document.querySelectorAll(".dropdown");
 const btnDropDownMenu = document.querySelectorAll(".dropdown-menu");
 
-menuToggle.addEventListener("click", function () {
-  menu.classList.toggle("hidden");
+btnHamburguer.addEventListener("click", function () {
+  btnHamburguer.classList.toggle("menu-icon--active");
+  nav.classList.toggle("nav--active");
 });
 
 btnDropDown.forEach((btn, index) =>

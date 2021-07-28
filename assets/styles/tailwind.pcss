@@ -55,6 +55,21 @@
 }
 
 @layer components {
+  .nav {
+    @apply absolute -left-full w-full py-12 top-24 lg:py-0 lg:top-0 lg:h-auto bg-white z-50;
+    transition: all 0.3s ease;
+  }
+
+  @screen lg {
+    .nav {
+      @apply lg:relative lg:left-8 lg:top-0 lg:flex-1;
+    }
+  }
+
+  .nav--active {
+    left: 0 !important;
+  }
+
   .nav__link {
     border-bottom: 2px solid transparent;
   }
@@ -75,6 +90,54 @@
     .footer {
       background-image: url("/images/footer-x2.png");
     }
+  }
+
+  /*             Button Hamburguer               */
+  .menu-button {
+    @apply relative cursor-pointer lg:hidden;
+  }
+
+  .menu-icon {
+    @apply relative;
+  }
+
+  .menu-icon,
+  .menu-icon::before,
+  .menu-icon::after {
+    @apply bg-color-light block w-8;
+    height: 3px;
+    transition: all 0.3s ease;
+  }
+
+  .menu-icon::before,
+  .menu-icon::after {
+    @apply absolute left-0;
+    content: "";
+  }
+
+  .menu-icon::before {
+    @apply top-2;
+  }
+
+  .menu-icon::after {
+    @apply -top-2;
+  }
+
+  .menu-icon--active {
+    background-color: transparent !important;
+  }
+
+  .menu-icon--active::before,
+  .menu-icon--active::after {
+    top: 0 !important;
+  }
+
+  .menu-icon--active::before {
+    transform: rotate(-135deg) !important;
+  }
+
+  .menu-icon--active::after {
+    transform: rotate(135deg) !important;
   }
 
   @screen xl {

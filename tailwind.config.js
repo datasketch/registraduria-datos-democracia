@@ -2,6 +2,7 @@ module.exports = {
   purge: {
     enabled: process.env.HUGO_ENVIRONMENT === "production",
     content: ["./layouts/**/*.html"],
+    safelist: ["nav--active", "menu-icon--active"],
     options: {},
   },
   darkMode: false, // or 'media' or 'class'
