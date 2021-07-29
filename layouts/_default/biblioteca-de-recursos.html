@@ -15,63 +15,28 @@
 </div>
 <section class="lg:pt-12 lg:pb-20 bg-white">
   <div class="grid grid-cols-1 lg:grid-cols-12">
-    <div class="lg:col-start-2 lg:col-end-4">
+    <div class="lg:col-start-2 lg:col-end-4" id="filters">
       <h4
         class="text-primary-color-dark uppercase font-bold lg:text-xl lg:mb-3"
       >
         Filtros
       </h4>
-      <!-- <div class="mb-4">
-        <h5 class="bg-primary-color-dark text-color-white py-2 px-6">
-          Tipo de recurso
-        </h5>
-        <div class="py-4">
-          <label class="container-input"
-            >Informes SISCRIMEL
-            <input type="checkbox" checked="checked" />
-            <span class="checkmark"></span>
-          </label>
-          <label class="container-input"
-            >Publicaciónes
-            <input type="checkbox" />
-            <span class="checkmark"></span>
-          </label>
-          <label class="container-input"
-            >Investigaciónes
-            <input type="checkbox" />
-            <span class="checkmark"></span>
-          </label>
-        </div>
-      </div> -->
-      <!-- <div class="mb-4">
-        <h5 class="bg-primary-color-dark text-color-white py-2 px-6">Temas</h5>
-        <div class="py-4">
-          <label class="container-input"
-            >Medio ambiente
-            <input type="checkbox" checked="checked" />
-            <span class="checkmark"></span>
-          </label>
-          <label class="container-input"
-            >Homicidios
-            <input type="checkbox" />
-            <span class="checkmark"></span>
-          </label>
-        </div>
-      </div> -->
+      <!-- Date -->
       <div class="mb-4">
         <h5 class="bg-primary-color-dark text-color-white py-2 px-6">
           Fecha de publicación
         </h5>
         <!-- PARENT ELEMENT -->
-        <div class="py-4 px-2 date-container">
-          <!-- CHILD ELEMENTS DATE -->
-          <!-- <label class="container-input"
-            >2013
-            <input type="checkbox" value="2013" />
-            <span class="checkmark"></span>
-          </label> -->
-          <!-- CHILD ELEMENTS DATE END -->
-        </div>
+        <div class="py-4 px-2 date-container"></div>
+        <!-- PARENT ELEMENT END -->
+      </div>
+      <!-- Line -->
+      <div class="mb-4">
+        <h5 class="bg-primary-color-dark text-color-white py-2 px-6">
+          Línea
+        </h5>
+        <!-- PARENT ELEMENT -->
+        <div class="py-4 px-2 line-container"></div>
         <!-- PARENT ELEMENT END -->
       </div>
     </div>
@@ -127,6 +92,6 @@
   value="{{ jsonify .Site.Data.biblioteca }}"
 />
 {{ end }} {{ define "js" }} {{ $biblioteca := resources.Get
-"js/api/biblioteca.js" | js.Build (dict "minify" true)}}
+"js/api/biblioteca.js" | js.Build (dict "minify" false)}}
 <script src="{{ $biblioteca.Permalink }}"></script>
 {{ end }}

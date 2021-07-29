@@ -1,112 +1,93 @@
 "use strict";
+import { renderItemLibrary, renderItemDate, renderItemLine } from '../utils/render'
 
 const data = document.querySelector("#data-biblioteca");
 const containerDate = document.querySelector(".date-container");
+const containerLine = document.querySelector(".line-container");
 const containerLibrary = document.querySelector(".library-container");
-let checkBoxDate;
-let years = new Array();
+const filtersContainer = document.getElementById('filters');
+
 
 data.remove();
 
-const renderItemDate = (year) => {
-  const html = `
-    <label class="container-input"
-      >${year}
-      <input class="checkDate" type="checkbox" value="${year}" />
-      <span class="checkmark"></span>
-    </label>
-  `;
-  containerDate.insertAdjacentHTML("beforeend", html);
-};
+const state = {
+  originalData: JSON.parse(data.value),
+  filteredData: JSON.parse(data.value),
+  filters: {
+    ano: [],
+    linea: []
+  }
+}
 
-const renderItemLibrary = (item) => {
-  const html = `
-    <div class="library-item">
-      <img
-        src="/images/biblioteca-recursos/imagen-biblioteca-recursos.png"
-        alt="imagen biblioteca recurso"
-        class="library-image"
-      />
-      <div class="library-description">
-        <span class="library-linea">${item.linea}</span>
-        <h4 class="library-title">${item.titulo}</h4>
-        <cite class="library-autor"
-          >Autor: <span class="font-bold">${item.autor}</span></cite
-        >
-        <p class="library-paragraph">${item.descripcion}</p>
-        <div class="library-date">
-          <p class="library-year">
-            Año de Investigación:
-            <span> ${item.ano}</span>
-          </p>
-          <a
-            href="${item.url}"
-            target="_blank"
-            download="XLSX"
-            class="btn btn--tertiary"
-            >Descargar</a
-          >
-        </div>
-      </div>
-    </div>
-    `;
-  containerLibrary.insertAdjacentHTML("beforeend", html);
-};
 
 const loadYears = () => {
-  let res = JSON.parse(data.value);
   // GENERATE DINAMIC YEARS
   const years = new Set(
     ...[
-      res
+      state.originalData
         .map((item) => item.ano)
         .filter((year) => +year)
         .sort((a, b) => b - a),
     ]
   );
-  [...years].map((year) => renderItemDate(year));
-  checkBoxDate = document.querySelectorAll(".checkDate");
-  // console.log(checkBoxDate);
+  [...years].forEach((year) => {
+    const html = renderItemDate(year)
+    containerDate.insertAdjacentHTML("beforeend", html);
+  });
 };
 
-const loadItems = () => {
+const loadLines = () => {
+  const lines = new Set(
+    ...[state.originalData.map((item) => item.linea)]
+  );
+  [...lines].map((line) => {
+    const html = renderItemLine(line)
+    containerLine.insertAdjacentHTML('beforeend', html);
+  });
+}
+
+
+function filterData(key, values) {
   containerLibrary.innerHTML = "";
-  let res = JSON.parse(data.value);
-  // SHOW PREVIUS ITEMS LIBRARIES
-  res.slice(0, 3).map((item) => renderItemLibrary(item));
-};
 
-const itemsFilterYear = (...years) => {
-  containerLibrary.innerHTML = "";
-  let res = JSON.parse(data.value);
+  if (!key || !values.length) {
+    state.filteredData = state.originalData
+    state.filteredData.forEach(item => {
+      const html = renderItemLibrary(item)
+      containerLibrary.insertAdjacentHTML("beforeend", html);
+    })
+    return
+  }
 
-  // Filter items for year
-  // const items = years.map((year) =>
-  //   res.filter((item) => item.ano === year).sort((a, b) => a.ano - b.ano)
-  // );
-  // console.log(items);
-  const items = res
-    .filter((item) => years.includes(item.ano))
-    .sort((a, b) => +b.ano - +a.ano);
-  items.map((item) => renderItemLibrary(item));
-};
+  state.filteredData = state.filteredData
+    .filter((item) => values.includes(item[key]))
+    .sort((a, b) => b.ano - a.ano)
+  
+  state.filteredData.forEach(item => {
+    const html = renderItemLibrary(item)
+    containerLibrary.insertAdjacentHTML("beforeend", html);
+  })
+}
 
 const init = () => {
-  loadItems();
+  filterData()
   loadYears();
+  loadLines();
 };
 init();
-console.log(checkBoxDate);
 
-checkBoxDate.forEach((check) =>
-  check.addEventListener("change", (e) => {
-    if (e.target.checked) {
-      years.push(e.target.value);
-      itemsFilterYear(...years);
-    } else {
-      loadItems();
-    }
-  })
-);
 
-// itemsFilterYear("2016", "2019", "2013");
+filtersContainer.addEventListener('change', event => {
+  const { name: key, value } = event.target
+  if (!state.filters[key]) return
+
+  if (state.filters[key].includes(value)) {
+    const idx = state.filters[key].findIndex(item => item === value)
+    state.filters[key].splice(idx, 1)
+  } else {
+    state.filters[key].push(value)
+  }
+
+  filterData(key, state.filters[key])
+})
+
