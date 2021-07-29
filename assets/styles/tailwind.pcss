@@ -56,7 +56,7 @@
 
 @layer components {
   .nav {
-    @apply absolute -left-full w-full py-12 top-24 lg:py-0 lg:top-0 lg:h-auto bg-white z-50;
+    @apply absolute -right-full w-full py-12 top-0 lg:py-0 lg:h-auto bg-white z-10;
     transition: all 0.3s ease;
   }
 
@@ -67,7 +67,7 @@
   }
 
   .nav--active {
-    left: 0 !important;
+    right: 0 !important;
   }
 
   .nav__link {
@@ -94,7 +94,7 @@
 
   /*             Button Hamburguer               */
   .menu-button {
-    @apply relative cursor-pointer lg:hidden;
+    @apply relative cursor-pointer lg:hidden z-50;
   }
 
   .menu-icon {
@@ -140,10 +140,8 @@
     transform: rotate(135deg) !important;
   }
 
-  @screen lg {
-    .banner--home {
-      height: 1000px !important;
-    }
+  .banner--home {
+    height: 1000px !important;
   }
 
   .slider-wrapper {

@@ -25,6 +25,8 @@ module.exports = {
         "soberana-sans": ['"Soberana Sans"'],
       },
       backgroundImage: {
+        "banner-home-lg": "url(/images/home/banner-lg.png)",
+        "banner-home-sm": "url(/images/home/banner-sm.png)",
         "bg-footer-sm": "url(/images/footer-x1.png)",
         "bg-footer-lg": "url(/images/footer-x2.png)",
         "bg-banner-electoral-sm":
@@ -35,7 +37,6 @@ module.exports = {
           "url(/images/siscrimel/explora-datos/banner-explora-datos.jpg)",
         "footer-sm": "url(/images/footer-x1.png)",
         "footer-lg": "url(/images/footer-x2.png)",
-        "banner-home": "url(/images/home/banner.png)",
         "siscrimel-bg": "url(/images/home/siscrimel.svg)",
         "mechanism-bg": "url(/images/home/mechanism.svg)",
         "quienes-somos-bg":
