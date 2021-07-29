@@ -29,4 +29,66 @@
     </p>
   </div>
 </div>
+<section class="lg:pt-12 lg:pb-20 bg-white">
+  <div class="grid grid-cols-1 lg:grid-cols-12">
+    <div class="lg:col-start-2 lg:col-end-4" id="filters">
+      <h4
+        class="text-primary-color-dark uppercase font-bold lg:text-xl lg:mb-3"
+      >
+        Filtros
+      </h4>
+      <!-- Date -->
+      <div class="mb-4">
+        <h5 class="bg-primary-color-dark text-color-white py-2 px-6">Año</h5>
+        <!-- PARENT ELEMENT -->
+        <div class="py-4 px-2 date-container"></div>
+        <!-- PARENT ELEMENT END -->
+      </div>
+    </div>
+    <div class="lg:col-start-4 lg:col-end-12 m-auto lg:w-11/12">
+      <div class="lg:flex lg:flex-col lg:items-end">
+        <div class="mb-12">
+          <h5 class="bg-primary-color-dark text-color-white py-2 px-6">
+            Fecha de publicación
+          </h5>
+        </div>
+      </div>
+      <!-- PARENT ELEMENT -->
+      <div
+        class="
+          results-container
+          grid grid-cols-1
+          lg:grid-cols-2
+          xl:grid-cols-3
+          gap-8
+        "
+      >
+        <!-- CHILDS ELEMENTS RESULTS -->
+        <!-- <div class="result-item">
+          <h3 class="result-title">Alcaldía Cartagena 2011</h3>
+          <p class="result-year">
+            Elecciones locales Año 2011, Alcaldía de Bolívar
+          </p>
+          <p class="result-excel">
+            Formato disponible: <span class="font-bold">XLSX</span>
+          </p>
+          <div class="result-btn">
+            <a href="#" class="btn btn--tertiary">Descargar</a>
+          </div>
+        </div> -->
+      </div>
+      <!-- PARENT ELEMENT END -->
+    </div>
+  </div>
+</section>
+{{ partial "explora-los-datos" . }}
+<input
+  type="hidden"
+  name="data"
+  id="data-resultados"
+  value="{{ jsonify .Site.Data.resultados }}"
+/>
+{{ end }} {{ define "js" }} {{ $resultados := resources.Get
+"js/api/resultados.js" | js.Build (dict "minify" true)}}
+<script src="{{ $resultados.Permalink }}"></script>
 {{ end }}

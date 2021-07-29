@@ -1,27 +1,27 @@
 export const renderItemDate = (year) => {
-    const html = `
+  const html = `
       <label class="container-input"
         >${year}
         <input type="checkbox" name="ano" value="${year}" />
         <span class="checkmark"></span>
       </label>
     `;
-    return html
+  return html;
 };
 
 export const renderItemLine = (line) => {
-    const html = `
+  const html = `
       <label class="container-input"
         >${line}
         <input type="checkbox" name="linea" value="${line}" />
         <span class="checkmark"></span>
       </label>
     `;
-    return html
+  return html;
 };
 
 export const renderItemLibrary = (item) => {
-    const html = `
+  const html = `
       <div class="library-item">
         <img
           src="/images/biblioteca-recursos/imagen-biblioteca-recursos.png"
@@ -51,5 +51,23 @@ export const renderItemLibrary = (item) => {
         </div>
       </div>
       `;
-    return html
+  return html;
+};
+
+export const renderItemResult = (item) => {
+  const html = `
+      <div class="result-item">
+      <h3 class="result-title">Alcaldía Cartagena 2011</h3>
+      <p class="result-year">
+        Elecciones locales Año 2011, Alcaldía de Bolívar
+      </p>
+      <p class="result-excel">
+        Formato disponible: <span class="font-bold">XLSX</span>
+      </p>
+      <div class="result-btn">
+        <a target="_blank" href="${item.path}" class="btn btn--tertiary">Descargar</a>
+      </div>
+    </div>
+  `;
+  return html;
 };

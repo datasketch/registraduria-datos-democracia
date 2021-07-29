@@ -32,9 +32,7 @@
       </div>
       <!-- Line -->
       <div class="mb-4">
-        <h5 class="bg-primary-color-dark text-color-white py-2 px-6">
-          Línea
-        </h5>
+        <h5 class="bg-primary-color-dark text-color-white py-2 px-6">Línea</h5>
         <!-- PARENT ELEMENT -->
         <div class="py-4 px-2 line-container"></div>
         <!-- PARENT ELEMENT END -->
@@ -92,6 +90,6 @@
   value="{{ jsonify .Site.Data.biblioteca }}"
 />
 {{ end }} {{ define "js" }} {{ $biblioteca := resources.Get
-"js/api/biblioteca.js" | js.Build (dict "minify" false)}}
+"js/api/biblioteca.js" | js.Build (dict "minify" true)}}
 <script src="{{ $biblioteca.Permalink }}"></script>
 {{ end }}
