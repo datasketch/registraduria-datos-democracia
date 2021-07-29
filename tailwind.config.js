@@ -2,7 +2,21 @@ module.exports = {
   purge: {
     enabled: process.env.HUGO_ENVIRONMENT === "production",
     content: ["./layouts/**/*.html"],
-    safelist: ["nav--active", "menu-icon--active"],
+    safelist: [
+      "nav--active",
+      "menu-icon--active",
+      "container-input",
+      "checkmark",
+      "library-item",
+      "library-image",
+      "library-description",
+      "library-linea",
+      "library-title",
+      "library-autor",
+      "library-paragraph",
+      "library-date",
+      "library-year",
+    ],
     options: {},
   },
   darkMode: false, // or 'media' or 'class'
@@ -56,6 +70,10 @@ module.exports = {
         "bg-blue-light":
           "url(/images/siscrimel/preguntas-frecuentes/blue-light.svg)",
         "bg-blue-dark": "url(/images/bg-blue-dark.svg)",
+        "bg-resultados-electorales-sm":
+          "url(/images/resultados-electorales/resultados-electorales-movil.png)",
+        "bg-resultados-electorales-lg":
+          "url(/images/resultados-electorales/resultados-electorales.png)",
       },
     },
   },

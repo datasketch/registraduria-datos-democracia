@@ -3,8 +3,7 @@
   class="
     relative
     overflow-hidden
-    bg-cover
-    bg-center
+    bg-cover bg-center
     text-color-white
     bg-banner-home-sm
     lg:bg-banner-home-lg
@@ -13,10 +12,12 @@
 >
   <div class="container">
     <div class="text-center lg:text-left lg:w-6/12 pt-56 lg:pt-48">
-      <h1 class="uppercase mb-4 text-4xl font-bold lg:mb-3 lg:text-6xl lg:w-10/12">
+      <h1
+        class="uppercase mb-4 text-4xl font-bold lg:mb-3 lg:text-6xl lg:w-10/12"
+      >
         Datos para la democracia
       </h1>
-      <p class="px-8 lg:px-0  lg:w-10/12">
+      <p class="px-8 lg:px-0 lg:w-10/12">
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
         nonummy nibh euismod tincidunt ut laoreet dolore.
       </p>
@@ -26,8 +27,7 @@
           bottom-24
           text-center
           px-12
-          lg:px-0
-          lg:bottom-36 lg:w-6/12 lg:text-xl lg:right-1/4
+          lg:px-0 lg:bottom-36 lg:w-6/12 lg:text-xl lg:right-1/4
         "
       >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eaque
@@ -39,23 +39,45 @@
   </div>
 </div>
 <section class="py-16 lg:pt-20 lg:pb-24">
-  <div
-    class="grid grid-cols-1 gap-y-20 lg:grid-cols-2 items-center"
-  >
-    <div class="text-center bg-siscrimel-bg bg-cover bg-center lg:text-left lg:pl-32">
+  <div class="grid grid-cols-1 gap-y-20 lg:grid-cols-2 items-center">
+    <div
+      class="
+        text-center
+        bg-siscrimel-bg bg-cover bg-center
+        lg:text-left lg:pl-32
+      "
+    >
       <h2 class="text-4xl text-primary-color uppercase font-bold text-5xl">
         Siscrimel
         <span class="lowercase block text-4xl"
           >Sistema de Criminalidad Electoral</span
         >
       </h2>
-      <p class="my-10 px-10 paragraph paragraph--black lg:px-0 lg:my-7 lg:w-10/12">
+      <p
+        class="
+          my-10
+          px-10
+          paragraph paragraph--black
+          lg:px-0 lg:my-7 lg:w-10/12
+        "
+      >
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint cum
         facilis repellat praesentium minus sapiente. Asperiores vero sint
         sapiente delectus, quae sed totam mollitia tempora, praesentium
         accusamus cumque porro eius.
       </p>
-      <a href="#" class="bg-primary-color-dark text-color-white py-2 px-6 uppercase font-bold">Leer más</a>
+      <a
+        href="#"
+        class="
+          bg-primary-color-dark
+          text-color-white
+          py-2
+          px-6
+          uppercase
+          font-bold
+        "
+        >Leer más</a
+      >
     </div>
     <div class="px-10 text-center lg:text-left lg:px-44">
       {{ partial "siscrimel-slider" . }}
@@ -64,7 +86,16 @@
 </section>
 <section class="py-16 bg-primary-color lg:pt-28 lg:pb-36">
   <div class="container text-center">
-    <h2 class="text-4xl mb-8 font-bold text-color-white uppercase lg:text-5xl lg:mb-12">
+    <h2
+      class="
+        text-4xl
+        mb-8
+        font-bold
+        text-color-white
+        uppercase
+        lg:text-5xl lg:mb-12
+      "
+    >
       Resultados Electorales
     </h2>
     <div class="text-center">
@@ -74,13 +105,25 @@
         aspernatur assumenda obcaecati debitis. Hic delectus beatae veritatis
         quos?
       </p>
-      <div class="grid grid-cols-2 gap-8 m-auto mb-12 w-10/12 lg:grid-cols-4 m-auto lg:gap-x-24 lg:w-9/12 lg:mb-16">
+      <div
+        class="
+          grid grid-cols-2
+          gap-8
+          m-auto
+          mb-12
+          w-10/12
+          lg:grid-cols-4
+          m-auto
+          lg:gap-x-24 lg:w-9/12 lg:mb-16
+        "
+      >
         <a
           href="#"
           class="
-            text-3xl
-            text-white
-            px-4 py-3 lg:text-4xl
+            text-3xl text-white
+            px-4
+            py-3
+            lg:text-4xl
             border-2 border-primary-color-light
           "
           >2010</a
@@ -88,9 +131,10 @@
         <a
           href="#"
           class="
-            text-3xl
-            text-white
-            px-4 py-3 lg:text-4xl
+            text-3xl text-white
+            px-4
+            py-3
+            lg:text-4xl
             border-2 border-primary-color-light
           "
           >2011</a
@@ -98,9 +142,10 @@
         <a
           href="#"
           class="
-            text-3xl
-            text-white
-            px-4 py-3 lg:text-4xl
+            text-3xl text-white
+            px-4
+            py-3
+            lg:text-4xl
             border-2 border-primary-color-light
           "
           >2014</a
@@ -108,15 +153,20 @@
         <a
           href="#"
           class="
-            text-3xl
-            text-white
-            px-4 py-3 lg:text-4xl
+            text-3xl text-white
+            px-4
+            py-3
+            lg:text-4xl
             border-2 border-primary-color-light
           "
           >2018</a
         >
       </div>
-      <a href="#" class="bg-color-white uppercase font-bold text-primary-color py-3 px-4">Conoce los datos</a>
+      <a
+        href="#"
+        class="bg-color-white uppercase font-bold text-primary-color py-3 px-4"
+        >Conoce los datos</a
+      >
     </div>
   </div>
 </section>
@@ -159,14 +209,19 @@
         order-1
         bg-cover bg-center
         py-12
-        lg:py-0
-        lg:order-2
-        lg:px-24 lg:col-start-6 lg:col-end-13
+        lg:py-0 lg:order-2 lg:px-24 lg:col-start-6 lg:col-end-13
         bg-mechanism-bg
         text-primary-color-dark
       "
     >
-      <h2 class="text-center text-4xl uppercase font-bold lg:text-5xl lg:text-left">
+      <h2
+        class="
+          text-center text-4xl
+          uppercase
+          font-bold
+          lg:text-5xl lg:text-left
+        "
+      >
         <span class="block text-3xl font-normal normal-case lg:text-3xl"
           >Mecanismos de</span
         >participación electoral
@@ -177,7 +232,18 @@
         Neque officiis adipisci nemo accusamus, temporibus maiores explicabo ut.
       </p>
       <div class="text-center lg:text-left">
-        <a href="#" class="bg-primary-color-dark text-color-white py-2 px-6 uppercase font-bold">Leer más</a>
+        <a
+          href="#"
+          class="
+            bg-primary-color-dark
+            text-color-white
+            py-2
+            px-6
+            uppercase
+            font-bold
+          "
+          >Leer más</a
+        >
       </div>
     </div>
   </div>
@@ -185,7 +251,17 @@
 <section class="pt-14 py-20 lg:pt-24 lg:pb-32">
   <div class="container">
     <div class="text-center text-primary-color-dark lg:mb-14">
-      <h2 class="m-auto w-9/12 mb-8 text-4xl uppercase font-bold lg:w-full lg:mx-0 lg:mb-8 lg:text-5xl">
+      <h2
+        class="
+          m-auto
+          w-9/12
+          mb-8
+          text-4xl
+          uppercase
+          font-bold
+          lg:w-full lg:mx-0 lg:mb-8 lg:text-5xl
+        "
+      >
         Biblioteca Virtual
       </h2>
       <p class="m-auto mb-10 w-10/12 lg:w-7/12">
@@ -202,9 +278,7 @@
         grid
         gap-y-12
         grid-cols-1
-        lg:mx-0
-        lg:w-full
-        lg:gap-x-12 lg:grid-cols-3 lg:items-center
+        lg:mx-0 lg:w-full lg:gap-x-12 lg:grid-cols-3 lg:items-center
       "
     >
       <div
@@ -223,7 +297,20 @@
           Publicaciones <br />
           e Investigaciones
         </h3>
-        <a href="#" class="absolute -bottom-5 bg-primary-color-dark text-color-white py-2 px-6 uppercase font-bold">Leer más</a>
+        <a
+          href="#"
+          class="
+            absolute
+            -bottom-5
+            bg-primary-color-dark
+            text-color-white
+            py-2
+            px-6
+            uppercase
+            font-bold
+          "
+          >Leer más</a
+        >
       </div>
       <div
         class="
@@ -240,7 +327,20 @@
         <h3 class="text-2xl font-bold">
           Escuela de Nuevos Liderazgos en Cultura Democrática
         </h3>
-        <a href="#" class="absolute -bottom-5 bg-primary-color-dark text-color-white py-2 px-6 uppercase font-bold">Leer más</a>
+        <a
+          href="#"
+          class="
+            absolute
+            -bottom-5
+            bg-primary-color-dark
+            text-color-white
+            py-2
+            px-6
+            uppercase
+            font-bold
+          "
+          >Leer más</a
+        >
       </div>
       <div
         class="
@@ -257,7 +357,20 @@
         <h3 class="text-2xl font-bold">
           Escuela de Nuevos Liderazgos de Mujeres
         </h3>
-        <a href="#" class="absolute -bottom-5 bg-primary-color-dark text-color-white py-2 px-6 uppercase font-bold">Leer más</a>
+        <a
+          href="#"
+          class="
+            absolute
+            -bottom-5
+            bg-primary-color-dark
+            text-color-white
+            py-2
+            px-6
+            uppercase
+            font-bold
+          "
+          >Leer más</a
+        >
       </div>
     </div>
   </div>
