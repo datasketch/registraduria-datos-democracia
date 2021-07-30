@@ -5,9 +5,6 @@ const containerDate = document.querySelector(".date-container");
 const filtersContainer = document.getElementById("filters");
 data.remove();
 
-// const res = JSON.parse(data.value);
-// console.log(res);
-
 const state = {
   originalData: JSON.parse(data.value),
   filteredData: JSON.parse(data.value),
@@ -46,7 +43,6 @@ const filterData = (key, values) => {
           .join(" "),
         ano: item.ano,
         url: item.path,
-        // descripcion: item.nivel2.replace(".xls", ""),
       };
       const html = renderItemResult(state.format);
       containerResults.insertAdjacentHTML("beforeend", html);
@@ -67,7 +63,6 @@ const filterData = (key, values) => {
         .join(" "),
       ano: item.ano,
       url: item.path,
-      // descripcion: item.nivel2.replace(".xls", ""),
     };
     const html = renderItemResult(state.format);
     containerResults.insertAdjacentHTML("beforeend", html);
@@ -79,7 +74,6 @@ const init = () => {
   loadYears();
 };
 init();
-filterData("ano", "2018");
 
 filtersContainer.addEventListener("change", (event) => {
   const { name: key, value } = event.target;
