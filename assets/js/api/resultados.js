@@ -37,7 +37,7 @@ const filterData = (key, values) => {
   containerResults.innerHTML = "";
   if (!key || !values.length) {
     state.filteredData = state.originalData;
-    state.filteredData.slice(0, 9).forEach((item) => {
+    state.filteredData.forEach((item) => {
       state.format = {
         titulo: `${item.nivel0} ${item.nivel1}`
           .toLowerCase()
