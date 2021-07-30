@@ -1,16 +1,24 @@
-import { renderItemResult, renderItemDate } from "../utils/render";
+import {
+  renderItemResult,
+  renderItemDate,
+  renderItemNivel,
+  renderItemType,
+} from "../utils/render";
 const data = document.querySelector("#data-resultados");
 const containerResults = document.querySelector(".results-container");
 const containerDate = document.querySelector(".date-container");
+const containerNivel = document.querySelector(".nivel-container");
+const containerType = document.querySelector(".type-container");
 const filtersContainer = document.getElementById("filters");
 data.remove();
 
 const state = {
   originalData: JSON.parse(data.value),
   filteredData: JSON.parse(data.value),
-  format: [],
   filters: {
     ano: [],
+    nivel: [],
+    tipo: [],
   },
 };
 
@@ -30,21 +38,39 @@ const loadYears = () => {
   });
 };
 
+const loadNivels = () => {
+  const nivels = new Set(
+    ...[
+      state.originalData
+        .map((item) => item.nivel)
+        .filter((level) => level !== undefined)
+        .sort(),
+    ]
+  );
+  [...nivels].forEach((nivel) => {
+    const html = renderItemNivel(nivel);
+    containerNivel.insertAdjacentHTML("beforeend", html);
+  });
+};
+
+const loadTypes = () => {
+  const types = new Set(
+    ...[state.originalData.map((item) => item.tipo).sort()]
+  );
+
+  [...types].forEach((type) => {
+    const html = renderItemType(type);
+    containerType.insertAdjacentHTML("beforeend", html);
+  });
+};
+loadTypes();
+
 const filterData = (key, values) => {
   containerResults.innerHTML = "";
   if (!key || !values.length) {
     state.filteredData = state.originalData;
     state.filteredData.forEach((item) => {
-      state.format = {
-        titulo: `${item.nivel0} ${item.nivel1}`
-          .toLowerCase()
-          .split(" ")
-          .map((item) => item[0].toUpperCase() + item.slice(1))
-          .join(" "),
-        ano: item.ano,
-        url: item.path,
-      };
-      const html = renderItemResult(state.format);
+      const html = renderItemResult(item);
       containerResults.insertAdjacentHTML("beforeend", html);
     });
     return;
@@ -52,19 +78,9 @@ const filterData = (key, values) => {
   state.filteredData = state.filteredData.filter((item) =>
     values.includes(item[key])
   );
-  console.log(state.filteredData);
 
   state.filteredData.forEach((item) => {
-    state.format = {
-      titulo: `${item.nivel0} ${item.nivel1}`
-        .toLowerCase()
-        .split(" ")
-        .map((item) => item[0].toUpperCase() + item.slice(1))
-        .join(" "),
-      ano: item.ano,
-      url: item.path,
-    };
-    const html = renderItemResult(state.format);
+    const html = renderItemResult(item);
     containerResults.insertAdjacentHTML("beforeend", html);
   });
 };
@@ -72,12 +88,14 @@ const filterData = (key, values) => {
 const init = () => {
   filterData();
   loadYears();
+  loadNivels();
 };
 init();
 
 filtersContainer.addEventListener("change", (event) => {
   const { name: key, value } = event.target;
   console.log(key, value);
+  console.log(state.filters);
   if (!state.filters[key]) return;
 
   if (state.filters[key].includes(value)) {

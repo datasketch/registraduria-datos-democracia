@@ -20,6 +20,28 @@ export const renderItemLine = (line) => {
   return html;
 };
 
+export const renderItemNivel = (nivel) => {
+  const html = `
+      <label class="container-input"
+        >${nivel}
+        <input type="checkbox" name="nivel" value="${nivel}" />
+        <span class="checkmark"></span>
+      </label>
+    `;
+  return html;
+};
+
+export const renderItemType = (tipo) => {
+  const html = `
+      <label class="container-input"
+        >${tipo}
+        <input type="checkbox" name="tipo" value="${tipo}" />
+        <span class="checkmark"></span>
+      </label>
+    `;
+  return html;
+};
+
 export const renderItemLibrary = (item) => {
   const html = `
       <div class="library-item">
@@ -58,12 +80,14 @@ export const renderItemResult = (data) => {
   const html = `
       <div class="result-item">
       <h3 class="result-title">${data.titulo}</h3>
-      <p class="result-description">${data.ano}</p>
+      <p class="result-description">${data.nivel} ${data.tipo} ${data.ano}</p>
       <p class="result-excel">
-        Formato disponible: <span class="font-bold">XLSX</span>
+        Formato disponible: <span class="font-bold">${data.format.toUpperCase()}</span>
       </p>
       <div class="result-btn">
-        <a target="_blank" href="${data.url}" class="btn btn--tertiary">Descargar</a>
+        <a target="_blank" href="${
+          data.path
+        }" class="btn btn--tertiary">Descargar</a>
       </div>
     </div>
   `;
