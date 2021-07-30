@@ -54,18 +54,16 @@ export const renderItemLibrary = (item) => {
   return html;
 };
 
-export const renderItemResult = (item) => {
+export const renderItemResult = (data) => {
   const html = `
       <div class="result-item">
-      <h3 class="result-title">Alcaldía Cartagena 2011</h3>
-      <p class="result-year">
-        Elecciones locales Año 2011, Alcaldía de Bolívar
-      </p>
+      <h3 class="result-title">${data.titulo}</h3>
+      <p class="result-description">${data.ano}</p>
       <p class="result-excel">
         Formato disponible: <span class="font-bold">XLSX</span>
       </p>
       <div class="result-btn">
-        <a target="_blank" href="${item.path}" class="btn btn--tertiary">Descargar</a>
+        <a target="_blank" href="${data.url}" class="btn btn--tertiary">Descargar</a>
       </div>
     </div>
   `;

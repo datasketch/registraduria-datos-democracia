@@ -37,15 +37,25 @@ const filterData = (key, values) => {
   if (!key || !values.length) {
     state.filteredData = state.originalData;
     state.filteredData.slice(0, 9).forEach((item) => {
-      const html = renderItemResult(item);
+      const data = {
+        titulo: `${item.nivel0} ${item.nivel1}`
+          .toLowerCase()
+          .split(" ")
+          .map((item) => item[0].toUpperCase() + item.slice(1))
+          .join(" "),
+        ano: item.ano,
+        url: item.path,
+        // descripcion: item.nivel2.replace(".xls", ""),
+      };
+      const html = renderItemResult(data);
       containerResults.insertAdjacentHTML("beforeend", html);
     });
     return;
   }
 
-  state.filteredData = state.filteredData
-    .filter((item) => values.includes(item))
-    .sort((a, b) => a.ano - b.ano);
+  // state.filteredData = state.filteredData
+  //   .filter((item) => values.includes(item))
+  //   .sort((a, b) => a.ano - b.ano);
 
   state.filteredData.forEach((item) => {
     const html = renderItemResult(item);
@@ -61,7 +71,7 @@ init();
 
 filtersContainer.addEventListener("change", (event) => {
   const { name: key, value } = event.target;
-  console.log(key);
+  console.log(key, value);
   if (!state.filters[key]) return;
 
   if (state.filters[key].includes(value)) {
