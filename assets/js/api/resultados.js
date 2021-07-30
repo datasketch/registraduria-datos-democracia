@@ -11,33 +11,34 @@ data.remove();
 const state = {
   originalData: JSON.parse(data.value),
   filteredData: JSON.parse(data.value),
+  format: [],
   filters: {
     ano: [],
   },
 };
 
-// const loadYears = () => {
-//   // GENERATE DINAMIC YEARS
-//   const years = new Set(
-//     ...[
-//       state.originalData
-//         .map((item) => item.ano)
-//         .filter((year) => +year)
-//         .sort((a, b) => b - a),
-//     ]
-//   );
-//   [...years].forEach((year) => {
-//     const html = renderItemDate(year);
-//     containerDate.insertAdjacentHTML("beforeend", html);
-//   });
-// };
+const loadYears = () => {
+  // GENERATE DINAMIC YEARS
+  const years = new Set(
+    ...[
+      state.originalData
+        .map((item) => item.ano)
+        .filter((year) => +year)
+        .sort((a, b) => b - a),
+    ]
+  );
+  [...years].forEach((year) => {
+    const html = renderItemDate(year);
+    containerDate.insertAdjacentHTML("beforeend", html);
+  });
+};
 
 const filterData = (key, values) => {
   containerResults.innerHTML = "";
   if (!key || !values.length) {
     state.filteredData = state.originalData;
     state.filteredData.slice(0, 9).forEach((item) => {
-      const data = {
+      state.format = {
         titulo: `${item.nivel0} ${item.nivel1}`
           .toLowerCase()
           .split(" ")
@@ -47,27 +48,38 @@ const filterData = (key, values) => {
         url: item.path,
         // descripcion: item.nivel2.replace(".xls", ""),
       };
-      const html = renderItemResult(data);
+      const html = renderItemResult(state.format);
       containerResults.insertAdjacentHTML("beforeend", html);
     });
     return;
   }
-
-  // state.filteredData = state.filteredData
-  //   .filter((item) => values.includes(item))
-  //   .sort((a, b) => a.ano - b.ano);
+  state.filteredData = state.filteredData.filter((item) =>
+    values.includes(item[key])
+  );
+  console.log(state.filteredData);
 
   state.filteredData.forEach((item) => {
-    const html = renderItemResult(item);
+    state.format = {
+      titulo: `${item.nivel0} ${item.nivel1}`
+        .toLowerCase()
+        .split(" ")
+        .map((item) => item[0].toUpperCase() + item.slice(1))
+        .join(" "),
+      ano: item.ano,
+      url: item.path,
+      // descripcion: item.nivel2.replace(".xls", ""),
+    };
+    const html = renderItemResult(state.format);
     containerResults.insertAdjacentHTML("beforeend", html);
   });
 };
 
 const init = () => {
   filterData();
-  // loadYears();
+  loadYears();
 };
 init();
+filterData("ano", "2018");
 
 filtersContainer.addEventListener("change", (event) => {
   const { name: key, value } = event.target;
