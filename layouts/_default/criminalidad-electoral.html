@@ -4,6 +4,7 @@
     bg-bg-banner-electoral-sm
     h-screen
     bg-cover bg-center
+    relative
   "
 >
   <div class="container">
@@ -19,6 +20,7 @@
     </h1>
     </div>
   </div>
+  <img class="hidden lg:block lg:absolute lg:bottom-0 object-cover w-full" src="/images/curva-arriba-abajo.svg" alt="">
 </div>
 <div class="text-center -mt-16 pb-16 lg:pt-8">
   <div class="container">
@@ -207,7 +209,7 @@
           href="{{ relref . "siscrimel/quienes-somos.md" }}"
           >SISCRIMEL</a
         >
-        <p class="paragrah paragraph--blue">¿Qué es SISCRIMEL?</p>
+        <p class="text-xl">¿Qué es SISCRIMEL?</p>
       </div>
       <div class="lg:px-10 lg:py-8 rounded-3xl bg-bg-blue-dark bg-cover bg-center">
         <img
@@ -228,7 +230,7 @@
           href="{{ relref . "siscrimel/explora-los-datos.md" }}"
           >Explora los datos</a
         >
-        <p class="paragrah paragraph--blue">
+        <p class="text-xl">
           Conoce los datos de criminalidad electoral en Colombia
         </p>
       </div>
@@ -251,7 +253,7 @@
           href="{{ relref . "biblioteca-de-recursos.md" }}"
           >Conoce los informes</a
         >
-        <p class="paragrah paragraph--blue">
+        <p class="text-xl">
           Descarga los informes de SISCRIMEL
         </p>
       </div>

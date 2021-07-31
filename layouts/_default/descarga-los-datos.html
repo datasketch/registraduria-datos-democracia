@@ -1,5 +1,7 @@
 {{ define "main" }} {{ partial "nav-resultados-electorales" . }}
-<div class="bg-bg-resultados-electorales-lg h-screen bg-cover bg-center">
+<div
+  class="bg-bg-resultados-electorales-lg h-screen bg-cover bg-center relative"
+>
   <div class="container">
     <div class="lg:pt-40">
       <h1 class="text-white uppercase lg:text-6xl font-bold lg:mb-6">
@@ -13,6 +15,11 @@
       </p>
     </div>
   </div>
+  <img
+    class="hidden lg:block lg:absolute lg:-bottom-12 object-cover w-full"
+    src="/images/curva-abajo-arriba.svg"
+    alt=""
+  />
 </div>
 <div class="text-center -mt-4 pb-16 lg:pt-8">
   <div class="container">

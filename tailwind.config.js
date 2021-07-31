@@ -51,7 +51,7 @@ module.exports = {
         "bg-banner-electoral-sm":
           "url(/images/siscrimel/criminalidad-electoral/banner-criminalidad-electoral.png)",
         "bg-lines": "url(/images/bg-lines.svg)",
-        "bg-lines-dark": "url(/images/bg-lines-dark.svg)",
+        "bg-lines-dark": "url(/images/denuncia-banner.png)",
         "bg-banner-datos-sm":
           "url(/images/siscrimel/explora-datos/banner-explora-datos.jpg)",
         "footer-sm": "url(/images/footer-x1.png)",
@@ -79,6 +79,8 @@ module.exports = {
           "url(/images/resultados-electorales/resultados-electorales-movil.png)",
         "bg-resultados-electorales-lg":
           "url(/images/resultados-electorales/resultados-electorales.png)",
+        "bg-explora-datos":
+          "url(/images/resultados-electorales/banner-exploradatos.png)",
       },
     },
   },

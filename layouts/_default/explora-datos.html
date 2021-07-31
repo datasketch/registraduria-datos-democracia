@@ -1,0 +1,163 @@
+{{ define "main" }} {{ partial "nav-resultados-electorales" . }}
+<div class="bg-bg-explora-datos h-screen bg-cover bg-center relative">
+  <div class="container">
+    <div class="lg:pt-40">
+      <h1 class="text-white lg:text-6xl font-bold lg:mb-3">
+        Explora los Datos
+      </h1>
+      <p class="paragraph paragraph--white lg:w-5/12">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+        volutpat. Ut wisi enim ad minim veniam, quis
+      </p>
+    </div>
+  </div>
+  <img
+    class="hidden lg:block lg:absolute lg:-bottom-0 object-cover w-full"
+    src="/images/curva-arriba-abajo.svg"
+    alt=""
+  />
+</div>
+<div class="text-center pb-16 lg:pt-8 relative">
+  <div class="container">
+    <h2
+      class="
+        text-primary-color-dark
+        font-bold
+        lg:mb-4 lg:text-5xl
+        m-auto
+        lg:w-6/12 lg:mb-6
+      "
+    >
+      Resultados Electorales
+      <span class="font-normal block lg:text-4xl">en Colombia</span>
+    </h2>
+    <a
+      href="#"
+      class="
+        bg-primary-color-dark
+        uppercase
+        font-bold
+        color
+        text-color-white
+        py-3
+        px-8
+        text-sm
+      "
+      >Como utilizar esta herramienta</a
+    >
+  </div>
+</div>
+<section class="h-screen w-screen overflow-x-auto lg:pb-20">
+  <iframe
+    class="w-full h-full"
+    src="https://datasketch.shinyapps.io/app-datos-democracia/"
+    frameborder="0"
+  ></iframe>
+</section>
+<section class="bg-metodologia-bg bg-cover bg-center lg:pt-24 lg:pb-14">
+  <div class="container text-center">
+    <div class="lg:w-8/12 m-auto">
+      <h2 class="text-color-white font-bold lg:text-5xl lg:mb-4">
+        Conoce la Metodología
+      </h2>
+      <p class="m-auto text-color-white lg:w-10/12 lg:text-xl lg:mb-8">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+        volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+        ullamcorper suscipit lobortis nisl.
+      </p>
+      <a
+        href="#"
+        class="
+          text-color-primary-dark
+          bg-color-bg
+          py-3
+          px-10
+          uppercase
+          font-bold
+          text-sm
+        "
+        >Leer más</a
+      >
+    </div>
+  </div>
+</section>
+<section class="">
+  <div class="grid grid-cols-1 lg:grid-cols-2">
+    <div class="bg-color-white lg:py-20 lg:px-40">
+      <h2 class="text-primary-color-dark font-bold lg:text-4xl lg:mb-8">
+        Descarga los datos
+      </h2>
+      <p class="lg:mb-10 lg:text-xl">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+        volutpat. Ut wisi enim ad minim veniam, quis nostrud.
+      </p>
+      <a
+        href="#"
+        class="
+          text-color-white
+          bg-primary-color-dark
+          font-bold
+          uppercase
+          px-6
+          py-2
+        "
+        >Leer Más</a
+      >
+    </div>
+    <div class="lg:py-20 lg:px-40">
+      <h2 class="text-primary-color lg:text-4xl lg:mb-14 text-center">
+        Años más consultados
+      </h2>
+      <div class="grid grid-cols-2 gap-12 text-center">
+        <a
+          href="#"
+          class="
+            text-3xl text-primary-color
+            font-bold
+            p-4
+            lg:text-3xl
+            border-2 border-primary-color-light
+          "
+          >2010</a
+        >
+        <a
+          href="#"
+          class="
+            text-3xl text-primary-color
+            font-bold
+            p-4
+            lg:text-3xl
+            border-2 border-primary-color-light
+          "
+          >2011</a
+        >
+        <a
+          href="#"
+          class="
+            text-3xl text-primary-color
+            font-bold
+            p-4
+            lg:text-3xl
+            border-2 border-primary-color-light
+          "
+          >2014</a
+        >
+        <a
+          href="#"
+          class="
+            text-3xl text-primary-color
+            font-bold
+            p-4
+            lg:text-3xl
+            border-2 border-primary-color-light
+          "
+          >2018</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
