@@ -80,15 +80,15 @@ function filterData(key, values) {
     renderButtons(state.page);
     return;
   }
-
+  paginacion.innerHTML = "";
+  state.page = 1;
   state.filteredData = state.originalData
     .filter((item) => values.includes(item[key]))
     .sort((a, b) => a.ano - b.ano);
 
-  pagination(state.page, state.filteredData).forEach((item) => {
+  state.filteredData.forEach((item) => {
     const html = renderItemLibrary(item);
     containerLibrary.insertAdjacentHTML("beforeend", html);
-    renderButtons(state.page);
   });
 }
 
