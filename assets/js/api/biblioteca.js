@@ -3,6 +3,7 @@ import {
   renderItemLibrary,
   renderItemDate,
   renderItemLine,
+  renderButtons
 } from "../utils/render";
 
 const data = document.querySelector("#data-biblioteca");
@@ -29,21 +30,7 @@ const state = {
 const pagination = (page = state.page, data) => {
   const start = (page - 1) * state.itemsPerPagination; // 0;
   const end = page * state.itemsPerPagination; // 4;
-  console.log(data.slice(start, end));
   return data.slice(start, end);
-};
-
-const renderButtons = (page) => {
-  paginacion.innerHTML = "";
-  const html = `
-  <button class="pagination__button ${state.page === 1 ? "invisible" : "visible"} pagination__button--left bg-primary-color text-white py-2 px-4 mr-4">&leftarrow; Página <span>${
-    page === 1 ? "1" : page
-  }</span><button>
-  <button class="pagination__button pagination__button--right bg-primary-color text-white py-2 px-4">Página <span>${
-    page + 1
-  }</span> &rightarrow;<button>
-  `;
-  paginacion.insertAdjacentHTML("beforeend", html);
 };
 
 const loadYears = () => {
@@ -78,22 +65,18 @@ function filterData(key, values, baseData) {
       const html = renderItemLibrary(item);
       containerLibrary.insertAdjacentHTML("beforeend", html);
     });
-    renderButtons(state.page);
+    paginacion.insertAdjacentHTML("beforeend", renderButtons(paginacion, state.page, state.itemsPerPagination, state.filteredData));
     return;
   }
-  paginacion.innerHTML = "";
-  state.page = 1;
   state.filteredData = state.originalData
     .filter((item) => values.includes(item[key]))
     .sort((a, b) => a.ano - b.ano);
 
-
-
   pagination(state.page, state.filteredData).forEach((item) => {
     const html = renderItemLibrary(item);
     containerLibrary.insertAdjacentHTML("beforeend", html);
-    renderButtons(state.page);
   });
+  paginacion.insertAdjacentHTML("beforeend", renderButtons(paginacion, state.page, state.itemsPerPagination, state.filteredData));
 }
 
 const init = () => {
@@ -117,22 +100,11 @@ filtersContainer.addEventListener("change", (event) => {
 });
 
 paginacion.addEventListener("click", function (e) {
-  e.preventDefault();
-  if (
-    e.target.classList.contains("pagination__button--left") &&
-    state.page > 1
-  ) {
-    state.page--;
-    filterData(null, null, state.filteredData);
-    scrollPagination.scrollIntoView({ behavior: "smooth" });
-  }
+  const btn = e.target.closest(".pagination__button");
 
-  if (
-    e.target.classList.contains("pagination__button--right") &&
-    state.page >= 1
-  ) {
-    state.page++;
-    filterData(null, null, state.filteredData);
-    scrollPagination.scrollIntoView({ behavior: "smooth" });
-  }
+  if(!btn) return;
+
+  state.page = +btn.dataset.goto;
+  filterData(null, null, state.filteredData);
+  scrollPagination.scrollIntoView({ behavior: "smooth" });
 });
