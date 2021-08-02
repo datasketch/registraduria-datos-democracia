@@ -29,13 +29,14 @@ const state = {
 const pagination = (page = state.page, data) => {
   const start = (page - 1) * state.itemsPerPagination; // 0;
   const end = page * state.itemsPerPagination; // 4;
+  console.log(data.slice(start, end));
   return data.slice(start, end);
 };
 
 const renderButtons = (page) => {
   paginacion.innerHTML = "";
   const html = `
-  <button class="pagination__button pagination__button--left bg-primary-color text-white py-2 px-4 mr-4">&leftarrow; Página <span>${
+  <button class="pagination__button ${state.page === 1 ? "invisible" : "visible"} pagination__button--left bg-primary-color text-white py-2 px-4 mr-4">&leftarrow; Página <span>${
     page === 1 ? "1" : page
   }</span><button>
   <button class="pagination__button pagination__button--right bg-primary-color text-white py-2 px-4">Página <span>${
@@ -69,10 +70,10 @@ const loadLines = () => {
   });
 };
 
-function filterData(key, values) {
+function filterData(key, values, baseData) {
   containerLibrary.innerHTML = "";
   if (!key || !values.length) {
-    state.filteredData = state.originalData;
+    state.filteredData = baseData || state.originalData;
     pagination(state.page, state.filteredData).forEach((item) => {
       const html = renderItemLibrary(item);
       containerLibrary.insertAdjacentHTML("beforeend", html);
@@ -86,9 +87,12 @@ function filterData(key, values) {
     .filter((item) => values.includes(item[key]))
     .sort((a, b) => a.ano - b.ano);
 
-  state.filteredData.forEach((item) => {
+
+
+  pagination(state.page, state.filteredData).forEach((item) => {
     const html = renderItemLibrary(item);
     containerLibrary.insertAdjacentHTML("beforeend", html);
+    renderButtons(state.page);
   });
 }
 
@@ -119,7 +123,7 @@ paginacion.addEventListener("click", function (e) {
     state.page > 1
   ) {
     state.page--;
-    filterData();
+    filterData(null, null, state.filteredData);
     scrollPagination.scrollIntoView({ behavior: "smooth" });
   }
 
@@ -128,7 +132,7 @@ paginacion.addEventListener("click", function (e) {
     state.page >= 1
   ) {
     state.page++;
-    filterData();
+    filterData(null, null, state.filteredData);
     scrollPagination.scrollIntoView({ behavior: "smooth" });
   }
 });
