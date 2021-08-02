@@ -10,6 +10,9 @@ const containerLibrary = document.querySelector(".library-container");
 const containerDate = document.querySelector(".date-container");
 const containerLine = document.querySelector(".line-container");
 const filtersContainer = document.getElementById("filters");
+const paginacion = document.querySelector(".pagination");
+const scrollPagination = document.querySelector("#paginationScroll");
+
 data.remove();
 
 const state = {
@@ -19,6 +22,27 @@ const state = {
     ano: [],
     linea: [],
   },
+  itemsPerPagination: 4,
+  page: 1,
+};
+
+const pagination = (page = state.page, data) => {
+  const start = (page - 1) * state.itemsPerPagination; // 0;
+  const end = page * state.itemsPerPagination; // 4;
+  return data.slice(start, end);
+};
+
+const renderButtons = (page) => {
+  paginacion.innerHTML = "";
+  const html = `
+  <button class="pagination__button pagination__button--left bg-primary-color text-white py-2 px-4 mr-4">&leftarrow; Página <span>${
+    page === 1 ? "1" : page
+  }</span><button>
+  <button class="pagination__button pagination__button--right bg-primary-color text-white py-2 px-4">Página <span>${
+    page + 1
+  }</span> &rightarrow;<button>
+  `;
+  paginacion.insertAdjacentHTML("beforeend", html);
 };
 
 const loadYears = () => {
@@ -49,20 +73,22 @@ function filterData(key, values) {
   containerLibrary.innerHTML = "";
   if (!key || !values.length) {
     state.filteredData = state.originalData;
-    state.filteredData.forEach((item) => {
+    pagination(state.page, state.filteredData).forEach((item) => {
       const html = renderItemLibrary(item);
       containerLibrary.insertAdjacentHTML("beforeend", html);
     });
+    renderButtons(state.page);
     return;
   }
 
-  state.filteredData = state.filteredData
+  state.filteredData = state.originalData
     .filter((item) => values.includes(item[key]))
     .sort((a, b) => a.ano - b.ano);
 
-  state.filteredData.forEach((item) => {
+  pagination(state.page, state.filteredData).forEach((item) => {
     const html = renderItemLibrary(item);
     containerLibrary.insertAdjacentHTML("beforeend", html);
+    renderButtons(state.page);
   });
 }
 
@@ -84,4 +110,25 @@ filtersContainer.addEventListener("change", (event) => {
     state.filters[key].push(value);
   }
   filterData(key, state.filters[key]);
+});
+
+paginacion.addEventListener("click", function (e) {
+  e.preventDefault();
+  if (
+    e.target.classList.contains("pagination__button--left") &&
+    state.page > 1
+  ) {
+    state.page--;
+    filterData();
+    scrollPagination.scrollIntoView({ behavior: "smooth" });
+  }
+
+  if (
+    e.target.classList.contains("pagination__button--right") &&
+    state.page >= 1
+  ) {
+    state.page++;
+    filterData();
+    scrollPagination.scrollIntoView({ behavior: "smooth" });
+  }
 });
