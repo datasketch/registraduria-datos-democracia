@@ -3,7 +3,7 @@ import {
   renderItemLibrary,
   renderItemDate,
   renderItemLine,
-  renderButtons
+  renderButtons,
 } from "../utils/render";
 
 const data = document.querySelector("#data-biblioteca");
@@ -60,23 +60,42 @@ const loadLines = () => {
 function filterData(key, values, baseData) {
   containerLibrary.innerHTML = "";
   if (!key || !values.length) {
-    state.filteredData = baseData || state.originalData;
+    state.filteredData =
+      baseData || state.originalData.sort((a, b) => b.ano - a.ano);
     pagination(state.page, state.filteredData).forEach((item) => {
       const html = renderItemLibrary(item);
       containerLibrary.insertAdjacentHTML("beforeend", html);
     });
-    paginacion.insertAdjacentHTML("beforeend", renderButtons(paginacion, state.page, state.itemsPerPagination, state.filteredData));
+    paginacion.insertAdjacentHTML(
+      "beforeend",
+      renderButtons(
+        paginacion,
+        state.page,
+        state.itemsPerPagination,
+        state.filteredData
+      )
+    );
     return;
   }
-  state.filteredData = state.originalData
-    .filter((item) => values.includes(item[key]))
-    .sort((a, b) => a.ano - b.ano);
+  state.filteredData =
+    baseData ||
+    state.originalData
+      .filter((item) => values.includes(item[key]))
+      .sort((a, b) => b.ano - a.ano);
 
   pagination(state.page, state.filteredData).forEach((item) => {
     const html = renderItemLibrary(item);
     containerLibrary.insertAdjacentHTML("beforeend", html);
   });
-  paginacion.insertAdjacentHTML("beforeend", renderButtons(paginacion, state.page, state.itemsPerPagination, state.filteredData));
+  paginacion.insertAdjacentHTML(
+    "beforeend",
+    renderButtons(
+      paginacion,
+      state.page,
+      state.itemsPerPagination,
+      state.filteredData
+    )
+  );
 }
 
 const init = () => {
@@ -87,22 +106,24 @@ const init = () => {
 init();
 
 filtersContainer.addEventListener("change", (event) => {
-  const { name: key, value } = event.target;
-  if (!state.filters[key]) return;
+  const { name: key, value, checked } = event.target;
 
-  if (state.filters[key].includes(value)) {
+  if (!state.filters[key] && !checked) filterData();
+
+  if (state.filters[key].includes(value) && !checked) {
     const idx = state.filters[key].findIndex((item) => item === value);
     state.filters[key].splice(idx, 1);
+    filterData(key, state.filters[key]);
   } else {
     state.filters[key].push(value);
+    filterData(key, state.filters[key]);
   }
-  filterData(key, state.filters[key]);
 });
 
 paginacion.addEventListener("click", function (e) {
   const btn = e.target.closest(".pagination__button");
 
-  if(!btn) return;
+  if (!btn) return;
 
   state.page = +btn.dataset.goto;
   filterData(null, null, state.filteredData);
