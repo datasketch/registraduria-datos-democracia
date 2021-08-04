@@ -81,6 +81,8 @@ module.exports = {
           "url(/images/resultados-electorales/resultados-electorales.png)",
         "bg-explora-datos":
           "url(/images/resultados-electorales/banner-exploradatos.png)",
+        "bg-cursos-lg": "url(/images/home/cursos.png)",
+        "bg-cursos-sm": "url(/images/home/cursos-movil.png)",
       },
     },
   },
