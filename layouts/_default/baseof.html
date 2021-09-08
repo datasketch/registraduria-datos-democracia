@@ -4,9 +4,9 @@
     {{ partial "head.html" . }} {{ block "head" . }}{{ end }}
     <title>{{ .Title }}</title>
   </head>
-  <body class="font-soberana-sans">
+  <body class="font-soberana-sans overflow-x-hidden">
     {{ partial "nav.html" . }}
-    <main class="bg-color-bg">{{ block "main" . }}{{ end }}</main>
+    <main class="bg-color-white-2">{{ block "main" . }}{{ end }}</main>
     {{ partial "footer.html" . }} {{ $default := resources.Get "js/default.js" |
     js.Build (dict "minify" true)}}
     <script src="{{ $default.Permalink }}"></script>

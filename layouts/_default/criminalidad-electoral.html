@@ -1,263 +1,184 @@
-{{ define "main" }} {{ partial "nav-siscrimel" . }}
-<div
-  class="
+{{ define "main" }}
+{{ partial "nav-datos-democracia" . }}
+{{ partial "nav-siscrimel" . }}
+<div class="
     bg-bg-banner-electoral-sm
     h-screen
     bg-cover bg-center
     relative
-  "
->
+  ">
   <div class="container">
     <div class="lg:pt-40">
-      <h1
-      class="
+      <h1 class="
         text-white lg:text-6xl
-        uppercase font-bold
-      "
-    >
-      <span class="text-4xl block normal-case font-normal">Sobre la</span>Criminalidad <br />
-      electoral
-    </h1>
+        uppercase font-black
+      ">
+        <span class="text-4xl block normal-case font-normal">Sobre la</span>Criminalidad <br />
+        electoral
+      </h1>
     </div>
   </div>
   <img class="hidden lg:block lg:absolute lg:bottom-0 object-cover w-full" src="/images/curva-arriba-abajo.svg" alt="">
 </div>
 <div class="text-center -mt-16 pb-16 lg:pt-8">
   <div class="container">
-    <h2 class="heading-secondary heading-secondary--blue lg:mb-10">
-      <span>¿Qué es la</span>Criminalidad electoral ?
+    <h2 class="text-primary-color-dark font-black text-4xl lg:text-5xl lg:mb-10">
+      <span class="block text-3xl lg:text-4xl font-normal">¿Qué es la</span>Criminalidad electoral ?
     </h2>
-    <p
-      class="
-        paragraph
-        paragrpah--blue
+    <p class="
         lg:w-8/12 lg:m-auto
-        text-primary-color
-      "
-    >
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat
+        text-xl
+      ">
+      De acuerdo con la Política Criminal Electoral, elaborada a partir de la Ley 1864 de 2017, el crimen electoral es
+      una estrategia que distorsiona la expresión de la preferencia de la ciudadanía y/o manipular el resultado
+      electoral, ya sea para ganar una elección popular, evitar que la competencia gane las elecciones o forzar un
+      resultado de un mecanismo de participación democrática (Política Criminal Electoral, 2019, p. 12).
     </p>
   </div>
 </div>
 <div class="bg-bg-lines bg-cover bg-center lg:py-20">
   <div class="text-center">
-    <div
-      class="
+    <div class="
         container
         grid
         gap-y-6
         lg:grid-cols-2
         lg:text-xl
-      "
-    >
-      <div
-        class="
+      ">
+      <div class="
           uppercase
           text-color-light
           border-r border-primary-color
           text-bold
-        "
-      >
-        <p class="lg:text-6xl">7.616.857</p>
+        ">
+        <p class="lg:text-6xl">5.197</p>
         <p class="font-bold lg:text-3xl">Delitos</p>
         <p class="font-bold lg:text-3xl">Electorales</p>
-        <p class="lowercase text-base text-color-body">
+        <p class="lowercase text-base text-color-body lg:mb-4">
           en colombia entre 2010 a 2019
         </p>
+        <span class="italic text-xs text-color-body">Fuente: SPOA Fiscalía General de la Nación</span>
       </div>
       <div class="uppercase text-primary-color text-bold">
-        <p class="lg:text-6xl">10.398.689</p>
+        <p class="lg:text-6xl">8.057</p>
         <p class="font-bold lg:text-3xl">Irregularidades</p>
         <p class="font-bold lg:text-3xl">Electorales</p>
-        <p class="lowercase text-base text-color-body">
+        <p class="lowercase text-base text-color-body lg:mb-4">
           en colombia entre 2010 a 2019
         </p>
+        <span class="italic text-xs text-color-body">Fuente: URIEL – Ministerio del Interior</span>
       </div>
     </div>
   </div>
 </div>
 <section class="m-auto lg:py-16 lg:w-8/12">
   <div class="container">
-    <h2 class="heading-secondary heading-secondary--blue lg:text-center">
+    <h3 class="text-primary-color-dark font-bold text-3xl lg:text-4xl mb-2 lg:mb-5">
       Delito Electoral
-    </h2>
-    <p class="paragraph paragraph--blue my-8 lg:my-12">
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
-      wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-      lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
-      dolor in hendrerit in vulputate velit esse molestie consequat, vel illum
-      dolore eu feugiat
-    </p>
-    <h3 class="text-color-orange italic text-xl mb-6">
-      ¿Como identificar un delito electoral?
     </h3>
-    <p class="paragraph paragraph--blue mb-8">
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
-      wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-      lobortis nisl ut aliquip ex ea commodo consequat.
+    <p class="text-lg lg:text-xl mb-6 lg:mb-10">
+      Son aquellos delitos contemplados en el Código de Procedimiento Penal (Ley 906 de 2004) en su capítulo XIV
+      denominado “Delitos contra mecanismos de participación democrática”, definidos en los artículos 386 a 396C y
+      modificados por la Ley 1142 de 2007 y la Ley 1864 de 2017.
     </p>
-    <h3 class="text-color-orange italic text-xl mb-6">
-      ¿Cuales son las consecuencias de un delito electoral?
-    </h3>
-    <p class="paragraph paragraph--blue">
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
-      wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-      lobortis nisl ut aliquip ex ea commodo consequat.
-    </p>
-  </div>
-</section>
-<section class="m-auto lg:py-16 lg:w-8/12">
-  <div class="container">
-    <h2 class="heading-secondary heading-secondary--blue lg:text-center">
+    <h3 class="text-primary-color-dark font-bold text-3xl lg:text-4xl mb-2 lg:mb-5">
       Irregularidad Electoral
-    </h2>
-    <p class="paragraph paragraph--blue my-8 lg:my-12">
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
-      wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-      lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
-      dolor in hendrerit in vulputate velit esse molestie consequat, vel illum
-      dolore eu feugiat
-    </p>
-    <h3 class="text-color-orange italic text-xl mb-6">
-      ¿Como identificar una irregularidad electoral?
     </h3>
-    <p class="paragraph paragraph--blue mb-8">
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
-      wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-      lobortis nisl ut aliquip ex ea commodo consequat.
-    </p>
-    <h3 class="text-color-orange italic text-xl mb-6">
-      ¿Cuales son las consecuencias de una irregularidad electoral?
-    </h3>
-    <p class="paragraph paragraph--blue">
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
-      wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-      lobortis nisl ut aliquip ex ea commodo consequat.
+    <p class="text-lg lg:text-xl">
+      Se entiende por irregularidades las conductas asociadas a las prohibiciones, inhabilidades y limitaciones de los
+      funcionarios públicos para intervenir o participar en política y que afecten la transparencia del proceso
+      electoral, contempladas en el derecho disciplinario, la Constitución Política y demás normas concomitantes en la
+      materia.
     </p>
   </div>
 </section>
 <section class="bg-color-blue-dark lg:py-20">
   <div class="text-center lg:w-6/12 m-auto">
-    <h2 class="text-primary-color font-bold lg:text-4xl">
+    <h2 class="text-primary-color-dark font-black text-3xl lg:text-4xl lg:mb-10">
       ¿Cuál es la tasa de la criminalidad electoral en Colombia?
     </h2>
     <div class="lg:my-10">
       <div class="">
-        <a href="#" class="bg-color-light text-white py-2 px-4 uppercase inline-block lg:mb-3"
-        >Por delitos electorales</a
-      >
+        <a href="#" class="bg-color-light text-white py-2 px-4 uppercase inline-block lg:mb-3 rounded">Por delitos
+          electorales</a>
       </div>
-       <div class="">
-        <a href="#" class="bg-primary-color text-white py-2 px-4 uppercase inline-block">Por irregularidades electorales</a>
-       </div>
+      <div class="">
+        <a href="#" class="bg-primary-color-dark text-white py-2 px-4 uppercase inline-block rounded">Por
+          irregularidades
+          electorales</a>
+      </div>
     </div>
-    <p class="paragraph paragraph--blue lg:mb-16">
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
-      wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-      lobortis nisl ut aliquip ex ea commodo consequat.
+    <p class="text-lg lg:text-xl lg:mb-16">
+      Las tasas de delitos e irregularidades electorales permiten definir la magnitud del cambio y la dinámica de estas
+      variables en el tiempo, tomando la frecuencia de las denuncias de forma anual y dividiéndola por la población
+      habilitada para votar a partir del censo electoral. Esta operación estadística permite reducir los sesgos en el
+      análisis del fenómeno que se presenta si se tiene en cuenta solo la frecuencia de las denuncias a nivel municipal
+      o departamental.
     </p>
   </div>
   <div class="container text-center">
     <h3 class="heading-tertiary heading-tertiary--blue uppercase lg:text-xl">
       TASA DELITOS ELECTORALES A NIVEL DEPARTAMETAL EN COLOMBIA
     </h3>
-    <img
-      src="/images/siscrimel/criminalidad-electoral/delitos-electorales.svg"
-      alt=""
-      class="object-cover"
-    />
+    <img src="/images/siscrimel/criminalidad-electoral/delitos-electorales.svg" alt="" class="object-cover" />
   </div>
 </section>
 <section class="bg-bg-lines-dark bg-center bg-cover lg:py-20">
   <div class="container">
     <div class="lg:w-8/12 m-auto text-color-white text-center">
-      <h2 class="font-bold lg:mb-4 xl:text-4xl">
+      <h2 class="font-black lg:mb-4 xl:text-4xl">
         ¿Conoces algún caso de criminalidad electoral en Colombia?
       </h2>
       <p class="m-auto font-light lg:mb-12 lg:w-10/12 lg:text-xl">
-        Te conectamos con las entidades a las cuales puedes acudir si deseas reportar algún acto de criminalidad electoral en Colombia
+        Te conectamos con las entidades a las cuales puedes acudir si deseas reportar algún acto de criminalidad
+        electoral en Colombia
       </p>
-      <a href="#" class="bg-color-bg py-2 px-8 text-primary-color uppercase font-bold">Conoce como denunciar</a>
+      <a href="#" class="bg-color-bg py-2 px-8 text-primary-color uppercase font-bold rounded">Conoce como denunciar</a>
     </div>
   </div>
 </section>
 <section class="lg:py-20">
   <div class="grid grid-cols-1 gap-y-4 lg:grid-cols-3 lg:gap-x-8 lg:w-11/12 m-auto">
-      <div class="lg:px-10 lg:py-8 rounded-3xl bg-bg-blue-dark bg-cover bg-center">
-        <img
-          src="/images/siscrimel/criminalidad-electoral/siscrimel-lg.jpg"
-          alt=""
-        />
-        <a
-          class="
+    <div class="lg:px-10 lg:py-8 rounded-3xl bg-bg-blue-dark bg-cover bg-center">
+      <img src="/images/siscrimel/criminalidad-electoral/siscrimel-lg.jpg" alt="" />
+      <a class="
             block
-            text-primary-color
-            font-bold
             mt-4
             mb-2
-            text-color-primary
-            font-bold
+            text-color-primary-dark
+            font-black
             text-xl
-          "
-          href="{{ relref . "siscrimel/quienes-somos.md" }}"
-          >SISCRIMEL</a
-        >
-        <p class="text-xl">¿Qué es SISCRIMEL?</p>
-      </div>
-      <div class="lg:px-10 lg:py-8 rounded-3xl bg-bg-blue-dark bg-cover bg-center">
-        <img
-          src="/images/siscrimel/criminalidad-electoral/datas-lg.jpg"
-          alt=""
-        />
-        <a
-          class="
+          " href="#">SISCRIMEL</a>
+      <p class="text-xl">¿Qué es SISCRIMEL?</p>
+    </div>
+    <div class="lg:px-10 lg:py-8 rounded-3xl bg-bg-blue-dark bg-cover bg-center">
+      <img src="/images/siscrimel/criminalidad-electoral/datas-lg.jpg" alt="" />
+      <a class="
             block
-            text-primary-color
-            font-bold
+            font-black
             mt-4
             mb-2
-            text-color-primary
-            font-bold
+            text-color-primary-dark
             text-xl
-          "
-          href="{{ relref . "siscrimel/explora-los-datos.md" }}"
-          >Explora los datos</a
-        >
-        <p class="text-xl">
-          Conoce los datos de criminalidad electoral en Colombia
-        </p>
-      </div>
-      <div class="lg:px-10 lg:py-8 rounded-3xl bg-bg-blue-dark bg-cover bg-center">
-        <img
-          src="/images/siscrimel/criminalidad-electoral/information-lg.jpg"
-          alt=""
-        />
-        <a
-          class="
+          " href="#">Explora los datos</a>
+      <p class="text-xl">
+        Conoce los datos de criminalidad electoral en Colombia
+      </p>
+    </div>
+    <div class="lg:px-10 lg:py-8 rounded-3xl bg-bg-blue-dark bg-cover bg-center">
+      <img src="/images/siscrimel/criminalidad-electoral/information-lg.jpg" alt="" />
+      <a class="
             block
-            text-primary-color
-            font-bold
+            font-black
             mt-4
             mb-2
-            text-color-primary
-            font-bold
+            text-color-primary-dark
             text-xl
-          "
-          href="{{ relref . "biblioteca-de-recursos.md" }}"
-          >Conoce los informes</a
-        >
-        <p class="text-xl">
-          Descarga los informes de SISCRIMEL
-        </p>
-      </div>
+          " href="#">Conoce los informes</a>
+      <p class="text-xl">
+        Descarga los informes de SISCRIMEL
+      </p>
+    </div>
   </div>
 </section>
 {{ end }}
-

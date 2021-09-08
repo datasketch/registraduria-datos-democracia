@@ -1,5 +1,4 @@
-<header
-  class="
+<header class="
     relative
     flex
     justify-between
@@ -7,52 +6,39 @@
     items-center
     lg:py-8 lg:px-8
     xl:px-20
-  "
->
+  ">
   <img src="{{ "images/logo.svg" | absURL }}" alt="" class="header__logo" />
-  <nav
-    class="
+  <nav class="
       nav
-    "
-   id="nav"
-  >
-  <ul class="pt-16 pl-16 lg:py-0 lg:px-0 lg:grid lg:grid-cols-6 lg:items-center">
-    <li class="mb-8 lg:text-left lg:mb-0 lg:mx-3 xl:mx-6">
-      <a class="nav__link block text-primary-color uppercase text-xs font-medium lg:ml-8 lg:text-center lg:pb-1 lg:text-xs xl:text-base" href="{{ .Site.BaseURL }}">Inicio</a>
-    </li>
-    <li class="hidden mb-8 lg:text-left lg:mb-0 lg:mx-3 lg:block xl:mx-6">
-      <a class="nav__link block text-primary-color uppercase text-xs font-medium lg:text-center lg:pb-1 lg:text-xs xl:text-base" href="{{ relref . "siscrimel/quienes-somos.md" }}">Siscrimel</a>
-    </li>
-    <li class="block mb-8 lg:text-left lg:mb-0 lg:mx-3 lg:hidden xl:mx-6">
-      <a class="nav__link block text-primary-color uppercase text-xs font-medium lg:text-center lg:pb-1 lg:text-xs xl:text-base" href="{{ relref . "siscrimel/quienes-somos.md" }}">Quienes somos</a>
-    </li>
-    <li class="block mb-8 lg:text-left lg:mb-0 lg:mx-3 lg:hidden xl:mx-6">
-      <a class="nav__link block text-primary-color uppercase text-xs font-medium lg:text-center lg:pb-1 lg:text-xs xl:text-base" href="{{ relref . "siscrimel/criminalidad-electoral.md" }}">Sobre la criminalidad electoral</a>
-    </li>
-    <li class="block mb-8 lg:text-left lg:mb-0 lg:mx-3 lg:hidden xl:mx-6">
-      <a class="nav__link block text-primary-color uppercase text-xs font-medium lg:text-center lg:pb-1 lg:text-xs xl:text-base" href="{{ relref . "siscrimel/explora-los-datos.md" }}">Explora los datos</a>
-    </li>
-    <li class="block mb-8 lg:text-left lg:mb-0 lg:mx-3 lg:hidden xl:mx-6">
-      <a class="nav__link block text-primary-color uppercase text-xs font-medium lg:text-center lg:pb-1 lg:text-xs xl:text-base" href="#">Conoce los informes</a>
-    </li>
-    <li class="block mb-8 lg:text-left lg:mb-0 lg:mx-3 lg:hidden xl:mx-6">
-      <a class="nav__link block text-primary-color uppercase text-xs font-medium lg:text-center lg:pb-1 lg:text-xs xl:text-base" href="{{ relref . "siscrimel/preguntas-frecuentes.md" }}">Preguntas frecuentes</a>
-    </li>
-    <li class="mb-8 lg:text-left lg:mb-0 lg:mx-3 xl:mx-6">
-      <a class="nav__link block text-primary-color uppercase text-xs font-medium lg:text-center lg:pb-1 lg:text-xs xl:text-base" href="{{ relref . "resultados-electorales/descarga-los-datos.md" }}">Resultados electorales</a>
-    </li>
-    <li class="mb-8 lg:text-left lg:mb-0 lg:mx-3 xl:mx-6">
-      <a class="nav__link block text-primary-color uppercase text-xs font-medium lg:text-center lg:pb-1 lg:text-xs xl:text-base" href="#">Mecanismos de participación</a>
-    </li>
-    <li class="mb-8 lg:text-left lg:mb-0 lg:mx-3 xl:mx-6">
-      <a class="nav__link block text-primary-color uppercase text-xs font-medium lg:text-center lg:pb-1 lg:text-xs xl:text-base" href="{{ relref . "biblioteca-de-recursos.md" }}">Biblioteca de recursos</a>
-    </li>
-    <li class="lg:text-left lg:mb-0 lg:mx-3 xl:mx-6">
-      <a class="nav__link block text-primary-color uppercase text-xs font-medium lg:text-center lg:pb-1 lg:text-xs xl:text-base" href="#">Contáctanos</a>
-    </li>
-  </ul>
-</nav>
-<button class="menu-button">
-  <span class="menu-icon" id="menu-icon"></span>
-</button>
+    " id="nav">
+    <ul class="pt-16 pl-16 lg:py-0 lg:px-0 lg:grid lg:grid-cols-6 lg:items-center">
+      <li class="mb-8 lg:text-left lg:mb-0 lg:mx-3 xl:mx-6">
+        <a class="nav__link block text-primary-color uppercase text-xs lg:text-center lg:pb-1 xl:text-sm"
+          href="{{ .Site.BaseURL }}">Inicio</a>
+      </li>
+      <li class="mb-8 lg:text-left lg:mb-0 lg:mx-3 xl:mx-6">
+        <a class="nav__link block text-primary-color uppercase text-xs lg:text-center lg:pb-1 xl:text-sm"
+          href="{{ relref . "quienes-somos/quienes-somos.md" }}">¿Quiénes somos?</a>
+      </li>
+      <li class="mb-8 lg:text-left lg:mb-0 lg:mx-3 xl:mx-6">
+        <a class="nav__link block text-primary-color uppercase text-xs lg:text-center lg:pb-1 xl:text-sm"
+          href="{{ relref . "datos-democracia/datos-para-la-democracia.md" }}">Datos para la democracia</a>
+      </li>
+      <li class="mb-8 lg:text-left lg:mb-0 lg:mx-3 xl:mx-6">
+        <a class="nav__link block text-primary-color uppercase text-xs lg:text-center lg:pb-1 xl:text-sm"
+          href="{{ relref . "biblioteca-de-recursos.md"}}">Biblioteca de recursos</a>
+      </li>
+      <li class="mb-8 lg:text-left lg:mb-0 lg:mx-3 xl:mx-6">
+        <a class="nav__link block text-primary-color uppercase text-xs lg:text-center lg:pb-1 xl:text-sm"
+          href="#">Capacitación virtual</a>
+      </li>
+      <li class="mb-8 lg:text-left lg:mb-0 lg:mx-3 xl:mx-6">
+        <a class="nav__link block text-primary-color uppercase text-xs lg:text-center lg:pb-1 xl:text-sm"
+          href="#">Contáctanos</a>
+      </li>
+    </ul>
+  </nav>
+  <button class="menu-button">
+    <span class="menu-icon" id="menu-icon"></span>
+  </button>
 </header>

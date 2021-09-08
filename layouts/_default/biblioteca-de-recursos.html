@@ -2,28 +2,23 @@
 <div class="relative bg-biblioteca-recursos-bg h-screen bg-cover bg-center">
   <div class="container">
     <div class="lg:pt-56">
-      <h1 class="text-white lg:text-6xl uppercase font-bold lg:mb-3">
+      <h1 class="text-white lg:text-6xl uppercase font-black lg:mb-3">
         Biblioteca de recursos
       </h1>
       <p class="font-light lg:w-7/12 text-white">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-        volutpat.
+        Descarga las publicaciones relacionadas con las iniciativas de capacitación e investigación que ha realizado el
+        CEDAE desde el 2013 hasta la actualidad. Selecciona el año de referencia y la línea temática correspondiente a
+        la publicación que deseas consultar.
       </p>
     </div>
   </div>
-  <img
-    class="hidden lg:block lg:absolute lg:-bottom-6 object-cover w-full"
-    src="/images/curva-arriba-abajo.svg"
-    alt=""
-  />
+  <img class="hidden lg:block lg:absolute lg:-bottom-6 object-cover w-full" src="/images/curva-arriba-abajo.svg"
+    alt="" />
 </div>
 <section class="lg:pt-12 lg:pb-20 bg-white">
   <div class="grid grid-cols-1 lg:grid-cols-12">
     <div class="lg:col-start-2 lg:col-end-4" id="filters">
-      <h4
-        class="text-primary-color-dark uppercase font-bold lg:text-xl lg:mb-3"
-      >
+      <h4 class="text-primary-color-dark uppercase font-bold lg:text-xl lg:mb-3">
         Filtros
       </h4>
       <!-- Date -->
@@ -46,10 +41,7 @@
     <div class="lg:col-start-5 lg:col-end-12 relative">
       <div class="lg:flex lg:flex-col lg:items-end">
         <div class="mb-12">
-          <h5
-            class="bg-primary-color-dark text-color-white py-2 px-6"
-            id="paginationScroll"
-          >
+          <h5 class="bg-primary-color-dark text-color-white py-2 px-6" id="paginationScroll">
             Fecha de publicación
           </h5>
         </div>
@@ -95,12 +87,7 @@
     </div>
   </div>
 </section>
-<input
-  type="hidden"
-  name="data"
-  id="data-biblioteca"
-  value="{{ jsonify .Site.Data.biblioteca }}"
-/>
+<input type="hidden" name="data" id="data-biblioteca" value="{{ jsonify .Site.Data.biblioteca }}" />
 {{ end }} {{ define "js" }} {{ $biblioteca := resources.Get
 "js/api/biblioteca.js" | js.Build (dict "minify" true)}}
 <script src="{{ $biblioteca.Permalink }}"></script>

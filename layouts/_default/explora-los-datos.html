@@ -1,62 +1,57 @@
-{{ define "main" }} {{ partial "nav-siscrimel" . }}
-<div
-  class="
+{{ define "main" }}
+{{ partial "nav-datos-democracia" . }}
+{{ partial "nav-siscrimel" . }}
+<div class="
     bg-bg-banner-datos-sm
     h-screen
     bg-cover bg-center
     relative
-  "
->
+  ">
   <div class="container">
     <div class="lg:pt-40">
-      <h1
-        class="
+      <h1 class="
         text-white lg:text-6xl
-         font-bold
+         font-black
          lg:mb-3
-        "
-      >
+        ">
         Explora los Datos
       </h1>
-      <p class="paragraph paragraph--white lg:w-5/12">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-        volutpat. Ut wisi enim ad minim veniam, quis
+      <p class="paragraph paragraph--white lg:w-7/12">
+        Con esta herramienta puedes visualizar los datos de los delitos e irregularidades electorales en Colombia a
+        nivel municipal y departamental. También puedes observar la interacción de los delitos e irregularidades con
+        otras variables económicas, sociales y políticas que contribuyen a comprender el fenómeno de la criminalidad
+        electoral.
       </p>
     </div>
   </div>
-  <img class="hidden lg:block lg:absolute lg:-bottom-12 object-cover w-full" src="/images/curva-abajo-arriba.svg" alt="">
+  <img class="hidden lg:block lg:absolute lg:-bottom-12 object-cover w-full" src="/images/curva-abajo-arriba.svg"
+    alt="">
 </div>
 <div class="text-center bg-color-white pb-16 lg:pt-8 relative">
   <div class="container">
-    <h2 class="text-primary-color font-bold lg:mb-4 lg:text-5xl m-auto lg:w-6/12 lg:mb-6">
+    <h2 class="text-primary-color-dark font-bold lg:mb-4 lg:text-5xl m-auto lg:w-6/12 lg:mb-6">
       Delitos e irregularidades <span class="font-normal lg:text-4xl">en Colombia</span>
     </h2>
-    <a href="#" class="bg-primary-color-dark uppercase font-bold color text-color-white py-3 px-8 text-sm">Como utilizar esta herramienta</a>
+    <a href="#" class="bg-primary-color-dark uppercase font-bold color text-color-white py-3 px-8 text-sm">Como utilizar
+      esta herramienta</a>
   </div>
 </div>
 <section class="h-screen w-screen overflow-x-auto lg:pb-20">
-  <iframe
-    class="w-full h-full"
-    src="https://datasketch.shinyapps.io/app-datos-democracia/"
-    frameborder="0"
-  ></iframe>
+  <iframe class="w-full h-full" src="https://datasketch.shinyapps.io/app-datos-democracia/" frameborder="0"></iframe>
 </section>
-<section class="bg-metodologia-bg bg-cover bg-center lg:pt-24 lg:pb-14">
+<section class="bg-metodologia-bg bg-cover bg-center lg:py-24">
   <div class="container text-center">
     <div class="lg:w-8/12 m-auto">
       <h2 class="text-color-white font-bold lg:text-5xl lg:mb-4">
         Conoce la Metodología
       </h2>
-      <p
-        class="
+      <p class="
           m-auto
           text-color-white
           lg:w-10/12
           lg:text-xl
           lg:mb-8
-        "
-      >
+        ">
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
         nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
         volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
@@ -66,15 +61,29 @@
     </div>
   </div>
 </section>
+<section class="lg:py-24" style="background-color: #EAEDF0;">
+  <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-32 justify-items-stretch mx-auto lg:w-9/12">
+    <div class="border-2 border-color-light lg:p-16 grid place-items-center relative">
+      <h3 class="font-black text-xl lg:text-2xl text-center" style="color: #003057;">
+        <span class="block font-normal">Explora los datos de</span>
+        Resultados electorales
+      </h3>
+      <a href="#" class="py-2 px-6 bg-primary-color-dark text-white rounded text-md absolute -bottom-5">EXPLORAR LOS DATOS</a>
+    </div>
+    <div class="border-2 border-color-light lg:p-16 grid place-items-center relative">
+      <h3 class="font-black text-xl lg:text-2xl text-center" style="color: #003057;">
+        <span class="block font-normal">Explora los datos de</span>
+        Mecanismos de Participación Ciudadana
+      </h3>
+      <a href="#" class="py-2 px-6 bg-primary-color-dark text-white rounded text-md absolute -bottom-5">EXPLORAR LOS DATOS</a>
+    </div>
+  </div>
+</section>
 <section class="lg:py-20">
   <div class="grid grid-cols-1 gap-y-4 lg:grid-cols-3 lg:gap-x-8 lg:w-11/12 m-auto">
     <div class="lg:px-10 lg:py-8 rounded-3xl bg-bg-blue-dark bg-cover bg-center">
-      <img
-        src="/images/siscrimel/criminalidad-electoral/siscrimel-lg.jpg"
-        alt=""
-      />
-      <a
-        class="
+      <img src="/images/siscrimel/criminalidad-electoral/siscrimel-lg.jpg" alt="" />
+      <a class="
           block
           text-primary-color
           font-bold
@@ -83,19 +92,12 @@
           text-color-primary
           font-bold
           text-xl
-        "
-        href="{{ relref . "siscrimel/quienes-somos.md" }}"
-        >SISCRIMEL</a
-      >
+        " href="#">SISCRIMEL</a>
       <p class="text-xl">¿Qué es SISCRIMEL?</p>
     </div>
     <div class="lg:px-10 lg:py-8 rounded-3xl bg-bg-blue-dark bg-cover bg-center">
-      <img
-        src="/images/siscrimel/criminalidad-electoral/corruption.jpg"
-        alt=""
-      />
-      <a
-        class="
+      <img src="/images/siscrimel/criminalidad-electoral/corruption.jpg" alt="" />
+      <a class="
           block
           text-primary-color
           font-bold
@@ -104,21 +106,14 @@
           text-color-primary
           font-bold
           text-xl
-        "
-        href="{{ relref . "siscrimel/criminalidad-electoral.md" }}"
-        >Criminalidad electoral</a
-      >
+        " href="#">Criminalidad electoral</a>
       <p class="text-xl">
         ¿Qué es la criminalidad electoral?
       </p>
     </div>
     <div class="lg:px-10 lg:py-8 rounded-3xl bg-bg-blue-dark bg-cover bg-center">
-      <img
-        src="/images/siscrimel/criminalidad-electoral/information-lg.jpg"
-        alt=""
-      />
-      <a
-        class="
+      <img src="/images/siscrimel/criminalidad-electoral/information-lg.jpg" alt="" />
+      <a class="
           block
           text-primary-color
           font-bold
@@ -127,10 +122,7 @@
           text-color-primary
           font-bold
           text-xl
-        "
-        href="{{ relref . "biblioteca-de-recursos.md" }}"
-        >Conoce los informes</a
-      >
+        " href="#">Conoce los informes</a>
       <p class="text-xl">
         Descarga los informes de SISCRIMEL
       </p>

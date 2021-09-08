@@ -1,32 +1,29 @@
-{{ define "main" }} {{ partial "nav-resultados-electorales" . }}
-<div
-  class="bg-bg-resultados-electorales-lg h-screen bg-cover bg-center relative"
->
+{{ define "main" }}
+{{ partial "nav-datos-democracia" . }}
+{{ partial "nav-resultados-electorales" . }}
+<div class="bg-bg-resultados-electorales-lg h-screen bg-cover bg-center relative">
   <div class="container">
     <div class="lg:pt-40">
-      <h1 class="text-white uppercase lg:text-6xl font-bold lg:mb-6">
+      <h1 class="text-white uppercase lg:text-6xl font-black lg:mb-6">
         Resultados electorales
       </h1>
       <p class="paragraph paragraph--white lg:w-6/12">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-        volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-        ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        La Registraduría del siglo XXI pone a disposición de la ciudadanía, la academia y de las entidades del Estado el
+        histórico de resultados electorales en Colombia. En esta sección se encuentran disponibles para descarga en
+        formato .CSV los resultados de las elecciones a la Presidencia (primera y segunda vuelta), Congreso (Cámara de
+        Representantes y Senado), Asamblea, Gobernación, Parlamento Andino, Alcaldía y Concejo.
       </p>
     </div>
   </div>
-  <img
-    class="hidden lg:block lg:absolute lg:-bottom-12 object-cover w-full"
-    src="/images/curva-abajo-arriba.svg"
-    alt=""
-  />
+  <img class="hidden lg:block lg:absolute lg:-bottom-12 object-cover w-full" src="/images/curva-abajo-arriba.svg"
+    alt="" />
 </div>
 <div class="text-center -mt-4 pb-16 lg:pt-8">
   <div class="container">
-    <h2 class="heading-secondary heading-secondary--blue lg:mb-10">
+    <h2 class="mb-4 text-3xl font-black lg:text-4xl lg:mb-8" style="color: #003057;">
       Descarga los datos
-    </h2>
-    <p class="paragraph lg:w-8/12 lg:m-auto">
+  </h2>
+    <p class="text-lg lg:text-xl lg:w-8/12 lg:m-auto">
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
       nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
       wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
@@ -39,9 +36,7 @@
 <section class="lg:pt-12 lg:pb-20 bg-white">
   <div class="grid grid-cols-1 lg:grid-cols-12">
     <div class="lg:col-start-2 lg:col-end-4" id="filters">
-      <h4
-        class="text-primary-color-dark uppercase font-bold lg:text-xl lg:mb-3"
-      >
+      <h4 class="text-primary-color-dark uppercase font-bold lg:text-xl lg:mb-3">
         Filtros
       </h4>
       <!-- Date -->
@@ -69,25 +64,20 @@
     <div class="lg:col-start-4 lg:col-end-12 m-auto lg:w-11/12">
       <div class="lg:flex lg:flex-col lg:items-end">
         <div class="mb-12">
-          <h5
-            class="bg-primary-color-dark text-color-white py-2 px-6"
-            id="paginationScroll"
-          >
+          <h5 class="bg-primary-color-dark text-color-white py-2 px-6" id="paginationScroll">
             Fecha de publicación
           </h5>
         </div>
       </div>
       <!-- PARENT ELEMENT -->
-      <div
-        class="
+      <div class="
           results-container
           grid grid-cols-1
           lg:grid-cols-2
           xl:grid-cols-3
           gap-8
           mb-16
-        "
-      >
+        ">
         <!-- CHILDS ELEMENTS RESULTS -->
         <!-- <div class="result-item">
           <h3 class="result-title">Alcaldía Cartagena 2011</h3>
@@ -111,12 +101,7 @@
   </div>
 </section>
 {{ partial "explora-los-datos" . }}
-<input
-  type="hidden"
-  name="data"
-  id="data-resultados"
-  value="{{ jsonify .Site.Data.resultados }}"
-/>
+<input type="hidden" name="data" id="data-resultados" value="{{ jsonify .Site.Data.resultados }}" />
 {{ end }} {{ define "js" }} {{ $resultados := resources.Get
 "js/api/resultados.js" | js.Build (dict "minify" true)}}
 <script src="{{ $resultados.Permalink }}"></script>

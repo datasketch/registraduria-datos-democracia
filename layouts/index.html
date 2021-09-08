@@ -1,395 +1,183 @@
 {{ define "main" }}
-<div
-  class="
-    relative
-    overflow-hidden
-    bg-cover bg-center
-    text-color-white
-    bg-banner-home-sm
-    lg:bg-banner-home-lg
-    banner--home
-  "
->
-  <div class="container">
-    <div class="text-center lg:text-left lg:w-6/12 pt-56 lg:pt-48">
-      <h1
-        class="uppercase mb-4 text-4xl font-bold lg:mb-3 lg:text-6xl lg:w-10/12"
-      >
-        Datos para la democracia
-      </h1>
-      <p class="px-8 lg:px-0 lg:w-10/12">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-        nonummy nibh euismod tincidunt ut laoreet dolore.
-      </p>
-      <p
-        class="
-          absolute
-          bottom-24
-          text-center
-          px-12
-          lg:px-0 lg:bottom-36 lg:w-6/12 lg:text-xl lg:right-1/4
-        "
-      >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eaque
-        similique quibusdam, eos aperiam, officiis dolor saepe maiores ducimus
-        nam et deserunt dolorem? Magnam soluta perferendis tempora tenetur
-        ducimus nobis.
-      </p>
+<!-- BANNER CEDAE -->
+<div class="
+  relative
+  overflow-hidden
+  bg-cover
+  bg-center
+  text-color-white
+  bg-bg-cedae-lg
+">
+    <div class="mx-auto w-9/12 lg:py-72">
+        <h1 class="uppercase mb-4 text-6xl font-black lg:mb-5 lg:text-7xl lg:w-10/12">
+            Cedae-rnec
+        </h1>
+        <p class="lg:w-7/12 lg:text-xl">
+            El Centro de Estudios en Democracia y Asuntos Electorales - CEDAE es el grupo encargado de adelantar
+            procesos de investigación y capacitación para mejorar el desarrollo de las funciones misionales de la
+            Registraduría Nacional del Estado Civil.
+        </p>
     </div>
-  </div>
 </div>
-<section class="py-16 lg:pt-20 lg:pb-24">
-  <div class="grid grid-cols-1 gap-y-20 lg:grid-cols-2 items-center">
-    <div
-      class="
-        text-center
-        bg-siscrimel-bg bg-cover bg-center
-        lg:text-left lg:pl-32
-      "
-    >
-      <h2 class="text-4xl text-primary-color uppercase font-bold text-5xl">
-        Siscrimel
-        <span class="lowercase block text-4xl"
-          >Sistema de Criminalidad Electoral</span
-        >
-      </h2>
-      <p
-        class="
-          my-10
-          px-10
-          paragraph paragraph--black
-          lg:px-0 lg:my-7 lg:w-10/12
-        "
-      >
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint cum
-        facilis repellat praesentium minus sapiente. Asperiores vero sint
-        sapiente delectus, quae sed totam mollitia tempora, praesentium
-        accusamus cumque porro eius.
-      </p>
-      <a
-        href="{{ relref . "siscrimel/quienes-somos.md" }}"
-        class="
-          bg-primary-color-dark
-          text-color-white
-          py-2
-          px-6
-          uppercase
-          font-bold
-        "
-        >Leer más</a
-      >
+<!-- BANNER CEDAE END -->
+
+<!-- DATOS PARA LA DEMOCRACIA -->
+<div class="bg-color-white-2 lg:pt-8 lg:py-24">
+    <div class="mx-auto lg:w-10/12">
+        <div class="text-center lg:mb-16 bg-bg-cedae-lines-white bg-center bg-cover">
+            <h2 class="uppercase mb-4 text-4xl font-black lg:text-5xl lg:mb-8" style="color: #003057;">
+                Datos para la <span class="block">democracia</span>
+            </h2>
+            <p class="lg:text-xl mx-auto lg:w-7/12 mb-6 lg:mb-12">
+                Datos para la Democracia es una iniciativa del CEDAE que busca mejorar el acceso, uso y conocimiento de
+                la información relacionada con el desarrollo de las funciones misionales de la Registraduría Nacional
+                del
+                Estado Civil en materia electoral, de registro civil e identificación, siguiendo los estándares de datos
+                abiertos.
+            </p>
+            <a href="{{ relref . "datos-democracia/datos-para-la-democracia.md" }}" class="bg-primary-color text-white rounded uppercase font-bold py-2 px-4 text-sm">Ir a datos
+                para la democracia</a>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-x-28 justify-items-stretch">
+            <div class="border-2 border-color-light p-12 grid place-items-center relative">
+                <h3 class="uppercase text-lg font-bold lg:text-xl text-center" style="color: #003057;">
+                    Siscrimel
+                </h3>
+                <a href="{{ relref . " datos-democracia/siscrimel/que-es-siscrimel.md" }}"
+                    class="py-2 px-6 bg-primary-color-dark text-white rounded text-md absolute -bottom-5">CONOCER
+                    MÁS</a>
+            </div>
+            <div class="border-2 border-color-light p-12 grid place-items-center relative">
+                <h3 class="uppercase text-lg font-bold lg:text-xl text-center" style="color: #003057;">
+                    Resultados electorales
+                </h3>
+                <a href="{{ relref . "datos-democracia/resultados-electorales/descarga-los-datos.md" }}"
+                    class="py-2 px-6 bg-primary-color-dark text-white rounded text-md absolute -bottom-5">CONOCER
+                    MÁS</a>
+            </div>
+            <div class="border-2 border-color-light p-12 grid place-items-center relative">
+                <h3 class="uppercase text-lg font-bold lg:text-xl text-center" style="color: #003057;">
+                    Mecanismos de participacion ciudadana
+                </h3>
+                <a href="#"
+                    class="py-2 px-6 bg-primary-color-dark text-white rounded text-md absolute -bottom-5">CONOCER
+                    MÁS</a>
+            </div>
+        </div>
     </div>
-    <div class="px-10 text-center lg:text-left lg:px-44">
-      {{ partial "siscrimel-slider" . }}
+</div>
+<!-- DATOS PARA LA DEMOCRACIA END -->
+
+<!-- BIBLIOTECA DE RECURSOS -->
+<div class=" lg:py-28 bg-bg-cedae-lines-blue bg-cover bg-center">
+    <div class="text-center text-white lg:mb-16 mx-auto lg:w-9/12">
+        <h2 class="uppercase mb-6 text-4xl font-black lg:text-5xl lg:mb-10">
+            Biblioteca de recursos
+        </h2>
+        <p class="lg:text-xl mx-auto lg:w-7/12 mb-6 lg:mb-12">
+            En esta sección podrás descargar las publicaciones e investigaciones realizadas por el CEDAE desde el
+            2013
+            hasta la fecha, atendiendo las líneas de trabajo en identificación y registro civil de las personas,
+            gestión
+            del conocimiento institucional, violencia y corrupción electoral, elecciones y democracia.
+        </p>
+        <a href="{{ relref . "biblioteca-de-recursos.md"}}" class="bg-color-white-2 text-primary-color-dark rounded uppercase font-bold py-2 px-4 text-sm">Ir a
+           biblioteca de recuros</a>
     </div>
-  </div>
-</section>
-<section class="py-16 bg-primary-color lg:pt-28 lg:pb-36">
-  <div class="container text-center">
-    <h2
-      class="
-        text-4xl
-        mb-8
-        font-bold
-        text-color-white
-        uppercase
-        lg:text-5xl lg:mb-12
-      "
-    >
-      Resultados Electorales
-    </h2>
-    <div class="text-center">
-      <p class="mb-8 text-white m-auto w-10/12 lg:w-5/12 lg:mb-16">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea enim saepe
-        autem porro odit corporis necessitatibus a vel. Maxime dolorum vitae
-        aspernatur assumenda obcaecati debitis. Hic delectus beatae veritatis
-        quos?
-      </p>
-      <h3 class="text-white lg:text-4xl lg:mb-14">Años más consultados</h3>
-      <div
-        class="
-          grid grid-cols-2
-          gap-8
-          m-auto
-          mb-12
-          w-10/12
-          lg:grid-cols-4
-          m-auto
-          lg:gap-x-24 lg:w-9/12 lg:mb-16
-        "
-      >
-        <a
-          href="#"
-          class="
-            text-3xl text-white
-            px-4
-            py-3
-            lg:text-4xl
-            border-2 border-primary-color-light
-          "
-          >2010</a
-        >
-        <a
-          href="#"
-          class="
-            text-3xl text-white
-            px-4
-            py-3
-            lg:text-4xl
-            border-2 border-primary-color-light
-          "
-          >2011</a
-        >
-        <a
-          href="#"
-          class="
-            text-3xl text-white
-            px-4
-            py-3
-            lg:text-4xl
-            border-2 border-primary-color-light
-          "
-          >2014</a
-        >
-        <a
-          href="#"
-          class="
-            text-3xl text-white
-            px-4
-            py-3
-            lg:text-4xl
-            border-2 border-primary-color-light
-          "
-          >2018</a
-        >
-      </div>
-      <a
-        href="{{ relref . "resultados-electorales/descarga-los-datos.md" }}"
-        class="bg-color-white uppercase font-bold text-primary-color py-3 px-4"
-        >Conoce los datos</a
-      >
+</div>
+<!-- BIBLIOTECA DE RECURSOS END -->
+
+<div class="lg:py-20" style="background-color: #EAEDF0;">
+    <h3 class="text-primary-color text-center text-xl lg:text-3xl lg:mb-14">Documentos más consultados</h3>
+    <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-x-12 mx-auto lg:w-10/12">
+        <div class="p-4 lg:p-10 rounded shadow-lg bg-color-white" style="background-color: #EAEDF0;">
+            <span class="block italic text-xs text-primary-color font-bold mb-2 lg:mb-4">Democracia</span>
+            <h4 class="text-primary-color font-bold text-lg lg:text-xl mb-4 lg:mb-6">Análisis de la financiación de
+                las
+                campañas legislativas de Colombia en 2014</h4>
+            <p class="italic text-sm mb-2 lg:mb-4">Autor: <span class="font-bold">Transparencia por colombia</span>
+            </p>
+            <p class="mb-4 lg:mb-8">Análisis normativo y jurisprudencial del financiamiento político, principalmente
+                el
+                de campañas,
+                enfocándose en las elecciones de 2014</p>
+            <p class="italic text-sm mb-4 lg:mb-8">Año de invertigación: <span class="font-bold">2014</span></p>
+            <div class="text-center">
+                <a href="#" class="py-2 px-6 bg-color-orange text-white rounded text-sm uppercase">Descargar</a>
+            </div>
+        </div>
+        <div class="p-4 lg:p-10 rounded shadow-lg bg-color-white" style="background-color: #EAEDF0;">
+            <span class="block italic text-xs text-primary-color font-bold mb-2 lg:mb-4">Democracia</span>
+            <h4 class="text-primary-color font-bold text-lg lg:text-xl mb-4 lg:mb-6">Análisis de la financiación de
+                las
+                campañas legislativas de Colombia en 2014</h4>
+            <p class="italic text-sm mb-2 lg:mb-4">Autor: <span class="font-bold">Transparencia por colombia</span>
+            </p>
+            <p class="mb-4 lg:mb-8">Análisis normativo y jurisprudencial del financiamiento político, principalmente
+                el
+                de campañas,
+                enfocándose en las elecciones de 2014</p>
+            <p class="italic text-sm mb-4 lg:mb-8">Año de invertigación: <span class="font-bold">2014</span></p>
+            <div class="text-center">
+                <a href="#" class="py-2 px-6 bg-color-orange text-white rounded text-sm uppercase">Descargar</a>
+            </div>
+        </div>
+        <div class="p-4 lg:p-10 rounded shadow-lg bg-color-white" style="background-color: #EAEDF0;">
+            <span class="block italic text-xs text-primary-color font-bold mb-2 lg:mb-4">Democracia</span>
+            <h4 class="text-primary-color font-bold text-lg lg:text-xl mb-4 lg:mb-6">Análisis de la financiación de
+                las
+                campañas legislativas de Colombia en 2014</h4>
+            <p class="italic text-sm mb-2 lg:mb-4">Autor: <span class="font-bold">Transparencia por colombia</span>
+            </p>
+            <p class="mb-4 lg:mb-8">Análisis normativo y jurisprudencial del financiamiento político, principalmente
+                el
+                de campañas,
+                enfocándose en las elecciones de 2014</p>
+            <p class="italic text-sm mb-4 lg:mb-8">Año de invertigación: <span class="font-bold">2014</span></p>
+            <div class="text-center">
+                <a href="#" class="py-2 px-6 bg-color-orange text-white rounded text-sm uppercase">Descargar</a>
+            </div>
+        </div>
     </div>
-  </div>
-</section>
+</div>
+
+<!-- INGRESA A LOS CURSOS -->
 <section class="">
-  <div class="grid lg:items-center lg:grid-cols-12">
-    <ul
-      class="
-        py-16
-        text-center
-        bg-primary-color-dark
-        text-color-white
-        order-2
-        lg:order-1 lg:col-start-1 lg:col-end-6 lg:py-28
-      "
-    >
-      <li class="mb-8">
-        <span class="mr-6">1.</span> Mecanismo de participación electoral
-      </li>
-      <li class="mb-8">
-        <span class="mr-6">1.</span> Mecanismo de participación electoral
-      </li>
-      <li class="mb-8">
-        <span class="mr-6">1.</span> Mecanismo de participación electoral
-      </li>
-      <li class="mb-8">
-        <span class="mr-6">1.</span> Mecanismo de participación electoral
-      </li>
-      <li class="mb-8">
-        <span class="mr-6">1.</span> Mecanismo de participación electoral
-      </li>
-      <li class="mb-8">
-        <span class="mr-6">1.</span> Mecanismo de participación electoral
-      </li>
-      <li class="mb-0">
-        <span class="mr-6">1.</span> Mecanismo de participación electoral
-      </li>
-    </ul>
-    <div
-      class="
-        order-1
-        bg-cover bg-center
-        py-12
-        lg:py-0 lg:order-2 lg:px-24 lg:col-start-6 lg:col-end-13
-        bg-mechanism-bg
-        text-primary-color-dark
-      "
-    >
-      <h2
-        class="
-          text-center text-4xl
-          uppercase
-          font-bold
-          lg:text-5xl lg:text-left
-        "
-      >
-        <span class="block text-3xl font-normal normal-case lg:text-3xl"
-          >Mecanismos de</span
-        >participación electoral
-      </h2>
-      <p class="my-10 m-auto w-10/12 text-center lg:text-left lg:mx-0 lg:my-8">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, velit,
-        dicta, quo cupiditate tempore maxime earum aliquid sit esse sunt nulla!
-        Neque officiis adipisci nemo accusamus, temporibus maiores explicabo ut.
-      </p>
-      <div class="text-center lg:text-left">
-        <a
-          href="#"
-          class="
-            bg-primary-color-dark
-            text-color-white
-            py-2
-            px-6
-            uppercase
-            font-bold
-          "
-          >Leer más</a
-        >
-      </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2">
+        <div class="text-center py-16 lg:py-24">
+            <h3 class="uppercase mb-6 text-3xl font-black lg:text-4xl lg:mb-10 text-primary-color-dark">
+                Capacitación virtual
+            </h3>
+            <p class="mx-auto lg:w-8/12 lg:text-xl mb-10 lg:mb-20">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmodtempor invidunt u labore
+                dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                sed diam nonumy eirmodtempor invidunt u labore dolore magna aliquyam erat, sed diam voluptua
+            </p>
+            <div class="inline-flex flex-col">
+                <a target="_blank" href="https://escuelavirtual.registraduria.gov.co/"
+                    class="bg-primary-color-dark uppercase text-white py-3 px-4 font-bold rounded text-xs mb-4 lg:mb-6">
+                    Conocer los cursos
+                </a>
+                <a target="_blank" href="https://escuelavirtual.registraduria.gov.co/"
+                    class="bg-color-orange uppercase text-white py-3 px-4 font-bold rounded text-xs">
+                    Descarga los contenidos
+                </a>
+            </div>
+        </div>
+        <div class="bg-bg-cursos-sm lg:bg-bg-cursos-lg bg-cover bg-center grid place-items-center ">
+            <div class="text-center">
+                <h2 class="mx-auto font-black text-2xl text-color-white lg:text-3xl lg:mb-24">
+                    Ingresa a la plataforma
+                    <span class="block">de capacitación virtual</span>
+                    <span class="block">CEDAE-RNEC</span>
+                </h2>
+                <a target="_blank" href="https://escuelavirtual.registraduria.gov.co/"
+                    class="bg-primary-color-dark uppercase text-white py-3 px-4 font-bold rounded text-xs">
+                    Ir a la plataforma moodle
+                </a>
+            </div>
+        </div>
     </div>
-  </div>
 </section>
-<section class="pt-14 py-20 lg:pt-24 lg:pb-32">
-  <div class="container">
-    <div class="text-center text-primary-color-dark lg:mb-14">
-      <h2
-        class="
-          m-auto
-          w-9/12
-          mb-8
-          text-4xl
-          uppercase
-          font-bold
-          lg:w-full lg:mx-0 lg:mb-8 lg:text-5xl
-        "
-      >
-        Biblioteca Virtual
-      </h2>
-      <p class="m-auto mb-10 w-10/12 lg:w-7/12">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-        incidunt cumque commodi saepe sapiente adipisci tenetur maxime aut. Odio
-        ducimus hic accusamus est aspernatur laudantium autem ab, voluptatum
-        illum iste!
-      </p>
-    </div>
-    <div
-      class="
-        m-auto
-        w-10/12
-        grid
-        gap-y-12
-        grid-cols-1
-        lg:mx-0 lg:w-full lg:gap-x-12 lg:grid-cols-3 lg:items-center
-      "
-    >
-      <div
-        class="
-          relative
-          flex flex-col
-          justify-center
-          items-center
-          text-center
-          self-stretch
-          p-10
-          border-primary-color-light border-solid border-2
-        "
-      >
-        <h3 class="text-2xl font-bold">
-          Publicaciones <br />
-          e Investigaciones
-        </h3>
-        <a
-          href="{{ relref . "biblioteca-de-recursos.md" }}"
-          class="
-            absolute
-            -bottom-5
-            bg-primary-color-dark
-            text-color-white
-            py-2
-            px-6
-            uppercase
-            font-bold
-          "
-          >Leer más</a
-        >
-      </div>
-      <div
-        class="
-          relative
-          flex flex-col
-          justify-center
-          items-center
-          text-center
-          self-stretch
-          p-10
-          border-primary-color-light border-solid border-2
-        "
-      >
-        <h3 class="text-2xl font-bold">
-          Escuela de Nuevos Liderazgos en Cultura Democrática
-        </h3>
-        <a
-          href="{{ relref . "biblioteca-de-recursos.md" }}"
-          class="
-            absolute
-            -bottom-5
-            bg-primary-color-dark
-            text-color-white
-            py-2
-            px-6
-            uppercase
-            font-bold
-          "
-          >Leer más</a
-        >
-      </div>
-      <div
-        class="
-          relative
-          flex flex-col
-          justify-center
-          items-center
-          text-center
-          self-stretch
-          p-10
-          border-primary-color-light border-solid border-2
-        "
-      >
-        <h3 class="text-2xl font-bold">
-          Escuela de Nuevos Liderazgos de Mujeres
-        </h3>
-        <a
-          href="{{ relref . "biblioteca-de-recursos.md" }}"
-          class="
-            absolute
-            -bottom-5
-            bg-primary-color-dark
-            text-color-white
-            py-2
-            px-6
-            uppercase
-            font-bold
-          "
-          >Leer más</a
-        >
-      </div>
-    </div>
-  </div>
-</section>
-<section class="py-36 bg-bg-cursos-sm bg-cover bg-center lg:py-28 lg:bg-bg-cursos-lg">
-  <div class="container">
-      <div class="text-center">
-          <h2 class="mx-auto font-bold text-3xl mb-14 text-color-white lg:text-5xl lg:w-6/12 block lg:mb-16">Ingresa a los cursos de capacitación virtual <span class="block">CEDAE-RNEC</span></h2>
-          <a target="_blank" href="https://escuelavirtual.registraduria.gov.co/" class="bg-color-white uppercase text-primary-color py-3 px-4 font-bold rounded">Conoce los cursos</a>
-      </div>
-  </div>
-</section>
-{{ end }} {{ define "head" }}
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/swiper@6.7.0/swiper-bundle.min.css"
-/>
-{{ end }} {{ define "js" }} {{ $services := resources.Get "js/home.js" |
-js.Build (dict "minify" true)}}
-<script src="{{ $services.Permalink }}"></script>
+<!-- INGRESA A LOS CURSOS END -->
 {{ end }}
