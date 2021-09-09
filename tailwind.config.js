@@ -20,7 +20,7 @@ module.exports = {
       "result-title",
       "result-description",
       "result-excel",
-      "result-btn",
+      "result-btn"
     ],
     options: {},
   },
@@ -84,6 +84,7 @@ module.exports = {
         "bg-cursos-lg": "url(/images/home/cursos.png)",
         "bg-cursos-sm": "url(/images/home/cursos-movil.png)",
         "bg-cedae-lg": "url(/images/cedae/cedae-lg.png)",
+        "bg-cedae-sm": "url(/images/cedae/cedae-sm.png)",
         "bg-cedae-lines-white": "url(/images/cedae/cedae-lines-white.svg)",
         "bg-cedae-lines-blue": "url(/images/cedae/cedae-lines-blue.svg)",
       },

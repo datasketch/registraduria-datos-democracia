@@ -3,16 +3,19 @@
 <div class="
   relative
   overflow-hidden
+  py-80
+  bg-bg-cedae-sm
   bg-cover
   bg-center
   text-color-white
-  bg-bg-cedae-lg
+  lg:py-72
+  lg:bg-bg-cedae-lg
 ">
-    <div class="mx-auto w-9/12 lg:py-72">
-        <h1 class="uppercase mb-4 text-6xl font-black lg:mb-5 lg:text-7xl lg:w-10/12">
+    <div class="pb-16 mx-auto text-center w-10/12 lg:w-9/12 lg:text-left lg:pb-0">
+        <h1 class="uppercase mb-8 text-5xl md:text-6xl font-black lg:mb-5 xl:text-7xl lg:w-10/12">
             Cedae-rnec
         </h1>
-        <p class="lg:w-7/12 lg:text-xl">
+        <p class="mx-auto w-10/12 lg:mx-0 lg:w-7/12 lg:text-xl">
             El Centro de Estudios en Democracia y Asuntos Electorales - CEDAE es el grupo encargado de adelantar
             procesos de investigación y capacitación para mejorar el desarrollo de las funciones misionales de la
             Registraduría Nacional del Estado Civil.
@@ -22,23 +25,26 @@
 <!-- BANNER CEDAE END -->
 
 <!-- DATOS PARA LA DEMOCRACIA -->
-<div class="bg-color-white-2 lg:pt-8 lg:py-24">
-    <div class="mx-auto lg:w-10/12">
-        <div class="text-center lg:mb-16 bg-bg-cedae-lines-white bg-center bg-cover">
-            <h2 class="uppercase mb-4 text-4xl font-black lg:text-5xl lg:mb-8" style="color: #003057;">
+<div class="bg-color-white-2 py-16 lg:pt-8 lg:py-24">
+    <div class="mx-auto w-11/12 lg:w-10/12">
+        <div class="text-center mb-20 lg:mb-16 lg:bg-bg-cedae-lines-white bg-center bg-cover">
+            <h2 class="uppercase mb-10 text-4xl font-black lg:text-5xl lg:mb-8" style="color: #003057;">
                 Datos para la <span class="block">democracia</span>
             </h2>
-            <p class="lg:text-xl mx-auto lg:w-7/12 mb-6 lg:mb-12">
+            <p class="lg:text-xl mx-auto lg:w-7/12 mb-10 lg:mb-12">
                 Datos para la Democracia es una iniciativa del CEDAE que busca mejorar el acceso, uso y conocimiento de
                 la información relacionada con el desarrollo de las funciones misionales de la Registraduría Nacional
                 del
                 Estado Civil en materia electoral, de registro civil e identificación, siguiendo los estándares de datos
                 abiertos.
             </p>
-            <a href="{{ relref . "datos-democracia/datos-para-la-democracia.md" }}" class="bg-primary-color text-white rounded uppercase font-bold py-2 px-4 text-sm">Ir a datos
+            <a href="{{ relref . " datos-democracia/datos-para-la-democracia.md" }}"
+                class="bg-primary-color-dark text-white rounded uppercase font-bold py-2 px-4 text-sm">Ir
+                a datos
                 para la democracia</a>
         </div>
-        <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-x-28 justify-items-stretch">
+        <div
+            class="grid grid-cols-1 mx-auto lg:mx-0 w-10/12 lg:w-full lg:grid-cols-3 gap-y-14 lg:gap-x-28 justify-items-stretch">
             <div class="border-2 border-color-light p-12 grid place-items-center relative">
                 <h3 class="uppercase text-lg font-bold lg:text-xl text-center" style="color: #003057;">
                     Siscrimel
@@ -51,7 +57,7 @@
                 <h3 class="uppercase text-lg font-bold lg:text-xl text-center" style="color: #003057;">
                     Resultados electorales
                 </h3>
-                <a href="{{ relref . "datos-democracia/resultados-electorales/descarga-los-datos.md" }}"
+                <a href="{{ relref . " datos-democracia/resultados-electorales/descarga-los-datos.md" }}"
                     class="py-2 px-6 bg-primary-color-dark text-white rounded text-md absolute -bottom-5">CONOCER
                     MÁS</a>
             </div>
@@ -69,27 +75,30 @@
 <!-- DATOS PARA LA DEMOCRACIA END -->
 
 <!-- BIBLIOTECA DE RECURSOS -->
-<div class=" lg:py-28 bg-bg-cedae-lines-blue bg-cover bg-center">
-    <div class="text-center text-white lg:mb-16 mx-auto lg:w-9/12">
-        <h2 class="uppercase mb-6 text-4xl font-black lg:text-5xl lg:mb-10">
+<div class="py-16 lg:py-28 bg-bg-cedae-lines-blue bg-cover bg-center">
+    <div class="text-center text-white lg:mb-16 mx-auto w-10/12 lg:w-9/12">
+        <h2 class="uppercase mb-10 text-4xl font-black lg:text-5xl">
             Biblioteca de recursos
         </h2>
-        <p class="lg:text-xl mx-auto lg:w-7/12 mb-6 lg:mb-12">
+        <p class="lg:text-xl mx-auto lg:w-7/12 mb-10 lg:mb-12">
             En esta sección podrás descargar las publicaciones e investigaciones realizadas por el CEDAE desde el
             2013
             hasta la fecha, atendiendo las líneas de trabajo en identificación y registro civil de las personas,
             gestión
             del conocimiento institucional, violencia y corrupción electoral, elecciones y democracia.
         </p>
-        <a href="{{ relref . "biblioteca-de-recursos.md"}}" class="bg-color-white-2 text-primary-color-dark rounded uppercase font-bold py-2 px-4 text-sm">Ir a
-           biblioteca de recuros</a>
+        <a href="{{ relref . " biblioteca-de-recursos.md"}}"
+            class="bg-color-white-2 text-primary-color-dark rounded uppercase font-bold py-2 px-4 text-sm">Ir a
+            biblioteca de recuros</a>
     </div>
 </div>
 <!-- BIBLIOTECA DE RECURSOS END -->
 
-<div class="lg:py-20" style="background-color: #EAEDF0;">
-    <h3 class="text-primary-color text-center text-xl lg:text-3xl lg:mb-14">Documentos más consultados</h3>
-    <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-x-12 mx-auto lg:w-10/12">
+<div class="py-16 lg:py-20" style="background-color: #EAEDF0;">
+    <div class="w-10/12 mx-auto lg:w-full lg:mx-0">
+        <h3 class="text-primary-color text-center text-3xl lg:mb-14">Documentos más consultados</h3>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-y-10 lg:gap-x-12 mx-auto w-10/12">
         <div class="p-4 lg:p-10 rounded shadow-lg bg-color-white" style="background-color: #EAEDF0;">
             <span class="block italic text-xs text-primary-color font-bold mb-2 lg:mb-4">Democracia</span>
             <h4 class="text-primary-color font-bold text-lg lg:text-xl mb-4 lg:mb-6">Análisis de la financiación de
@@ -144,8 +153,8 @@
 <!-- INGRESA A LOS CURSOS -->
 <section class="">
     <div class="grid grid-cols-1 lg:grid-cols-2">
-        <div class="text-center py-16 lg:py-24">
-            <h3 class="uppercase mb-6 text-3xl font-black lg:text-4xl lg:mb-10 text-primary-color-dark">
+        <div class="mx-auto w-10/12 text-center py-16 lg:py-24 lg:mx-0 lg:w-full">
+            <h3 class="uppercase mb-6 text-4xl font-black lg:mb-10 text-primary-color-dark">
                 Capacitación virtual
             </h3>
             <p class="mx-auto lg:w-8/12 lg:text-xl mb-10 lg:mb-20">
@@ -164,9 +173,9 @@
                 </a>
             </div>
         </div>
-        <div class="bg-bg-cursos-sm lg:bg-bg-cursos-lg bg-cover bg-center grid place-items-center ">
+        <div class="py-24 bg-bg-cursos-sm lg:bg-bg-cursos-lg bg-cover bg-center grid place-items-center lg:py-0">
             <div class="text-center">
-                <h2 class="mx-auto font-black text-2xl text-color-white lg:text-3xl lg:mb-24">
+                <h2 class="mx-auto font-black text-2xl text-color-white mb-12 lg:text-3xl lg:mb-24">
                     Ingresa a la plataforma
                     <span class="block">de capacitación virtual</span>
                     <span class="block">CEDAE-RNEC</span>
