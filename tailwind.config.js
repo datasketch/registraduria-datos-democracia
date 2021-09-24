@@ -5,7 +5,6 @@ module.exports = {
     safelist: [
       'nav--active',
       'menu-icon--active',
-      'container-input',
       'checkmark',
       'library-item',
       'library-image',

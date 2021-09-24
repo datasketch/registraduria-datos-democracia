@@ -1,7 +1,8 @@
 import {
   renderItemLibrary,
-  renderPaginationButtons,
 } from '../utils/render';
+
+import { paginate, renderPaginationButtons } from '../utils/pagination';
 
 const dataEl = document.querySelector('#data-biblioteca');
 const containerLibrary = document.querySelector('.library-container');
@@ -16,33 +17,27 @@ const state = {
     .filter(({ titulo }) => titulo).sort((a, b) => b.ano - a.ano),
   filteredData: null,
   filters: {
-    ano: [],
-    linea: [],
+    year: [],
+    line: [],
   },
   itemsPerPagination: 10,
   page: 1,
 };
 
-function paginate(page = state.page, data) {
-  const start = (page - 1) * state.itemsPerPagination;
-  const end = page * state.itemsPerPagination;
-  return data.slice(start, end);
-}
-
 function filterData() {
   containerLibrary.innerHTML = '';
   const { filters, originalData } = state;
-  const hasYearFilter = !!filters.ano.length;
-  const hasLineFilter = !!filters.linea.length;
+  const hasYearFilter = !!filters.year.length;
+  const hasLineFilter = !!filters.line.length;
   state.filteredData = originalData;
   if (hasYearFilter) {
-    state.filteredData = state.filteredData.filter((item) => filters.ano.includes(item.ano));
+    state.filteredData = state.filteredData.filter((item) => filters.year.includes(item.ano));
   }
   if (hasLineFilter) {
-    state.filteredData = state.filteredData.filter((item) => filters.linea.includes(item.linea));
+    state.filteredData = state.filteredData.filter((item) => filters.line.includes(item.linea));
   }
 
-  paginate(state.page, state.filteredData).forEach((item) => {
+  paginate(state.page, state.itemsPerPagination, state.filteredData).forEach((item) => {
     const html = renderItemLibrary(item);
     containerLibrary.insertAdjacentHTML('beforeend', html);
   });

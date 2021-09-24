@@ -1,6 +1,26 @@
 {{ define "main" }}
 {{ partial "nav-datos-democracia" . }}
 {{ partial "nav-resultados-electorales" . }}
+
+{{ $data := .Site.Data.resultados }}
+{{ $years := slice }}
+{{ $levels := slice }}
+{{ $types := slice }}
+
+<!-- Get categories -->
+{{ range $data }}
+  {{ $isYear := findRE "[0-9]{4}" .ano }}
+  {{ if eq (len $isYear) 1 }}
+    {{ $years = $years | append (int .ano) }}
+  {{ end }}
+  {{ if .nivel }}
+    {{ $levels = $levels | append .nivel }}
+  {{ end }}
+  {{ if .tipo }}
+    {{ $types = $types | append .tipo }}
+  {{ end }}
+{{ end }}
+
 <div class="bg-bg-resultados-electorales-lg h-screen bg-cover bg-center relative">
   <div class="container">
     <div class="lg:pt-40">
@@ -42,23 +62,41 @@
       <!-- Date -->
       <div class="mb-4">
         <h5 class="bg-primary-color-dark text-color-white py-2 px-6">Año</h5>
-        <!-- PARENT ELEMENT -->
-        <div class="py-4 px-2 date-container"></div>
-        <!-- PARENT ELEMENT END -->
+        <div class="py-4 px-2">
+          {{ range sort (uniq $years) "value" "desc" }}
+            <label class="filter-label" for="filter-{{ . }}">
+              <span>{{ . }}</span>
+              <input type="checkbox" id="filter-{{ . }}" name="year" value="{{ . }}" />
+              <span class="checkmark"></span>
+            </label>
+          {{ end }}
+        </div>
       </div>
       <!-- Nivel -->
       <div class="mb-4">
         <h5 class="bg-primary-color-dark text-color-white py-2 px-6">Nivel</h5>
-        <!-- PARENT ELEMENT -->
-        <div class="py-4 px-2 nivel-container"></div>
-        <!-- PARENT ELEMENT END -->
+        <div class="py-4 px-2">
+          {{ range (uniq $levels) }}
+            <label class="filter-label">
+              <span class="capitalize">{{ . | lower }}</span>
+              <input type="checkbox" name="level" value="{{ . }}" />
+              <span class="checkmark"></span>
+            </label>
+          {{ end }}
+        </div>
       </div>
       <!-- Tipo -->
       <div class="mb-4">
         <h5 class="bg-primary-color-dark text-color-white py-2 px-6">Tipo</h5>
-        <!-- PARENT ELEMENT -->
-        <div class="py-4 px-2 type-container"></div>
-        <!-- PARENT ELEMENT END -->
+        <div class="py-4 px-2 type-container">
+          {{ range sort (uniq $types) }}
+            <label class="filter-label">
+              <span class="capitalize">{{ . | lower }}</span>
+              <input type="checkbox" name="type" value="{{ . }}" />
+              <span class="checkmark"></span>
+            </label>
+          {{ end }}
+        </div>
       </div>
     </div>
     <div class="lg:col-start-4 lg:col-end-12 m-auto lg:w-11/12">
@@ -69,34 +107,8 @@
           </h5>
         </div>
       </div>
-      <!-- PARENT ELEMENT -->
-      <div class="
-          results-container
-          grid grid-cols-1
-          lg:grid-cols-2
-          xl:grid-cols-3
-          gap-8
-          mb-16
-        ">
-        <!-- CHILDS ELEMENTS RESULTS -->
-        <!-- <div class="result-item">
-          <h3 class="result-title">Alcaldía Cartagena 2011</h3>
-          <p class="result-year">
-            Elecciones locales Año 2011, Alcaldía de Bolívar
-          </p>
-          <p class="result-excel">
-            Formato disponible: <span class="font-bold">XLSX</span>
-          </p>
-          <div class="result-btn">
-            <a href="#" class="btn btn--tertiary">Descargar</a>
-          </div>
-        </div> -->
-      </div>
-      <!-- PARENT ELEMENT END -->
-      <div class="pagination text-center">
-        <!-- <button class="pagination__button pagination__button--left bg-primary-color text-white py-2 px-4 mr-4">&leftarrow; Página <span>1</span></button>
-        <button class="pagination__button pagination__button--right bg-primary-color text-white py-2 px-4">Página <span>3</span> &rightarrow;</button> -->
-      </div>
+      <div class="results-container grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 mb-16"></div>
+      <div class="pagination text-center"></div>
     </div>
   </div>
 </section>

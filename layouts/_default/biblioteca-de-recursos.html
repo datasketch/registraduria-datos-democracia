@@ -3,7 +3,7 @@
 {{ $years := slice }}
 {{ $lines := slice }}
 
-<!-- Get years and lines -->
+<!-- Get categories -->
 {{ range $data }}
   {{ $isYear := findRE "[0-9]{4}" .ano }}
   {{ if eq (len $isYear) 1 }}
@@ -39,11 +39,11 @@
         <h5 class="bg-primary-color-dark text-color-white py-2 px-6">
           Fecha de publicación
         </h5>
-        <div class="py-4 px-2 date-container">
+        <div class="py-4 px-2">
           {{ range sort (uniq $years) "value" "desc" }}
             <label class="filter-label" for="filter-{{ . }}">
               <span>{{ . }}</span>
-              <input type="checkbox" id="filter-{{ . }}" name="ano" value="{{ . }}" />
+              <input type="checkbox" id="filter-{{ . }}" name="year" value="{{ . }}" />
               <span class="checkmark"></span>
             </label>
           {{ end }}
@@ -52,11 +52,11 @@
       <!-- Line -->
       <div class="mb-4">
         <h5 class="bg-primary-color-dark text-color-white py-2 px-6">Línea</h5>
-        <div class="py-4 px-2 line-container">
+        <div class="py-4 px-2">
           {{ range (uniq $lines) }}
             <label class="filter-label">
               <span class="capitalize">{{ . | lower }}</span>
-              <input type="checkbox" name="linea" value="{{ . }}" />
+              <input type="checkbox" name="line" value="{{ . }}" />
               <span class="checkmark"></span>
             </label>
           {{ end }}
@@ -71,12 +71,8 @@
           </h5>
         </div>
       </div>
-      <div class="library-container">
-      </div>
-      <div class="pagination text-center">
-        <!-- <button class="pagination__button pagination__button--left bg-primary-color text-white py-2 px-4 mr-4">&leftarrow; Página <span>1</span></button>
-        <button class="pagination__button pagination__button--right bg-primary-color text-white py-2 px-4">Página <span>3</span> &rightarrow;</button> -->
-      </div>
+      <div class="library-container"></div>
+      <div class="pagination text-center"></div>
     </div>
   </div>
 </section>
