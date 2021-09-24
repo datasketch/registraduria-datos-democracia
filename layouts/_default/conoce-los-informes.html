@@ -1,0 +1,173 @@
+{{ define "main" }}
+{{ partial "nav-datos-democracia" . }}
+{{ partial "nav-siscrimel" . }}
+
+<div class="relative bg-bg-banner-informes-sm lg:bg-bg-banner-informes-lg h-screen bg-cover bg-center">
+  <div class="container">
+    <div class="lg:pt-56">
+      <h1 class="text-white lg:text-6xl font-black lg:mb-3">
+        Conoce los informes
+      </h1>
+      <p class="lg:w-5/12 text-white text-lg lg:text-xl">
+        Interactúa con las bases de datos de resultados electorales a través de nuestra herramienta de visualización.
+      </p>
+    </div>
+  </div>
+</div>
+<section class="lg:pt-12 lg:pb-20">
+  <div class="grid grid-cols-1 lg:grid-cols-12">
+    <div class="lg:col-start-2 lg:col-end-4" id="filters">
+      <h4 class="text-primary-color-dark uppercase font-bold lg:text-xl lg:mb-3">
+        Filtros
+      </h4>
+      <!-- Year -->
+      <div class="mb-4 lg:mb-6">
+        <h5 class="bg-primary-color-dark text-color-white py-2 px-6">
+          Año
+        </h5>
+        <div class="">
+        </div>
+      </div>
+      <!-- Nivel -->
+      <div class="mb-4 lg:mb-6">
+        <h5 class="bg-primary-color-dark text-color-white py-2 px-6">Nivel</h5>
+        <div class="">
+        </div>
+      </div>
+      <!-- Type -->
+      <div class="mb-4 lg:mb-6">
+        <h5 class="bg-primary-color-dark text-color-white py-2 px-6">Tipo</h5>
+        <div class="">
+        </div>
+      </div>
+    </div>
+    <div class="lg:col-start-5 lg:col-end-12 relative">
+      <div class="lg:flex lg:flex-col lg:items-end">
+        <div class="mb-12">
+          <span class="block uppercase text-primary-color-dark font-bold text-lg lg:text-xl mb-3">Ordernar por</span>
+          <h5 class="bg-primary-color-dark text-color-white py-2 px-6" id="paginationScroll">
+            Fecha de publicación
+          </h5>
+        </div>
+      </div>
+      <div class="library-container">
+        <div class="library-item">
+          <img src="/images/biblioteca-recursos/imagen-biblioteca-recursos.png" alt="imagen biblioteca recurso"
+            class="library-image" />
+          <div class="library-description">
+            <h4 class="library-title mb-4">Nombre del informe</h4>
+            <span class="block library-linea mb-2">Publicado por: <span class="font-bold">CEDAE</span></span>
+            <p class="library-paragraph mb-8">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+              laoreet dolore magna aliquam erat volutpat.
+            </p>
+            <div class="library-date">
+              <p class="library-year">
+                Fecha de publicación:
+                <span>Julio 23 de 2014</span>
+              </p>
+              <a href="#" class="btn btn--tertiary">Descargar</a>
+            </div>
+          </div>
+        </div>
+        <div class="library-item">
+          <img src="/images/biblioteca-recursos/imagen-biblioteca-recursos.png" alt="imagen biblioteca recurso"
+            class="library-image" />
+          <div class="library-description">
+            <h4 class="library-title mb-4">Nombre del informe</h4>
+            <span class="block library-linea mb-2">Publicado por: <span class="font-bold">CEDAE</span></span>
+            <p class="library-paragraph mb-8">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+              laoreet dolore magna aliquam erat volutpat.
+            </p>
+            <div class="library-date">
+              <p class="library-year">
+                Fecha de publicación:
+                <span>Julio 23 de 2014</span>
+              </p>
+              <a href="#" class="btn btn--tertiary">Descargar</a>
+            </div>
+          </div>
+        </div>
+        <div class="library-item">
+          <img src="/images/biblioteca-recursos/imagen-biblioteca-recursos.png" alt="imagen biblioteca recurso"
+            class="library-image" />
+          <div class="library-description">
+            <h4 class="library-title mb-4">Nombre del informe</h4>
+            <span class="block library-linea mb-2">Publicado por: <span class="font-bold">CEDAE</span></span>
+            <p class="library-paragraph mb-8">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+              laoreet dolore magna aliquam erat volutpat.
+            </p>
+            <div class="library-date">
+              <p class="library-year">
+                Fecha de publicación:
+                <span>Julio 23 de 2014</span>
+              </p>
+              <a href="#" class="btn btn--tertiary">Descargar</a>
+            </div>
+          </div>
+        </div>
+        <div class="library-item">
+          <img src="/images/biblioteca-recursos/imagen-biblioteca-recursos.png" alt="imagen biblioteca recurso"
+            class="library-image" />
+          <div class="library-description">
+            <h4 class="library-title mb-4">Nombre del informe</h4>
+            <span class="block library-linea mb-2">Publicado por: <span class="font-bold">CEDAE</span></span>
+            <p class="library-paragraph mb-8">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+              laoreet dolore magna aliquam erat volutpat.
+            </p>
+            <div class="library-date">
+              <p class="library-year">
+                Fecha de publicación:
+                <span>Julio 23 de 2014</span>
+              </p>
+              <a href="#" class="btn btn--tertiary">Descargar</a>
+            </div>
+          </div>
+        </div>
+        <div class="library-item">
+          <img src="/images/biblioteca-recursos/imagen-biblioteca-recursos.png" alt="imagen biblioteca recurso"
+            class="library-image" />
+          <div class="library-description">
+            <h4 class="library-title mb-4">Nombre del informe</h4>
+            <span class="block library-linea mb-2">Publicado por: <span class="font-bold">CEDAE</span></span>
+            <p class="library-paragraph mb-8">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+              laoreet dolore magna aliquam erat volutpat.
+            </p>
+            <div class="library-date">
+              <p class="library-year">
+                Fecha de publicación:
+                <span>Julio 23 de 2014</span>
+              </p>
+              <a href="#" class="btn btn--tertiary">Descargar</a>
+            </div>
+          </div>
+        </div>
+        <div class="library-item">
+          <img src="/images/biblioteca-recursos/imagen-biblioteca-recursos.png" alt="imagen biblioteca recurso"
+            class="library-image" />
+          <div class="library-description">
+            <h4 class="library-title mb-4">Nombre del informe</h4>
+            <span class="block library-linea mb-2">Publicado por: <span class="font-bold">CEDAE</span></span>
+            <p class="library-paragraph mb-8">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+              laoreet dolore magna aliquam erat volutpat.
+            </p>
+            <div class="library-date">
+              <p class="library-year">
+                Fecha de publicación:
+                <span>Julio 23 de 2014</span>
+              </p>
+              <a href="#" class="btn btn--tertiary">Descargar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pagination text-center"></div>
+    </div>
+  </div>
+</section>
+{{ end }}

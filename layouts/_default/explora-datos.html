@@ -1,18 +1,21 @@
 {{ define "main" }}
 {{ partial "nav-datos-democracia" . }}
 {{ partial "nav-resultados-electorales" . }}
-<div class="bg-bg-explora-datos h-screen bg-cover bg-center relative">
+<div class="bg-bg-resultados-electorales-lg h-screen bg-cover bg-center relative">
   <div class="container">
     <div class="lg:pt-40">
-      <h1 class="text-white lg:text-6xl font-black lg:mb-3">
-        Explora los Datos
+      <h1 class="text-white uppercase lg:text-6xl font-black lg:mb-6">
+        Resultados electorales
       </h1>
-      <p class="paragraph paragraph--white lg:w-5/12">
-        Interactúa con las bases de datos de resultados electorales a través de nuestra herramienta de visualización.
+      <p class="paragraph paragraph--white lg:w-6/12">
+        La Registraduría del siglo XXI pone a disposición de la ciudadanía, la academia y de las entidades del Estado el
+        histórico de resultados electorales en Colombia. En esta sección se encuentran disponibles para descarga en
+        formato .CSV los resultados de las elecciones a la Presidencia (primera y segunda vuelta), Congreso (Cámara de
+        Representantes y Senado), Asamblea, Gobernación, Parlamento Andino, Alcaldía y Concejo.
       </p>
     </div>
   </div>
-  <img class="hidden lg:block lg:absolute lg:-bottom-0 object-cover w-full" src="/images/curva-arriba-abajo.svg"
+  <img class="hidden lg:block lg:absolute lg:-bottom-12 object-cover w-full" src="/images/curva-abajo-arriba.svg"
     alt="" />
 </div>
 <div class="text-center pb-16 lg:pt-8 relative">
@@ -20,8 +23,8 @@
     <h2 class="
     mb-4 text-3xl font-black lg:text-4xl lg:mb-8 text-primary-color-dark
       ">
-      Resultados Electorales
-      <span class="font-normal block lg:text-4xl">en Colombia</span>
+      Explora los datos
+      <span class="font-normal block lg:text-3xl">de Resultados Electorales en Colombia</span>
     </h2>
     <a href="#" class="
         bg-primary-color-dark
@@ -32,6 +35,7 @@
         py-3
         px-8
         text-sm
+        rounded
       ">Como utilizar esta herramienta</a>
   </div>
 </div>
@@ -101,38 +105,38 @@
         ">Leer Más</a>
     </div>
     <div class="lg:py-20 lg:px-40 bg-primary-color-dark text-white">
-      <h2 class="lg:text-4xl lg:mb-14 text-center">
+      <h2 class="text-2xl lg:text-3xl lg:mb-14 text-center">
         Años más consultados
       </h2>
       <div class="grid grid-cols-2 gap-12 text-center">
-        <a href="#" class="
+        <div class="
             text-3xl
             font-bold
             p-4
             lg:text-3xl
             border-2 border-primary-color-light
-          ">2010</a>
-        <a href="#" class="
+          ">2010</div>
+        <div class="
             text-3xl
             font-bold
             p-4
             lg:text-3xl
             border-2 border-primary-color-light
-          ">2011</a>
-        <a href="#" class="
+          ">2011</div>
+        <div class="
             text-3xl
             font-bold
             p-4
             lg:text-3xl
             border-2 border-primary-color-light
-          ">2014</a>
-        <a href="#" class="
+          ">2014</div>
+        <div class="
             text-3xl
             font-bold
             p-4
             lg:text-3xl
             border-2 border-primary-color-light
-          ">2018</a>
+          ">2018</div>
       </div>
     </div>
   </div>

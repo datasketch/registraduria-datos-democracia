@@ -9,49 +9,31 @@
 
 <!-- Get categories -->
 {{ range $data }}
-  {{ $isYear := findRE "[0-9]{4}" .ano }}
-  {{ if eq (len $isYear) 1 }}
-    {{ $years = $years | append (int .ano) }}
-  {{ end }}
-  {{ if .nivel }}
-    {{ $levels = $levels | append .nivel }}
-  {{ end }}
-  {{ if .tipo }}
-    {{ $types = $types | append .tipo }}
-  {{ end }}
+{{ $isYear := findRE "[0-9]{4}" .ano }}
+{{ if eq (len $isYear) 1 }}
+{{ $years = $years | append (int .ano) }}
+{{ end }}
+{{ if .nivel }}
+{{ $levels = $levels | append .nivel }}
+{{ end }}
+{{ if .tipo }}
+{{ $types = $types | append .tipo }}
+{{ end }}
 {{ end }}
 
-<div class="bg-bg-resultados-electorales-lg h-screen bg-cover bg-center relative">
+<div class="bg-bg-explora-datos h-screen bg-cover bg-center relative">
   <div class="container">
     <div class="lg:pt-40">
-      <h1 class="text-white uppercase lg:text-6xl font-black lg:mb-6">
-        Resultados electorales
+      <h1 class="text-white lg:text-6xl font-black mb-4 lg:mb-6">
+        Descarga los datos
       </h1>
-      <p class="paragraph paragraph--white lg:w-6/12">
-        La Registraduría del siglo XXI pone a disposición de la ciudadanía, la academia y de las entidades del Estado el
-        histórico de resultados electorales en Colombia. En esta sección se encuentran disponibles para descarga en
-        formato .CSV los resultados de las elecciones a la Presidencia (primera y segunda vuelta), Congreso (Cámara de
-        Representantes y Senado), Asamblea, Gobernación, Parlamento Andino, Alcaldía y Concejo.
+      <p class="text-lg lg:text-xl text-white lg:w-5/12">
+        Accede a las bases de datos de resultados electorales a través de nuestra herramienta de visualización.
       </p>
     </div>
   </div>
-  <img class="hidden lg:block lg:absolute lg:-bottom-12 object-cover w-full" src="/images/curva-abajo-arriba.svg"
+  <img class="hidden lg:block lg:absolute lg:-bottom-0 object-cover w-full" src="/images/curva-arriba-abajo.svg"
     alt="" />
-</div>
-<div class="text-center -mt-4 pb-16 lg:pt-8">
-  <div class="container">
-    <h2 class="mb-4 text-3xl font-black lg:text-4xl lg:mb-8" style="color: #003057;">
-      Descarga los datos
-  </h2>
-    <p class="text-lg lg:text-xl lg:w-8/12 lg:m-auto">
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
-      wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-      lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
-      iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
-      illum dolore eu feugiat
-    </p>
-  </div>
 </div>
 <section class="lg:pt-12 lg:pb-20 bg-white">
   <div class="grid grid-cols-1 lg:grid-cols-12">
@@ -64,11 +46,11 @@
         <h5 class="bg-primary-color-dark text-color-white py-2 px-6">Año</h5>
         <div class="py-4 px-2">
           {{ range sort (uniq $years) "value" "desc" }}
-            <label class="filter-label" for="filter-{{ . }}">
-              <span>{{ . }}</span>
-              <input type="checkbox" id="filter-{{ . }}" name="year" value="{{ . }}" />
-              <span class="checkmark"></span>
-            </label>
+          <label class="filter-label" for="filter-{{ . }}">
+            <span>{{ . }}</span>
+            <input type="checkbox" id="filter-{{ . }}" name="year" value="{{ . }}" />
+            <span class="checkmark"></span>
+          </label>
           {{ end }}
         </div>
       </div>
@@ -77,11 +59,11 @@
         <h5 class="bg-primary-color-dark text-color-white py-2 px-6">Nivel</h5>
         <div class="py-4 px-2">
           {{ range (uniq $levels) }}
-            <label class="filter-label">
-              <span class="capitalize">{{ . | lower }}</span>
-              <input type="checkbox" name="level" value="{{ . }}" />
-              <span class="checkmark"></span>
-            </label>
+          <label class="filter-label">
+            <span class="capitalize">{{ . | lower }}</span>
+            <input type="checkbox" name="level" value="{{ . }}" />
+            <span class="checkmark"></span>
+          </label>
           {{ end }}
         </div>
       </div>
@@ -90,11 +72,11 @@
         <h5 class="bg-primary-color-dark text-color-white py-2 px-6">Tipo</h5>
         <div class="py-4 px-2 type-container">
           {{ range sort (uniq $types) }}
-            <label class="filter-label">
-              <span class="capitalize">{{ . | lower }}</span>
-              <input type="checkbox" name="type" value="{{ . }}" />
-              <span class="checkmark"></span>
-            </label>
+          <label class="filter-label">
+            <span class="capitalize">{{ . | lower }}</span>
+            <input type="checkbox" name="type" value="{{ . }}" />
+            <span class="checkmark"></span>
+          </label>
           {{ end }}
         </div>
       </div>
@@ -102,6 +84,7 @@
     <div class="lg:col-start-4 lg:col-end-12 m-auto lg:w-11/12">
       <div class="lg:flex lg:flex-col lg:items-end">
         <div class="mb-12">
+          <span class="block uppercase text-primary-color-dark font-bold text-lg lg:text-xl mb-3">Ordernar por</span>
           <h5 class="bg-primary-color-dark text-color-white py-2 px-6" id="paginationScroll">
             Fecha de publicación
           </h5>

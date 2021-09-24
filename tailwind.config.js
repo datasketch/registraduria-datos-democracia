@@ -86,6 +86,8 @@ module.exports = {
         'bg-cedae-sm': 'url(/images/cedae/cedae-sm.png)',
         'bg-cedae-lines-white': 'url(/images/cedae/cedae-lines-white.svg)',
         'bg-cedae-lines-blue': 'url(/images/cedae/cedae-lines-blue.svg)',
+        'bg-banner-informes-lg': 'url(/images/siscrimel/conoce-los-informes/banner-conoce-los-informes@2x.png)',
+        'bg-banner-informes-sm': 'url(/images/siscrimel/conoce-los-informes/banner-conoce-los-informes.png)',
       },
     },
   },
