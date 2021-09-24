@@ -86,53 +86,31 @@ export const renderItemResult = (data) => {
       </p>
       <div class="result-btn">
         <a target="_blank" href="${
-          data.path
-        }" class="btn btn--tertiary">Descargar</a>
+  data.path
+}" class="btn btn--tertiary">Descargar</a>
       </div>
     </div>
   `;
   return html;
 };
 
-export const renderButtons = (parentEl, currentPage, perPagination, data) => {
-  parentEl.innerHTML = "";
+export const renderPaginationButtons = (parentEl, currentPage, perPagination, data) => {
+  // eslint-disable-next-line no-param-reassign
+  parentEl.innerHTML = '';
   const curPage = currentPage;
   const numPages = Math.ceil(data.length / perPagination);
 
   if (curPage === 1 && numPages > 1) {
-    return `
-    <button data-goto="${
-      curPage + 1
-    }" class="pagination__button bg-primary-color text-white py-2 px-4">Página <span>${
-      curPage + 1
-    }</span> &rightarrow;<button>
-    `;
+    return `<button data-page="${curPage + 1}" class="pagination__button bg-primary-color text-white py-2 px-4">Página <span>${curPage + 1}</span> &rightarrow;<button>`;
   }
 
   if (curPage === numPages && numPages > 1) {
-    return `
-    <button data-goto="${
-      curPage - 1
-    }" class="pagination__button bg-primary-color text-white py-2 px-4 mr-4">&leftarrow; Página <span>${
-      curPage - 1
-    }</span><button>
-    `;
+    return `<button data-page="${curPage - 1}" class="pagination__button bg-primary-color text-white py-2 px-4 mr-4">&leftarrow; Página <span>${curPage - 1}</span><button>`;
   }
 
   if (curPage < numPages) {
-    return `
-    <button data-goto="${
-      curPage - 1
-    }" class="pagination__button bg-primary-color text-white py-2 px-4 mr-4">&leftarrow; Página <span>${
-      curPage - 1
-    }</span><button>
-    <button data-goto="${
-      curPage + 1
-    }" class="pagination__button bg-primary-color text-white py-2 px-4">Página <span>${
-      curPage + 1
-    }</span> &rightarrow;<button>
-    `;
+    return `<button data-page="${curPage - 1}" class="pagination__button bg-primary-color text-white py-2 px-4 mr-4">&leftarrow; Página <span>${curPage - 1}</span><button><button data-page="${curPage + 1}" class="pagination__button bg-primary-color text-white py-2 px-4">Página <span>${curPage + 1}</span> &rightarrow;<button>`;
   }
 
-  return "";
+  return '';
 };

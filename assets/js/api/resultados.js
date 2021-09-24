@@ -3,16 +3,17 @@ import {
   renderItemDate,
   renderItemNivel,
   renderItemType,
-  renderButtons,
-} from "../utils/render";
-const data = document.querySelector("#data-resultados");
-const containerResults = document.querySelector(".results-container");
-const containerDate = document.querySelector(".date-container");
-const containerNivel = document.querySelector(".nivel-container");
-const containerType = document.querySelector(".type-container");
-const filtersContainer = document.getElementById("filters");
-const paginacion = document.querySelector(".pagination");
-const scrollPagination = document.querySelector("#paginationScroll");
+  renderPaginationButtons,
+} from '../utils/render';
+
+const data = document.querySelector('#data-resultados');
+const containerResults = document.querySelector('.results-container');
+const containerDate = document.querySelector('.date-container');
+const containerNivel = document.querySelector('.nivel-container');
+const containerType = document.querySelector('.type-container');
+const filtersContainer = document.getElementById('filters');
+const paginacion = document.querySelector('.pagination');
+const scrollPagination = document.querySelector('#paginationScroll');
 data.remove();
 
 const state = {
@@ -41,11 +42,11 @@ const loadYears = () => {
         .map((item) => item.ano)
         .filter((year) => +year)
         .sort((a, b) => b - a),
-    ]
+    ],
   );
   [...years].forEach((year) => {
     const html = renderItemDate(year);
-    containerDate.insertAdjacentHTML("beforeend", html);
+    containerDate.insertAdjacentHTML('beforeend', html);
   });
 };
 
@@ -56,64 +57,62 @@ const loadNivels = () => {
         .map((item) => item.nivel)
         .filter((level) => level !== undefined)
         .sort(),
-    ]
+    ],
   );
   [...nivels].forEach((nivel) => {
     const html = renderItemNivel(nivel);
-    containerNivel.insertAdjacentHTML("beforeend", html);
+    containerNivel.insertAdjacentHTML('beforeend', html);
   });
 };
 
 const loadTypes = () => {
   const types = new Set(
-    ...[state.originalData.map((item) => item.tipo).sort()]
+    ...[state.originalData.map((item) => item.tipo).sort()],
   );
 
   [...types].forEach((type) => {
     const html = renderItemType(type);
-    containerType.insertAdjacentHTML("beforeend", html);
+    containerType.insertAdjacentHTML('beforeend', html);
   });
 };
 loadTypes();
 
 const filterData = (key, values, baseData) => {
-  containerResults.innerHTML = "";
+  containerResults.innerHTML = '';
   if (!key || !values.length) {
-    state.filteredData =
-      baseData || state.originalData.sort((a, b) => b.ano - a.ano);
+    state.filteredData = baseData || state.originalData.sort((a, b) => b.ano - a.ano);
     pagination(state.page, state.filteredData).forEach((item) => {
       const html = renderItemResult(item);
-      containerResults.insertAdjacentHTML("beforeend", html);
+      containerResults.insertAdjacentHTML('beforeend', html);
     });
     paginacion.insertAdjacentHTML(
-      "beforeend",
-      renderButtons(
+      'beforeend',
+      renderPaginationButtons(
         paginacion,
         state.page,
         state.itemsPerPagination,
-        state.filteredData
-      )
+        state.filteredData,
+      ),
     );
     return;
   }
-  state.filteredData =
-    baseData ||
-    state.filteredData
+  state.filteredData = baseData
+    || state.filteredData
       .filter((item) => values.includes(item[key]))
       .sort((a, b) => b.ano - a.ano);
 
   pagination(state.page, state.filteredData).forEach((item) => {
     const html = renderItemResult(item);
-    containerResults.insertAdjacentHTML("beforeend", html);
+    containerResults.insertAdjacentHTML('beforeend', html);
   });
   paginacion.insertAdjacentHTML(
-    "beforeend",
-    renderButtons(
+    'beforeend',
+    renderPaginationButtons(
       paginacion,
       state.page,
       state.itemsPerPagination,
-      state.filteredData
-    )
+      state.filteredData,
+    ),
   );
 };
 
@@ -124,7 +123,7 @@ const init = () => {
 };
 init();
 
-filtersContainer.addEventListener("change", (event) => {
+filtersContainer.addEventListener('change', (event) => {
   const { name: key, value, checked } = event.target;
 
   if (!state.filters[key] && !checked) filterData();
@@ -139,12 +138,12 @@ filtersContainer.addEventListener("change", (event) => {
   }
 });
 
-paginacion.addEventListener("click", function (e) {
-  const btn = e.target.closest(".pagination__button");
+paginacion.addEventListener('click', (e) => {
+  const btn = e.target.closest('.pagination__button');
 
   if (!btn) return;
 
   state.page = +btn.dataset.goto;
   filterData(null, null, state.filteredData);
-  scrollPagination.scrollIntoView({ behavior: "smooth" });
+  scrollPagination.scrollIntoView({ behavior: 'smooth' });
 });

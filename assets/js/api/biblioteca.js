@@ -1,131 +1,88 @@
-"use strict";
 import {
   renderItemLibrary,
-  renderItemDate,
-  renderItemLine,
-  renderButtons,
-} from "../utils/render";
+  renderPaginationButtons,
+} from '../utils/render';
 
-const data = document.querySelector("#data-biblioteca");
-const containerLibrary = document.querySelector(".library-container");
-const containerDate = document.querySelector(".date-container");
-const containerLine = document.querySelector(".line-container");
-const filtersContainer = document.getElementById("filters");
-const paginacion = document.querySelector(".pagination");
-const scrollPagination = document.querySelector("#paginationScroll");
+const dataEl = document.querySelector('#data-biblioteca');
+const containerLibrary = document.querySelector('.library-container');
+const filtersContainer = document.getElementById('filters');
+const paginationContainer = document.querySelector('.pagination');
+const scrollPagination = document.querySelector('#paginationScroll');
 
-data.remove();
+dataEl.remove();
 
 const state = {
-  originalData: JSON.parse(data.value),
-  filteredData: JSON.parse(data.value),
+  originalData: JSON.parse(dataEl.value)
+    .filter(({ titulo }) => titulo).sort((a, b) => b.ano - a.ano),
+  filteredData: null,
   filters: {
     ano: [],
     linea: [],
   },
-  itemsPerPagination: 4,
+  itemsPerPagination: 10,
   page: 1,
 };
 
-const pagination = (page = state.page, data) => {
-  const start = (page - 1) * state.itemsPerPagination; // 0;
-  const end = page * state.itemsPerPagination; // 4;
+function paginate(page = state.page, data) {
+  const start = (page - 1) * state.itemsPerPagination;
+  const end = page * state.itemsPerPagination;
   return data.slice(start, end);
-};
+}
 
-const loadYears = () => {
-  // GENERATE DINAMIC YEARS
-  const years = new Set(
-    ...[
-      state.originalData
-        .map((item) => item.ano)
-        .filter((year) => +year)
-        .sort((a, b) => b - a),
-    ]
-  );
-  [...years].forEach((year) => {
-    const html = renderItemDate(year);
-    containerDate.insertAdjacentHTML("beforeend", html);
-  });
-};
-
-const loadLines = () => {
-  const lines = new Set(...[state.originalData.map((item) => item.linea)]);
-  [...lines].map((line) => {
-    const html = renderItemLine(line);
-    containerLine.insertAdjacentHTML("beforeend", html);
-  });
-};
-
-function filterData(key, values, baseData) {
-  containerLibrary.innerHTML = "";
-  if (!key || !values.length) {
-    state.filteredData =
-      baseData || state.originalData.sort((a, b) => b.ano - a.ano);
-    pagination(state.page, state.filteredData).forEach((item) => {
-      const html = renderItemLibrary(item);
-      containerLibrary.insertAdjacentHTML("beforeend", html);
-    });
-    paginacion.insertAdjacentHTML(
-      "beforeend",
-      renderButtons(
-        paginacion,
-        state.page,
-        state.itemsPerPagination,
-        state.filteredData
-      )
-    );
-    return;
+function filterData() {
+  containerLibrary.innerHTML = '';
+  const { filters, originalData } = state;
+  const hasYearFilter = !!filters.ano.length;
+  const hasLineFilter = !!filters.linea.length;
+  state.filteredData = originalData;
+  if (hasYearFilter) {
+    state.filteredData = state.filteredData.filter((item) => filters.ano.includes(item.ano));
   }
-  state.filteredData =
-    baseData ||
-    state.originalData
-      .filter((item) => values.includes(item[key]))
-      .sort((a, b) => b.ano - a.ano);
+  if (hasLineFilter) {
+    state.filteredData = state.filteredData.filter((item) => filters.linea.includes(item.linea));
+  }
 
-  pagination(state.page, state.filteredData).forEach((item) => {
+  paginate(state.page, state.filteredData).forEach((item) => {
     const html = renderItemLibrary(item);
-    containerLibrary.insertAdjacentHTML("beforeend", html);
+    containerLibrary.insertAdjacentHTML('beforeend', html);
   });
-  paginacion.insertAdjacentHTML(
-    "beforeend",
-    renderButtons(
-      paginacion,
+
+  paginationContainer.insertAdjacentHTML(
+    'beforeend',
+    renderPaginationButtons(
+      paginationContainer,
       state.page,
       state.itemsPerPagination,
-      state.filteredData
-    )
+      state.filteredData,
+    ),
   );
 }
 
-const init = () => {
-  filterData();
-  loadYears();
-  loadLines();
-};
-init();
+filtersContainer.addEventListener('change', (event) => {
+  const { name: key, value } = event.target;
+  const filterKeyValue = state.filters[key];
 
-filtersContainer.addEventListener("change", (event) => {
-  const { name: key, value, checked } = event.target;
-
-  if (!state.filters[key] && !checked) filterData();
-
-  if (state.filters[key].includes(value) && !checked) {
-    const idx = state.filters[key].findIndex((item) => item === value);
-    state.filters[key].splice(idx, 1);
-    filterData(key, state.filters[key]);
+  if (filterKeyValue.includes(value)) {
+    const idx = filterKeyValue.findIndex((item) => item === value);
+    filterKeyValue.splice(idx, 1);
   } else {
-    state.filters[key].push(value);
-    filterData(key, state.filters[key]);
+    filterKeyValue.push(value);
   }
+
+  state.page = 1;
+  filterData();
 });
 
-paginacion.addEventListener("click", function (e) {
-  const btn = e.target.closest(".pagination__button");
+paginationContainer.addEventListener('click', (e) => {
+  const btn = e.target.closest('.pagination__button');
 
   if (!btn) return;
 
-  state.page = +btn.dataset.goto;
-  filterData(null, null, state.filteredData);
-  scrollPagination.scrollIntoView({ behavior: "smooth" });
+  state.page = +btn.dataset.page;
+  filterData();
+  scrollPagination.scrollIntoView({ behavior: 'smooth' });
+});
+
+window.addEventListener('load', () => {
+  filterData();
 });

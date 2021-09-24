@@ -158,71 +158,36 @@
   }
 
   /* The container */
-  .container-input {
-    display: block;
-    position: relative;
-    padding-bottom: 10px !important;
-    cursor: pointer;
-    font-size: 16px;
-    color: #0a4a83;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  .filter-label {
+    @apply cursor-pointer text-primary-color text-base select-none flex pb-3 space-x-2 items-start justify-between;
   }
-
-  /* Hide the browser's default checkbox */
-  .container-input input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
+  
+  .filter-label input {
+    @apply hidden;
   }
-
-  /* Create a custom checkbox */
-  .checkmark {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 20px;
-    width: 20px;
+  
+  .filter-label .checkmark {
+    @apply w-5 h-5 flex-shrink-0 relative;
     background-color: #eee;
   }
-
-  /* On mouse-over, add a grey background color */
-  .container-input:hover input ~ .checkmark {
+  
+  .filter-label:hover .checkmark {
     background-color: #ccc;
   }
 
-  /* When the checkbox is checked, add a blue background */
-  .container-input input:checked ~ .checkmark {
-    background-color: #2196f3;
-  }
-
   /* Create the checkmark/indicator (hidden when not checked) */
-  .checkmark:after {
+  .filter-label .checkmark:after {
     content: "";
-    position: absolute;
-    display: none;
+    background-image: url(/images/checkmark.svg);
+    @apply absolute w-3 h-3 mt-1 ml-1 bg-center bg-contain hidden;
   }
 
-  /* Show the checkmark when checked */
-  .container-input input:checked ~ .checkmark:after {
-    display: block;
+  .filter-label input:checked ~ .checkmark {
+    @apply bg-color-light;
   }
 
-  /* Style the checkmark/indicator */
-  .container-input .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
+  .filter-label input:checked ~ .checkmark:after {
+    @apply block;
   }
 
   /* Library item */
