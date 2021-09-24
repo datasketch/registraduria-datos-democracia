@@ -107,7 +107,6 @@
           mb-12
           w-10/12
           lg:grid-cols-4
-          m-auto
           lg:gap-x-24 lg:w-9/12 lg:mb-16
         ">
         <a href="#" class="
@@ -317,7 +316,7 @@
 </section> -->
 {{ end }} {{ define "head" }}
 <link rel="stylesheet" href="https://unpkg.com/swiper@6.7.0/swiper-bundle.min.css" />
-{{ end }} {{ define "js" }} {{ $services := resources.Get "js/home.js" |
+{{ end }} {{ define "js" }} {{ $services := resources.Get "js/datos-democracia.js" |
 js.Build (dict "minify" true)}}
 <script src="{{ $services.Permalink }}"></script>
 {{ end }}
