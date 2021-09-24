@@ -1,6 +1,6 @@
-import { setupSlider } from "./lib/slider";
+import { setupSlider } from './lib/slider';
 
-setupSlider(".slider-wrapper", {
+setupSlider('.slider-wrapper', {
   autoplay: {
     delay: 5000,
   },

@@ -1,4 +1,17 @@
 {{ define "main" }}
+{{ $data := .Site.Data.biblioteca }}
+{{ $years := slice }}
+{{ $lines := slice }}
+
+<!-- Get categories -->
+{{ range $data }}
+  {{ $isYear := findRE "[0-9]{4}" .ano }}
+  {{ if eq (len $isYear) 1 }}
+    {{ $years = $years | append (int .ano) }}
+  {{ end }}
+  {{ $lines = $lines | append .linea }}
+{{ end }}
+
 <div class="relative bg-biblioteca-recursos-bg h-screen bg-cover bg-center">
   <div class="container">
     <div class="lg:pt-56">
@@ -26,16 +39,28 @@
         <h5 class="bg-primary-color-dark text-color-white py-2 px-6">
           Fecha de publicación
         </h5>
-        <!-- PARENT ELEMENT -->
-        <div class="py-4 px-2 date-container"></div>
-        <!-- PARENT ELEMENT END -->
+        <div class="py-4 px-2">
+          {{ range sort (uniq $years) "value" "desc" }}
+            <label class="filter-label" for="filter-{{ . }}">
+              <span>{{ . }}</span>
+              <input type="checkbox" id="filter-{{ . }}" name="year" value="{{ . }}" />
+              <span class="checkmark"></span>
+            </label>
+          {{ end }}
+        </div>
       </div>
       <!-- Line -->
       <div class="mb-4">
         <h5 class="bg-primary-color-dark text-color-white py-2 px-6">Línea</h5>
-        <!-- PARENT ELEMENT -->
-        <div class="py-4 px-2 line-container"></div>
-        <!-- PARENT ELEMENT END -->
+        <div class="py-4 px-2">
+          {{ range (uniq $lines) }}
+            <label class="filter-label">
+              <span class="capitalize">{{ . | lower }}</span>
+              <input type="checkbox" name="line" value="{{ . }}" />
+              <span class="checkmark"></span>
+            </label>
+          {{ end }}
+        </div>
       </div>
     </div>
     <div class="lg:col-start-5 lg:col-end-12 relative">
@@ -46,49 +71,13 @@
           </h5>
         </div>
       </div>
-      <!-- PARENT ELEMENT -->
-      <div class="library-container">
-        <!-- CHILDS ELEMENTS DATAS -->
-        <!-- <div class="library-item">
-          <img
-            src="/images/biblioteca-recursos/imagen-biblioteca-recursos.png"
-            alt="imagen biblioteca recurso"
-            class="library-image"
-          />
-          <div class="library-description">
-            <span class="library-linea">${item.linea}</span>
-            <h4 class="library-title">${item.titulo}</h4>
-            <cite class="library-autor"
-              >Autor: <span class="font-bold">${item.autor}</span></cite
-            >
-            <p class="library-paragraph">${item.descripcion}</p>
-            <div class="library-date">
-              <p class="library-year">
-                Año de Investigación:
-                <span> ${item.ano}</span>
-              </p>
-              <a
-                href="${item.url}"
-                target="_blank"
-                download="XLSX"
-                class="btn btn--tertiary"
-                >Descargar</a
-              >
-            </div>
-          </div>
-        </div> -->
-        <!-- CHILDS ELEMENTS DATAS END -->
-      </div>
-      <!-- PARENT ELEMENT END -->
-      <div class="pagination text-center">
-        <!-- <button class="pagination__button pagination__button--left bg-primary-color text-white py-2 px-4 mr-4">&leftarrow; Página <span>1</span></button>
-        <button class="pagination__button pagination__button--right bg-primary-color text-white py-2 px-4">Página <span>3</span> &rightarrow;</button> -->
-      </div>
+      <div class="library-container"></div>
+      <div class="pagination text-center"></div>
     </div>
   </div>
 </section>
-<input type="hidden" name="data" id="data-biblioteca" value="{{ jsonify .Site.Data.biblioteca }}" />
+<input type="hidden" name="data" id="data-biblioteca" value="{{ jsonify $data }}" />
 {{ end }} {{ define "js" }} {{ $biblioteca := resources.Get
-"js/api/biblioteca.js" | js.Build (dict "minify" true)}}
+"js/api/biblioteca.js" | js.Build (dict "minify" false)}}
 <script src="{{ $biblioteca.Permalink }}"></script>
 {{ end }}
