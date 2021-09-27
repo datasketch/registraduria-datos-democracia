@@ -1,4 +1,4 @@
 ---
 title: Explora los datos
-layout: explora-datos
+layout: explora-datos-electorales
 ---

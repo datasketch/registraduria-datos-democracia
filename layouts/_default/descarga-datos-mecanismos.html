@@ -1,0 +1,104 @@
+{{ define "main" }}
+{{ partial "nav-datos-democracia" . }}
+{{ partial "nav-mecanismos-participacion" . }}
+
+{{ $data := .Site.Data.resultados }}
+{{ $years := slice }}
+{{ $levels := slice }}
+{{ $types := slice }}
+
+<!-- Get categories -->
+{{ range $data }}
+{{ $isYear := findRE "[0-9]{4}" .ano }}
+{{ if eq (len $isYear) 1 }}
+{{ $years = $years | append (int .ano) }}
+{{ end }}
+{{ if .nivel }}
+{{ $levels = $levels | append .nivel }}
+{{ end }}
+{{ if .tipo }}
+{{ $types = $types | append .tipo }}
+{{ end }}
+{{ end }}
+
+<div class="bg-bg-banner-mecanismos-descarga-sm lg:bg-bg-banner-mecanismos-descarga-lg h-screen bg-cover bg-center relative">
+    <div class="container">
+        <div class="lg:pt-40">
+            <h1 class="text-white lg:text-6xl font-black mb-4 lg:mb-6">
+                Descarga los datos
+            </h1>
+            <p class="text-lg lg:text-xl text-white lg:w-5/12">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpa.
+            </p>
+        </div>
+    </div>
+    <img class="hidden lg:block lg:absolute lg:-bottom-0 object-cover w-full" src="/images/curva-arriba-abajo.svg"
+        alt="" />
+</div>
+<section class="lg:pt-12 lg:pb-20 bg-white">
+    <div class="grid grid-cols-1 lg:grid-cols-12">
+        <div class="lg:col-start-2 lg:col-end-4" id="filters">
+            <h4 class="text-primary-color-dark uppercase font-bold lg:text-xl lg:mb-3">
+                Filtros
+            </h4>
+            <!-- Date -->
+            <div class="mb-4">
+                <h5 class="bg-primary-color-dark text-color-white py-2 px-6">Año</h5>
+                <div class="py-4 px-2">
+                    {{ range sort (uniq $years) "value" "desc" }}
+                    <label class="filter-label" for="filter-{{ . }}">
+                        <span>{{ . }}</span>
+                        <input type="checkbox" id="filter-{{ . }}" name="year" value="{{ . }}" />
+                        <span class="checkmark"></span>
+                    </label>
+                    {{ end }}
+                </div>
+            </div>
+            <!-- Nivel -->
+            <div class="mb-4">
+                <h5 class="bg-primary-color-dark text-color-white py-2 px-6">Nivel</h5>
+                <div class="py-4 px-2">
+                    {{ range (uniq $levels) }}
+                    <label class="filter-label">
+                        <span class="capitalize">{{ . | lower }}</span>
+                        <input type="checkbox" name="level" value="{{ . }}" />
+                        <span class="checkmark"></span>
+                    </label>
+                    {{ end }}
+                </div>
+            </div>
+            <!-- Tipo -->
+            <div class="mb-4">
+                <h5 class="bg-primary-color-dark text-color-white py-2 px-6">Tipo</h5>
+                <div class="py-4 px-2 type-container">
+                    {{ range sort (uniq $types) }}
+                    <label class="filter-label">
+                        <span class="capitalize">{{ . | lower }}</span>
+                        <input type="checkbox" name="type" value="{{ . }}" />
+                        <span class="checkmark"></span>
+                    </label>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+        <div class="lg:col-start-4 lg:col-end-12 m-auto lg:w-11/12">
+            <div class="lg:flex lg:flex-col lg:items-end">
+                <div class="mb-12">
+                    <span class="block uppercase text-primary-color-dark font-bold text-lg lg:text-xl mb-3">Ordernar
+                        por</span>
+                    <h5 class="bg-primary-color-dark text-color-white py-2 px-6" id="paginationScroll">
+                        Fecha de publicación
+                    </h5>
+                </div>
+            </div>
+            <div class="results-container grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 mb-16"></div>
+            <div class="pagination text-center"></div>
+        </div>
+    </div>
+</section>
+{{ partial "explora-los-datos" . }}
+<input type="hidden" name="data" id="data-resultados" value="{{ jsonify .Site.Data.resultados }}" />
+{{ end }} {{ define "js" }} {{ $resultados := resources.Get
+"js/api/resultados.js" | js.Build (dict "minify" true)}}
+<script src="{{ $resultados.Permalink }}"></script>
+{{ end }}
