@@ -99,13 +99,13 @@
     </h2>
     <div class="lg:my-10">
       <div class="">
-        <a href="#" class="bg-color-light text-white py-2 px-4 uppercase inline-block lg:mb-3 rounded">Por delitos
-          electorales</a>
+        <div href="#" class="bg-color-light text-white py-2 px-4 uppercase inline-block lg:mb-3 rounded">Por delitos
+          electorales</div>
       </div>
       <div class="">
-        <a href="#" class="bg-primary-color-dark text-white py-2 px-4 uppercase inline-block rounded">Por
+        <div href="#" class="bg-primary-color-dark text-white py-2 px-4 uppercase inline-block rounded">Por
           irregularidades
-          electorales</a>
+          electorales</div>
       </div>
     </div>
     <p class="text-lg lg:text-xl lg:mb-16">
@@ -133,7 +133,7 @@
         Te conectamos con las entidades a las cuales puedes acudir si deseas reportar algún acto de criminalidad
         electoral en Colombia
       </p>
-      <a href="#" class="bg-color-bg py-2 px-8 text-primary-color uppercase font-bold rounded">Conoce como denunciar</a>
+      <a href="{{ relref . "contactanos.md" }}" class="bg-color-bg py-2 px-8 text-primary-color uppercase font-bold rounded">Conoce como denunciar</a>
     </div>
   </div>
 </section>
@@ -145,10 +145,10 @@
             block
             mt-4
             mb-2
-            text-color-primary-dark
+            text-primary-color-dark
             font-black
             text-xl
-          " href="#">SISCRIMEL</a>
+          " href="{{ relref . " datos-democracia/siscrimel/que-es-siscrimel.md" }}">SISCRIMEL</a>
       <p class="text-xl">¿Qué es SISCRIMEL?</p>
     </div>
     <div class="lg:px-10 lg:py-8 rounded-3xl bg-bg-blue-dark bg-cover bg-center">
@@ -158,9 +158,9 @@
             font-black
             mt-4
             mb-2
-            text-color-primary-dark
+            text-primary-color-dark
             text-xl
-          " href="#">Explora los datos</a>
+          " href="{{ relref . " datos-democracia/siscrimel/explora-los-datos.md" }}">Explora los datos</a>
       <p class="text-xl">
         Conoce los datos de criminalidad electoral en Colombia
       </p>
@@ -172,9 +172,9 @@
             font-black
             mt-4
             mb-2
-            text-color-primary-dark
+            text-primary-color-dark
             text-xl
-          " href="#">Conoce los informes</a>
+          " href="{{ relref . " datos-democracia/siscrimel/conoce-los-informes.md" }}">Conoce los informes</a>
       <p class="text-xl">
         Descarga los informes de SISCRIMEL
       </p>

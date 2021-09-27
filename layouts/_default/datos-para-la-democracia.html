@@ -67,7 +67,7 @@
         en colaboración con otras entidades del Estado para identificar el comportamiento de la criminalidad electoral y
         las recomendaciones para la protección de la democracia.
       </p>
-      <a href="#" class="
+      <a href="{{ relref . " datos-democracia/siscrimel/que-es-siscrimel.md" }}" class="
           bg-primary-color-dark
           text-color-white
           py-2
@@ -138,7 +138,7 @@
             border-2 border-primary-color-light
           ">2018</div>
       </div>
-      <a href="#" class="bg-color-white uppercase font-bold text-primary-color py-3 px-4">Conoce los datos</a>
+      <a href="{{ relref . "datos-democracia/resultados-electorales/explora-los-datos.md" }}" class="bg-color-white uppercase font-bold text-primary-color py-3 px-4">Conoce los datos</a>
     </div>
   </div>
 </section>
@@ -197,7 +197,7 @@
         popular, el cabildo abierto, la iniciativa legislativa y la revocatoria del mandato.
       </p>
       <div class="text-center lg:text-left">
-        <a href="#" class="
+        <a href="{{ relref . "datos-democracia/mecanismos-de-participacion/explora-los-datos.md" }}" class="
             bg-primary-color-dark
             text-color-white
             py-2
@@ -209,111 +209,6 @@
     </div>
   </div>
 </section>
-<!-- <section class="pt-14 py-20 lg:pt-24 lg:pb-32">
-  <div class="container">
-    <div class="text-center text-primary-color-dark lg:mb-14">
-      <h2 class="
-          m-auto
-          w-9/12
-          mb-8
-          text-4xl
-          uppercase
-          font-bold
-          lg:w-full lg:mx-0 lg:mb-8 lg:text-5xl
-        ">
-        Biblioteca Virtual
-      </h2>
-      <p class="m-auto mb-10 w-10/12 lg:w-7/12">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-        incidunt cumque commodi saepe sapiente adipisci tenetur maxime aut. Odio
-        ducimus hic accusamus est aspernatur laudantium autem ab, voluptatum
-        illum iste!
-      </p>
-    </div>
-    <div class="
-        m-auto
-        w-10/12
-        grid
-        gap-y-12
-        grid-cols-1
-        lg:mx-0 lg:w-full lg:gap-x-12 lg:grid-cols-3 lg:items-center
-      ">
-      <div class="
-          relative
-          flex flex-col
-          justify-center
-          items-center
-          text-center
-          self-stretch
-          p-10
-          border-primary-color-light border-solid border-2
-        ">
-        <h3 class="text-2xl font-bold">
-          Publicaciones <br />
-          e Investigaciones
-        </h3>
-        <a href="#" class="
-            absolute
-            -bottom-5
-            bg-primary-color-dark
-            text-color-white
-            py-2
-            px-6
-            uppercase
-            font-bold
-          ">Leer más</a>
-      </div>
-      <div class="
-          relative
-          flex flex-col
-          justify-center
-          items-center
-          text-center
-          self-stretch
-          p-10
-          border-primary-color-light border-solid border-2
-        ">
-        <h3 class="text-2xl font-bold">
-          Escuela de Nuevos Liderazgos en Cultura Democrática
-        </h3>
-        <a href="#" class="
-            absolute
-            -bottom-5
-            bg-primary-color-dark
-            text-color-white
-            py-2
-            px-6
-            uppercase
-            font-bold
-          ">Leer más</a>
-      </div>
-      <div class="
-          relative
-          flex flex-col
-          justify-center
-          items-center
-          text-center
-          self-stretch
-          p-10
-          border-primary-color-light border-solid border-2
-        ">
-        <h3 class="text-2xl font-bold">
-          Escuela de Nuevos Liderazgos de Mujeres
-        </h3>
-        <a href="#" class="
-            absolute
-            -bottom-5
-            bg-primary-color-dark
-            text-color-white
-            py-2
-            px-6
-            uppercase
-            font-bold
-          ">Leer más</a>
-      </div>
-    </div>
-  </div>
-</section> -->
 {{ end }} {{ define "head" }}
 <link rel="stylesheet" href="https://unpkg.com/swiper@6.7.0/swiper-bundle.min.css" />
 {{ end }} {{ define "js" }} {{ $services := resources.Get "js/datos-democracia.js" |
