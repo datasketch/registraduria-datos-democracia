@@ -41,9 +41,7 @@ export const renderItemResult = (data) => {
         Formato disponible: <span class="font-bold">${data.format.toUpperCase()}</span>
       </p>
       <div class="result-btn">
-        <a target="_blank" href="${
-  data.path
-}" class="btn btn--tertiary">Descargar</a>
+        <a target="_blank" href="${data.path}" class="btn btn--tertiary">Descargar</a>
       </div>
     </div>
   `;

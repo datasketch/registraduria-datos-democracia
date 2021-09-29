@@ -2,5 +2,5 @@
 title: Novedades
 layout: novedades
 menu: main
-weight: 5
+weight: 6
 ---

@@ -2,5 +2,5 @@
 title: Capacitación virtual
 layout: capacitacion-virtual
 menu: main
-weight: 6
+weight: 5
 ---

@@ -30,6 +30,7 @@ function filterData() {
   const hasYearFilter = !!filters.year.length;
   const hasLineFilter = !!filters.line.length;
   state.filteredData = originalData;
+
   if (hasYearFilter) {
     state.filteredData = state.filteredData.filter((item) => filters.year.includes(item.ano));
   }
@@ -56,23 +57,19 @@ function filterData() {
 filtersContainer.addEventListener('change', (event) => {
   const { name: key, value } = event.target;
   const filterKeyValue = state.filters[key];
-
   if (filterKeyValue.includes(value)) {
     const idx = filterKeyValue.findIndex((item) => item === value);
     filterKeyValue.splice(idx, 1);
   } else {
     filterKeyValue.push(value);
   }
-
   state.page = 1;
   filterData();
 });
 
 paginationContainer.addEventListener('click', (e) => {
   const btn = e.target.closest('.pagination__button');
-
   if (!btn) return;
-
   state.page = +btn.dataset.page;
   filterData();
   scrollPagination.scrollIntoView({ behavior: 'smooth' });
