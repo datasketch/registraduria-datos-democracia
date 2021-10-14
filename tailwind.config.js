@@ -20,6 +20,8 @@ module.exports = {
       'result-description',
       'result-excel',
       'result-btn',
+      'slider-next',
+      'slider-prev',
     ],
     options: {},
   },

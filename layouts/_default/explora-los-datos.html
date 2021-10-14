@@ -6,11 +6,17 @@
     h-screen
     bg-cover bg-center
     relative
+    pt-56
+    lg:pt-0
+    text-center lg:text-left
   ">
-  <div class="container">
+  <div class="mx-auto w-10/12 lg:w-9/12">
     <div class="lg:pt-40">
       <h1 class="
-        text-white lg:text-6xl
+        text-white 
+         text-4xl
+         lg:text-5xl
+         xl:text-6xl
          font-black
          mb-4
          lg:mb-6
@@ -29,8 +35,8 @@
     alt="">
 </div>
 <div class="text-center bg-color-white pb-16 lg:pt-8 relative">
-  <div class="container">
-    <h2 class="text-primary-color-dark font-bold lg:text-5xl m-auto lg:w-6/12 lg:mb-6">
+  <div class="mx-auto w-10/12 lg:w-9/12">
+    <h2 class="text-primary-color-dark font-bold text-3xl lg:text-4xl xl:text-5xl mx-auto lg:w-6/12 mb-4 lg:mb-6">
       Delitos e irregularidades <span class="font-normal lg:text-4xl">en Colombia</span>
     </h2>
     <a href="#" class="bg-primary-color-dark uppercase font-bold color text-color-white py-3 px-8 text-sm">Como utilizar
@@ -40,15 +46,16 @@
 <section class="h-screen w-screen overflow-x-auto lg:pb-20">
   <iframe class="w-full h-full" src="https://datasketch.shinyapps.io/app-datos-democracia/" frameborder="0"></iframe>
 </section>
-<section class="bg-metodologia-bg bg-cover bg-center lg:py-24">
-  <div class="container text-center">
-    <div class="lg:w-8/12 m-auto">
-      <h2 class="text-color-white font-bold lg:text-5xl mb-4 lg:mb-6">
+<section class="bg-metodologia-bg bg-cover bg-center py-12 lg:py-24">
+  <div class="mx-auto w-10/12 lg:w-9/12 text-center">
+    <div class="lg:w-8/12 lg:mx-auto">
+      <h2 class="text-color-white font-bold text-3xl lg:text-4xl xl:text-5xl mb-4 lg:mb-6">
         Conoce la Metodología
       </h2>
       <p class="
-          m-auto
+          mx-auto
           text-color-white
+          mb-6
           lg:w-10/12
           lg:text-xl
           lg:mb-8
@@ -60,9 +67,9 @@
     </div>
   </div>
 </section>
-<section class="lg:py-24" style="background-color: #EAEDF0;">
-  <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-32 justify-items-stretch mx-auto lg:w-9/12">
-    <div class="border-2 border-color-light lg:p-16 grid place-items-center relative">
+<section class="py-12 lg:py-24" style="background-color: #EAEDF0;">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-10 lg:gap-x-32 justify-items-stretch mx-auto w-10/12 lg:w-9/12">
+    <div class="border-2 border-color-light p-8 lg:p-16 grid place-items-center relative">
       <h3 class="font-black text-xl lg:text-2xl text-center" style="color: #003057;">
         <span class="block font-normal">Explora los datos de</span>
         Resultados electorales
@@ -71,7 +78,7 @@
         class="py-2 px-6 bg-primary-color-dark text-white rounded text-md absolute -bottom-5">EXPLORAR LOS
         DATOS</a>
     </div>
-    <div class="border-2 border-color-light lg:p-16 grid place-items-center relative">
+    <div class="border-2 border-color-light p-8 lg:p-16 grid place-items-center relative">
       <h3 class="font-black text-xl lg:text-2xl text-center" style="color: #003057;">
         <span class="block font-normal">Explora los datos de</span>
         Mecanismos de Participación Ciudadana
@@ -82,9 +89,9 @@
     </div>
   </div>
 </section>
-<section class="lg:py-20">
-  <div class="grid grid-cols-1 gap-y-4 lg:grid-cols-3 lg:gap-x-8 lg:w-11/12 m-auto">
-    <div class="lg:px-10 lg:py-8 rounded-3xl bg-bg-blue-dark bg-cover bg-center">
+<section class="py-12 lg:py-20">
+  <div class="grid grid-cols-1 gap-y-4 lg:grid-cols-3 lg:gap-x-8 w-10/12 lg:w-11/12 mx-auto">
+    <div class="p-10 lg:px-10 lg:py-8 rounded-3xl bg-bg-blue-dark bg-cover bg-center">
       <img src="/images/siscrimel/criminalidad-electoral/siscrimel-lg.jpg" alt="" />
       <a class="
           block
@@ -97,7 +104,7 @@
         " href="{{ relref . " datos-democracia/siscrimel/que-es-siscrimel.md" }}">SISCRIMEL</a>
       <p class="text-xl">¿Qué es SISCRIMEL?</p>
     </div>
-    <div class="lg:px-10 lg:py-8 rounded-3xl bg-bg-blue-dark bg-cover bg-center">
+    <div class="p-10 lg:px-10 lg:py-8 rounded-3xl bg-bg-blue-dark bg-cover bg-center">
       <img src="/images/siscrimel/criminalidad-electoral/corruption.jpg" alt="" />
       <a class="
           block
@@ -113,7 +120,7 @@
         ¿Qué es la criminalidad electoral?
       </p>
     </div>
-    <div class="lg:px-10 lg:py-8 rounded-3xl bg-bg-blue-dark bg-cover bg-center">
+    <div class="p-10 lg:px-10 lg:py-8 rounded-3xl bg-bg-blue-dark bg-cover bg-center">
       <img src="/images/siscrimel/criminalidad-electoral/information-lg.jpg" alt="" />
       <a class="
           block

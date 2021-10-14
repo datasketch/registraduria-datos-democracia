@@ -8,10 +8,13 @@
     h-screen
     bg-quienes-somos-bg
     overflow-hidden
+    text-center lg:text-left
+    pt-56
+    lg:pt-0
   ">
   <div class="container">
     <div class="lg:pt-40">
-      <h1 class="text-4xl md:text-5xl xl:text-6xl uppercase font-black">
+      <h1 class="text-4xl lg:text-5xl xl:text-6xl uppercase font-black">
         Siscrimel
         <span class="block normal-case font-normal text-2xl lg:text-3xl">Sistema de información</span>
         <span class="block normal-case font-normal text-2xl lg:text-3xl">sobre Criminalidad Electoral</span>
@@ -19,9 +22,9 @@
     </div>
   </div>
 </div>
-<div class="lg:pt-16 lg:pb-28">
-  <div class="container">
-    <div class="grid lg:grid-cols-2 lg:gap-x-28 items-center">
+<div class="-mt-24 pb-10 lg:mt-0 lg:pt-16 lg:pb-28">
+  <div class="mx-auto w-10/12 lg:w-9/12">
+    <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-28 items-center text-center lg:text-left">
       <h2 class=" mb-4 lg:mb-0 text-primary-color-dark text-2xl lg:text-3xl">
         ¿Qué es el
         <span class="block font-black text-3xl lg:text-4xl">Sistema de</span>
@@ -37,9 +40,9 @@
     </div>
   </div>
 </div>
-<section class="bg-cover bg-center lg:py-24 bg-delitos-bg">
-  <div class="container">
-    <div class="grid lg:grid-cols-2 lg:gap-x-32 text-center">
+<section class="bg-cover bg-center py-12 lg:py-24 bg-delitos-bg">
+  <div class="mx-auto w-10/12 lg:w-9/12">
+    <div class="grid lg:grid-cols-2 lg:gap-x-32 text-center gap-y-10">
       <div class="">
         <h3 class="lg:text-4xl text-color-white lg:mb-8">Delito Electoral</h3>
         <p class="mb-10 text-color-white">
@@ -66,12 +69,13 @@
 </section>
 {{ partial "explora-los-datos" . }}
 <section class="
+    py-12
     lg:pt-14 lg:pb-20
     bg-center bg-cover bg-variables-bg-sm
     lg-bg-variables-bg-lg
   ">
-  <div class="container text-center text-color-white">
-    <h3 class="lg:text-4xl lg:mb-8">Variables</h3>
+  <div class="mx-auto w-10/12 lg:w-9/12 text-center text-color-white">
+    <h3 class="text-3xl lg:text-4xl mb-8">Variables</h3>
     <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-stretch md:mb-5 gap-8">
       <div class="
             font-light
@@ -184,11 +188,11 @@
     </div>
   </div>
 </section>
-<section class="lg:pt-20 lg:pb-16">
+<section class="py-12 lg:pt-20 lg:pb-16">
   <div class="container">
     <div class="text-primary-color-dark text-center lg:mb-10">
-      <h2 class="font-black mb-5 lg:text-5xl">Conoce los informes</h2>
-      <p class="md:text-xl lg:text-2xl text-xl">
+      <h2 class="font-black mb-5 text-3xl lg:text-4xl xl:text-5xl">Conoce los informes</h2>
+      <p class="text-lg lg:text-xl xl:text-2xl">
         Informes más descargados
       </p>
     </div>
@@ -418,7 +422,8 @@
     <div class="slider-next"></div>
   </div>
   <div class="text-center">
-    <a href="{{ relref . " datos-democracia/siscrimel/conoce-los-informes.md" }}" class="btn btn--primary">Ver más informes</a>
+    <a href="{{ relref . " datos-democracia/siscrimel/conoce-los-informes.md" }}" class="btn btn--primary">Ver más
+      informes</a>
   </div>
 </section>
 {{ end }} {{ define "head" }}

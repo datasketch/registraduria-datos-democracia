@@ -1,15 +1,19 @@
 {{ define "main" }}
 {{ partial "nav-datos-democracia" . }}
 {{ partial "nav-siscrimel" . }}
-<section class="py-8 px-4 md:py-12 lg:py-16 lg:pb-0 xl:py-20 xl:pb-0 m-auto lg:w-9/12">
+<section class="py-12 lg:py-24 w-10/12 lg:w-9/12 mx-auto">
   <h2 class="
       text-primary-color-dark text-center
       font-black
-      lg:text-5xl lg:mb-16
+      text-3xl
+      lg:text-4xl
+      xl:text-5xl 
+      mb-8
+      lg:mb-16
     ">
     Preguntas frecuentes
   </h2>
-  <div class="bg-bg-blue-dark bg-cover bg-center lg:py-10 lg:px-20 lg:mb-6">
+  <div class="bg-bg-blue-dark bg-cover bg-center p-10 lg:py-10 lg:px-20 lg:mb-10">
     <a href="#" class="block mb-3 text-primary-color font-bold lg:text-2xl">¿Qué son los Datos Abiertos y por qué son
       importantes?</a>
     <p class="lg:mb-6">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmodtempor invidunt u
@@ -17,7 +21,7 @@
       clita kasd gubergren, no ea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor…</p>
     <p class=" italic">última actualización: <span class="font-bold">Julio 14 del 2021</span></p>
   </div>
-  <div class="bg-bg-blue-dark bg-cover bg-center lg:py-10 lg:px-20 lg:mb-6">
+  <div class="bg-bg-blue-dark bg-cover bg-center p-10 lg:py-10 lg:px-20 lg:mb-10">
     <a href="#" class="block mb-3 text-primary-color font-bold lg:text-2xl">¿Qué son los Datos Abiertos y por qué son
       importantes?</a>
     <p class="lg:mb-6">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmodtempor invidunt u
@@ -25,7 +29,7 @@
       clita kasd gubergren, no ea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor…</p>
     <p class=" italic">última actualización: <span class="font-bold">Julio 14 del 2021</span></p>
   </div>
-  <div class="bg-bg-blue-dark bg-cover bg-center lg:py-10 lg:px-20 lg:mb-6">
+  <div class="bg-bg-blue-dark bg-cover bg-center p-10 lg:py-10 lg:px-20 lg:mb-10">
     <a href="#" class="block mb-3 text-primary-color font-bold lg:text-2xl">¿Qué son los Datos Abiertos y por qué son
       importantes?</a>
     <p class="lg:mb-6">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmodtempor invidunt u
@@ -33,7 +37,7 @@
       clita kasd gubergren, no ea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor…</p>
     <p class=" italic">última actualización: <span class="font-bold">Julio 14 del 2021</span></p>
   </div>
-  <div class="bg-bg-blue-dark bg-cover bg-center lg:py-10 lg:px-20 lg:mb-6">
+  <div class="bg-bg-blue-dark bg-cover bg-center p-10 lg:py-10 lg:px-20">
     <a href="#" class="block mb-3 text-primary-color font-bold lg:text-2xl">¿Qué son los Datos Abiertos y por qué son
       importantes?</a>
     <p class="lg:mb-6">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmodtempor invidunt u
@@ -42,9 +46,9 @@
     <p class=" italic">última actualización: <span class="font-bold">Julio 14 del 2021</span></p>
   </div>
 </section>
-<section class="lg:py-20">
-  <div class="grid grid-cols-1 gap-y-4 lg:grid-cols-3 lg:gap-x-8 lg:w-11/12 m-auto">
-    <div class="lg:px-10 lg:py-8 rounded-3xl bg-bg-blue-dark bg-cover bg-center">
+<section class="py-12 lg:py-20">
+  <div class="grid grid-cols-1 gap-y-4 lg:grid-cols-3 lg:gap-x-8 w-10/12 lg:w-11/12 mx-auto">
+    <div class="p-10 lg:px-10 lg:py-8 rounded-3xl bg-bg-blue-dark bg-cover bg-center">
       <img src="/images/siscrimel/criminalidad-electoral/siscrimel-lg.jpg" alt="" />
       <a class="
           block
@@ -57,7 +61,7 @@
         " href="{{ relref . " datos-democracia/siscrimel/que-es-siscrimel.md" }}">SISCRIMEL</a>
       <p class="text-xl">¿Qué es SISCRIMEL?</p>
     </div>
-    <div class="lg:px-10 lg:py-8 rounded-3xl bg-bg-blue-dark bg-cover bg-center">
+    <div class="p-10 lg:px-10 lg:py-8 rounded-3xl bg-bg-blue-dark bg-cover bg-center">
       <img src="/images/siscrimel/criminalidad-electoral/corruption.jpg" alt="" />
       <a class="
           block
@@ -67,12 +71,13 @@
           mb-2
           text-color-primary
           text-xl
-        " href="{{ relref . " datos-democracia/siscrimel/sobre-la-criminalidad-electoral.md" }}">Criminalidad electoral</a>
+        " href="{{ relref . " datos-democracia/siscrimel/sobre-la-criminalidad-electoral.md" }}">Criminalidad
+        electoral</a>
       <p class="text-xl">
         ¿Qué es la criminalidad electoral?
       </p>
     </div>
-    <div class="lg:px-10 lg:py-8 rounded-3xl bg-bg-blue-dark bg-cover bg-center">
+    <div class="p-10 lg:px-10 lg:py-8 rounded-3xl bg-bg-blue-dark bg-cover bg-center">
       <img src="/images/siscrimel/criminalidad-electoral/information-lg.jpg" alt="" />
       <a class="
           block
