@@ -11,23 +11,100 @@
   <nav class="
       nav
     " id="nav">
-    <ul class="pt-16 pl-16 lg:py-0 lg:px-0 lg:grid lg:grid-cols-7 lg:items-center">
+    <!-- DESKTOP MENU -->
+    <ul class="hidden lg:py-0 lg:px-0 lg:grid lg:grid-cols-7 lg:items-center">
       {{ $currentPage := . }}
       {{ range .Site.Menus.main }}
       {{ $menu_item_url := .URL | relLangURL }}
       {{ $page_url:= $currentPage.RelPermalink | relLangURL }}
       {{ if eq $menu_item_url $page_url }}
-      <li class="mb-8 lg:text-left lg:mb-0 lg:mx-3 xl:mx-4 lg:pt-2" style="border-bottom: 2px solid #04f6e8;">
-        <a class="nav__link block text-primary-color uppercase text-xs lg:text-center xl:text-sm lg:pb-2"
+      <li class="lg:text-left lg:mb-0 lg:mx-3 xl:mx-4 lg:pt-2">
+        <a class="nav__link block text-primary-color uppercase text-xs lg:text-center xl:text-sm lg:pb-2 lg:border-b-2 lg:border-primary-color-light"
           href="{{ .URL }}">{{ .Title }}</a>
       </li>
       {{ else }}
-      <li class="mb-8 lg:text-left lg:mb-0 lg:mx-3 xl:mx-4 lg:pt-2">
+      <li class="lg:text-left lg:mb-0 lg:mx-3 xl:mx-4 lg:pt-2">
         <a class="nav__link block text-primary-color uppercase text-xs lg:text-center xl:text-sm lg:pb-2"
           href="{{ .URL }}">{{ .Title }}</a>
       </li>
       {{ end }}
       {{ end }}
+    </ul>
+    <!-- MOBILE MENU -->
+    <ul class="pt-16 pl-16 lg:hidden">
+      <li class="mb-8"><a class="nav__link block text-primary-color uppercase" href="{{ relref . "_index.md" }}">Inicio</a></li>
+      <li class="mb-8">
+        <details class="text-primary-color uppercase">
+          <summary class="mb-4">¿Quiénes somos?</summary>
+          <ul>
+            <li class="mb-4 list-disc list-inside">
+              <a href="{{ relref . "/quienes-somos/quienes-somos.md" }}">¿Quiénes somos?</a>
+            </li>
+            <li class="mb-4 list-disc list-inside">
+              <a href="{{ relref . "/quienes-somos/quienes-hacemos-parte-del-cedae.md" }}">¿Quiénes hacemos parte del CEDAE?</a>
+            </li>
+          </ul>
+        </details>
+      </li>
+      <li class="mb-8">
+        <details class="text-primary-color uppercase">
+          <summary class="mb-4">Datos para la democracia</summary>
+          <ul>
+            <li>
+              <details class="text-primary-color uppercase">
+                <summary class="mb-4">Datos de criminalidad electoral</summary>
+                <ul>
+                  <li class="mb-4 list-disc list-inside">
+                    <a href="{{ relref . "/datos-democracia/siscrimel/que-es-siscrimel.md" }}">¿Qué es siscrimel?</a>
+                  </li>
+                  <li class="mb-4 list-disc list-inside">
+                    <a href="{{ relref . "/datos-democracia/siscrimel/sobre-la-criminalidad-electoral.md" }}">Sobre la criminalidad electoral</a>
+                  </li>
+                  <li class="mb-4 list-disc list-inside">
+                    <a href="{{ relref . "/datos-democracia/siscrimel/explora-los-datos.md" }}">Explora los datos</a>
+                  </li>
+                  <li class="mb-4 list-disc list-inside">
+                    <a href="{{ relref . "/datos-democracia/siscrimel/conoce-los-informes.md" }}">Conoce los informes</a>
+                  </li>
+                  <li class="mb-4 list-disc list-inside">
+                    <a href="{{ relref . "/datos-democracia/siscrimel/preguntas-frecuentes.md" }}">Preguntas frecuentes</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <details class="text-primary-color uppercase">
+                <summary class="mb-4">Resultados electorales</summary>
+                <ul>
+                  <li class="mb-4 list-disc list-inside">
+                    <a href="{{ relref . "/datos-democracia/resultados-electorales/explora-los-datos.md" }}">Explora los datos</a>
+                  </li>
+                  <li class="mb-4 list-disc list-inside">
+                    <a href="{{ relref . "/datos-democracia/resultados-electorales/descarga-los-datos.md" }}">Descarga los datos</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <details class="text-primary-color uppercase">
+                <summary class="mb-4">Mecanismos de participación</summary>
+                <ul>
+                  <li class="mb-4 list-disc list-inside">
+                    <a href="{{ relref . "/datos-democracia/mecanismos-de-participacion/explora-los-datos.md" }}">Explora los datos</a>
+                  </li>
+                  <li class="mb-4 list-disc list-inside">
+                    <a href="{{ relref . "/datos-democracia/mecanismos-de-participacion/descarga-los-datos.md" }}">Descarga los datos</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+        </details>
+      </li>
+      <li class="mb-8"><a class="nav__link block text-primary-color uppercase" href="{{ relref . "biblioteca-de-recursos.md" }}">Biblioteca de recursos</a></li>
+      <li class="mb-8"><a class="nav__link block text-primary-color uppercase" href="{{ relref . "capacitacion-virtual.md" }}">Capacitación virtual</a></li>
+      <li class="mb-8"><a class="nav__link block text-primary-color uppercase" href="{{ relref . "novedades.md" }}">Novedades</a></li>
+      <li class="mb-8"><a class="nav__link block text-primary-color uppercase" href="{{ relref . "contactanos.md" }}">Contáctanos</a></li>
     </ul>
   </nav>
   <button class="menu-button">
