@@ -100,15 +100,15 @@
     <h2 class="text-primary-color-dark font-black text-2xl lg:text-3xl xl:text-4xl lg:mb-10">
       ¿Cuál es la tasa de la criminalidad electoral en Colombia?
     </h2>
-    <div class="my-6 lg:my-10">
-      <div class="mb-4 lg:mb-0">
-        <div class="bg-color-light text-white py-2 px-4 uppercase inline-block lg:mb-3 rounded">Por delitos
-          electorales</div>
+    <div class="my-6 lg:my-10 container-electorales">
+      <div class="mb-4 lg:mb-4">
+        <button data-id="0" class="btn-electorales btn-electorales--active">Por delitos
+          electorales</button>
       </div>
       <div class="">
-        <div class="bg-primary-color-dark text-white py-2 px-4 uppercase inline-block rounded">Por
+        <button data-id="1" class="btn-electorales">Por
           irregularidades
-          electorales</div>
+          electorales</button>
       </div>
     </div>
     <p class="text-lg lg:text-xl lg:mb-16">
@@ -120,10 +120,18 @@
     </p>
   </div>
   <div class="mx-auto w-10/12 lg:w-9/12 text-center">
-    <h3 class="heading-tertiary heading-tertiary--blue uppercase lg:text-xl">
-      TASA DELITOS ELECTORALES A NIVEL DEPARTAMENTAL EN COLOMBIA
-    </h3>
-    <img src="/images/siscrimel/criminalidad-electoral/delitos-electorales.svg" alt="" class="object-cover" />
+    <div class="box-electorales box-electorales--active">
+      <h3 class="heading-tertiary heading-tertiary--blue uppercase lg:text-xl mb-4 lg:mb-6 xl:mb-8">
+        TASA DELITOS ELECTORALES A NIVEL DEPARTAMENTAL EN COLOMBIA
+      </h3>
+      <iframe src="{{ relref . "/graficas/promedio-tasa-denuncias.md" }}" class="mx-auto h-96 w-full" frameborder="0"></iframe>
+    </div>
+    <div class="box-electorales">
+      <h3 class="heading-tertiary heading-tertiary--blue uppercase lg:text-xl mb-4 lg:mb-6 xl:mb-8">
+        TASA IRREGULARIDADES ELECTORALES A NIVEL DEPARTAMENTAL EN COLOMBIA
+      </h3>
+      <iframe src="{{ relref . "/graficas/promedio-tasa-irregularidades.md" }}" class="mx-auto h-96 w-full" frameborder="0"></iframe>
+    </div>
   </div>
 </section>
 <section class="bg-bg-lines-dark bg-center bg-cover py-12 lg:py-20">
@@ -185,4 +193,8 @@
     </div>
   </div>
 </section>
+{{ end }}
+{{ define "js" }}
+ {{ $criminalidad := resources.Get "js/criminalidad.js" | js.Build (dict "minify" true)}}
+<script src="{{ $criminalidad.Permalink }}"></script>
 {{ end }}
