@@ -1,11 +1,7 @@
 export const renderItemLibrary = (item) => {
   const html = `
       <div class="library-item">
-        <img
-          src="/images/biblioteca-recursos/imagen-biblioteca-recursos.png"
-          alt="imagen biblioteca recurso"
-          class="library-image"
-        />
+      ${checkPDF(item.url)}
         <div class="library-description">
           <span class="library-linea">${item.linea}</span>
           <h4 class="library-title">${item.titulo}</h4>
@@ -47,3 +43,23 @@ export const renderItemResult = (data) => {
   `;
   return html;
 };
+
+function checkPDF(url) {
+  let html = '';
+
+  if (url === 'PDF') {
+    html = `
+    <img
+    src="/images/biblioteca-recursos/imagen-biblioteca-recursos.png"
+    alt="imagen biblioteca recurso"
+    class="library-image"
+    />
+    `;
+  } else {
+    html = `
+    <embed class="library-image" src="${url}"/>
+    `;
+  }
+
+  return html;
+}
