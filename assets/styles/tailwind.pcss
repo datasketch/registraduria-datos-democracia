@@ -199,8 +199,13 @@
     lg:gap-x-8 mb-6 lg:mb-10;
   }
 
-  .library-image {
+  .library-image,
+  .library-not-image {
     @apply mx-auto mb-4 lg:mb-0 lg:mx-0 lg:col-start-1 lg:col-end-4 w-full;
+  }
+
+  .library-not-image {
+    @apply bg-black opacity-25 h-40;
   }
 
   .library-description {

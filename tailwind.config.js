@@ -22,6 +22,8 @@ module.exports = {
       'result-btn',
       'slider-next',
       'slider-prev',
+      'cursor-not-allowed',
+      'library-not-image',
     ],
     options: {},
   },
