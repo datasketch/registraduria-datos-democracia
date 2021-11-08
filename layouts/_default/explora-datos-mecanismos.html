@@ -1,7 +1,8 @@
 {{ define "main" }}
 {{ partial "nav-datos-democracia" . }}
 {{ partial "nav-mecanismos-participacion" . }}
-<div class="bg-bg-banner-mecanismos-sm lg:bg-bg-banner-mecanismos-lg h-screen bg-cover bg-center relative text-center lg:text-left pt-52 lg:pt-0">
+<div
+    class="bg-bg-banner-mecanismos-sm lg:bg-bg-banner-mecanismos-lg h-screen bg-cover bg-center relative text-center lg:text-left pt-52 lg:pt-0">
     <div class="mx-auto w-10/12 lg:w-9/12">
         <div class="lg:pt-40">
             <h1 class="text-white uppercase text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-6">
@@ -27,17 +28,36 @@
             <span class="font-normal block lg:text-3xl">de Mecanismos de Participación Ciudadana <span class="block">en
                     Colombia</span></span>
         </h2>
-        <a href="#" class="
-        bg-primary-color-dark
-        uppercase
-        font-bold
-        color
-        text-color-white
-        py-3
-        px-8
-        text-sm
-        rounded
-      ">Como utilizar esta herramienta</a>
+        <details class="mx-auto w-11/12 md:w-9/12 lg:w-8/12">
+            <summary
+                class="bg-primary-color-dark uppercase font-bold color text-color-white py-3 px-8 text-sm inline-block cursor-pointer mb-8">
+                Como utilizar esta herramienta</summary>
+            <p class="mb-8">
+                Esta herramienta de visualización de datos para explorar la información relacionada con los Mecanismos
+                de Participación realizados en Colombia, consiste en tres tipos de paneles. En el primer panel se
+                encuentran todos los posibles controles de cambio y filtros de la información que se visualizará en el
+                segundo panel, y en el tercer panel se podrá tener detalles de la información.
+            </p>
+            <p class="mb-8">
+                En el primer panel es posible explorar la información por filtros de referendo, plebiscito, cabildo
+                abierto, entre otros, y además realizar controles de cambios por fechas y por niveles territoriales.
+            </p>
+            <img class="mx-auto mb-8" src="/images/mecanismos-participacion/GIF 1.gif" alt="gif">
+            <p class="mb-8">
+                En el segundo panel se podrán visualizar los cambios que se realizan en el primer panel, se puede
+                seleccionar el tipo de visualización deseada, incluso aquellas tablas que contienen los datos.
+            </p>
+            <img class="mx-auto mb-8" src="/images/mecanismos-participacion/GIF 2.gif" alt="gif">
+            <p class="mb-8">
+                Finalmente se podrán descargar las visualizaciones y los datos en distintos formatos, según se desee.
+            </p>
+            <img class="mx-auto mb-8" src="/images/mecanismos-participacion/GIF 3.gif" alt="gif">
+            <p class="mb-8">
+                El tercer panel permitirá que el usuario dé clic a algún dato dentro de la gráfica y obtener información
+                de detalle de los datos tratados en la gráfica.
+            </p>
+            <img class="mx-auto mb-8" src="/images/mecanismos-participacion/GIF 4.gif" alt="gif">
+        </details>
     </div>
 </div>
 <section class="h-screen w-screen overflow-x-auto lg:pb-20">
