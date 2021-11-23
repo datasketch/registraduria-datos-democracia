@@ -95,7 +95,30 @@
     </div>
   </div>
 </section>
-{{ partial "explora-los-datos" . }}
+<section class="py-12 lg:py-24">
+  <div class="mx-auto w-10/12 lg:w-9/12">
+    <div class="grid items-center lg:grid-cols-2 lg:gap-x-36">
+      <div class="relative text-primary-color-dark text-center lg:text-left">
+        <h2 class="text-3xl lg:text-4xl mb-4 lg:mb-5 font-black">Explora los datos</h2>
+        <p class="mb-4 lg:mb-6 lg:text-xl">
+          Conoce los datos relacionados con los resultados de las elecciones ordinarias de tipo nacional y local que se
+          han realizado en Colombia desde 1958 hasta la fecha. Con esta herramienta podrás observar el comportamiento de
+          la participación electoral a nivel nacional, departamental y local.
+        </p>
+        <a href="{{ relref . " datos-democracia/resultados-electorales/explora-los-datos.md" }}"
+          class="btn btn--primary mb-3 lg:mb-0">Visor de datos</a>
+        {{/* <img class="
+            hidden
+            absolute
+            lg:-top-8 lg:-left-2
+            xl:-top-8 xl:-left-8
+            lg:block
+          " src="/images/siscrimel/quienes-somos/icono.svg" alt="" /> */}}
+      </div>
+      <img src="/images/siscrimel/quienes-somos/explore-data-desktop.png" alt="" class="" />
+    </div>
+  </div>
+</section>
 <input type="hidden" name="data" id="data-resultados" value="{{ jsonify .Site.Data.resultados }}" />
 {{ end }} {{ define "js" }} {{ $resultados := resources.Get
 "js/api/resultados.js" | js.Build (dict "minify" true)}}

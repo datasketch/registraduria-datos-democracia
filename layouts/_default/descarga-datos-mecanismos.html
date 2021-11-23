@@ -21,14 +21,16 @@
 {{ end }}
 {{ end }}
 
-<div class="bg-bg-banner-mecanismos-descarga-sm lg:bg-bg-banner-mecanismos-descarga-lg h-screen bg-cover bg-center relative text-center lg:text-left pt-56 lg:pt-0">
+<div
+    class="bg-bg-banner-mecanismos-descarga-sm lg:bg-bg-banner-mecanismos-descarga-lg h-screen bg-cover bg-center relative text-center lg:text-left pt-56 lg:pt-0">
     <div class="container">
         <div class="lg:pt-40">
             <h1 class="text-white text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-4 lg:mb-6">
                 Descarga los datos
             </h1>
             <p class="text-lg lg:text-xl text-white lg:w-5/12">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpa.
+                Aquí podrás acceder y descargar las bases de datos correspondientes a la caracterización de los
+                mecanismos de participación ciudadana realizados en Colombia a partir de 1994.
             </p>
         </div>
     </div>
@@ -96,7 +98,31 @@
         </div>
     </div>
 </section>
-{{ partial "explora-los-datos" . }}
+<section class="py-12 lg:py-24">
+    <div class="mx-auto w-10/12 lg:w-9/12">
+        <div class="grid items-center lg:grid-cols-2 lg:gap-x-36">
+            <div class="relative text-primary-color-dark text-center lg:text-left">
+                <h2 class="text-3xl lg:text-4xl mb-4 lg:mb-5 font-black">Explora los datos</h2>
+                <p class="mb-4 lg:mb-6 lg:text-xl">
+                    Conoce los datos relacionados con los mecanismos de participación ciudadana realizados en Colombia a
+                    través de nuestra herramienta de visualización.
+                    Con esta herramienta podrás observar el comportamiento de los mecanismos realizados de acuerdo con
+                    su tipo a nivel municipal y departamental desde 1994 hasta la fecha.
+                </p>
+                <a href="{{ relref . " datos-democracia/mecanismos-de-participacion/explora-los-datos.md" }}"
+                    class="btn btn--primary mb-3 lg:mb-0">Visor de datos</a>
+                {{/* <img class="
+              hidden
+              absolute
+              lg:-top-8 lg:-left-2
+              xl:-top-8 xl:-left-8
+              lg:block
+            " src="/images/siscrimel/quienes-somos/icono.svg" alt="" /> */}}
+            </div>
+            <img src="/images/siscrimel/quienes-somos/explore-data-desktop.png" alt="" class="" />
+        </div>
+    </div>
+</section>
 <input type="hidden" name="data" id="data-resultados" value="{{ jsonify .Site.Data.resultados }}" />
 {{ end }} {{ define "js" }} {{ $resultados := resources.Get
 "js/api/resultados.js" | js.Build (dict "minify" true)}}
