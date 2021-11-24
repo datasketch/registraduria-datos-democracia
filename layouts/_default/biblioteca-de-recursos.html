@@ -64,12 +64,14 @@
       </div>
     </div>
     <div class="lg:col-start-5 lg:col-end-12 relative">
-      <div class="lg:flex lg:flex-col lg:items-end">
-        <div class="mb-12">
-          <h5 class="bg-primary-color-dark text-color-white py-2 px-6" id="paginationScroll">
-            Fecha de publicación
-          </h5>
-        </div>
+      <div class="lg:flex lg:flex-col lg:items-end mb-12">
+        <h5 class="bg-primary-color-dark text-color-white py-2 px-6" id="paginationScroll">
+          Fecha de publicación
+        </h5>
+      </div>
+      <div class="mb-12 flex items-center mx-auto w-11/12 lg:w-6/12" id="search">
+          <input class="border py-1 px-2 w-full outline-none" type="text" placeholder="Buscar">
+          <img class="h-6 -ml-8" src="/images/search-icon.png" alt="search icon">
       </div>
       <div class="library-container"></div>
       <div class="pagination text-center"></div>
@@ -79,7 +81,7 @@
 <input type="hidden" name="data" id="data-biblioteca" value="{{ jsonify $data }}" />
 <input type="hidden" name="data" id="data-revista" value="{{ jsonify .Site.Data.revista }}" />
 {{ end }}
-{{ define "js" }} 
-{{ $biblioteca := resources.Get "js/api/biblioteca.js" | js.Build (dict "minify" false)}}
+{{ define "js" }}
+{{ $biblioteca := resources.Get "js/api/biblioteca.js" | js.Build (dict "minify" hugo.IsProduction)}}
 <script src="{{ $biblioteca.Permalink }}"></script>
 {{ end }}

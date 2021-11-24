@@ -9,6 +9,7 @@ const containerLibrary = document.querySelector('.library-container');
 const filtersContainer = document.getElementById('filters');
 const paginationContainer = document.querySelector('.pagination');
 const scrollPagination = document.querySelector('#paginationScroll');
+const search = document.querySelector('#search');
 
 dataEl.remove();
 
@@ -19,6 +20,7 @@ const state = {
   filters: {
     year: [],
     line: [],
+    query: '',
   },
   itemsPerPagination: 10,
   page: 1,
@@ -29,13 +31,18 @@ function filterData() {
   const { filters, originalData } = state;
   const hasYearFilter = !!filters.year.length;
   const hasLineFilter = !!filters.line.length;
+  const hasQuery = !!filters.query.length;
   state.filteredData = originalData;
 
   if (hasYearFilter) {
     state.filteredData = state.filteredData.filter((item) => filters.year.includes(item.ano));
   }
   if (hasLineFilter) {
-    state.filteredData = state.filteredData.filter((item) => filters.line.includes(item.linea));
+    state.filteredData = state.filteredData.filter(({ linea }) => filters.line.includes(linea));
+  }
+  if (hasQuery) {
+    state.filteredData = state.filteredData
+      .filter((item) => item.titulo.includes(filters.query))
   }
 
   paginate(state.page, state.itemsPerPagination, state.filteredData).forEach((item) => {
@@ -74,6 +81,11 @@ paginationContainer.addEventListener('click', (e) => {
   filterData();
   scrollPagination.scrollIntoView({ behavior: 'smooth' });
 });
+
+search.addEventListener('input', function (e) {
+  state.filters.query = e.target.value;
+  filterData();
+})
 
 window.addEventListener('load', () => {
   filterData();
