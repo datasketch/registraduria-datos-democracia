@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $data := .Site.Data.biblioteca }}
 <!-- BANNER CEDAE -->
 <div class="
   relative
@@ -95,222 +96,33 @@
 
 <div class="py-16 lg:py-20" style="background-color: #EAEDF0;">
     <div class="w-10/12 mx-auto lg:w-full lg:mx-0">
-        <h3 class="text-primary-color text-center text-3xl mb-8 lg:mb-14">Documentos más consultados</h3>
+        <h3 class="text-primary-color text-center text-3xl mb-8 lg:mb-14">Conoce los informes</h3>
     </div>
     <div class="slider-wrapper mx-auto w-10/12">
         <div class="swiper-container">
             <div class="swiper-wrapper">
+                {{ range first 10 $data }}
                 <div class="swiper-slide">
-                    <div class="p-4 lg:p-10 rounded shadow-lg" style="background-color: #F7F8F9;">
-                        <span class="block italic text-xs text-primary-color font-bold mb-2 lg:mb-4">Democracia</span>
-                        <h4 class="text-primary-color font-bold text-lg lg:text-xl mb-4 lg:mb-6">Análisis de la
-                            financiación de
-                            las
-                            campañas legislativas de Colombia en 2014</h4>
-                        <p class="italic text-sm mb-2 lg:mb-4">Autor: <span class="font-bold">Transparencia por
-                                colombia</span>
+                    <div class="informe__item duration-300 hover:shadow-lg" style="background-color: #F7F8F9;">
+                        <h4 class="informe__title">{{ .titulo }}</h4>
+                        <span class="informe__type">{{ .linea }}</span>
+                        <p class="informe__description">{{ .descripcion | truncate 180 }}</p>
+                        <p class="informe__year">Fecha de publicación: <span class="font-bold">2014</span>
                         </p>
-                        <p class="mb-4 lg:mb-8">Análisis normativo y jurisprudencial del financiamiento político,
-                            principalmente
-                            el
-                            de campañas,
-                            enfocándose en las elecciones de 2014</p>
-                        <p class="italic text-sm mb-4 lg:mb-8">Año de invertigación: <span class="font-bold">2014</span>
-                        </p>
-                        <div class="text-center">
-                            <a href="#"
-                                class="py-2 px-6 bg-color-orange text-white rounded text-sm uppercase">Descargar</a>
+                        <div class="informe__button">
+                            <a href="{{ .url }}" target="_blank" class="informe__link">Ver informe</a>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="p-4 lg:p-10 rounded shadow-lg" style="background-color: #F7F8F9;">
-                        <span class="block italic text-xs text-primary-color font-bold mb-2 lg:mb-4">Democracia</span>
-                        <h4 class="text-primary-color font-bold text-lg lg:text-xl mb-4 lg:mb-6">Análisis de la
-                            financiación de
-                            las
-                            campañas legislativas de Colombia en 2014</h4>
-                        <p class="italic text-sm mb-2 lg:mb-4">Autor: <span class="font-bold">Transparencia por
-                                colombia</span>
-                        </p>
-                        <p class="mb-4 lg:mb-8">Análisis normativo y jurisprudencial del financiamiento político,
-                            principalmente
-                            el
-                            de campañas,
-                            enfocándose en las elecciones de 2014</p>
-                        <p class="italic text-sm mb-4 lg:mb-8">Año de invertigación: <span class="font-bold">2014</span>
-                        </p>
-                        <div class="text-center">
-                            <a href="#"
-                                class="py-2 px-6 bg-color-orange text-white rounded text-sm uppercase">Descargar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="p-4 lg:p-10 rounded shadow-lg" style="background-color: #F7F8F9;">
-                        <span class="block italic text-xs text-primary-color font-bold mb-2 lg:mb-4">Democracia</span>
-                        <h4 class="text-primary-color font-bold text-lg lg:text-xl mb-4 lg:mb-6">Análisis de la
-                            financiación de
-                            las
-                            campañas legislativas de Colombia en 2014</h4>
-                        <p class="italic text-sm mb-2 lg:mb-4">Autor: <span class="font-bold">Transparencia por
-                                colombia</span>
-                        </p>
-                        <p class="mb-4 lg:mb-8">Análisis normativo y jurisprudencial del financiamiento político,
-                            principalmente
-                            el
-                            de campañas,
-                            enfocándose en las elecciones de 2014</p>
-                        <p class="italic text-sm mb-4 lg:mb-8">Año de invertigación: <span class="font-bold">2014</span>
-                        </p>
-                        <div class="text-center">
-                            <a href="#"
-                                class="py-2 px-6 bg-color-orange text-white rounded text-sm uppercase">Descargar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="p-4 lg:p-10 rounded shadow-lg" style="background-color: #F7F8F9;">
-                        <span class="block italic text-xs text-primary-color font-bold mb-2 lg:mb-4">Democracia</span>
-                        <h4 class="text-primary-color font-bold text-lg lg:text-xl mb-4 lg:mb-6">Análisis de la
-                            financiación de
-                            las
-                            campañas legislativas de Colombia en 2014</h4>
-                        <p class="italic text-sm mb-2 lg:mb-4">Autor: <span class="font-bold">Transparencia por
-                                colombia</span>
-                        </p>
-                        <p class="mb-4 lg:mb-8">Análisis normativo y jurisprudencial del financiamiento político,
-                            principalmente
-                            el
-                            de campañas,
-                            enfocándose en las elecciones de 2014</p>
-                        <p class="italic text-sm mb-4 lg:mb-8">Año de invertigación: <span class="font-bold">2014</span>
-                        </p>
-                        <div class="text-center">
-                            <a href="#"
-                                class="py-2 px-6 bg-color-orange text-white rounded text-sm uppercase">Descargar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="p-4 lg:p-10 rounded shadow-lg" style="background-color: #F7F8F9;">
-                        <span class="block italic text-xs text-primary-color font-bold mb-2 lg:mb-4">Democracia</span>
-                        <h4 class="text-primary-color font-bold text-lg lg:text-xl mb-4 lg:mb-6">Análisis de la
-                            financiación de
-                            las
-                            campañas legislativas de Colombia en 2014</h4>
-                        <p class="italic text-sm mb-2 lg:mb-4">Autor: <span class="font-bold">Transparencia por
-                                colombia</span>
-                        </p>
-                        <p class="mb-4 lg:mb-8">Análisis normativo y jurisprudencial del financiamiento político,
-                            principalmente
-                            el
-                            de campañas,
-                            enfocándose en las elecciones de 2014</p>
-                        <p class="italic text-sm mb-4 lg:mb-8">Año de invertigación: <span class="font-bold">2014</span>
-                        </p>
-                        <div class="text-center">
-                            <a href="#"
-                                class="py-2 px-6 bg-color-orange text-white rounded text-sm uppercase">Descargar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="p-4 lg:p-10 rounded shadow-lg" style="background-color: #F7F8F9;">
-                        <span class="block italic text-xs text-primary-color font-bold mb-2 lg:mb-4">Democracia</span>
-                        <h4 class="text-primary-color font-bold text-lg lg:text-xl mb-4 lg:mb-6">Análisis de la
-                            financiación de
-                            las
-                            campañas legislativas de Colombia en 2014</h4>
-                        <p class="italic text-sm mb-2 lg:mb-4">Autor: <span class="font-bold">Transparencia por
-                                colombia</span>
-                        </p>
-                        <p class="mb-4 lg:mb-8">Análisis normativo y jurisprudencial del financiamiento político,
-                            principalmente
-                            el
-                            de campañas,
-                            enfocándose en las elecciones de 2014</p>
-                        <p class="italic text-sm mb-4 lg:mb-8">Año de invertigación: <span class="font-bold">2014</span>
-                        </p>
-                        <div class="text-center">
-                            <a href="#"
-                                class="py-2 px-6 bg-color-orange text-white rounded text-sm uppercase">Descargar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="p-4 lg:p-10 rounded shadow-lg" style="background-color: #F7F8F9;">
-                        <span class="block italic text-xs text-primary-color font-bold mb-2 lg:mb-4">Democracia</span>
-                        <h4 class="text-primary-color font-bold text-lg lg:text-xl mb-4 lg:mb-6">Análisis de la
-                            financiación de
-                            las
-                            campañas legislativas de Colombia en 2014</h4>
-                        <p class="italic text-sm mb-2 lg:mb-4">Autor: <span class="font-bold">Transparencia por
-                                colombia</span>
-                        </p>
-                        <p class="mb-4 lg:mb-8">Análisis normativo y jurisprudencial del financiamiento político,
-                            principalmente
-                            el
-                            de campañas,
-                            enfocándose en las elecciones de 2014</p>
-                        <p class="italic text-sm mb-4 lg:mb-8">Año de invertigación: <span class="font-bold">2014</span>
-                        </p>
-                        <div class="text-center">
-                            <a href="#"
-                                class="py-2 px-6 bg-color-orange text-white rounded text-sm uppercase">Descargar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="p-4 lg:p-10 rounded shadow-lg" style="background-color: #F7F8F9;">
-                        <span class="block italic text-xs text-primary-color font-bold mb-2 lg:mb-4">Democracia</span>
-                        <h4 class="text-primary-color font-bold text-lg lg:text-xl mb-4 lg:mb-6">Análisis de la
-                            financiación de
-                            las
-                            campañas legislativas de Colombia en 2014</h4>
-                        <p class="italic text-sm mb-2 lg:mb-4">Autor: <span class="font-bold">Transparencia por
-                                colombia</span>
-                        </p>
-                        <p class="mb-4 lg:mb-8">Análisis normativo y jurisprudencial del financiamiento político,
-                            principalmente
-                            el
-                            de campañas,
-                            enfocándose en las elecciones de 2014</p>
-                        <p class="italic text-sm mb-4 lg:mb-8">Año de invertigación: <span class="font-bold">2014</span>
-                        </p>
-                        <div class="text-center">
-                            <a href="#"
-                                class="py-2 px-6 bg-color-orange text-white rounded text-sm uppercase">Descargar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="p-4 lg:p-10 rounded shadow-lg" style="background-color: #F7F8F9;">
-                        <span class="block italic text-xs text-primary-color font-bold mb-2 lg:mb-4">Democracia</span>
-                        <h4 class="text-primary-color font-bold text-lg lg:text-xl mb-4 lg:mb-6">Análisis de la
-                            financiación de
-                            las
-                            campañas legislativas de Colombia en 2014</h4>
-                        <p class="italic text-sm mb-2 lg:mb-4">Autor: <span class="font-bold">Transparencia por
-                                colombia</span>
-                        </p>
-                        <p class="mb-4 lg:mb-8">Análisis normativo y jurisprudencial del financiamiento político,
-                            principalmente
-                            el
-                            de campañas,
-                            enfocándose en las elecciones de 2014</p>
-                        <p class="italic text-sm mb-4 lg:mb-8">Año de invertigación: <span class="font-bold">2014</span>
-                        </p>
-                        <div class="text-center">
-                            <a href="#"
-                                class="py-2 px-6 bg-color-orange text-white rounded text-sm uppercase">Descargar</a>
-                        </div>
-                    </div>
-                </div>
+                {{ end }}
             </div>
         </div>
         <div class="slider-prev"></div>
         <div class="slider-next"></div>
+    </div>
+    <div class="text-center mt-12">
+        <a href="{{ relref . " biblioteca-de-recursos.md" }}"
+            class="bg-primary-color text-white rounded uppercase font-bold py-2 px-4 text-sm">Ver más informes</a>
     </div>
 </div>
 

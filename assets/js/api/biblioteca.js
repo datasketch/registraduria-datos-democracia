@@ -42,7 +42,7 @@ function filterData() {
   }
   if (hasQuery) {
     state.filteredData = state.filteredData
-      .filter((item) => item.titulo.includes(filters.query))
+      .filter((item) => item.titulo.includes(filters.query));
   }
 
   paginate(state.page, state.itemsPerPagination, state.filteredData).forEach((item) => {
@@ -82,10 +82,10 @@ paginationContainer.addEventListener('click', (e) => {
   scrollPagination.scrollIntoView({ behavior: 'smooth' });
 });
 
-search.addEventListener('input', function (e) {
+search.addEventListener('input', (e) => {
   state.filters.query = e.target.value;
   filterData();
-})
+});
 
 window.addEventListener('load', () => {
   filterData();
