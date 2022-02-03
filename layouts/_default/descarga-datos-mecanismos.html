@@ -2,28 +2,9 @@
 {{ partial "nav-datos-democracia" . }}
 {{ partial "nav-mecanismos-participacion" . }}
 
-{{ $data := .Site.Data.resultados }}
-{{ $years := slice }}
-{{ $levels := slice }}
-{{ $types := slice }}
-
-<!-- Get categories -->
-{{ range $data }}
-{{ $isYear := findRE "[0-9]{4}" .ano }}
-{{ if eq (len $isYear) 1 }}
-{{ $years = $years | append (int .ano) }}
-{{ end }}
-{{ if .nivel }}
-{{ $levels = $levels | append .nivel }}
-{{ end }}
-{{ if .tipo }}
-{{ $types = $types | append .tipo }}
-{{ end }}
-{{ end }}
-
 <div
     class="bg-bg-banner-mecanismos-descarga-sm lg:bg-bg-banner-mecanismos-descarga-lg h-screen bg-cover bg-center relative text-center lg:text-left pt-56 lg:pt-0">
-    <div class="container">
+    <div class="mx-auto w-10/12 lg:w-9/12">
         <div class="lg:pt-40">
             <h1 class="text-white text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-4 lg:mb-6">
                 Descarga los datos
@@ -37,64 +18,47 @@
     <img class="hidden lg:block lg:absolute lg:-bottom-0 object-cover w-full" src="/images/curva-arriba-abajo.svg"
         alt="" />
 </div>
-<section class="py-12 lg:pt-12 lg:pb-20 bg-white">
-    <div class="grid grid-cols-1 lg:grid-cols-12 mx-auto w-10/12 lg:w-full">
-        <div class="lg:col-start-2 lg:col-end-4" id="filters">
-            <h4 class="text-primary-color-dark uppercase font-bold lg:text-xl lg:mb-3">
-                Filtros
-            </h4>
-            <!-- Date -->
-            <div class="mb-4">
-                <h5 class="bg-primary-color-dark text-color-white py-2 px-6">Año</h5>
-                <div class="py-4 px-2">
-                    {{ range sort (uniq $years) "value" "desc" }}
-                    <label class="filter-label" for="filter-{{ . }}">
-                        <span>{{ . }}</span>
-                        <input type="checkbox" id="filter-{{ . }}" name="year" value="{{ . }}" />
-                        <span class="checkmark"></span>
-                    </label>
-                    {{ end }}
-                </div>
+<section class="pt-12 lg:pt-16 xl:py-16">
+    <div class="mx-auto w-10/12 lg:w-9/12">
+        <h2 class="text-primary-color text-xl lg:text-2xl xl:text-3xl font-black mb-4 lg:mb-6 text-center">
+            Descarga los datos de <br> mecanismos de participación ciudadana
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-12 gap-4 xl:gap-8 mt-12 lg:mt-16">
+            <div class="text-center border border-primary-color py-8 px-4 flex flex-col justify-between lg:col-start-1 lg:col-end-4">
+                <h3 class="text-primary-color text-lg lg:text-xl font-black mb-4 lg:mb-6">Cabildo abierto</h3>
+                <a href="https://docs.google.com/spreadsheets/d/1uz7tNqv71Jy4kw0gF0vDZpaPn7Dl0V5f/edit#gid=2082856087"
+                    target="_blank" class="btn btn--tertiary">Descargar</a>
             </div>
-            <!-- Nivel -->
-            <div class="mb-4">
-                <h5 class="bg-primary-color-dark text-color-white py-2 px-6">Nivel</h5>
-                <div class="py-4 px-2">
-                    {{ range (uniq $levels) }}
-                    <label class="filter-label">
-                        <span class="capitalize">{{ . | lower }}</span>
-                        <input type="checkbox" name="level" value="{{ . }}" />
-                        <span class="checkmark"></span>
-                    </label>
-                    {{ end }}
-                </div>
+            <div class="text-center border border-primary-color py-8 px-4 flex flex-col justify-between lg:col-start-4 lg:col-end-7">
+                <h3 class="text-primary-color text-lg lg:text-xl font-black mb-4 lg:mb-6">Consultas populares</h3>
+                <a href="https://docs.google.com/spreadsheets/d/10DjnUxtt_Bb8FZh0dzAAuLDsxsd0GM75/edit?rtpof=true"
+                    target="_blank" class="btn btn--tertiary">Descargar</a>
             </div>
-            <!-- Tipo -->
-            <!-- <div class="mb-4">
-                <h5 class="bg-primary-color-dark text-color-white py-2 px-6">Tipo</h5>
-                <div class="py-4 px-2 type-container">
-                    {{ range sort (uniq $types) }}
-                    <label class="filter-label">
-                        <span class="capitalize">{{ . | lower }}</span>
-                        <input type="checkbox" name="type" value="{{ . }}" />
-                        <span class="checkmark"></span>
-                    </label>
-                    {{ end }}
-                </div>
-            </div> -->
-        </div>
-        <div class="lg:col-start-4 lg:col-end-12 m-auto lg:w-11/12">
-            <div class="lg:flex lg:flex-col lg:items-end">
-                <div class="mb-12">
-                    <span class="block uppercase text-primary-color-dark font-bold text-lg lg:text-xl mb-3">Ordernar
-                        por</span>
-                    <h5 class="bg-primary-color-dark text-color-white py-2 px-6" id="paginationScroll">
-                        Fecha de publicación
-                    </h5>
-                </div>
+            <div class="text-center border border-primary-color py-8 px-4 flex flex-col justify-between lg:col-start-7 lg:col-end-10">
+                <h3 class="text-primary-color text-lg lg:text-xl font-black mb-4 lg:mb-6">Revocatorias de mandato</h3>
+                <a href="https://docs.google.com/spreadsheets/d/1uAzbdW66bDBbIPf0jp5FAI_8MSMgOHK6/edit?rtpof=true#gid=442737508"
+                    target="_blank" class="btn btn--tertiary">Descargar</a>
             </div>
-            <div class="results-container grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 mb-16"></div>
-            <div class="pagination text-center"></div>
+            <div class="text-center border border-primary-color py-8 px-4 flex flex-col justify-between lg:col-start-10 lg:col-end-13">
+                <h3 class="text-primary-color text-lg lg:text-xl font-black mb-4 lg:mb-6">Iniciatias populares</h3>
+                <a href="https://docs.google.com/spreadsheets/d/1XXnaaN18cF06sc4j19HmnPIBxuBSerzP/edit?rtpof=true"
+                    target="_blank" class="btn btn--tertiary">Descargar</a>
+            </div>
+            <div class="text-center border border-primary-color py-8 px-4 flex flex-col justify-between lg:col-start-2 lg:col-end-5">
+                <h3 class="text-primary-color text-lg lg:text-xl font-black mb-4 lg:mb-6">Referendos populares históricos</h3>
+                <a href="https://docs.google.com/spreadsheets/d/1ZvJQTNsFm6W-O_4nuKHFqDZiZe9llkvt/edit?rtpof=true"
+                    target="_blank" class="btn btn--tertiary">Descargar</a>
+            </div>
+            <div class="text-center border border-primary-color py-8 px-4 flex flex-col justify-between lg:col-start-5 lg:col-end-8">
+                <h3 class="text-primary-color text-lg lg:text-xl font-black mb-4 lg:mb-6">Referendo popular 2003</h3>
+                <a href="https://docs.google.com/spreadsheets/d/1zwx_FbWm6aGeuhjduY-YL9i3IRcPYMgN/edit#gid=2015279077"
+                    target="_blank" class="btn btn--tertiary">Descargar</a>
+            </div>
+            <div class="text-center border border-primary-color py-8 px-4 flex flex-col justify-between lg:col-start-8 lg:col-end-11">
+                <h3 class="text-primary-color text-lg lg:text-xl font-black mb-4 lg:mb-6">Plebiscito 2006</h3>
+                <a href="https://docs.google.com/spreadsheets/d/1O0frDgTwzMYkCboqCvRYDjWJ3352ZWuC/edit?rtpof=true"
+                    target="_blank" class="btn btn--tertiary">Descargar</a>
+            </div>
         </div>
     </div>
 </section>
@@ -111,20 +75,8 @@
                 </p>
                 <a href="{{ relref . " datos-democracia/mecanismos-de-participacion/explora-los-datos.md" }}"
                     class="btn btn--primary mb-3 lg:mb-0">Visor de datos</a>
-                {{/* <img class="
-              hidden
-              absolute
-              lg:-top-8 lg:-left-2
-              xl:-top-8 xl:-left-8
-              lg:block
-            " src="/images/siscrimel/quienes-somos/icono.svg" alt="" /> */}}
             </div>
             <img src="/images/siscrimel/quienes-somos/explore-data-desktop.png" alt="" class="" />
         </div>
-    </div>
 </section>
-<input type="hidden" name="data" id="data-resultados" value="{{ jsonify .Site.Data.resultados }}" />
-{{ end }} {{ define "js" }} {{ $resultados := resources.Get
-"js/api/resultados.js" | js.Build (dict "minify" true)}}
-<script src="{{ $resultados.Permalink }}"></script>
 {{ end }}
