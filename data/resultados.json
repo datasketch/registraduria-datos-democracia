@@ -5297,7 +5297,7 @@
   },
   {
     "titulo": "Parlamento 2014",
-    "nivel": "Parlamento Andino",
+    "nivel": "Concejo",
     "tipo": "Congreso",
     "ano": "2014",
     "path": "https://s3.amazonaws.com/cedae.dskt.ch/2014/CONGRESO/PARLAMENTO ANDINO 2014/PARLAMENTO 2014.xls",
@@ -6482,5 +6482,21 @@
     "ano": "2018",
     "path": "https://s3.amazonaws.com/cedae.dskt.ch/2018/PRESIDENCIALES Y VICEPRESIDENCIALES/PRESIDENTE 2da VUELTA/2018_PRESIDENTE_Y_VICEPRESIDENTE_DE_LA_REPUBLICA_SEGUNDA_VUELTA VICHADA.csv",
     "format": "csv"
+  },
+  {
+    "titulo": "2022 Diccionario datos electorales",
+    "nivel": "Documentos guía",
+    "tipo": "Informativo",
+    "ano": "2022",
+    "path": "https://drive.google.com/file/d/1tzIWss6oVIRTwtJYpV3mSy8eZiINdSgO/view?usp=sharing",
+    "format": "PDF"
+  },
+  {
+    "titulo": "2022 Partidos electorales",
+    "nivel": "Documentos guía",
+    "tipo": "Informativo",
+    "ano": "2022",
+    "path": "https://docs.google.com/spreadsheets/d/1-A5t1K4QWf0EA59Rq1QbVsSaqlTALyJ2/edit?usp=sharing&ouid=111040004274928967967&rtpof=true&sd=true",
+    "format": "xlsx"
   }
 ]
