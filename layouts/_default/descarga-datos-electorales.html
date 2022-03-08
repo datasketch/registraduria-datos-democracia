@@ -36,7 +36,7 @@
     alt="" />
 </div>
 <section class="lg:pt-12 lg:pb-20 bg-color-white-2">
-  <div class="grid grid-cols-1 lg:grid-cols-12 mx-auto w-10/12 lg:w-full">
+  <div class="grid grid-cols-1 lg:grid-cols-12 items-start mx-auto w-10/12 lg:w-full">
     <div class="lg:col-start-2 lg:col-end-4" id="filters">
       <h4 class="text-primary-color-dark uppercase font-bold lg:text-xl lg:mb-3">
         Filtros
@@ -44,7 +44,7 @@
       <!-- Date -->
       <div class="mb-4">
         <h5 class="bg-primary-color-dark text-color-white py-2 px-6">Año</h5>
-        <div class="py-4 px-2">
+        <div class="py-4 px-2 max-h-56 overflow-y-scroll">
           {{ range sort (uniq $years) "value" "desc" }}
           <label class="filter-label" for="filter-{{ . }}">
             <span>{{ . }}</span>
@@ -57,7 +57,7 @@
       <!-- Nivel -->
       <div class="mb-4">
         <h5 class="bg-primary-color-dark text-color-white py-2 px-6">Nivel</h5>
-        <div class="py-4 px-2">
+        <div class="py-4 px-2 max-h-56 overflow-y-scroll">
           {{ range (uniq $levels) }}
           <label class="filter-label">
             <span class="capitalize">{{ . | lower }}</span>
@@ -67,19 +67,6 @@
           {{ end }}
         </div>
       </div>
-      <!-- Tipo -->
-      <!-- <div class="mb-4">
-        <h5 class="bg-primary-color-dark text-color-white py-2 px-6">Tipo</h5>
-        <div class="py-4 px-2 type-container">
-          {{ range sort (uniq $types) }}
-          <label class="filter-label">
-            <span class="capitalize">{{ . | lower }}</span>
-            <input type="checkbox" name="type" value="{{ . }}" />
-            <span class="checkmark"></span>
-          </label>
-          {{ end }}
-        </div>
-      </div> -->
     </div>
     <div class="lg:col-start-4 lg:col-end-12 m-auto lg:w-11/12">
       <div class="lg:flex lg:flex-col lg:items-end">

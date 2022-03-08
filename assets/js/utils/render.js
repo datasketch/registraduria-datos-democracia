@@ -26,7 +26,7 @@ export const renderItemResult = (data) => {
   const html = `
       <div class="result-item">
       <h3 class="result-title">${data.titulo}</h3>
-      <p class="result-description">${data.nivel} ${data.tipo} ${data.ano}</p>
+      <p class="result-description">${data.tipo} ${data.ano}</p>
       <p class="result-excel">
         Formato disponible: <span class="font-bold">${data.format.toUpperCase()}</span>
       </p>
