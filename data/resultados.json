@@ -1,930 +1,2186 @@
 [
   {
-    "titulo": "1988 Alcaldía",
-    "nivel": "Alcaldía",
-    "tipo": "Alcaldía Municipial",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Alcaldia/1988_alcaldia.dta",
+    "nivel": "Alcaldia",
     "ano": "1988",
-    "path": "https://drive.google.com/file/d/1IS7h0hNNMULS-J5oXK3e1Yl9NmSkA785/view?usp=sharing",
-    "format": "csv"
+    "size": 469829,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Alcaldia 1988"
   },
   {
-    "titulo": "1990 Alcaldía",
-    "nivel": "Alcaldía",
-    "tipo": "Alcaldía Municipial",
-    "ano": "1990",
-    "path": "https://drive.google.com/file/d/1jW66iJSn7xaLFZlAHWdgvIvTae7D0nd6/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "1992 Alcaldía",
-    "nivel": "Alcaldía",
-    "tipo": "Alcaldía Municipial",
-    "ano": "1992",
-    "path": "https://drive.google.com/file/d/188f57RkEjk9ijqeCsGDFL4aPkQ01mAwT/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "1994 Alcaldía",
-    "nivel": "Alcaldía",
-    "tipo": "Alcaldía Municipial",
-    "ano": "1994",
-    "path": "https://drive.google.com/file/d/1AFWewxY2DtixJbW38Hy5dt3ifypfcvS8/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "1997 Alcaldía",
-    "nivel": "Alcaldía",
-    "tipo": "Alcaldía Municipial",
-    "ano": "1997",
-    "path": "https://drive.google.com/file/d/1-2bpa32BJwJD1l03WmTq-TtLjeKptBzL/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "2000 Alcaldía",
-    "nivel": "Alcaldía",
-    "tipo": "Alcaldía Municipial",
-    "ano": "2000",
-    "path": "https://drive.google.com/file/d/19hriuTkm6x0aA3zzPdtpQSfvKDfvN-vp/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "2003 Alcaldía",
-    "nivel": "Alcaldía",
-    "tipo": "Alcaldía Municipial",
-    "ano": "2003",
-    "path": "https://drive.google.com/file/d/1kPBrb88hg35agZ6OH1q44tBvGFa9IK-4/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "2007 Alcaldía",
-    "nivel": "Alcaldía",
-    "tipo": "Alcaldía Municipial",
-    "ano": "2007",
-    "path": "https://drive.google.com/file/d/16nHItPxpS7fYHBLum4Lbw36A1gR1xV7M/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "2011 Alcaldía",
-    "nivel": "Alcaldía",
-    "tipo": "Alcaldía Municipial",
-    "ano": "2011",
-    "path": "https://drive.google.com/file/d/1RLvMqHHMP4TU_wNABjPgbPaKGMP9h1Jq/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "2015 Alcaldía",
-    "nivel": "Alcaldía",
-    "tipo": "Alcaldía Municipial",
-    "ano": "2015",
-    "path": "https://drive.google.com/file/d/1oV4CgjZ_GrVB7dc96M4qTzfGaPfF2yHN/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "2019 Alcaldía",
-    "nivel": "Alcaldía",
-    "tipo": "Alcaldía Municipial",
-    "ano": "2019",
-    "path": "https://drive.google.com/file/d/1SrY7AnZjGKnai6DqwAkxVQ9EZf6iNEj9/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "1958 Asamblea",
-    "nivel": "Asamblea",
-    "tipo": "Asamblea Departamental",
-    "ano": "1958",
-    "path": "https://drive.google.com/file/d/1SrY7AnZjGKnai6DqwAkxVQ9EZf6iNEj9/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "1958 Asamblea",
-    "nivel": "Asamblea",
-    "tipo": "Asamblea Departamental",
-    "ano": "1958",
-    "path": "https://drive.google.com/file/d/1ariHAFLucf52NA1gThEoMsyWBUCm8fih/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "1962 Asamblea",
-    "nivel": "Asamblea",
-    "tipo": "Asamblea Departamental",
-    "ano": "1962",
-    "path": "https://drive.google.com/file/d/1PPiOd4CSe57JicISkUpJEYjPyqTZpY2f/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "1964 Asamblea",
-    "nivel": "Asamblea",
-    "tipo": "Asamblea Departamental",
-    "ano": "1964",
-    "path": "https://drive.google.com/file/d/1q1jlmRub9yJBADyjvCXhKraxvrUs6rrC/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "1966 Asamblea",
-    "nivel": "Asamblea",
-    "tipo": "Asamblea Departamental",
-    "ano": "1966",
-    "path": "https://drive.google.com/file/d/1hlXPmbLOmckd7GDAJI_DA8kspwKXIaUz/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "1968 Asamblea",
-    "nivel": "Asamblea",
-    "tipo": "Asamblea Departamental",
-    "ano": "1968",
-    "path": "https://drive.google.com/file/d/1FBJZZv2Mj72HPOqgTH02lMrk5LW1uA5_/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "1970 Asamblea",
-    "nivel": "Asamblea",
-    "tipo": "Asamblea Departamental",
-    "ano": "1970",
-    "path": "https://drive.google.com/file/d/116xt7kq80BMcu6Zcwi3eVNNnefm9mfZR/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "1972 Asamblea",
-    "nivel": "Asamblea",
-    "tipo": "Asamblea Departamental",
-    "ano": "1972",
-    "path": "https://drive.google.com/file/d/1xbT6nrLwcuty3gWwBj9AyC0t85Dm2udH/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "1974 Asamblea",
-    "nivel": "Asamblea",
-    "tipo": "Asamblea Departamental",
-    "ano": "1974",
-    "path": "https://drive.google.com/file/d/1U1WqIEHvqbwUEVq0OH_vZSN14WKFUKEh/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "1976 Asamblea",
-    "nivel": "Asamblea",
-    "tipo": "Asamblea Departamental",
-    "ano": "1976",
-    "path": "https://drive.google.com/file/d/17f09lUmZKcAeDDaK5G1f0W-AHjg34i0c/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "1978 Asamblea",
-    "nivel": "Asamblea",
-    "tipo": "Asamblea Departamental",
-    "ano": "1978",
-    "path": "https://drive.google.com/file/d/1xcrwe_5dT-q3RRu-_3p2T9kzOl0GdTkn/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "1980 Asamblea",
-    "nivel": "Asamblea",
-    "tipo": "Asamblea Departamental",
-    "ano": "1980",
-    "path": "https://drive.google.com/file/d/148H9YAmHDeNkeQUUrmDBwshepUVfVvOo/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "1982 Asamblea",
-    "nivel": "Asamblea",
-    "tipo": "Asamblea Departamental",
-    "ano": "1982",
-    "path": "https://drive.google.com/file/d/1mveYzVnvGtYHPSRZZ3tuAFVWp6CqpL6Z/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "1984 Asamblea",
-    "nivel": "Asamblea",
-    "tipo": "Asamblea Departamental",
-    "ano": "1984",
-    "path": "https://drive.google.com/file/d/1KuEh72iOgS3gQCtuszRaoliGGWCJgzNj/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "1986 Asamblea",
-    "nivel": "Asamblea",
-    "tipo": "Asamblea Departamental",
-    "ano": "1986",
-    "path": "https://drive.google.com/file/d/1TO5DE34hCH7G1DpjUbi3wh9IIxICMIyr/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "1988 Asamblea",
-    "nivel": "Asamblea",
-    "tipo": "Asamblea Departamental",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Alcaldia/1988_alcaldia.dta.csv",
+    "nivel": "Alcaldia",
     "ano": "1988",
-    "path": "https://drive.google.com/file/d/1d4K7XzkSnh3WLo-DM6GMTzqC6SYYw1eb/view?usp=sharing",
-    "format": "csv"
+    "size": 281554,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Alcaldia 1988"
   },
   {
-    "titulo": "1990 Asamblea",
-    "nivel": "Asamblea",
-    "tipo": "Asamblea Departamental",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Alcaldia/1990_alcaldia.dta",
+    "nivel": "Alcaldia",
     "ano": "1990",
-    "path": "https://drive.google.com/file/d/1PmD1XoilVXaylcvh_usPTJaihryS3GeF/view?usp=sharing",
-    "format": "csv"
+    "size": 503278,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Alcaldia 1990"
   },
   {
-    "titulo": "1992 Asamblea",
-    "nivel": "Asamblea",
-    "tipo": "Asamblea Departamental",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Alcaldia/1990_alcaldia.dta.csv",
+    "nivel": "Alcaldia",
+    "ano": "1990",
+    "size": 280854,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Alcaldia 1990"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Alcaldia/1992_alcaldia.dta",
+    "nivel": "Alcaldia",
     "ano": "1992",
-    "path": "https://drive.google.com/file/d/15ljwi1BdXMGsVM2fgojGIiV-Z4NpHpFm/view?usp=sharing",
-    "format": "csv"
+    "size": 560174,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Alcaldia 1992"
   },
   {
-    "titulo": "1994 Asamblea",
-    "nivel": "Asamblea",
-    "tipo": "Asamblea Departamental",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Alcaldia/1992_alcaldia.dta.csv",
+    "nivel": "Alcaldia",
+    "ano": "1992",
+    "size": 321870,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Alcaldia 1992"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Alcaldia/1994_alcaldia.dta",
+    "nivel": "Alcaldia",
     "ano": "1994",
-    "path": "https://drive.google.com/file/d/1qNqvTl3pr2ClRtSTIVkMmaGXhRKbMDHP/view?usp=sharing",
-    "format": "csv"
+    "size": 733545,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Alcaldia 1994"
   },
   {
-    "titulo": "1997 Asamblea",
-    "nivel": "Asamblea",
-    "tipo": "Asamblea Departamental",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Alcaldia/1994_alcaldia.dta.csv",
+    "nivel": "Alcaldia",
+    "ano": "1994",
+    "size": 500850,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Alcaldia 1994"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Alcaldia/1997_alcaldia.dta",
+    "nivel": "Alcaldia",
     "ano": "1997",
-    "path": "https://drive.google.com/file/d/1Hm1oQxlCcXKp5L_rxdnt-6YXr8zeQTlY/view?usp=sharing",
-    "format": "csv"
+    "size": 1339971,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Alcaldia 1997"
   },
   {
-    "titulo": "2000 Asamblea",
-    "nivel": "Asamblea",
-    "tipo": "Asamblea Departamental",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Alcaldia/1997_alcaldia.dta.csv",
+    "nivel": "Alcaldia",
+    "ano": "1997",
+    "size": 764459,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Alcaldia 1997"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Alcaldia/2000_Alcaldia.dta",
+    "nivel": "Alcaldia",
     "ano": "2000",
-    "path": "https://drive.google.com/file/d/1S5O_5zyzaumEHh5vJlX_-_wXZKiGaWvZ/view?usp=sharing",
-    "format": "csv"
+    "size": 1222576,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Alcaldia 2000"
   },
   {
-    "titulo": "2003 Asamblea",
-    "nivel": "Asamblea",
-    "tipo": "Asamblea Departamental",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Alcaldia/2000_alcaldia.dta.csv",
+    "nivel": "Alcaldia",
+    "ano": "2000",
+    "size": 697567,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Alcaldia 2000"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Alcaldia/2003_Alcaldia.dta",
+    "nivel": "Alcaldia",
     "ano": "2003",
-    "path": "https://drive.google.com/file/d/1NNN2J1Sg5mjnejccW5DdL2U5VEdTbJC_/view?usp=sharing",
-    "format": "csv"
+    "size": 1215960,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Alcaldia 2003"
   },
   {
-    "titulo": "2007 Asamblea",
-    "nivel": "Asamblea",
-    "tipo": "Asamblea Departamental",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Alcaldia/2003_alcaldia.dta.csv",
+    "nivel": "Alcaldia",
+    "ano": "2003",
+    "size": 727110,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Alcaldia 2003"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Alcaldia/2007_alcaldia.dta",
+    "nivel": "Alcaldia",
     "ano": "2007",
-    "path": "https://drive.google.com/file/d/1-GYPq6uvVeo_8mt9ht67wemxQEKbCJZC/view?usp=sharing",
-    "format": "csv"
+    "size": 1686081,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Alcaldia 2007"
   },
   {
-    "titulo": "2011 Asamblea",
-    "nivel": "Asamblea",
-    "tipo": "Asamblea Departamental",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Alcaldia/2007_alcaldia.dta.csv",
+    "nivel": "Alcaldia",
+    "ano": "2007",
+    "size": 1097491,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Alcaldia 2007"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Alcaldia/2011_alcaldia.dta",
+    "nivel": "Alcaldia",
     "ano": "2011",
-    "path": "https://drive.google.com/file/d/14iWTbfPilKyz6StObv6eKv1Vlzaben_o/view?usp=sharing",
-    "format": "csv"
+    "size": 1792356,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Alcaldia 2011"
   },
   {
-    "titulo": "2015 Asamblea",
-    "nivel": "Asamblea",
-    "tipo": "Asamblea Departamental",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Alcaldia/2011_alcaldia.dta.csv",
+    "nivel": "Alcaldia",
+    "ano": "2011",
+    "size": 993310,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Alcaldia 2011"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Alcaldia/2015_alcaldia.dta",
+    "nivel": "Alcaldia",
     "ano": "2015",
-    "path": "https://drive.google.com/file/d/1AkbiDwS00k3W855Tshhtv46JLvJf0-Cf/view?usp=sharing",
-    "format": "csv"
+    "size": 1922486,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Alcaldia 2015"
   },
   {
-    "titulo": "2019 Asamblea",
-    "nivel": "Asamblea",
-    "tipo": "Asamblea Departamental",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Alcaldia/2015_alcaldia.dta.csv",
+    "nivel": "Alcaldia",
+    "ano": "2015",
+    "size": 1082114,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Alcaldia 2015"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Alcaldia/2019_alcaldia.dta",
+    "nivel": "Alcaldia",
     "ano": "2019",
-    "path": "https://drive.google.com/file/d/13i-68dWCVSBhQw-2IZNXB66M9Q8TeiQb/view?usp=sharing",
-    "format": "csv"
+    "size": 2044532,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Alcaldia 2019"
   },
   {
-    "titulo": "1958 Camara",
-    "nivel": "Camara",
-    "tipo": "Cámara de Representantes",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Alcaldia/2019_alcaldia.dta.csv",
+    "nivel": "Alcaldia",
+    "ano": "2019",
+    "size": 1150886,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Alcaldia 2019"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/1958_Asamblea.dta",
+    "nivel": "Asamblea",
     "ano": "1958",
-    "path": "https://drive.google.com/file/d/1lXVJv7N-cOMOuObWJVR7-C6eslWM8m4e/view?usp=sharing",
-    "format": "csv"
+    "size": 2760563,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Asamblea 1958"
   },
   {
-    "titulo": "1962 Camara",
-    "nivel": "Camara",
-    "tipo": "Cámara de Representantes",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/1958_asamblea.dta.csv",
+    "nivel": "Asamblea",
+    "ano": "1958",
+    "size": 1442954,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Asamblea 1958"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/1962_Asamblea.dta",
+    "nivel": "Asamblea",
     "ano": "1962",
-    "path": "https://drive.google.com/file/d/15thqs3mllOMJUCZ5_1wqdUEBHvfXt9Yh/view?usp=sharing",
-    "format": "csv"
+    "size": 9880195,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Asamblea 1962"
   },
   {
-    "titulo": "1964 Camara",
-    "nivel": "Camara",
-    "tipo": "Cámara de Representantes",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/1962_asamblea.dta.csv",
+    "nivel": "Asamblea",
+    "ano": "1962",
+    "size": 5066479,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Asamblea 1962"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/1964_Asamblea.dta",
+    "nivel": "Asamblea",
     "ano": "1964",
-    "path": "https://drive.google.com/file/d/1UmM5fcuiXvvi1sckeYmSf7LmN6G9Gfkx/view?usp=sharing",
-    "format": "csv"
+    "size": 13375612,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Asamblea 1964"
   },
   {
-    "titulo": "1966 Camara",
-    "nivel": "Camara",
-    "tipo": "Cámara de Representantes",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/1964_asamblea.dta.csv",
+    "nivel": "Asamblea",
+    "ano": "1964",
+    "size": 5978154,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Asamblea 1964"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/1966_Asamblea.dta",
+    "nivel": "Asamblea",
     "ano": "1966",
-    "path": "https://drive.google.com/file/d/1HjZ9bNygmHsbEd7ksjmcd5mWxdNJhPw_/view?usp=sharing",
-    "format": "csv"
+    "size": 11796977,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Asamblea 1966"
   },
   {
-    "titulo": "1968 Camara",
-    "nivel": "Camara",
-    "tipo": "Cámara de Representantes",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/1966_asamblea.dta.csv",
+    "nivel": "Asamblea",
+    "ano": "1966",
+    "size": 6016211,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Asamblea 1966"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/1968_Asamblea.dta",
+    "nivel": "Asamblea",
     "ano": "1968",
-    "path": "https://drive.google.com/file/d/1L3nzTTA7UxApK6mUuepbSmeVoS7nsIWc/view?usp=sharing",
-    "format": "csv"
+    "size": 10864353,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Asamblea 1968"
   },
   {
-    "titulo": "1970 Camara",
-    "nivel": "Camara",
-    "tipo": "Cámara de Representantes",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/1968_asamblea.dta.csv",
+    "nivel": "Asamblea",
+    "ano": "1968",
+    "size": 6375697,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Asamblea 1968"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/1970_Asamblea.dta",
+    "nivel": "Asamblea",
     "ano": "1970",
-    "path": "https://drive.google.com/file/d/1pJk76p_GYHM6_g8Odam7PUFFOZDVFyjM/view?usp=sharing",
-    "format": "csv"
+    "size": 12228218,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Asamblea 1970"
   },
   {
-    "titulo": "1974 Camara",
-    "nivel": "Camara",
-    "tipo": "Cámara de Representantes",
-    "ano": "1974",
-    "path": "https://drive.google.com/file/d/1R3Auolgc9LbW-D5U4_eCuiLmS61U_CsJ/view?usp=sharing",
-    "format": "csv"
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/1970_asamblea.dta.csv",
+    "nivel": "Asamblea",
+    "ano": "1970",
+    "size": 7059890,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Asamblea 1970"
   },
   {
-    "titulo": "1978 Camara",
-    "nivel": "Camara",
-    "tipo": "Cámara de Representantes",
-    "ano": "1978",
-    "path": "https://drive.google.com/file/d/1r4e5rpwuPecfyOkFtfNdEA9T9wqEm18S/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "1982 Camara",
-    "nivel": "Camara",
-    "tipo": "Cámara de Representantes",
-    "ano": "1982",
-    "path": "https://drive.google.com/file/d/1cdL-UfSnXWNBWMtyzgzfm3ZirjLUzqP0/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "1986 Camara",
-    "nivel": "Camara",
-    "tipo": "Cámara de Representantes",
-    "ano": "1986",
-    "path": "https://drive.google.com/file/d/1PQ9FTQUN2Qug8b28bgmRTavtMhDqarsj/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "1990 Camara",
-    "nivel": "Camara",
-    "tipo": "Cámara de Representantes",
-    "ano": "1990",
-    "path": "https://drive.google.com/file/d/1ZPhDRnSvPI3FP2_yTaiA7ZIQgOZrEjYI/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "1991 Camara",
-    "nivel": "Camara",
-    "tipo": "Cámara de Representantes",
-    "ano": "1991",
-    "path": "https://drive.google.com/file/d/1cX7RXhaT-GS-OrbpZMyvS-5fG-JJr5sZ/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "1994 Camara",
-    "nivel": "Camara",
-    "tipo": "Cámara de Representantes",
-    "ano": "1994",
-    "path": "https://drive.google.com/file/d/1X6H7rjlVkneeiGIC3p-8wghUMcqPl8OK/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "1998 Camara",
-    "nivel": "Camara",
-    "tipo": "Cámara de Representantes",
-    "ano": "1998",
-    "path": "https://drive.google.com/file/d/185Brq34zFgcfEXeHixKdEkas14QQjnJ0/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "2002 Camara",
-    "nivel": "Camara",
-    "tipo": "Cámara de Representantes",
-    "ano": "2002",
-    "path": "https://drive.google.com/file/d/1U--bw6zruXHCe2iOJyFV1Uec5BRErKC8/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "2006 Camara",
-    "nivel": "Camara",
-    "tipo": "Cámara de Representantes",
-    "ano": "2006",
-    "path": "https://drive.google.com/file/d/1N63J-b6i4z_TwMxri12AezRSSXpvkP-t/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "2010 Camara",
-    "nivel": "Camara",
-    "tipo": "Cámara de Representantes",
-    "ano": "2010",
-    "path": "https://drive.google.com/file/d/1txxAn-75twHmhevNlyrtbyK6royLX7Kx/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "2014 Camara",
-    "nivel": "Camara",
-    "tipo": "Cámara de Representantes",
-    "ano": "2014",
-    "path": "https://drive.google.com/file/d/1pNY8Ho_dhwqxwQcHa8OVKxPygHWa3gwN/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "2018 Camara",
-    "nivel": "Camara",
-    "tipo": "Cámara de Representantes",
-    "ano": "2018",
-    "path": "https://drive.google.com/file/d/1jxaN2Titnlciq3zOkIIdGBiqnZoUd3h2/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "1972 Concejo",
-    "nivel": "Concejo",
-    "tipo": "Concejo Municipal",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/1972_Asamblea.dta",
+    "nivel": "Asamblea",
     "ano": "1972",
-    "path": "https://drive.google.com/file/d/1i55ABIe6mhllYJQHdQqZhTVZrGJus9cX/view?usp=sharing",
-    "format": "csv"
+    "size": 10324116,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Asamblea 1972"
   },
   {
-    "titulo": "1974 Concejo",
-    "nivel": "Concejo",
-    "tipo": "Concejo Municipal",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/1972_asamblea.dta.csv",
+    "nivel": "Asamblea",
+    "ano": "1972",
+    "size": 7030695,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Asamblea 1972"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/1974_Asamblea.dta",
+    "nivel": "Asamblea",
     "ano": "1974",
-    "path": "https://drive.google.com/file/d/1QAvJVfplvWL28gZQ8FmIdZDPtZYQ9iSD/view?usp=sharing",
-    "format": "csv"
+    "size": 12847383,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Asamblea 1974"
   },
   {
-    "titulo": "1976 Concejo",
-    "nivel": "Concejo",
-    "tipo": "Concejo Municipal",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/1974_asamblea.dta.csv",
+    "nivel": "Asamblea",
+    "ano": "1974",
+    "size": 6841627,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Asamblea 1974"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/1976_Asamblea.dta",
+    "nivel": "Asamblea",
     "ano": "1976",
-    "path": "https://drive.google.com/file/d/1Rl7lcghdkdDse58ACpbZQoou529rl7B2/view?usp=sharing",
-    "format": "csv"
+    "size": 15316762,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Asamblea 1976"
   },
   {
-    "titulo": "1978 Concejo",
-    "nivel": "Concejo",
-    "tipo": "Concejo Municipal",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/1976_asamblea.dta.csv",
+    "nivel": "Asamblea",
+    "ano": "1976",
+    "size": 8401737,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Asamblea 1976"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/1978_Asamblea.dta",
+    "nivel": "Asamblea",
     "ano": "1978",
-    "path": "https://drive.google.com/file/d/1P4ShlKg1b9EYNl7RC18WILKuGQCqdlMW/view?usp=sharing",
-    "format": "csv"
+    "size": 16452191,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Asamblea 1978"
   },
   {
-    "titulo": "1980 Concejo",
-    "nivel": "Concejo",
-    "tipo": "Concejo Municipal",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/1978_asamblea.dta.csv",
+    "nivel": "Asamblea",
+    "ano": "1978",
+    "size": 8899947,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Asamblea 1978"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/1980_Asamblea.dta",
+    "nivel": "Asamblea",
     "ano": "1980",
-    "path": "https://drive.google.com/file/d/17tqgVduiUIQhPCNdEedcQw4mqbSIcTzp/view?usp=sharing",
-    "format": "csv"
+    "size": 16668104,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Asamblea 1980"
   },
   {
-    "titulo": "1982 Concejo",
-    "nivel": "Concejo",
-    "tipo": "Concejo Municipal",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/1980_asamblea.dta.csv",
+    "nivel": "Asamblea",
+    "ano": "1980",
+    "size": 10140049,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Asamblea 1980"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/1982_Asamblea.dta",
+    "nivel": "Asamblea",
     "ano": "1982",
-    "path": "https://drive.google.com/file/d/11ceGp-7557tPJdDOEmKWb7qh_liFvfDi/view?usp=sharing",
-    "format": "csv"
+    "size": 17125696,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Asamblea 1982"
   },
   {
-    "titulo": "1984 Concejo",
-    "nivel": "Concejo",
-    "tipo": "Concejo Municipal",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/1982_asamblea.dta.csv",
+    "nivel": "Asamblea",
+    "ano": "1982",
+    "size": 10568373,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Asamblea 1982"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/1984_Asamblea.dta",
+    "nivel": "Asamblea",
     "ano": "1984",
-    "path": "https://drive.google.com/file/d/1wpkNfahSTPE5EOe36Uo8GPDEt3ZVKasf/view?usp=sharing",
-    "format": "csv"
+    "size": 18531164,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Asamblea 1984"
   },
   {
-    "titulo": "1986 Concejo",
-    "nivel": "Concejo",
-    "tipo": "Concejo Municipal",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/1984_asamblea.dta.csv",
+    "nivel": "Asamblea",
+    "ano": "1984",
+    "size": 10234096,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Asamblea 1984"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/1986_Asamblea.dta",
+    "nivel": "Asamblea",
     "ano": "1986",
-    "path": "https://drive.google.com/file/d/1QS_f7VJpQY_N7czXDHZqEcwvQlV1KrH9/view?usp=sharing",
-    "format": "csv"
+    "size": 16993841,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Asamblea 1986"
   },
   {
-    "titulo": "1990 Concejo",
-    "nivel": "Concejo",
-    "tipo": "Concejo Municipal",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/1986_asamblea.dta.csv",
+    "nivel": "Asamblea",
+    "ano": "1986",
+    "size": 10311534,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Asamblea 1986"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/1988_Asamblea.dta",
+    "nivel": "Asamblea",
+    "ano": "1988",
+    "size": 15816794,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Asamblea 1988"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/1988_asamblea.dta.csv",
+    "nivel": "Asamblea",
+    "ano": "1988",
+    "size": 10311583,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Asamblea 1988"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/1990_Asamblea.dta",
+    "nivel": "Asamblea",
     "ano": "1990",
-    "path": "https://drive.google.com/file/d/1LlYYPBaj8zt_nxI1B6cgZQjd-m5K27GG/view?usp=sharing",
-    "format": "csv"
+    "size": 23634122,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Asamblea 1990"
   },
   {
-    "titulo": "1992 Concejo",
-    "nivel": "Concejo",
-    "tipo": "Concejo Municipal",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/1990_asamblea.dta.csv",
+    "nivel": "Asamblea",
+    "ano": "1990",
+    "size": 13247291,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Asamblea 1990"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/1992_Asamblea.dta",
+    "nivel": "Asamblea",
     "ano": "1992",
-    "path": "https://drive.google.com/file/d/1c6IqZc1bDshlk1IRb_jpp8hUBVr6T2MG/view?usp=sharing",
-    "format": "csv"
+    "size": 20455811,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Asamblea 1992"
   },
   {
-    "titulo": "1994 Concejo",
-    "nivel": "Concejo",
-    "tipo": "Concejo Municipal",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/1992_asamblea.dta.csv",
+    "nivel": "Asamblea",
+    "ano": "1992",
+    "size": 10567554,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Asamblea 1992"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/1994_Asamblea.dta",
+    "nivel": "Asamblea",
     "ano": "1994",
-    "path": "https://drive.google.com/file/d/1GDYd21Zx1ZsyRrYW9a0ospQ4G2d9pt6M/view?usp=sharing",
-    "format": "csv"
+    "size": 20928824,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Asamblea 1994"
   },
   {
-    "titulo": "1997 Concejo",
-    "nivel": "Concejo",
-    "tipo": "Concejo Municipal",
-    "ano": "1997",
-    "path": "https://drive.google.com/file/d/1HuqF3RzSYVZXPA4Kwy5f2yaPl-JmXzaR/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "2000 Concejo",
-    "nivel": "Concejo",
-    "tipo": "Concejo Municipal",
-    "ano": "2000",
-    "path": "https://drive.google.com/file/d/1C1fBWrnl1rTvvbwuyVU1y4pn5FmeebJa/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "2003 Concejo",
-    "nivel": "Concejo",
-    "tipo": "Concejo Municipal",
-    "ano": "2003",
-    "path": "https://drive.google.com/file/d/1cEi6lwUFB7T1FLy1X5ZZ_bykRXnBR4kF/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "2007 Concejo",
-    "nivel": "Concejo",
-    "tipo": "Concejo Municipal",
-    "ano": "2007",
-    "path": "https://drive.google.com/file/d/1mHqcrm3TtHwJTAmW7erU_HPJA3XcE-85/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "2011 Concejo",
-    "nivel": "Concejo",
-    "tipo": "Concejo Municipal",
-    "ano": "2011",
-    "path": "https://drive.google.com/file/d/1jwZaE-WRnQKCKSZFK4M5J1CDu-roVMwr/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "2015 Concejo",
-    "nivel": "Concejo",
-    "tipo": "Concejo Municipal",
-    "ano": "2015",
-    "path": "https://drive.google.com/file/d/12LS6EEhI0zWuvIfsVni0PeIlkmMPNYbt/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "1991 Gobernación",
-    "nivel": "Gobernación",
-    "tipo": "Gobernación",
-    "ano": "1991",
-    "path": "https://drive.google.com/file/d/11--Xi55Up9-hVEWzOQIK8Fu5rtP-SZ6a/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "1994 Gobernación",
-    "nivel": "Gobernación",
-    "tipo": "Gobernación",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/1994_asamblea.dta.csv",
+    "nivel": "Asamblea",
     "ano": "1994",
-    "path": "https://drive.google.com/file/d/1azqRD1hFgcnLt5rJQuMOOByoQLH4Kuu1/view?usp=sharing",
-    "format": "csv"
+    "size": 13215734,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Asamblea 1994"
   },
   {
-    "titulo": "1997 Gobernación",
-    "nivel": "Gobernación",
-    "tipo": "Gobernación",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/1997_Asamblea.dta",
+    "nivel": "Asamblea",
     "ano": "1997",
-    "path": "https://drive.google.com/file/d/198JJRcXhnEtfccQnOxqNQog0H9Y3TeMZ/view?usp=sharing",
-    "format": "csv"
+    "size": 34621085,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Asamblea 1997"
   },
   {
-    "titulo": "2000 Gobernación",
-    "nivel": "Gobernación",
-    "tipo": "Gobernación",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/1997_asamblea.dta.csv",
+    "nivel": "Asamblea",
+    "ano": "1997",
+    "size": 19286834,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Asamblea 1997"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/2000_Asamblea.dta",
+    "nivel": "Asamblea",
     "ano": "2000",
-    "path": "https://drive.google.com/file/d/19h_476HxPM7crELplprJ1DrVrDjHMM06/view?usp=sharing",
-    "format": "csv"
+    "size": 24822638,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Asamblea 2000"
   },
   {
-    "titulo": "2003 Gobernación",
-    "nivel": "Gobernación",
-    "tipo": "Gobernación",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/2000_asamblea.dta.csv",
+    "nivel": "Asamblea",
+    "ano": "2000",
+    "size": 14547465,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Asamblea 2000"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/2003_Asamblea.dta",
+    "nivel": "Asamblea",
     "ano": "2003",
-    "path": "https://drive.google.com/file/d/1Po4nAzeq8-XTnwdzcrw4l2YCIgDTORZk/view?usp=sharing",
-    "format": "csv"
+    "size": 20935946,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Asamblea 2003"
   },
   {
-    "titulo": "2007 Gobernación",
-    "nivel": "Gobernación",
-    "tipo": "Gobernación",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/2003_asamblea.dta.csv",
+    "nivel": "Asamblea",
+    "ano": "2003",
+    "size": 12421576,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Asamblea 2003"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/2007_Asamblea.dta",
+    "nivel": "Asamblea",
     "ano": "2007",
-    "path": "https://drive.google.com/file/d/1eVJ069lnJI3rXEIelIaTS4NZZ_0UpCDU/view?usp=sharing",
-    "format": "csv"
+    "size": 27233214,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Asamblea 2007"
   },
   {
-    "titulo": "2011 Gobernación",
-    "nivel": "Gobernación",
-    "tipo": "Gobernación",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/2007_asamblea.dta.csv",
+    "nivel": "Asamblea",
+    "ano": "2007",
+    "size": 16470327,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Asamblea 2007"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/2011_Asamblea.dta",
+    "nivel": "Asamblea",
     "ano": "2011",
-    "path": "https://drive.google.com/file/d/1Z83XIcWfSA8zOsdQzPB4BW9Z2syfF-Lo/view?usp=sharing",
-    "format": "csv"
+    "size": 30837596,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Asamblea 2011"
   },
   {
-    "titulo": "2015 Gobernación",
-    "nivel": "Gobernación",
-    "tipo": "Gobernación",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/2011_asamblea.dta.csv",
+    "nivel": "Asamblea",
+    "ano": "2011",
+    "size": 17847994,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Asamblea 2011"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/2015_Asamblea.dta",
+    "nivel": "Asamblea",
     "ano": "2015",
-    "path": "https://drive.google.com/file/d/1L97ptSEV5YdX9dubK4F_atb1YwP53O-U/view?usp=sharing",
-    "format": "csv"
+    "size": 29828212,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Asamblea 2015"
   },
   {
-    "titulo": "2019 Gobernación",
-    "nivel": "Gobernación",
-    "tipo": "Gobernación",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/2015_asamblea.dta.csv",
+    "nivel": "Asamblea",
+    "ano": "2015",
+    "size": 16909258,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Asamblea 2015"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/2019_Asamblea.dta",
+    "nivel": "Asamblea",
     "ano": "2019",
-    "path": "https://drive.google.com/file/d/14_SVyeMgyVIWEHZ0rDPxyguew_rKoWZO/view?usp=sharing",
-    "format": "csv"
+    "size": 31054798,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Asamblea 2019"
   },
   {
-    "titulo": "1958 Presidencia",
-    "nivel": "Presidencia",
-    "tipo": "Presidencia",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Asamblea/2019_asamblea.dta.csv",
+    "nivel": "Asamblea",
+    "ano": "2019",
+    "size": 17365071,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Asamblea 2019"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Camara/1958_Camara.dta",
+    "nivel": "Camara",
     "ano": "1958",
-    "path": "https://drive.google.com/file/d/1Xflps8kmtukvj_uSaTpYbZX6fSNWQF9m/view?usp=sharing",
-    "format": "csv"
+    "size": 2715989,
+    "tipo": "Congreso",
+    "format": "dta",
+    "titulo": "Camara 1958"
   },
   {
-    "titulo": "1962 Presidencia",
-    "nivel": "Presidencia",
-    "tipo": "Presidencia",
-    "ano": "1962",
-    "path": "https://drive.google.com/file/d/1wpOYHxRxHBtMg1kh-ZKY0RfasD100d2e/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "1966 Presidencia",
-    "nivel": "Presidencia",
-    "tipo": "Presidencia",
-    "ano": "1966",
-    "path": "https://drive.google.com/file/d/1PttpdI5MZqxX0yPyA-qjCEQ-2mvdBV0f/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "1970 Presidencia",
-    "nivel": "Presidencia",
-    "tipo": "Presidencia",
-    "ano": "1970",
-    "path": "https://drive.google.com/file/d/10fIGKjYIu5FKyniKfe9j5wFXV2OLLNLp/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "1974 Presidencia",
-    "nivel": "Presidencia",
-    "tipo": "Presidencia",
-    "ano": "1974",
-    "path": "https://drive.google.com/file/d/14QJhv3j73oWVBAzmUkMsvPxkBUKCc9Gl/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "1978 Presidencia",
-    "nivel": "Presidencia",
-    "tipo": "Presidencia",
-    "ano": "1978",
-    "path": "https://drive.google.com/file/d/1BkcIMggBzo0hYIkEcikH2TW9HhqNZNJo/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "1982 Presidencia",
-    "nivel": "Presidencia",
-    "tipo": "Presidencia",
-    "ano": "1982",
-    "path": "https://drive.google.com/file/d/1gtfyDOlQ8JhdVTT-uzRKmke17XbaNgjj/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "1986 Presidencia",
-    "nivel": "Presidencia",
-    "tipo": "Presidencia",
-    "ano": "1986",
-    "path": "https://drive.google.com/file/d/1AeSQfNV8PtXvi7V13nr2V7gLJfMtxFkS/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "1990 Presidencia",
-    "nivel": "Presidencia",
-    "tipo": "Presidencia",
-    "ano": "1990",
-    "path": "https://drive.google.com/file/d/1UClW9bcghYfIVcASqMa2p7fsDNJlSrPS/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "1994 Presidencia Primera Vuelta",
-    "nivel": "Presidencia",
-    "tipo": "Presidencia",
-    "ano": "1994",
-    "path": "https://drive.google.com/file/d/1-8KPN7iwDSjCz6LmDbBbKu9D7hnebfj2/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "1994 Presidencia Segunda Vuelta",
-    "nivel": "Presidencia",
-    "tipo": "Presidencia",
-    "ano": "1994",
-    "path": "https://drive.google.com/file/d/1GxLklyX3N6uAykfW-nX_8f95GPVajeXj/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "1998 Presidencia Primera Vuelta",
-    "nivel": "Presidencia",
-    "tipo": "Presidencia",
-    "ano": "1998",
-    "path": "https://drive.google.com/file/d/1-8KPN7iwDSjCz6LmDbBbKu9D7hnebfj2/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "1998 Presidencia Segunda Vuelta",
-    "nivel": "Presidencia",
-    "tipo": "Presidencia",
-    "ano": "1998",
-    "path": "https://drive.google.com/file/d/1Rdk2akrst3BIopQ3o0OHx1Ly8Lu5lozL/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "2002 Presidencia",
-    "nivel": "Presidencia",
-    "tipo": "Presidencia",
-    "ano": "2002",
-    "path": "https://drive.google.com/file/d/1mCIH7GaCDOrpEEvYSOW8EYVLDiLTdDw3/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "2006 Presidencia",
-    "nivel": "Presidencia",
-    "tipo": "Presidencia",
-    "ano": "2006",
-    "path": "https://drive.google.com/file/d/1az5VsjouYqAW6CRFGLH-MTa9yaUy51bq/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "2010 Presidencia Primera Vuelta",
-    "nivel": "Presidencia",
-    "tipo": "Presidencia",
-    "ano": "2010",
-    "path": "https://drive.google.com/file/d/1h9UPNth5Ngejw6sre5RH18VuVLrAOfB_/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "2010 Presidencia Segunda Vuelta",
-    "nivel": "Presidencia",
-    "tipo": "Presidencia",
-    "ano": "2010",
-    "path": "https://drive.google.com/file/d/15Fbl8sPRYLEOHwyQO6k4gHm3gbfBuhh9/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "2014 Presidencia Primera Vuelta",
-    "nivel": "Presidencia",
-    "tipo": "Presidencia",
-    "ano": "2014",
-    "path": "https://drive.google.com/file/d/18jCALp-fzQRj-Y2AboyFht8cYcvVy4ob/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "2014 Presidencia Segunda Vuelta",
-    "nivel": "Presidencia",
-    "tipo": "Presidencia",
-    "ano": "2014",
-    "path": "https://drive.google.com/file/d/1PWMefEZpXCsky-dDp1btarH5SgiP73cP/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "2018 Presidencia Primera Vuelta",
-    "nivel": "Presidencia",
-    "tipo": "Presidencia",
-    "ano": "2018",
-    "path": "https://drive.google.com/file/d/1CG1dPrZn7syX9Q9iimmf8FISoCb5VcX1/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "2018 Presidencia Segunda Vuelta",
-    "nivel": "Presidencia",
-    "tipo": "Presidencia",
-    "ano": "2018",
-    "path": "https://drive.google.com/file/d/1PdDzqQhj5TooAcY9_R912bD7tkSYsxq8/view?usp=sharing",
-    "format": "csv"
-  },
-  {
-    "titulo": "1958 Senado",
-    "nivel": "Senado",
-    "tipo": "Senado",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Camara/1958_camara.dta.csv",
+    "nivel": "Camara",
     "ano": "1958",
-    "path": "https://drive.google.com/file/d/1K_UVNzFBS9J_xf5J62HL8O2frE9z-1FH/view?usp=sharing",
-    "format": "csv"
+    "size": 1462888,
+    "tipo": "Congreso",
+    "format": "csv",
+    "titulo": "Camara 1958"
   },
   {
-    "titulo": "1962 Senado",
-    "nivel": "Senado",
-    "tipo": "Senado",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Camara/1962_Camara.dta",
+    "nivel": "Camara",
     "ano": "1962",
-    "path": "https://drive.google.com/file/d/1xFLmIQ5KVzRAXZN7imQdPVIrTHb1egkW/view?usp=sharing",
-    "format": "csv"
+    "size": 9389345,
+    "tipo": "Congreso",
+    "format": "dta",
+    "titulo": "Camara 1962"
   },
   {
-    "titulo": "1966 Senado",
-    "nivel": "Senado",
-    "tipo": "Senado",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Camara/1962_camara.dta.csv",
+    "nivel": "Camara",
+    "ano": "1962",
+    "size": 3576425,
+    "tipo": "Congreso",
+    "format": "csv",
+    "titulo": "Camara 1962"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Camara/1964_Camara.dta",
+    "nivel": "Camara",
+    "ano": "1964",
+    "size": 8620029,
+    "tipo": "Congreso",
+    "format": "dta",
+    "titulo": "Camara 1964"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Camara/1964_camara.dta.csv",
+    "nivel": "Camara",
+    "ano": "1964",
+    "size": 4562832,
+    "tipo": "Congreso",
+    "format": "csv",
+    "titulo": "Camara 1964"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Camara/1966_Camara.dta",
+    "nivel": "Camara",
     "ano": "1966",
-    "path": "https://drive.google.com/file/d/1c9nMzJBbBudKNTgNglSa6a092efKFlI_/view?usp=sharing",
-    "format": "csv"
+    "size": 8435988,
+    "tipo": "Congreso",
+    "format": "dta",
+    "titulo": "Camara 1966"
   },
   {
-    "titulo": "1970 Senado",
-    "nivel": "Senado",
-    "tipo": "Senado",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Camara/1966_camara.dta.csv",
+    "nivel": "Camara",
+    "ano": "1966",
+    "size": 4612183,
+    "tipo": "Congreso",
+    "format": "csv",
+    "titulo": "Camara 1966"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Camara/1968_Camara.dta",
+    "nivel": "Camara",
+    "ano": "1968",
+    "size": 6738316,
+    "tipo": "Congreso",
+    "format": "dta",
+    "titulo": "Camara 1968"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Camara/1968_camara.dta.csv",
+    "nivel": "Camara",
+    "ano": "1968",
+    "size": 4261051,
+    "tipo": "Congreso",
+    "format": "csv",
+    "titulo": "Camara 1968"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Camara/1970_Camara.dta",
+    "nivel": "Camara",
     "ano": "1970",
-    "path": "https://drive.google.com/file/d/1EOBMN6MqAathPfhzN6Ptg_VIwaQXrE8j/view?usp=sharing",
-    "format": "csv"
+    "size": 9444851,
+    "tipo": "Congreso",
+    "format": "dta",
+    "titulo": "Camara 1970"
   },
   {
-    "titulo": "1974 Senado",
-    "nivel": "Senado",
-    "tipo": "Senado",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Camara/1970_camara.dta.csv",
+    "nivel": "Camara",
+    "ano": "1970",
+    "size": 5193998,
+    "tipo": "Congreso",
+    "format": "csv",
+    "titulo": "Camara 1970"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Camara/1974_Camara.dta",
+    "nivel": "Camara",
     "ano": "1974",
-    "path": "https://drive.google.com/file/d/1xwC7blstHUzquRX2fah4ZrUxzOb4SICK/view?usp=sharing",
-    "format": "csv"
+    "size": 8330327,
+    "tipo": "Congreso",
+    "format": "dta",
+    "titulo": "Camara 1974"
   },
   {
-    "titulo": "1978 Senado",
-    "nivel": "Senado",
-    "tipo": "Senado",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Camara/1974_camara.dta.csv",
+    "nivel": "Camara",
+    "ano": "1974",
+    "size": 4611661,
+    "tipo": "Congreso",
+    "format": "csv",
+    "titulo": "Camara 1974"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Camara/1978_Camara.dta",
+    "nivel": "Camara",
     "ano": "1978",
-    "path": "https://drive.google.com/file/d/1Ui3XSeClXmJRXFPJo1isQHJ2jMmrlfgT/view?usp=sharing",
-    "format": "csv"
+    "size": 10296625,
+    "tipo": "Congreso",
+    "format": "dta",
+    "titulo": "Camara 1978"
   },
   {
-    "titulo": "1982 Senado",
-    "nivel": "Senado",
-    "tipo": "Senado",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Camara/1978_camara.dta.csv",
+    "nivel": "Camara",
+    "ano": "1978",
+    "size": 5783001,
+    "tipo": "Congreso",
+    "format": "csv",
+    "titulo": "Camara 1978"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Camara/1982_Camara.dta",
+    "nivel": "Camara",
     "ano": "1982",
-    "path": "https://drive.google.com/file/d/1th11C8YM8AImz8qWEgTGjpTJryO1jQT0/view?usp=sharing",
-    "format": "csv"
+    "size": 11121886,
+    "tipo": "Congreso",
+    "format": "dta",
+    "titulo": "Camara 1982"
   },
   {
-    "titulo": "1986 Senado",
-    "nivel": "Senado",
-    "tipo": "Senado",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Camara/1982_camara.dta.csv",
+    "nivel": "Camara",
+    "ano": "1982",
+    "size": 6869650,
+    "tipo": "Congreso",
+    "format": "csv",
+    "titulo": "Camara 1982"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Camara/1986_Camara.dta",
+    "nivel": "Camara",
     "ano": "1986",
-    "path": "https://drive.google.com/file/d/1QHLWOdEvlI8K8so0sAnPWjLMuILBWEQh/view?usp=sharing",
-    "format": "csv"
+    "size": 13637751,
+    "tipo": "Congreso",
+    "format": "dta",
+    "titulo": "Camara 1986"
   },
   {
-    "titulo": "1990 Senado",
-    "nivel": "Senado",
-    "tipo": "Senado",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Camara/1986_camara.dta.csv",
+    "nivel": "Camara",
+    "ano": "1986",
+    "size": 6875136,
+    "tipo": "Congreso",
+    "format": "csv",
+    "titulo": "Camara 1986"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Camara/1990_Camara.dta",
+    "nivel": "Camara",
     "ano": "1990",
-    "path": "https://drive.google.com/file/d/1fxaUHyU4k_DYWPjGD8Mmy-l1g6b93Nx1/view?usp=sharing",
-    "format": "csv"
+    "size": 12618526,
+    "tipo": "Congreso",
+    "format": "dta",
+    "titulo": "Camara 1990"
   },
   {
-    "titulo": "2002 Senado",
-    "nivel": "Senado",
-    "tipo": "Senado",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Camara/1990_camara.dta.csv",
+    "nivel": "Camara",
+    "ano": "1990",
+    "size": 7741988,
+    "tipo": "Congreso",
+    "format": "csv",
+    "titulo": "Camara 1990"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Camara/1991_Camara.dta",
+    "nivel": "Camara",
+    "ano": "1991",
+    "size": 22187731,
+    "tipo": "Congreso",
+    "format": "dta",
+    "titulo": "Camara 1991"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Camara/1991_camara.dta.csv",
+    "nivel": "Camara",
+    "ano": "1991",
+    "size": 7324896,
+    "tipo": "Congreso",
+    "format": "csv",
+    "titulo": "Camara 1991"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Camara/1994_Camara.dta",
+    "nivel": "Camara",
+    "ano": "1994",
+    "size": 19213792,
+    "tipo": "Congreso",
+    "format": "dta",
+    "titulo": "Camara 1994"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Camara/1994_camara.dta.csv",
+    "nivel": "Camara",
+    "ano": "1994",
+    "size": 12375869,
+    "tipo": "Congreso",
+    "format": "csv",
+    "titulo": "Camara 1994"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Camara/1998_Camara.dta",
+    "nivel": "Camara",
+    "ano": "1998",
+    "size": 12380454,
+    "tipo": "Congreso",
+    "format": "dta",
+    "titulo": "Camara 1998"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Camara/1998_camara.dta.csv",
+    "nivel": "Camara",
+    "ano": "1998",
+    "size": 7771758,
+    "tipo": "Congreso",
+    "format": "csv",
+    "titulo": "Camara 1998"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Camara/2002_Camara.dta",
+    "nivel": "Camara",
     "ano": "2002",
-    "path": "https://drive.google.com/file/d/136WBuURV9UkEtSwYW-q2cqVQlr5AEKl6/view?usp=sharing",
-    "format": "csv"
+    "size": 38478212,
+    "tipo": "Congreso",
+    "format": "dta",
+    "titulo": "Camara 2002"
   },
   {
-    "titulo": "2006 Senado",
-    "nivel": "Senado",
-    "tipo": "Senado",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Camara/2002_camara.dta.csv",
+    "nivel": "Camara",
+    "ano": "2002",
+    "size": 23836695,
+    "tipo": "Congreso",
+    "format": "csv",
+    "titulo": "Camara 2002"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Camara/2006_Camara.dta",
+    "nivel": "Camara",
     "ano": "2006",
-    "path": "https://drive.google.com/file/d/1XSg_zVLhQOT0ASPe8i77WayDXeH9nOpe/view?usp=sharing",
-    "format": "csv"
+    "size": 23978558,
+    "tipo": "Congreso",
+    "format": "dta",
+    "titulo": "Camara 2006"
   },
   {
-    "titulo": "2010 Senado",
-    "nivel": "Senado",
-    "tipo": "Senado",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Camara/2006_camara.dta.csv",
+    "nivel": "Camara",
+    "ano": "2006",
+    "size": 11862563,
+    "tipo": "Congreso",
+    "format": "csv",
+    "titulo": "Camara 2006"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Camara/2010_Camara.dta",
+    "nivel": "Camara",
     "ano": "2010",
-    "path": "https://drive.google.com/file/d/1CK974sg9K1gin0P0l1AK3hXujiRrurwM/view?usp=sharing",
-    "format": "csv"
+    "size": 22229126,
+    "tipo": "Congreso",
+    "format": "dta",
+    "titulo": "Camara 2010"
   },
   {
-    "titulo": "2014 Senado",
-    "nivel": "Senado",
-    "tipo": "Senado",
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Camara/2010_camara.dta.csv",
+    "nivel": "Camara",
+    "ano": "2010",
+    "size": 12979671,
+    "tipo": "Congreso",
+    "format": "csv",
+    "titulo": "Camara 2010"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Camara/2014_Camara.dta",
+    "nivel": "Camara",
     "ano": "2014",
-    "path": "https://drive.google.com/file/d/1MUJ0p31OryPwOVfeNTnLL-ZliIKD_KAr/view?usp=sharing",
-    "format": "csv"
+    "size": 26409225,
+    "tipo": "Congreso",
+    "format": "dta",
+    "titulo": "Camara 2014"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Camara/2014_camara.dta.csv",
+    "nivel": "Camara",
+    "ano": "2014",
+    "size": 12933111,
+    "tipo": "Congreso",
+    "format": "csv",
+    "titulo": "Camara 2014"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Camara/2018_Camara.dta",
+    "nivel": "Camara",
+    "ano": "2018",
+    "size": 28976127,
+    "tipo": "Congreso",
+    "format": "dta",
+    "titulo": "Camara 2018"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Camara/2018_camara.dta.csv",
+    "nivel": "Camara",
+    "ano": "2018",
+    "size": 15578360,
+    "tipo": "Congreso",
+    "format": "csv",
+    "titulo": "Camara 2018"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Concejo/1972_Concejo.dta",
+    "nivel": "Concejo",
+    "ano": "1972",
+    "size": 2448573,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Concejo 1972"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Concejo/1972_concejo.dta.csv",
+    "nivel": "Concejo",
+    "ano": "1972",
+    "size": 1243054,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Concejo 1972"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Concejo/1974_Concejo.dta",
+    "nivel": "Concejo",
+    "ano": "1974",
+    "size": 1849183,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Concejo 1974"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Concejo/1974_concejo.dta.csv",
+    "nivel": "Concejo",
+    "ano": "1974",
+    "size": 971715,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Concejo 1974"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Concejo/1976_Concejo.dta",
+    "nivel": "Concejo",
+    "ano": "1976",
+    "size": 2762569,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Concejo 1976"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Concejo/1976_concejo.dta.csv",
+    "nivel": "Concejo",
+    "ano": "1976",
+    "size": 1041232,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Concejo 1976"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Concejo/1978_Concejo.dta",
+    "nivel": "Concejo",
+    "ano": "1978",
+    "size": 1949087,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Concejo 1978"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Concejo/1978_concejo.dta.csv",
+    "nivel": "Concejo",
+    "ano": "1978",
+    "size": 939694,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Concejo 1978"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Concejo/1980_Concejo.dta",
+    "nivel": "Concejo",
+    "ano": "1980",
+    "size": 2291105,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Concejo 1980"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Concejo/1980_concejo.dta.csv",
+    "nivel": "Concejo",
+    "ano": "1980",
+    "size": 1305915,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Concejo 1980"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Concejo/1982_Concejo.dta",
+    "nivel": "Concejo",
+    "ano": "1982",
+    "size": 2392306,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Concejo 1982"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Concejo/1982_concejo.dta.csv",
+    "nivel": "Concejo",
+    "ano": "1982",
+    "size": 1390174,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Concejo 1982"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Concejo/1984_Concejo.dta",
+    "nivel": "Concejo",
+    "ano": "1984",
+    "size": 1688430,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Concejo 1984"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Concejo/1984_concejo.dta.csv",
+    "nivel": "Concejo",
+    "ano": "1984",
+    "size": 979984,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Concejo 1984"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Concejo/1986_Concejo.dta",
+    "nivel": "Concejo",
+    "ano": "1986",
+    "size": 2102125,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Concejo 1986"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Concejo/1986_concejo.dta.csv",
+    "nivel": "Concejo",
+    "ano": "1986",
+    "size": 969200,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Concejo 1986"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Concejo/1990_Concejo.dta",
+    "nivel": "Concejo",
+    "ano": "1990",
+    "size": 357874,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Concejo 1990"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Concejo/1990_concejo.dta.csv",
+    "nivel": "Concejo",
+    "ano": "1990",
+    "size": 204723,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Concejo 1990"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Concejo/1992_Concejo.dta",
+    "nivel": "Concejo",
+    "ano": "1992",
+    "size": 6232783,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Concejo 1992"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Concejo/1992_concejo.dta.csv",
+    "nivel": "Concejo",
+    "ano": "1992",
+    "size": 3306241,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Concejo 1992"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Concejo/1994_Concejo.dta",
+    "nivel": "Concejo",
+    "ano": "1994",
+    "size": 7429436,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Concejo 1994"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Concejo/1994_concejo.dta.csv",
+    "nivel": "Concejo",
+    "ano": "1994",
+    "size": 4119560,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Concejo 1994"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Concejo/1997_Concejo.dta",
+    "nivel": "Concejo",
+    "ano": "1997",
+    "size": 14778692,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Concejo 1997"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Concejo/1997_concejo.dta.csv",
+    "nivel": "Concejo",
+    "ano": "1997",
+    "size": 7991216,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Concejo 1997"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Concejo/2000_Concejo.dta",
+    "nivel": "Concejo",
+    "ano": "2000",
+    "size": 20514126,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Concejo 2000"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Concejo/2000_concejo.dta.csv",
+    "nivel": "Concejo",
+    "ano": "2000",
+    "size": 8460692,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Concejo 2000"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Concejo/2003_Concejo.dta",
+    "nivel": "Concejo",
+    "ano": "2003",
+    "size": 14206089,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Concejo 2003"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Concejo/2003_concejo.dta.csv",
+    "nivel": "Concejo",
+    "ano": "2003",
+    "size": 7708308,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Concejo 2003"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Concejo/2007_Concejo.dta",
+    "nivel": "Concejo",
+    "ano": "2007",
+    "size": 18706829,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Concejo 2007"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Concejo/2007_concejo.dta.csv",
+    "nivel": "Concejo",
+    "ano": "2007",
+    "size": 7875329,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Concejo 2007"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Concejo/2011_Concejo.dta",
+    "nivel": "Concejo",
+    "ano": "2011",
+    "size": 25133996,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Concejo 2011"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Concejo/2011_concejo.dta.csv",
+    "nivel": "Concejo",
+    "ano": "2011",
+    "size": 11128541,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Concejo 2011"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Concejo/2015_Concejo.dta",
+    "nivel": "Concejo",
+    "ano": "2015",
+    "size": 27339052,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Concejo 2015"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Concejo/2015_concejo.dta.csv",
+    "nivel": "Concejo",
+    "ano": "2015",
+    "size": 12225652,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Concejo 2015"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Concejo/2019_Concejo.dta",
+    "nivel": "Concejo",
+    "ano": "2019",
+    "size": 31430097,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Concejo 2019"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Concejo/2019_concejo.dta.csv",
+    "nivel": "Concejo",
+    "ano": "2019",
+    "size": 12991734,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Concejo 2019"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/DiccionarioDatosElectorales.pdf",
+    "nivel": "DiccionarioDatosElectorales.pdf",
+    "size": 877939,
+    "tipo": "Diccionarios",
+    "format": "pdf",
+    "titulo": "DiccionarioDatosElectorales"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Gobernacion/1991_Gobernacion.dta",
+    "nivel": "Gobernacion",
+    "ano": "1991",
+    "size": 1408623,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Gobernacion 1991"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Gobernacion/1991_gobernacion.dta.csv",
+    "nivel": "Gobernacion",
+    "ano": "1991",
+    "size": 953324,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Gobernacion 1991"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Gobernacion/1994_Gobernacion.dta",
+    "nivel": "Gobernacion",
+    "ano": "1994",
+    "size": 1163386,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Gobernacion 1994"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Gobernacion/1994_gobernacion.dta.csv",
+    "nivel": "Gobernacion",
+    "ano": "1994",
+    "size": 703695,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Gobernacion 1994"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Gobernacion/1997_Gobernacion.dta",
+    "nivel": "Gobernacion",
+    "ano": "1997",
+    "size": 1319964,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Gobernacion 1997"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Gobernacion/1997_gobernacion.dta.csv",
+    "nivel": "Gobernacion",
+    "ano": "1997",
+    "size": 843197,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Gobernacion 1997"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Gobernacion/2000_Gobernacion.dta",
+    "nivel": "Gobernacion",
+    "ano": "2000",
+    "size": 1519284,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Gobernacion 2000"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Gobernacion/2000_gobernacion.dta.csv",
+    "nivel": "Gobernacion",
+    "ano": "2000",
+    "size": 962153,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Gobernacion 2000"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Gobernacion/2003_Gobernacion.dta",
+    "nivel": "Gobernacion",
+    "ano": "2003",
+    "size": 1825330,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Gobernacion 2003"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Gobernacion/2003_gobernacion.dta.csv",
+    "nivel": "Gobernacion",
+    "ano": "2003",
+    "size": 1046254,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Gobernacion 2003"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Gobernacion/2007_Gobernacion.dta",
+    "nivel": "Gobernacion",
+    "ano": "2007",
+    "size": 1690844,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Gobernacion 2007"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Gobernacion/2007_gobernacion.dta.csv",
+    "nivel": "Gobernacion",
+    "ano": "2007",
+    "size": 989257,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Gobernacion 2007"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Gobernacion/2011_Gobernacion.dta",
+    "nivel": "Gobernacion",
+    "ano": "2011",
+    "size": 1552070,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Gobernacion 2011"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Gobernacion/2011_gobernacion.dta.csv",
+    "nivel": "Gobernacion",
+    "ano": "2011",
+    "size": 904986,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Gobernacion 2011"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Gobernacion/2015_Gobernacion.dta",
+    "nivel": "Gobernacion",
+    "ano": "2015",
+    "size": 1837712,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Gobernacion 2015"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Gobernacion/2015_gobernacion.dta.csv",
+    "nivel": "Gobernacion",
+    "ano": "2015",
+    "size": 998337,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Gobernacion 2015"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Gobernacion/2019_Gobernacion.dta",
+    "nivel": "Gobernacion",
+    "ano": "2019",
+    "size": 1927178,
+    "tipo": "Locales",
+    "format": "dta",
+    "titulo": "Gobernacion 2019"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Gobernacion/2019_gobernacion.dta.csv",
+    "nivel": "Gobernacion",
+    "ano": "2019",
+    "size": 1117956,
+    "tipo": "Locales",
+    "format": "csv",
+    "titulo": "Gobernacion 2019"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Partidos_Electorales.dta",
+    "nivel": "Partidos_Electorales.dta",
+    "size": 1209543,
+    "tipo": "Diccionarios",
+    "format": "dta",
+    "titulo": "Partidos Electorales"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Partidos_Electorales.xlsx",
+    "nivel": "Partidos_Electorales.xlsx",
+    "size": 124683,
+    "tipo": "Diccionarios",
+    "format": "xlsx",
+    "titulo": "Partidos Electorales"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/1958_Presidencia.dta",
+    "nivel": "Presidencia",
+    "ano": "1958",
+    "size": 1078223,
+    "tipo": "Presidenciales",
+    "format": "dta",
+    "titulo": "Presidencia 1958"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/1958_presidencia.dta.csv",
+    "nivel": "Presidencia",
+    "ano": "1958",
+    "size": 508176,
+    "tipo": "Presidenciales",
+    "format": "csv",
+    "titulo": "Presidencia 1958"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/1962_Presidencia.dta",
+    "nivel": "Presidencia",
+    "ano": "1962",
+    "size": 1160802,
+    "tipo": "Presidenciales",
+    "format": "dta",
+    "titulo": "Presidencia 1962"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/1962_presidencia.dta.csv",
+    "nivel": "Presidencia",
+    "ano": "1962",
+    "size": 553265,
+    "tipo": "Presidenciales",
+    "format": "csv",
+    "titulo": "Presidencia 1962"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/1966_Presidencia.dta",
+    "nivel": "Presidencia",
+    "ano": "1966",
+    "size": 1309023,
+    "tipo": "Presidenciales",
+    "format": "dta",
+    "titulo": "Presidencia 1966"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/1966_presidencia.dta.csv",
+    "nivel": "Presidencia",
+    "ano": "1966",
+    "size": 602065,
+    "tipo": "Presidenciales",
+    "format": "csv",
+    "titulo": "Presidencia 1966"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/1970_Presidencia.dta",
+    "nivel": "Presidencia",
+    "ano": "1970",
+    "size": 1703677,
+    "tipo": "Presidenciales",
+    "format": "dta",
+    "titulo": "Presidencia 1970"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/1970_presidencia.dta.csv",
+    "nivel": "Presidencia",
+    "ano": "1970",
+    "size": 886029,
+    "tipo": "Presidenciales",
+    "format": "csv",
+    "titulo": "Presidencia 1970"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/1974_Presidencia.dta",
+    "nivel": "Presidencia",
+    "ano": "1974",
+    "size": 2083289,
+    "tipo": "Presidenciales",
+    "format": "dta",
+    "titulo": "Presidencia 1974"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/1974_presidencia.dta.csv",
+    "nivel": "Presidencia",
+    "ano": "1974",
+    "size": 1042961,
+    "tipo": "Presidenciales",
+    "format": "csv",
+    "titulo": "Presidencia 1974"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/1978_Presidencia.dta",
+    "nivel": "Presidencia",
+    "ano": "1978",
+    "size": 2906655,
+    "tipo": "Presidenciales",
+    "format": "dta",
+    "titulo": "Presidencia 1978"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/1978_presidencia.dta.csv",
+    "nivel": "Presidencia",
+    "ano": "1978",
+    "size": 1503608,
+    "tipo": "Presidenciales",
+    "format": "csv",
+    "titulo": "Presidencia 1978"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/1982_Presidencia.dta",
+    "nivel": "Presidencia",
+    "ano": "1982",
+    "size": 1609197,
+    "tipo": "Presidenciales",
+    "format": "dta",
+    "titulo": "Presidencia 1982"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/1982_presidencia.dta.csv",
+    "nivel": "Presidencia",
+    "ano": "1982",
+    "size": 936291,
+    "tipo": "Presidenciales",
+    "format": "csv",
+    "titulo": "Presidencia 1982"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/1986_Presidencia.dta",
+    "nivel": "Presidencia",
+    "ano": "1986",
+    "size": 1883669,
+    "tipo": "Presidenciales",
+    "format": "dta",
+    "titulo": "Presidencia 1986"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/1986_presidencia.dta.csv",
+    "nivel": "Presidencia",
+    "ano": "1986",
+    "size": 1094994,
+    "tipo": "Presidenciales",
+    "format": "csv",
+    "titulo": "Presidencia 1986"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/1990_Presidencia.dta",
+    "nivel": "Presidencia",
+    "ano": "1990",
+    "size": 3621257,
+    "tipo": "Presidenciales",
+    "format": "dta",
+    "titulo": "Presidencia 1990"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/1990_presidencia.dta.csv",
+    "nivel": "Presidencia",
+    "ano": "1990",
+    "size": 1967651,
+    "tipo": "Presidenciales",
+    "format": "csv",
+    "titulo": "Presidencia 1990"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/1994_Presidencia_Primera_Vuelta.dta",
+    "nivel": "Presidencia",
+    "ano": "1994",
+    "size": 5329895,
+    "tipo": "Presidenciales",
+    "format": "dta",
+    "titulo": "Presidencia 1994"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/1994_Presidencia_Segunda_Vuelta.dta",
+    "nivel": "Presidencia",
+    "ano": "1994",
+    "size": 1393454,
+    "tipo": "Presidenciales",
+    "format": "dta",
+    "titulo": "Presidencia 1994"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/1994_presidencia_primera_vuelta.dta.csv",
+    "nivel": "Presidencia",
+    "ano": "1994",
+    "size": 2927596,
+    "tipo": "Presidenciales",
+    "format": "csv",
+    "titulo": "Presidencia 1994"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/1994_presidencia_segunda_vuelta.dta.csv",
+    "nivel": "Presidencia",
+    "ano": "1994",
+    "size": 607217,
+    "tipo": "Presidenciales",
+    "format": "csv",
+    "titulo": "Presidencia 1994"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/1998_Presidencia_Primera_Vuelta.dta",
+    "nivel": "Presidencia",
+    "ano": "1998",
+    "size": 3110528,
+    "tipo": "Presidenciales",
+    "format": "dta",
+    "titulo": "Presidencia 1998"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/1998_Presidencia_Segunda_Vuelta.dta",
+    "nivel": "Presidencia",
+    "ano": "1998",
+    "size": 826152,
+    "tipo": "Presidenciales",
+    "format": "dta",
+    "titulo": "Presidencia 1998"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/1998_presidencia_primera_vuelta.dta.csv",
+    "nivel": "Presidencia",
+    "ano": "1998",
+    "size": 1940530,
+    "tipo": "Presidenciales",
+    "format": "csv",
+    "titulo": "Presidencia 1998"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/1998_presidencia_segunda_vuelta.dta.csv",
+    "nivel": "Presidencia",
+    "ano": "1998",
+    "size": 492290,
+    "tipo": "Presidenciales",
+    "format": "csv",
+    "titulo": "Presidencia 1998"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/2002_Presidencia.dta",
+    "nivel": "Presidencia",
+    "ano": "2002",
+    "size": 3192036,
+    "tipo": "Presidenciales",
+    "format": "dta",
+    "titulo": "Presidencia 2002"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/2002_presidencia.dta.csv",
+    "nivel": "Presidencia",
+    "ano": "2002",
+    "size": 1816597,
+    "tipo": "Presidenciales",
+    "format": "csv",
+    "titulo": "Presidencia 2002"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/2006_Presidencia.dta",
+    "nivel": "Presidencia",
+    "ano": "2006",
+    "size": 2258998,
+    "tipo": "Presidenciales",
+    "format": "dta",
+    "titulo": "Presidencia 2006"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/2006_presidencia.dta.csv",
+    "nivel": "Presidencia",
+    "ano": "2006",
+    "size": 1267507,
+    "tipo": "Presidenciales",
+    "format": "csv",
+    "titulo": "Presidencia 2006"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/2010_Presidencia_Primera_Vuelta.dta",
+    "nivel": "Presidencia",
+    "ano": "2010",
+    "size": 2613585,
+    "tipo": "Presidenciales",
+    "format": "dta",
+    "titulo": "Presidencia 2010"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/2010_Presidencia_Segunda_Vuelta.dta",
+    "nivel": "Presidencia",
+    "ano": "2010",
+    "size": 1060809,
+    "tipo": "Presidenciales",
+    "format": "dta",
+    "titulo": "Presidencia 2010"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/2010_presidencia_primera_vuelta.dta.csv",
+    "nivel": "Presidencia",
+    "ano": "2010",
+    "size": 1581497,
+    "tipo": "Presidenciales",
+    "format": "csv",
+    "titulo": "Presidencia 2010"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/2010_presidencia_segunda_vuelta.dta.csv",
+    "nivel": "Presidencia",
+    "ano": "2010",
+    "size": 659712,
+    "tipo": "Presidenciales",
+    "format": "csv",
+    "titulo": "Presidencia 2010"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/2014_Presidencia_Primera_Vuelta.dta",
+    "nivel": "Presidencia",
+    "ano": "2014",
+    "size": 1759888,
+    "tipo": "Presidenciales",
+    "format": "dta",
+    "titulo": "Presidencia 2014"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/2014_Presidencia_Segunda_Vuelta.dta",
+    "nivel": "Presidencia",
+    "ano": "2014",
+    "size": 1105219,
+    "tipo": "Presidenciales",
+    "format": "dta",
+    "titulo": "Presidencia 2014"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/2014_presidencia_primera_vuelta.dta.csv",
+    "nivel": "Presidencia",
+    "ano": "2014",
+    "size": 1057312,
+    "tipo": "Presidenciales",
+    "format": "csv",
+    "titulo": "Presidencia 2014"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/2014_presidencia_segunda_vuelta.dta.csv",
+    "nivel": "Presidencia",
+    "ano": "2014",
+    "size": 647331,
+    "tipo": "Presidenciales",
+    "format": "csv",
+    "titulo": "Presidencia 2014"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/2018_Presidencia_Primera_Vuelta.dta",
+    "nivel": "Presidencia",
+    "ano": "2018",
+    "size": 2557654,
+    "tipo": "Presidenciales",
+    "format": "dta",
+    "titulo": "Presidencia 2018"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/2018_Presidencia_Segunda_Vuelta.dta",
+    "nivel": "Presidencia",
+    "ano": "2018",
+    "size": 1115034,
+    "tipo": "Presidenciales",
+    "format": "dta",
+    "titulo": "Presidencia 2018"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/2018_presidencia_primera_vuelta.dta.csv",
+    "nivel": "Presidencia",
+    "ano": "2018",
+    "size": 1430284,
+    "tipo": "Presidenciales",
+    "format": "csv",
+    "titulo": "Presidencia 2018"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Presidencia/2018_presidencia_segunda_vuelta.dta.csv",
+    "nivel": "Presidencia",
+    "ano": "2018",
+    "size": 628413,
+    "tipo": "Presidenciales",
+    "format": "csv",
+    "titulo": "Presidencia 2018"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Senado/1958_Senado.dta",
+    "nivel": "Senado",
+    "ano": "1958",
+    "size": 2517636,
+    "tipo": "Congreso",
+    "format": "dta",
+    "titulo": "Senado 1958"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Senado/1958_senado.dta.csv",
+    "nivel": "Senado",
+    "ano": "1958",
+    "size": 1174672,
+    "tipo": "Congreso",
+    "format": "csv",
+    "titulo": "Senado 1958"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Senado/1962_Senado.dta",
+    "nivel": "Senado",
+    "ano": "1962",
+    "size": 6408789,
+    "tipo": "Congreso",
+    "format": "dta",
+    "titulo": "Senado 1962"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Senado/1962_senado.dta.csv",
+    "nivel": "Senado",
+    "ano": "1962",
+    "size": 2112303,
+    "tipo": "Congreso",
+    "format": "csv",
+    "titulo": "Senado 1962"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Senado/1966_Senado.dta",
+    "nivel": "Senado",
+    "ano": "1966",
+    "size": 5868495,
+    "tipo": "Congreso",
+    "format": "dta",
+    "titulo": "Senado 1966"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Senado/1966_senado.dta.csv",
+    "nivel": "Senado",
+    "ano": "1966",
+    "size": 2715659,
+    "tipo": "Congreso",
+    "format": "csv",
+    "titulo": "Senado 1966"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Senado/1970_Senado.dta",
+    "nivel": "Senado",
+    "ano": "1970",
+    "size": 8299690,
+    "tipo": "Congreso",
+    "format": "dta",
+    "titulo": "Senado 1970"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Senado/1970_senado.dta.csv",
+    "nivel": "Senado",
+    "ano": "1970",
+    "size": 3592863,
+    "tipo": "Congreso",
+    "format": "csv",
+    "titulo": "Senado 1970"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Senado/1974_Senado.dta",
+    "nivel": "Senado",
+    "ano": "1974",
+    "size": 6113354,
+    "tipo": "Congreso",
+    "format": "dta",
+    "titulo": "Senado 1974"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Senado/1974_senado.dta.csv",
+    "nivel": "Senado",
+    "ano": "1974",
+    "size": 2825121,
+    "tipo": "Congreso",
+    "format": "csv",
+    "titulo": "Senado 1974"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Senado/1978_Senado.dta",
+    "nivel": "Senado",
+    "ano": "1978",
+    "size": 7243778,
+    "tipo": "Congreso",
+    "format": "dta",
+    "titulo": "Senado 1978"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Senado/1978_senado.dta.csv",
+    "nivel": "Senado",
+    "ano": "1978",
+    "size": 3624355,
+    "tipo": "Congreso",
+    "format": "csv",
+    "titulo": "Senado 1978"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Senado/1982_Senado.dta",
+    "nivel": "Senado",
+    "ano": "1982",
+    "size": 8053280,
+    "tipo": "Congreso",
+    "format": "dta",
+    "titulo": "Senado 1982"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Senado/1982_senado.dta.csv",
+    "nivel": "Senado",
+    "ano": "1982",
+    "size": 3770773,
+    "tipo": "Congreso",
+    "format": "csv",
+    "titulo": "Senado 1982"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Senado/1986_Senado.dta",
+    "nivel": "Senado",
+    "ano": "1986",
+    "size": 6803725,
+    "tipo": "Congreso",
+    "format": "dta",
+    "titulo": "Senado 1986"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Senado/1986_senado.dta.csv",
+    "nivel": "Senado",
+    "ano": "1986",
+    "size": 3564874,
+    "tipo": "Congreso",
+    "format": "csv",
+    "titulo": "Senado 1986"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Senado/1990_Senado.dta",
+    "nivel": "Senado",
+    "ano": "1990",
+    "size": 7655446,
+    "tipo": "Congreso",
+    "format": "dta",
+    "titulo": "Senado 1990"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Senado/1990_senado.dta.csv",
+    "nivel": "Senado",
+    "ano": "1990",
+    "size": 4158569,
+    "tipo": "Congreso",
+    "format": "csv",
+    "titulo": "Senado 1990"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Senado/1991_Senado.dta",
+    "nivel": "Senado",
+    "ano": "1991",
+    "size": 77280518,
+    "tipo": "Congreso",
+    "format": "dta",
+    "titulo": "Senado 1991"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Senado/1991_senado.dta.csv",
+    "nivel": "Senado",
+    "ano": "1991",
+    "size": 42988092,
+    "tipo": "Congreso",
+    "format": "csv",
+    "titulo": "Senado 1991"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Senado/1994_Senado.dta",
+    "nivel": "Senado",
+    "ano": "1994",
+    "size": 190795906,
+    "tipo": "Congreso",
+    "format": "dta",
+    "titulo": "Senado 1994"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Senado/1994_senado.dta.csv",
+    "nivel": "Senado",
+    "ano": "1994",
+    "size": 86000127,
+    "tipo": "Congreso",
+    "format": "csv",
+    "titulo": "Senado 1994"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Senado/1998_Senado.dta",
+    "nivel": "Senado",
+    "ano": "1998",
+    "size": 140681593,
+    "tipo": "Congreso",
+    "format": "dta",
+    "titulo": "Senado 1998"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Senado/1998_senado.dta.csv",
+    "nivel": "Senado",
+    "ano": "1998",
+    "size": 76502496,
+    "tipo": "Congreso",
+    "format": "csv",
+    "titulo": "Senado 1998"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Senado/2002_Senado.dta",
+    "nivel": "Senado",
+    "ano": "2002",
+    "size": 52063499,
+    "tipo": "Congreso",
+    "format": "dta",
+    "titulo": "Senado 2002"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Senado/2002_senado.dta.csv",
+    "nivel": "Senado",
+    "ano": "2002",
+    "size": 27726483,
+    "tipo": "Congreso",
+    "format": "csv",
+    "titulo": "Senado 2002"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Senado/2006_Senado.dta",
+    "nivel": "Senado",
+    "ano": "2006",
+    "size": 45943912,
+    "tipo": "Congreso",
+    "format": "dta",
+    "titulo": "Senado 2006"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Senado/2006_senado.dta.csv",
+    "nivel": "Senado",
+    "ano": "2006",
+    "size": 22000891,
+    "tipo": "Congreso",
+    "format": "csv",
+    "titulo": "Senado 2006"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Senado/2010_Senado.dta",
+    "nivel": "Senado",
+    "ano": "2010",
+    "size": 53950222,
+    "tipo": "Congreso",
+    "format": "dta",
+    "titulo": "Senado 2010"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Senado/2010_senado.dta.csv",
+    "nivel": "Senado",
+    "ano": "2010",
+    "size": 26443110,
+    "tipo": "Congreso",
+    "format": "csv",
+    "titulo": "Senado 2010"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Senado/2014_Senado.dta",
+    "nivel": "Senado",
+    "ano": "2014",
+    "size": 60335468,
+    "tipo": "Congreso",
+    "format": "dta",
+    "titulo": "Senado 2014"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Senado/2014_senado.dta.csv",
+    "nivel": "Senado",
+    "ano": "2014",
+    "size": 28769049,
+    "tipo": "Congreso",
+    "format": "csv",
+    "titulo": "Senado 2014"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Senado/2018_Senado.dta",
+    "nivel": "Senado",
+    "ano": "2018",
+    "size": 76481454,
+    "tipo": "Congreso",
+    "format": "dta",
+    "titulo": "Senado 2018"
+  },
+  {
+    "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Senado/2018_senado.dta.csv",
+    "nivel": "Senado",
+    "ano": "2018",
+    "size": 35987478,
+    "tipo": "Congreso",
+    "format": "csv",
+    "titulo": "Senado 2018"
   }
 ]
