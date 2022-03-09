@@ -1315,7 +1315,7 @@
   },
   {
     "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/DiccionarioDatosElectorales.pdf",
-    "nivel": "DiccionarioDatosElectorales.pdf",
+    "nivel": "Documentos Guía",
     "size": 877939,
     "tipo": "Diccionarios",
     "format": "pdf",
@@ -1485,7 +1485,7 @@
   },
   {
     "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Partidos_Electorales.dta",
-    "nivel": "Partidos_Electorales.dta",
+    "nivel": "Documentos Guía",
     "size": 1209543,
     "tipo": "Diccionarios",
     "format": "dta",
