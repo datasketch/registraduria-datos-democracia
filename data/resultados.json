@@ -1493,7 +1493,7 @@
   },
   {
     "path": "https://s3.amazonaws.com/cedae.dskt.ch/resultados/Partidos_Electorales.xlsx",
-    "nivel": "Partidos_Electorales.xlsx",
+    "nivel": "Documentos Guía",
     "size": 124683,
     "tipo": "Diccionarios",
     "format": "xlsx",
